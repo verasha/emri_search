@@ -1,0 +1,118 @@
+Using dt = 10 seconds, T = 0.25 years
+Initializing waveform generator...
+Creating GenerateEMRIWaveform class...
+Done initializing waveform generator.
+Creating GravWaveAnalysis class...
+Initializing loglike class...
+Done initializing loglike class.
+Calculating SNR...
+SNR calculated: 5.942134448355127
+Setting up log_density and prior functions...
+Done setting up log-likelihood and prior.
+Setting up ParisMC sampler...
+Done setting up ParisMC sampler.
+Setting up initial covariance matrix...
+Done setting up initial covariance matrix.
+Initializing sampler...
+Done initializing sampler.
+Loading external LHS samples from pkl...
+Loaded 500000 LHS samples.
+Running sampling...
+[Anneal] n_proc=1 reached at iter 4060. Waiting 1000 iters before annealing.
+[Anneal] Starting annealing at iter 5060: S=2.0
+[Anneal] max_ld converged (unchanged=2.78171). S: 2 -> 3 at iter 6060
+[Anneal] max_ld converged (unchanged=2.78171). S: 3 -> 4 at iter 7060
+[Anneal] max_ld converged (unchanged=2.78171). S: 4 -> 5 at iter 8060
+[Anneal] max_ld converged (unchanged=2.78171). S: 5 -> 6 at iter 9060
+[Anneal] max_ld converged (unchanged=2.78171). S: 6 -> 7 at iter 10060
+[Anneal] max_ld converged (unchanged=2.78171). S: 7 -> 8 at iter 11060
+[Anneal] max_ld converged (unchanged=2.78171). S: 8 -> 9 at iter 12060
+[Anneal] max_ld converged (unchanged=2.78171). S: 9 -> 10 at iter 13060
+[Anneal] max_ld still moving (2.78171 -> 2.78171). Staying S=10
+[Anneal] max_ld still moving (2.78171 -> 2.78171). Staying S=10
+[Anneal] max_ld still moving (2.78171 -> 4.29364). Staying S=10
+[Anneal] max_ld still moving (4.29364 -> 9.50737). Staying S=10
+[Anneal] max_ld still moving (9.50737 -> 9.50737). Staying S=10
+[Anneal] max_ld still moving (9.50737 -> 9.50737). Staying S=10
+[Anneal] max_ld still moving (9.50737 -> 9.50737). Staying S=10
+[Anneal] max_ld still moving (9.50737 -> 9.50737). Staying S=10
+[Anneal] max_ld still moving (9.50737 -> 13.21527). Staying S=10
+[Anneal] max_ld still moving (13.21527 -> 14.53241). Staying S=10
+[Anneal] max_ld still moving (14.53241 -> 14.53241). Staying S=10
+[Anneal] max_ld still moving (14.53241 -> 15.51810). Staying S=10
+[Anneal] max_ld still moving (15.51810 -> 16.10479). Staying S=10
+[Anneal] max_ld still moving (16.10479 -> 16.10479). Staying S=10
+[Anneal] max_ld still moving (16.10479 -> 34.39147). Staying S=10
+[Anneal] max_ld still moving (34.39147 -> 34.99216). Staying S=10
+[Anneal] max_ld still moving (34.99216 -> 43.17339). Staying S=10
+[Anneal] max_ld still moving (43.17339 -> 50.88706). Staying S=10
+[Anneal] max_ld still moving (50.88706 -> 55.70867). Staying S=10
+[Anneal] max_ld still moving (55.70867 -> 55.70867). Staying S=10
+[Anneal] max_ld still moving (55.70867 -> 56.25965). Staying S=10
+[Anneal] max_ld still moving (56.25965 -> 56.25965). Staying S=10
+[Anneal] max_ld still moving (56.25965 -> 56.25965). Staying S=10
+[Anneal] max_ld still moving (56.25965 -> 56.25965). Staying S=10
+[Anneal] max_ld still moving (56.25965 -> 56.25965). Staying S=10
+[Anneal] max_ld still moving (56.25965 -> 56.25965). Staying S=10
+[Anneal] max_ld still moving (56.25965 -> 56.25965). Staying S=10
+[Anneal] max_ld still moving (56.25965 -> 57.65374). Staying S=10
+[Anneal] max_ld still moving (57.65374 -> 57.65374). Staying S=10
+[Anneal] max_ld still moving (57.65374 -> 57.65374). Staying S=10
+[Anneal] max_ld still moving (57.65374 -> 57.65374). Staying S=10
+[Anneal] max_ld still moving (57.65374 -> 57.65374). Staying S=10
+[Anneal] max_ld still moving (57.65374 -> 57.65374). Staying S=10
+[Anneal] max_ld still moving (57.65374 -> 57.65374). Staying S=10
+[Anneal] max_ld still moving (57.65374 -> 58.16989). Staying S=10
+[Anneal] max_ld still moving (58.16989 -> 58.16989). Staying S=10
+[Anneal] max_ld still moving (58.16989 -> 58.16989). Staying S=10
+[Anneal] max_ld still moving (58.16989 -> 58.16989). Staying S=10
+[Anneal] max_ld still moving (58.16989 -> 58.16989). Staying S=10
+[Anneal] max_ld still moving (58.16989 -> 58.16989). Staying S=10
+[Anneal] max_ld still moving (58.16989 -> 58.16989). Staying S=10
+[Anneal] max_ld still moving (58.16989 -> 58.16989). Staying S=10
+[Anneal] max_ld still moving (58.16989 -> 58.16989). Staying S=10
+[Anneal] max_ld still moving (58.16989 -> 58.16989). Staying S=10
+[Anneal] max_ld still moving (58.16989 -> 58.16989). Staying S=10
+[Anneal] max_ld still moving (58.16989 -> 58.16989). Staying S=10
+[Anneal] max_ld still moving (58.16989 -> 58.16989). Staying S=10
+[Anneal] max_ld still moving (58.16989 -> 58.37596). Staying S=10
+[Anneal] max_ld still moving (58.37596 -> 58.37596). Staying S=10
+[Anneal] max_ld still moving (58.37596 -> 58.37596). Staying S=10
+[Anneal] max_ld still moving (58.37596 -> 58.37596). Staying S=10
+[Anneal] max_ld still moving (58.37596 -> 58.37596). Staying S=10
+[Anneal] max_ld still moving (58.37596 -> 58.37596). Staying S=10
+[Anneal] max_ld still moving (58.37596 -> 58.37596). Staying S=10
+[Anneal] max_ld still moving (58.37596 -> 58.37596). Staying S=10
+[Anneal] max_ld still moving (58.37596 -> 58.37596). Staying S=10
+[Anneal] max_ld still moving (58.37596 -> 58.37596). Staying S=10
+[Anneal] max_ld still moving (58.37596 -> 58.37596). Staying S=10
+[Anneal] max_ld still moving (58.37596 -> 58.37596). Staying S=10
+[Anneal] max_ld still moving (58.37596 -> 58.37596). Staying S=10
+[Anneal] max_ld still moving (58.37596 -> 58.37596). Staying S=10
+[Anneal] max_ld still moving (58.37596 -> 58.37596). Staying S=10
+[Anneal] max_ld still moving (58.37596 -> 58.37596). Staying S=10
+[Anneal] max_ld still moving (58.37596 -> 58.37596). Staying S=10
+[Anneal] max_ld still moving (58.37596 -> 58.37596). Staying S=10
+[Anneal] max_ld still moving (58.37596 -> 58.37596). Staying S=10
+[Anneal] max_ld still moving (58.37596 -> 58.37596). Staying S=10
+[Anneal] max_ld still moving (58.37596 -> 58.37596). Staying S=10
+[Anneal] max_ld still moving (58.37596 -> 58.37596). Staying S=10
+[Anneal] max_ld still moving (58.37596 -> 58.37596). Staying S=10
+[Anneal] max_ld still moving (58.37596 -> 58.37596). Staying S=10
+[Anneal] max_ld still moving (58.37596 -> 58.37596). Staying S=10
+[Anneal] max_ld still moving (58.37596 -> 58.37596). Staying S=10
+[Anneal] max_ld still moving (58.37596 -> 58.37596). Staying S=10
+[Anneal] max_ld still moving (58.37596 -> 58.37596). Staying S=10
+[Anneal] max_ld still moving (58.37596 -> 58.37596). Staying S=10
+[Anneal] max_ld still moving (58.37596 -> 58.37596). Staying S=10
+[Anneal] max_ld still moving (58.37596 -> 58.37596). Staying S=10
+[Anneal] max_ld still moving (58.37596 -> 58.37596). Staying S=10
+[Anneal] max_ld still moving (58.37596 -> 58.37596). Staying S=10
+[Anneal] max_ld still moving (58.37596 -> 58.37596). Staying S=10
+[Anneal] max_ld still moving (58.37596 -> 58.37596). Staying S=10
+[Anneal] max_ld still moving (58.37596 -> 58.37596). Staying S=10
+[Anneal] max_ld still moving (58.37596 -> 58.37596). Staying S=10
+[Anneal] max_ld still moving (58.37596 -> 58.37596). Staying S=10
+[Anneal] max_ld still moving (58.37596 -> 58.37596). Staying S=10
+Done running sampling.
+Job completed at Fri Mar 20 08:18:20 AM +08 2026

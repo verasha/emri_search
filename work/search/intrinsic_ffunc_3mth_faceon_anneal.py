@@ -157,6 +157,18 @@ data_snr = gwf.rhostat(data)
 print('SNR calculated:', data_snr)
 print("Setting up log_density and prior functions...")
 
+sampler_instance = None  # injected before run_sampling
+
+anneal_state = {
+    'S': 1.0,
+    'phase': 'normal',           # 'normal' | 'waiting' | 'annealing'
+    'phase_start_iter': None,    # iter when current phase began
+    'merge_max_ld': None,        # max_ld at the moment n_proc=1 (LHS baseline)
+    'ref_max_ld': None,          # raw max_ld at start of current interval
+    'ref_iter': None,            # iter when ref_max_ld was recorded
+    'stuck_count': 0,            # consecutive intervals with no max_ld improvement
+}
+
 
 def log_density(params):
     params = np.asarray(params)
@@ -171,7 +183,7 @@ def log_density(params):
         m2 = 10**logm2
 
         try:
-            loglike = loglike_obj(np.array([m1, m2, a, p0, e0, xI0, dist, qS, phiS, qK, phiK, Phi_phi0, Phi_theta0, Phi_r0]))
+            loglike = loglike_obj(np.array([m1, m2, a, p0, e0, xI0, dist, qS, phiS, qK, phiK, Phi_phi0, Phi_theta0, Phi_r0])) * anneal_state['S']
         except Exception:
             loglike = -np.inf
         log_likes[i] = loglike
@@ -242,6 +254,12 @@ config = parismc.SamplerConfig(
     keep_dead_processes=True
 )
 
+# Reverse annealing parameters
+anneal_wait_iter = 1000  # iters to wait at each stage
+S_max = 10               # max scaling factor
+anneal_alpha = 1000      # alpha when annealing starts
+anneal_stuck_max = 5     # force S++ after this many consecutive stuck intervals
+
 print('Done setting up ParisMC sampler.')
 print('Setting up initial covariance matrix...')
 
@@ -278,15 +296,67 @@ external_lhs_log_densities   = _logden
 print(f'Loaded {len(_logden)} LHS samples.')
 
 print('Running sampling...')
-def save_every_1000(sampler, i):
+
+def anneal_callback(sampler, i):
+    global anneal_state
+    state = anneal_state
+    S = state['S']
+    n_proc = sampler.n_proc
+
+    if state['phase'] == 'normal':
+        if n_proc == 1:
+            state['merge_max_ld'] = sampler.max_logden_list[0]
+            print(f"[Anneal] n_proc=1 reached at iter {i}. Baseline max_ld={state['merge_max_ld']:.5f}. Waiting {anneal_wait_iter} iters before annealing.", flush=True)
+            state['phase'] = 'waiting'
+            state['phase_start_iter'] = i
+            sampler.config.alpha = anneal_alpha
+
+    elif state['phase'] == 'waiting':
+        # Fixed wait: always wait anneal_wait_iter iters after merge before starting
+        if i - state['phase_start_iter'] >= anneal_wait_iter:
+            state['S'] = 5.0
+            state['phase'] = 'annealing'
+            state['ref_max_ld'] = sampler.max_logden_list[0]
+            state['ref_iter'] = i
+            print(f"[Anneal] Starting annealing at iter {i}: S=5.0 (max_ld={state['ref_max_ld']:.5f})", flush=True)
+
+    elif state['phase'] == 'annealing':
+        if i - state['ref_iter'] >= anneal_wait_iter:
+            current_max_ld = sampler.max_logden_list[0]
+            ref = state['ref_max_ld']
+            # Increment S if sampler found something better, or force if stuck too long
+            if current_max_ld > ref and S < S_max:
+                new_S = S + 1.0
+                state['S'] = new_S
+                state['stuck_count'] = 0
+                print(f"[Anneal] max_ld improved ({ref:.5f} -> {current_max_ld:.5f}). S: {S:.0f} -> {new_S:.0f} at iter {i}", flush=True)
+            elif state['stuck_count'] >= anneal_stuck_max and S < S_max:
+                new_S = S + 1.0
+                state['S'] = new_S
+                state['stuck_count'] = 0
+                print(f"[Anneal] Stuck for {anneal_stuck_max} intervals ({ref:.5f} -> {current_max_ld:.5f}). Forcing S: {S:.0f} -> {new_S:.0f} at iter {i}", flush=True)
+            else:
+                state['stuck_count'] += 1
+                print(f"[Anneal] max_ld not improved ({ref:.5f} -> {current_max_ld:.5f}). Staying S={S:.0f} (stuck={state['stuck_count']}/{anneal_stuck_max})", flush=True)
+
+            # Update reference for next interval
+            state['ref_max_ld'] = sampler.max_logden_list[0]
+            state['ref_iter'] = i
+
+
+def combined_callback(sampler, i):
+    anneal_callback(sampler, i)
     if i % 1000 == 0 and i > 0:
         sampler.save_state()
 
+
+sampler_instance = sampler
+
 sampler.run_sampling(
     num_iterations=int(1e5),
-    savepath='./intrinsic_ffunc_3mth_snr32_run5',
+    savepath='./intrinsic_ffunc_3mth_snr32_anneal5',
     print_iter=100,
-    callback=save_every_1000,
+    callback=combined_callback,
     external_lhs_points=external_lhs_points,
     external_lhs_log_densities=external_lhs_log_densities,
 )
