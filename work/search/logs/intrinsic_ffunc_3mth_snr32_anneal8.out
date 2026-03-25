@@ -1,0 +1,119 @@
+Using dt = 10 seconds, T = 0.25 years
+Initializing waveform generator...
+Creating GenerateEMRIWaveform class...
+Done initializing waveform generator.
+Creating GravWaveAnalysis class...
+Initializing loglike class...
+Done initializing loglike class.
+Calculating SNR...
+SNR calculated: 5.942134448355127
+Setting up log_density and prior functions...
+Done setting up log-likelihood and prior.
+Setting up ParisMC sampler...
+Done setting up ParisMC sampler.
+Setting up initial covariance matrix...
+Done setting up initial covariance matrix.
+Initializing sampler...
+Done initializing sampler.
+Loading external LHS samples from pkl...
+Loaded 500000 LHS samples.
+Running sampling...
+[Anneal] n_proc=1 at iter 3847. Setting S=10. Baseline max_ld=2.92401
+[Anneal] max_ld not improved (2.92401 -> 2.92401). Staying S=10 (stuck=1/5)
+[Anneal] max_ld not improved (2.92401 -> 2.92401). Staying S=10 (stuck=2/5)
+[Anneal] max_ld improved (2.92401 -> 3.39136). S: 10 -> 11 at iter 6847
+[Anneal] max_ld improved (3.39136 -> 6.45791). S: 11 -> 12 at iter 7847
+[Anneal] max_ld not improved (6.45791 -> 6.45791). Staying S=12 (stuck=1/5)
+[Anneal] max_ld not improved (6.45791 -> 6.45791). Staying S=12 (stuck=2/5)
+[Anneal] max_ld not improved (6.45791 -> 6.45791). Staying S=12 (stuck=3/5)
+[Anneal] max_ld not improved (6.45791 -> 6.45791). Staying S=12 (stuck=4/5)
+[Anneal] max_ld not improved (6.45791 -> 6.45791). Staying S=12 (stuck=5/5)
+[Anneal] Stuck for 5 intervals (6.45791 -> 6.45791). Forcing S: 12 -> 13 at iter 13847
+[Anneal] max_ld not improved (6.45791 -> 6.45791). Staying S=13 (stuck=1/5)
+[Anneal] max_ld not improved (6.45791 -> 6.45791). Staying S=13 (stuck=2/5)
+[Anneal] max_ld not improved (6.45791 -> 6.45791). Staying S=13 (stuck=3/5)
+[Anneal] max_ld not improved (6.45791 -> 6.45791). Staying S=13 (stuck=4/5)
+[Anneal] max_ld not improved (6.45791 -> 6.45791). Staying S=13 (stuck=5/5)
+[Anneal] max_ld improved (6.45791 -> 10.34606). S: 13 -> 14 at iter 19847
+[Anneal] max_ld improved (10.34606 -> 11.34002). S: 14 -> 15 at iter 20847
+[Anneal] max_ld not improved (11.34002 -> 11.34002). Staying S=15 (stuck=1/5)
+[Anneal] max_ld not improved (11.34002 -> 11.34002). Staying S=15 (stuck=2/5)
+[Anneal] max_ld improved (11.34002 -> 12.03517). S: 15 -> 16 at iter 23847
+[Anneal] max_ld not improved (12.03517 -> 12.03517). Staying S=16 (stuck=1/5)
+[Anneal] max_ld not improved (12.03517 -> 12.03517). Staying S=16 (stuck=2/5)
+[Anneal] max_ld not improved (12.03517 -> 12.03517). Staying S=16 (stuck=3/5)
+[Anneal] max_ld not improved (12.03517 -> 12.03517). Staying S=16 (stuck=4/5)
+[Anneal] max_ld improved (12.03517 -> 12.39577). S: 16 -> 17 at iter 28847
+[Anneal] max_ld not improved (12.39577 -> 12.39577). Staying S=17 (stuck=1/5)
+[Anneal] max_ld improved (12.39577 -> 14.48268). S: 17 -> 18 at iter 30847
+[Anneal] max_ld improved (14.48268 -> 33.50949). S: 18 -> 19 at iter 31847
+[Anneal] max_ld not improved (33.50949 -> 33.50949). Staying S=19 (stuck=1/5)
+[Anneal] max_ld not improved (33.50949 -> 33.50949). Staying S=19 (stuck=2/5)
+[Anneal] max_ld not improved (33.50949 -> 33.50949). Staying S=19 (stuck=3/5)
+[Anneal] max_ld improved (33.50949 -> 43.41349). S: 19 -> 20 at iter 35847
+[Anneal] max_ld not improved (43.41349 -> 81.64393). Staying S=20 (stuck=1/5)
+[Anneal] max_ld not improved (81.64393 -> 105.87467). Staying S=20 (stuck=2/5)
+[Anneal] max_ld not improved (105.87467 -> 111.19872). Staying S=20 (stuck=3/5)
+[Anneal] max_ld not improved (111.19872 -> 117.45963). Staying S=20 (stuck=4/5)
+[Anneal] max_ld not improved (117.45963 -> 117.57628). Staying S=20 (stuck=5/5)
+[Anneal] max_ld not improved (117.57628 -> 117.57628). Staying S=20 (stuck=6/5)
+[Anneal] max_ld not improved (117.57628 -> 117.57628). Staying S=20 (stuck=7/5)
+[Anneal] max_ld not improved (117.57628 -> 117.78656). Staying S=20 (stuck=8/5)
+[Anneal] max_ld not improved (117.78656 -> 117.78656). Staying S=20 (stuck=9/5)
+[Anneal] max_ld not improved (117.78656 -> 117.78656). Staying S=20 (stuck=10/5)
+[Anneal] max_ld not improved (117.78656 -> 117.78656). Staying S=20 (stuck=11/5)
+[Anneal] max_ld not improved (117.78656 -> 117.78656). Staying S=20 (stuck=12/5)
+[Anneal] max_ld not improved (117.78656 -> 117.78656). Staying S=20 (stuck=13/5)
+[Anneal] max_ld not improved (117.78656 -> 117.82540). Staying S=20 (stuck=14/5)
+[Anneal] max_ld not improved (117.82540 -> 117.82540). Staying S=20 (stuck=15/5)
+[Anneal] max_ld not improved (117.82540 -> 117.82540). Staying S=20 (stuck=16/5)
+[Anneal] max_ld not improved (117.82540 -> 117.82540). Staying S=20 (stuck=17/5)
+[Anneal] max_ld not improved (117.82540 -> 117.82540). Staying S=20 (stuck=18/5)
+[Anneal] max_ld not improved (117.82540 -> 117.82540). Staying S=20 (stuck=19/5)
+[Anneal] max_ld not improved (117.82540 -> 117.82540). Staying S=20 (stuck=20/5)
+[Anneal] max_ld not improved (117.82540 -> 117.82540). Staying S=20 (stuck=21/5)
+[Anneal] max_ld not improved (117.82540 -> 117.82540). Staying S=20 (stuck=22/5)
+[Anneal] max_ld not improved (117.82540 -> 117.82540). Staying S=20 (stuck=23/5)
+[Anneal] max_ld not improved (117.82540 -> 117.82540). Staying S=20 (stuck=24/5)
+[Anneal] max_ld not improved (117.82540 -> 117.82540). Staying S=20 (stuck=25/5)
+[Anneal] max_ld not improved (117.82540 -> 117.82540). Staying S=20 (stuck=26/5)
+[Anneal] max_ld not improved (117.82540 -> 117.82540). Staying S=20 (stuck=27/5)
+[Anneal] max_ld not improved (117.82540 -> 117.82540). Staying S=20 (stuck=28/5)
+[Anneal] max_ld not improved (117.82540 -> 117.82540). Staying S=20 (stuck=29/5)
+[Anneal] max_ld not improved (117.82540 -> 117.82540). Staying S=20 (stuck=30/5)
+[Anneal] max_ld not improved (117.82540 -> 117.82540). Staying S=20 (stuck=31/5)
+[Anneal] max_ld not improved (117.82540 -> 117.82540). Staying S=20 (stuck=32/5)
+[Anneal] max_ld not improved (117.82540 -> 117.82540). Staying S=20 (stuck=33/5)
+[Anneal] max_ld not improved (117.82540 -> 117.82540). Staying S=20 (stuck=34/5)
+[Anneal] max_ld not improved (117.82540 -> 117.82540). Staying S=20 (stuck=35/5)
+[Anneal] max_ld not improved (117.82540 -> 117.82540). Staying S=20 (stuck=36/5)
+[Anneal] max_ld not improved (117.82540 -> 117.82540). Staying S=20 (stuck=37/5)
+[Anneal] max_ld not improved (117.82540 -> 117.82540). Staying S=20 (stuck=38/5)
+[Anneal] max_ld not improved (117.82540 -> 117.82540). Staying S=20 (stuck=39/5)
+[Anneal] max_ld not improved (117.82540 -> 117.82540). Staying S=20 (stuck=40/5)
+[Anneal] max_ld not improved (117.82540 -> 117.82540). Staying S=20 (stuck=41/5)
+[Anneal] max_ld not improved (117.82540 -> 117.82540). Staying S=20 (stuck=42/5)
+[Anneal] max_ld not improved (117.82540 -> 117.82540). Staying S=20 (stuck=43/5)
+[Anneal] max_ld not improved (117.82540 -> 117.82540). Staying S=20 (stuck=44/5)
+[Anneal] max_ld not improved (117.82540 -> 117.82540). Staying S=20 (stuck=45/5)
+[Anneal] max_ld not improved (117.82540 -> 117.82540). Staying S=20 (stuck=46/5)
+[Anneal] max_ld not improved (117.82540 -> 117.82540). Staying S=20 (stuck=47/5)
+[Anneal] max_ld not improved (117.82540 -> 117.82540). Staying S=20 (stuck=48/5)
+[Anneal] max_ld not improved (117.82540 -> 117.82540). Staying S=20 (stuck=49/5)
+[Anneal] max_ld not improved (117.82540 -> 117.82540). Staying S=20 (stuck=50/5)
+[Anneal] max_ld not improved (117.82540 -> 117.82540). Staying S=20 (stuck=51/5)
+[Anneal] max_ld not improved (117.82540 -> 117.82540). Staying S=20 (stuck=52/5)
+[Anneal] max_ld not improved (117.82540 -> 117.82540). Staying S=20 (stuck=53/5)
+[Anneal] max_ld not improved (117.82540 -> 117.82540). Staying S=20 (stuck=54/5)
+[Anneal] max_ld not improved (117.82540 -> 117.82540). Staying S=20 (stuck=55/5)
+[Anneal] max_ld not improved (117.82540 -> 117.82540). Staying S=20 (stuck=56/5)
+[Anneal] max_ld not improved (117.82540 -> 117.82540). Staying S=20 (stuck=57/5)
+[Anneal] max_ld not improved (117.82540 -> 117.82540). Staying S=20 (stuck=58/5)
+[Anneal] max_ld not improved (117.82540 -> 117.82540). Staying S=20 (stuck=59/5)
+[Anneal] max_ld not improved (117.82540 -> 117.82540). Staying S=20 (stuck=60/5)
+[Anneal] max_ld not improved (117.82540 -> 117.82540). Staying S=20 (stuck=61/5)
+[Anneal] max_ld not improved (117.82540 -> 117.82540). Staying S=20 (stuck=62/5)
+[Anneal] max_ld not improved (117.82540 -> 117.82540). Staying S=20 (stuck=63/5)
+[Anneal] max_ld not improved (117.82540 -> 117.82540). Staying S=20 (stuck=64/5)
+Done running sampling.
+Job completed at Tue Mar 24 09:48:02 AM +08 2026

@@ -1,0 +1,118 @@
+Using dt = 10 seconds, T = 0.25 years
+Initializing waveform generator...
+Creating GenerateEMRIWaveform class...
+Done initializing waveform generator.
+Creating GravWaveAnalysis class...
+Initializing loglike class...
+Done initializing loglike class.
+Calculating SNR...
+SNR calculated: 5.942134448355127
+Setting up log_density and prior functions...
+Done setting up log-likelihood and prior.
+Setting up ParisMC sampler...
+Done setting up ParisMC sampler.
+Setting up initial covariance matrix...
+Done setting up initial covariance matrix.
+Initializing sampler...
+Done initializing sampler.
+Loading external LHS samples from pkl...
+Loaded 500000 LHS samples.
+Running sampling...
+[Anneal] n_proc=1 at iter 4060. Setting S=10. Baseline max_ld=2.78171
+[Anneal] S=10 fixed. max_ld: 2.78171 -> 9.85538 at iter 5060
+[Anneal] S=10 fixed. max_ld: 9.85538 -> 12.68918 at iter 6060
+[Anneal] S=10 fixed. max_ld: 12.68918 -> 13.45408 at iter 7060
+[Anneal] S=10 fixed. max_ld: 13.45408 -> 13.45408 at iter 8060
+[Anneal] S=10 fixed. max_ld: 13.45408 -> 14.02049 at iter 9060
+[Anneal] S=10 fixed. max_ld: 14.02049 -> 14.02049 at iter 10060
+[Anneal] S=10 fixed. max_ld: 14.02049 -> 22.00352 at iter 11060
+[Anneal] S=10 fixed. max_ld: 22.00352 -> 22.28541 at iter 12060
+[Anneal] S=10 fixed. max_ld: 22.28541 -> 22.39848 at iter 13060
+[Anneal] S=10 fixed. max_ld: 22.39848 -> 22.39848 at iter 14060
+[Anneal] S=10 fixed. max_ld: 22.39848 -> 22.39848 at iter 15060
+[Anneal] S=10 fixed. max_ld: 22.39848 -> 22.39848 at iter 16060
+[Anneal] S=10 fixed. max_ld: 22.39848 -> 41.76903 at iter 17060
+[Anneal] S=10 fixed. max_ld: 41.76903 -> 42.06350 at iter 18060
+[Anneal] S=10 fixed. max_ld: 42.06350 -> 42.07208 at iter 19060
+[Anneal] S=10 fixed. max_ld: 42.07208 -> 42.07922 at iter 20060
+[Anneal] S=10 fixed. max_ld: 42.07922 -> 42.10677 at iter 21060
+[Anneal] S=10 fixed. max_ld: 42.10677 -> 42.11816 at iter 22060
+[Anneal] S=10 fixed. max_ld: 42.11816 -> 42.11816 at iter 23060
+[Anneal] S=10 fixed. max_ld: 42.11816 -> 42.11816 at iter 24060
+[Anneal] S=10 fixed. max_ld: 42.11816 -> 42.11816 at iter 25060
+[Anneal] S=10 fixed. max_ld: 42.11816 -> 42.11816 at iter 26060
+[Anneal] S=10 fixed. max_ld: 42.11816 -> 42.11816 at iter 27060
+[Anneal] S=10 fixed. max_ld: 42.11816 -> 42.16931 at iter 28060
+[Anneal] S=10 fixed. max_ld: 42.16931 -> 42.16931 at iter 29060
+[Anneal] S=10 fixed. max_ld: 42.16931 -> 42.16931 at iter 30060
+[Anneal] S=10 fixed. max_ld: 42.16931 -> 42.16931 at iter 31060
+[Anneal] S=10 fixed. max_ld: 42.16931 -> 42.16931 at iter 32060
+[Anneal] S=10 fixed. max_ld: 42.16931 -> 42.16931 at iter 33060
+[Anneal] S=10 fixed. max_ld: 42.16931 -> 42.16931 at iter 34060
+[Anneal] S=10 fixed. max_ld: 42.16931 -> 42.16931 at iter 35060
+[Anneal] S=10 fixed. max_ld: 42.16931 -> 42.16931 at iter 36060
+[Anneal] S=10 fixed. max_ld: 42.16931 -> 42.16931 at iter 37060
+[Anneal] S=10 fixed. max_ld: 42.16931 -> 42.16931 at iter 38060
+[Anneal] S=10 fixed. max_ld: 42.16931 -> 42.16931 at iter 39060
+[Anneal] S=10 fixed. max_ld: 42.16931 -> 42.16931 at iter 40060
+[Anneal] S=10 fixed. max_ld: 42.16931 -> 42.16931 at iter 41060
+[Anneal] S=10 fixed. max_ld: 42.16931 -> 42.16931 at iter 42060
+[Anneal] S=10 fixed. max_ld: 42.16931 -> 42.16931 at iter 43060
+[Anneal] S=10 fixed. max_ld: 42.16931 -> 42.16931 at iter 44060
+[Anneal] S=10 fixed. max_ld: 42.16931 -> 42.16931 at iter 45060
+[Anneal] S=10 fixed. max_ld: 42.16931 -> 42.16931 at iter 46060
+[Anneal] S=10 fixed. max_ld: 42.16931 -> 42.16931 at iter 47060
+[Anneal] S=10 fixed. max_ld: 42.16931 -> 42.16931 at iter 48060
+[Anneal] S=10 fixed. max_ld: 42.16931 -> 42.16931 at iter 49060
+[Anneal] S=10 fixed. max_ld: 42.16931 -> 42.16931 at iter 50060
+[Anneal] S=10 fixed. max_ld: 42.16931 -> 42.16931 at iter 51060
+[Anneal] S=10 fixed. max_ld: 42.16931 -> 42.16931 at iter 52060
+[Anneal] S=10 fixed. max_ld: 42.16931 -> 42.16931 at iter 53060
+[Anneal] S=10 fixed. max_ld: 42.16931 -> 42.16931 at iter 54060
+[Anneal] S=10 fixed. max_ld: 42.16931 -> 42.16931 at iter 55060
+[Anneal] S=10 fixed. max_ld: 42.16931 -> 42.16931 at iter 56060
+[Anneal] S=10 fixed. max_ld: 42.16931 -> 42.16931 at iter 57060
+[Anneal] S=10 fixed. max_ld: 42.16931 -> 42.16931 at iter 58060
+[Anneal] S=10 fixed. max_ld: 42.16931 -> 42.16931 at iter 59060
+[Anneal] S=10 fixed. max_ld: 42.16931 -> 42.16931 at iter 60060
+[Anneal] S=10 fixed. max_ld: 42.16931 -> 42.16931 at iter 61060
+[Anneal] S=10 fixed. max_ld: 42.16931 -> 42.16931 at iter 62060
+[Anneal] S=10 fixed. max_ld: 42.16931 -> 42.16931 at iter 63060
+[Anneal] S=10 fixed. max_ld: 42.16931 -> 42.16931 at iter 64060
+[Anneal] S=10 fixed. max_ld: 42.16931 -> 42.16931 at iter 65060
+[Anneal] S=10 fixed. max_ld: 42.16931 -> 42.16931 at iter 66060
+[Anneal] S=10 fixed. max_ld: 42.16931 -> 42.16931 at iter 67060
+[Anneal] S=10 fixed. max_ld: 42.16931 -> 42.16931 at iter 68060
+[Anneal] S=10 fixed. max_ld: 42.16931 -> 42.16931 at iter 69060
+[Anneal] S=10 fixed. max_ld: 42.16931 -> 42.16931 at iter 70060
+[Anneal] S=10 fixed. max_ld: 42.16931 -> 42.16931 at iter 71060
+[Anneal] S=10 fixed. max_ld: 42.16931 -> 42.16931 at iter 72060
+[Anneal] S=10 fixed. max_ld: 42.16931 -> 42.16931 at iter 73060
+[Anneal] S=10 fixed. max_ld: 42.16931 -> 42.16931 at iter 74060
+[Anneal] S=10 fixed. max_ld: 42.16931 -> 42.16931 at iter 75060
+[Anneal] S=10 fixed. max_ld: 42.16931 -> 42.16931 at iter 76060
+[Anneal] S=10 fixed. max_ld: 42.16931 -> 42.16931 at iter 77060
+[Anneal] S=10 fixed. max_ld: 42.16931 -> 42.16931 at iter 78060
+[Anneal] S=10 fixed. max_ld: 42.16931 -> 42.16931 at iter 79060
+[Anneal] S=10 fixed. max_ld: 42.16931 -> 42.16931 at iter 80060
+[Anneal] S=10 fixed. max_ld: 42.16931 -> 42.16931 at iter 81060
+[Anneal] S=10 fixed. max_ld: 42.16931 -> 42.16931 at iter 82060
+[Anneal] S=10 fixed. max_ld: 42.16931 -> 42.16931 at iter 83060
+[Anneal] S=10 fixed. max_ld: 42.16931 -> 42.16931 at iter 84060
+[Anneal] S=10 fixed. max_ld: 42.16931 -> 42.16931 at iter 85060
+[Anneal] S=10 fixed. max_ld: 42.16931 -> 42.16931 at iter 86060
+[Anneal] S=10 fixed. max_ld: 42.16931 -> 42.16931 at iter 87060
+[Anneal] S=10 fixed. max_ld: 42.16931 -> 42.16931 at iter 88060
+[Anneal] S=10 fixed. max_ld: 42.16931 -> 42.16931 at iter 89060
+[Anneal] S=10 fixed. max_ld: 42.16931 -> 42.16931 at iter 90060
+[Anneal] S=10 fixed. max_ld: 42.16931 -> 42.16931 at iter 91060
+[Anneal] S=10 fixed. max_ld: 42.16931 -> 42.16931 at iter 92060
+[Anneal] S=10 fixed. max_ld: 42.16931 -> 42.16931 at iter 93060
+[Anneal] S=10 fixed. max_ld: 42.16931 -> 42.16931 at iter 94060
+[Anneal] S=10 fixed. max_ld: 42.16931 -> 42.16931 at iter 95060
+[Anneal] S=10 fixed. max_ld: 42.16931 -> 42.16931 at iter 96060
+[Anneal] S=10 fixed. max_ld: 42.16931 -> 42.16931 at iter 97060
+[Anneal] S=10 fixed. max_ld: 42.16931 -> 42.16931 at iter 98060
+[Anneal] S=10 fixed. max_ld: 42.16931 -> 42.16931 at iter 99060
+Done running sampling.
+Job completed at Tue Mar 24 09:31:04 PM +08 2026

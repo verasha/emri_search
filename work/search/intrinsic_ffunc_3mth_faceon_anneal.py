@@ -244,7 +244,7 @@ print('Done setting up log-likelihood and prior.')
 print('Setting up ParisMC sampler...')
 config = parismc.SamplerConfig(
     merge_confidence=0.9,          # Coverage prob → Mahalanobis merge radius R_m (higher is more permissive)
-    alpha=int(100),                    # Use recent samples for weighting. 
+    alpha=int(100),                    # Use recent samples for weighting. anneal9: default 100 throughout (no mid-run change)
     trail_size=int(1e3),          # Maximum trials per iteration
     boundary_limiting=True,        # Enable boundary constraints
     use_beta=False,                # Use beta correction for boundaries
@@ -306,25 +306,31 @@ def anneal_callback(sampler, i):
     if state['phase'] == 'normal':
         if n_proc == 1:
             state['merge_max_ld'] = sampler.max_logden_list[0]
-            print(f"[Anneal] n_proc=1 reached at iter {i}. Baseline max_ld={state['merge_max_ld']:.5f}. Waiting {anneal_wait_iter} iters before annealing.", flush=True)
-            state['phase'] = 'waiting'
-            state['phase_start_iter'] = i
-            sampler.config.alpha = anneal_alpha
-
-    elif state['phase'] == 'waiting':
-        # Fixed wait: always wait anneal_wait_iter iters after merge before starting
-        if i - state['phase_start_iter'] >= anneal_wait_iter:
-            state['S'] = 5.0
+            # anneal10: alpha 100→1000 at merge, slow ramp S=2→10
+            sampler.alpha = anneal_alpha
+            sampler.latest_prob_index = anneal_alpha
+            state['S'] = 2.0
             state['phase'] = 'annealing'
             state['ref_max_ld'] = sampler.max_logden_list[0]
             state['ref_iter'] = i
-            print(f"[Anneal] Starting annealing at iter {i}: S=5.0 (max_ld={state['ref_max_ld']:.5f})", flush=True)
+            print(f"[Anneal] n_proc=1 at iter {i}. Setting S=2, alpha={anneal_alpha}. Baseline max_ld={state['merge_max_ld']:.5f}", flush=True)
+
+    # anneal9 version (S=10 immediately, alpha=100 throughout) — kept for reference
+    # if state['phase'] == 'normal':
+    #     if n_proc == 1:
+    #         state['merge_max_ld'] = sampler.max_logden_list[0]
+    #         state['S'] = 10.0
+    #         state['phase'] = 'annealing'
+    #         state['ref_max_ld'] = sampler.max_logden_list[0]
+    #         state['ref_iter'] = i
+    #         print(f"[Anneal] n_proc=1 at iter {i}. Setting S=10. Baseline max_ld={state['merge_max_ld']:.5f}", flush=True)
 
     elif state['phase'] == 'annealing':
         if i - state['ref_iter'] >= anneal_wait_iter:
             current_max_ld = sampler.max_logden_list[0]
             ref = state['ref_max_ld']
-            # Increment S if sampler found something better, or force if stuck too long
+
+            # S ramp logic: S=2→10, increment when max_ld improved, force after stuck_max intervals
             if current_max_ld > ref and S < S_max:
                 new_S = S + 1.0
                 state['S'] = new_S
@@ -354,7 +360,7 @@ sampler_instance = sampler
 
 sampler.run_sampling(
     num_iterations=int(1e5),
-    savepath='./intrinsic_ffunc_3mth_snr32_anneal5',
+    savepath='./intrinsic_ffunc_3mth_snr32_anneal10',
     print_iter=100,
     callback=combined_callback,
     external_lhs_points=external_lhs_points,
