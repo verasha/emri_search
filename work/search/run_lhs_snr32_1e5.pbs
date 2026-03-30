@@ -14,6 +14,6 @@ source /scratch/e1498138/anaconda3/bin/activate fewsm
 
 export CUDA_VISIBLE_DEVICES=0
 
-python -u run_lhs_snr32.py --n-samples 100000 --seed 999 --outdir ./lhs_snr32_checkpoints_1e5
+python -u run_lhs_snr32.py --n-samples 100000 --seed 42 --outdir /scratch/e1498138/lhs_snr32_checkpoints_1e5
 
 echo "Job completed at $(date)"

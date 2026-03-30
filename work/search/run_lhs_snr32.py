@@ -46,7 +46,7 @@ os.chdir('/nfs/home/svu/e1498138/localgit/FEWNEW/work/')
 sys.path.insert(0, '/nfs/home/svu/e1498138/localgit/FEWNEW/work/')
 
 import few
-import localgit.FEWNEW.work.GWfuncs_backup2 as GWfuncs_backup2
+import GWfuncs
 import loglike_timemax
 
 cfg_set = few.get_config_setter(reset=True)
@@ -78,7 +78,7 @@ waveform_gen_sep = GenerateEMRIWaveform(
     inspiral_kwargs=inspiral_kwargs, amplitude_kwargs=amplitude_kwargs,
     Ylm_kwargs=Ylm_kwargs, sum_kwargs=sum_kwargs_sep, use_gpu=use_gpu)
 
-gwf = GWfuncs_backup2.GravWaveAnalysis(T, dt)
+gwf = GWfuncs.GravWaveAnalysis(T, dt)
 
 # Source parameters
 m1, m2, a, p0, e0 = 1e6, 1e1, 0.7, 9, 0.4
@@ -214,7 +214,7 @@ for i in range(start_idx, n_total, batch_size):
 # ---------------------------------------------------------------------------
 # Save final output  (physical_points, logden)  — ready for run_sampling()
 # ---------------------------------------------------------------------------
-out_path = os.path.join(args.outdir, "lhs_snr32_final.pkl")
+out_path = os.path.join(args.outdir, "/scratch/e1498138/lhs_snr32_1e5.pkl")
 with open(out_path, "wb") as f:
     pickle.dump((phys_pts, logden), f)
 

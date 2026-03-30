@@ -157,10 +157,6 @@ data_snr = gwf.rhostat(data)
 print('SNR calculated:', data_snr)
 print("Setting up log_density and prior functions...")
 
-# REVERSE TEMP for annealing
-# supposed to be 1/10 if we're going with the right nomenclature 
-# so supposed to be reversetemp
-S = 3
 def log_density(params):
     params = np.asarray(params)
 
@@ -174,8 +170,7 @@ def log_density(params):
         m2 = 10**logm2
 
         try:
-            # NOTE: scaled by reverse temp
-            loglike = S*loglike_obj(np.array([m1, m2, a, p0, e0, xI0, dist, qS, phiS, qK, phiK, Phi_phi0, Phi_theta0, Phi_r0]))
+            loglike = loglike_obj(np.array([m1, m2, a, p0, e0, xI0, dist, qS, phiS, qK, phiK, Phi_phi0, Phi_theta0, Phi_r0]))
         except Exception:
             loglike = -np.inf
         log_likes[i] = loglike
@@ -199,18 +194,17 @@ def prior_transform(u):
     # m2
     transformed[:, 1] = (logm2lim[1] - logm2lim[0]) * u[:, 1] + logm2lim[0]
 
-    # Linear in others 
+    # Linear in others
 
     # a
     transformed[:, 2] = (alim[1] - alim[0]) * u[:, 2] + alim[0]
 
     # p0
-    transformed[:, 3] = (p0lim[1] - p0lim[0]) * u[:, 3] + p0lim[0] 
+    transformed[:, 3] = (p0lim[1] - p0lim[0]) * u[:, 3] + p0lim[0]
 
     # e0
     transformed[:, 4] = (e0lim[1] - e0lim[0]) * u[:, 4] + e0lim[0]
 
-    
     return transformed
 
 def inverse_prior_transform(params):
@@ -231,19 +225,22 @@ def inverse_prior_transform(params):
 
     return u
 
+
+
 print('Done setting up log-likelihood and prior.')
 print('Setting up ParisMC sampler...')
 config = parismc.SamplerConfig(
     merge_confidence=0.9,          # Coverage prob → Mahalanobis merge radius R_m (higher is more permissive)
-    alpha=int(1e5),                    # Use recent samples for weighting. 
+    alpha=int(1e3),                    # Use recent samples for weighting.  # NOTE: changed so can forget cov from prev stage
     trail_size=int(1e3),          # Maximum trials per iteration
     boundary_limiting=True,        # Enable boundary constraints
-    use_beta=True,                # Use beta correction for boundaries
-    integral_num=int(1e5),        # MC samples for beta estimation
+    use_beta=False,                # Use beta correction for boundaries #NOTE: changed so cov is smaller
     gamma=500,                    # Covariance update frequency NOTE: changed from 100
     exclude_scale_z=np.inf,       # No exclusion based on weights
     use_pool=False,               # Set to True for multiprocessing
-    keep_dead_processes=True
+    keep_dead_processes=True,
+    seed = 9
+    # paris6_seed : seed=9#paris5_seed: 132 #paris4_seed: 534
 )
 
 print('Done setting up ParisMC sampler.')
@@ -255,14 +252,10 @@ sys.path.insert(0, '/nfs/home/svu/e1498138/localgit/FEWNEW/work/search')
 
 
 ndim = 5
-n_seed = 1
+n_seed = 10
 
-inv_cov = np.array([[ 0.06176978,  0.00182774,  0.00349099, -0.00387599,  0.00082357],
-        [ 0.00182774,  0.07612409,  0.00390862,  0.01214081, -0.00472933],
-        [ 0.00349099,  0.00390862,  0.08585764,  0.01038404, -0.0123366 ],
-        [-0.00387599,  0.01214081,  0.01038404,  0.08207651,  0.01714665],
-        [ 0.00082357, -0.00472933, -0.0123366 ,  0.01714665,  0.06624379]])
-init_cov_list = [np.linalg.inv(inv_cov)/S for _ in range(n_seed)]
+sigma = 1e-5
+init_cov_list = [sigma**2 * np.eye(ndim) for _ in range(n_seed)]
 
 print('Done setting up initial covariance matrix.')
 
@@ -277,31 +270,26 @@ sampler = parismc.Sampler(
 )
 print('Done initializing sampler.')
 
-# print('Preparing LHS samples...')
-# sampler.prepare_lhs_samples(lhs_num=int(1e5), batch_size=10)
-
-# print('Done preparing LHS samples.')
-
-print('Using external LHS samples at previous best fit point...')
-best_fit = [6.03302293, 1.12261954, 0.69265393, 9.04744717, 0.31691929]
-external_lhs_points = inverse_prior_transform(np.array([best_fit]))
-external_lhs_log_densities = log_density(prior_transform(external_lhs_points))
-print('External LHS points:', external_lhs_points)
-print('External LHS log densities:', external_lhs_log_densities)
-
+print('Loading external LHS samples from pkl...')
+import pickle as _pkl
+with open('/scratch/e1498138/lhs/lhs_snr32_checkpoints/lhs_snr32_final.pkl', 'rb') as _f:
+    _phys_pts, _logden = _pkl.load(_f)
+external_lhs_points          = inverse_prior_transform(_phys_pts)
+external_lhs_log_densities   = _logden
+print(f'Loaded {len(_logden)} LHS samples.')
 
 print('Running sampling...')
-def save_every_1000(sampler, i):
+
+def combined_callback(sampler, i):
     if i % 1000 == 0 and i > 0:
         sampler.save_state()
 
 sampler.run_sampling(
-    num_iterations=int(5e5),
-    savepath='./intrinsic_ffunc_3mth_snr32_paris2_S3_stable',
-    print_iter=100, # Print progress every n iterations
-    callback=save_every_1000,
+    num_iterations=int(5e3),
+    savepath='./intrinsic_ffunc_3mth_snr32_paris1_6_seed',
+    print_iter=100,
+    callback=combined_callback,
     external_lhs_points=external_lhs_points,
     external_lhs_log_densities=external_lhs_log_densities,
-    stop_max_ld_stable_iters=int(1e4)
 )
 print('Done running sampling.')

@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/nfs/home/svu/e1498138/localgit/FEWNEW/work/search/run_lhs_snr32.py", line 49, in <module>
+    import localgit.FEWNEW.work.GWfuncs_backup2 as GWfuncs_backup2
+ModuleNotFoundError: No module named 'localgit'
+Traceback (most recent call last):
+  File "/nfs/home/svu/e1498138/localgit/FEWNEW/work/search/run_lhs_snr32.py", line 81, in <module>
+    gwf = GWfuncs_backup2.GravWaveAnalysis(T, dt)
+          ^^^^^^^^^^^^^^^
+NameError: name 'GWfuncs_backup2' is not defined
+/nfs/home/svu/e1498138/localgit/FEWNEW/work/search/run_lhs_snr32.py:145: DeprecationWarning: Passing a seed or integer to random_state is deprecated and will raise an error in a future version. Please use seed parameter
+  sampling = LHS(xlimits=xlimits, random_state=args.seed)
