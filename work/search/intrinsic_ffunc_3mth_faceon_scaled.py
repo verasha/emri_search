@@ -160,7 +160,7 @@ print("Setting up log_density and prior functions...")
 # REVERSE TEMP for annealing
 # supposed to be 1/10 if we're going with the right nomenclature 
 # so supposed to be reversetemp
-S = 3
+S = 30
 def log_density(params):
     params = np.asarray(params)
 
@@ -235,7 +235,7 @@ print('Done setting up log-likelihood and prior.')
 print('Setting up ParisMC sampler...')
 config = parismc.SamplerConfig(
     merge_confidence=0.9,          # Coverage prob → Mahalanobis merge radius R_m (higher is more permissive)
-    alpha=int(1e5),                    # Use recent samples for weighting. 
+    alpha=int(1e3),                    # Use recent samples for weighting. 
     trail_size=int(1e3),          # Maximum trials per iteration
     boundary_limiting=True,        # Enable boundary constraints
     use_beta=True,                # Use beta correction for boundaries
@@ -296,12 +296,12 @@ def save_every_1000(sampler, i):
         sampler.save_state()
 
 sampler.run_sampling(
-    num_iterations=int(5e5),
-    savepath='./intrinsic_ffunc_3mth_snr32_paris2_S3_stable',
+    num_iterations=int(1e5),
+    savepath='./intrinsic_ffunc_3mth_snr32_paris2_S30_new',
     print_iter=100, # Print progress every n iterations
     callback=save_every_1000,
     external_lhs_points=external_lhs_points,
     external_lhs_log_densities=external_lhs_log_densities,
-    stop_max_ld_stable_iters=int(1e4)
+    # stop_max_ld_stable_iters=int(1e4)
 )
 print('Done running sampling.')

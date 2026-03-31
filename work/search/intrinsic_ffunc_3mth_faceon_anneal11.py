@@ -206,7 +206,7 @@ print('Done setting up log-likelihood and prior.')
 print('Setting up ParisMC sampler...')
 config = parismc.SamplerConfig(
     merge_confidence=0.9,
-    alpha=int(1e5),          # large alpha: stable IS weights for single-process run
+    alpha=int(1e3),          # large alpha: stable IS weights for single-process run
     trail_size=int(1e3),
     boundary_limiting=True,
     use_beta=True,           # beta correction on (as in paris2_S3_stable)
@@ -303,7 +303,7 @@ def combined_callback(sampler, i):
 print('Running sampling...')
 sampler.run_sampling(
     num_iterations=int(1e5),
-    savepath='./intrinsic_ffunc_3mth_snr32_anneal11',
+    savepath='./intrinsic_ffunc_3mth_snr32_anneal12',
     print_iter=100,
     callback=combined_callback,
     external_lhs_points=external_lhs_points,

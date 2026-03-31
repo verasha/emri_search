@@ -234,12 +234,18 @@ config = parismc.SamplerConfig(
     alpha=int(1e3),                    # Use recent samples for weighting.  # NOTE: changed so can forget cov from prev stage
     trail_size=int(1e3),          # Maximum trials per iteration
     boundary_limiting=True,        # Enable boundary constraints
-    use_beta=False,                # Use beta correction for boundaries #NOTE: changed so cov is smaller
+    # previously use beta was false
+    use_beta=True,                # Use beta correction for boundaries #NOTE: changed so cov is smaller
+    integral_num=int(1e5),        # MC samples for beta estimation
     gamma=500,                    # Covariance update frequency NOTE: changed from 100
     exclude_scale_z=np.inf,       # No exclusion based on weights
     use_pool=False,               # Set to True for multiprocessing
     keep_dead_processes=True,
-    seed = 9
+    seed = 80
+    #12_seed: 48
+    #11_seed: 64
+    #10_seed: 29
+    #9_SEED: 2
     # paris6_seed : seed=9#paris5_seed: 132 #paris4_seed: 534
 )
 
@@ -286,7 +292,7 @@ def combined_callback(sampler, i):
 
 sampler.run_sampling(
     num_iterations=int(5e3),
-    savepath='./intrinsic_ffunc_3mth_snr32_paris1_6_seed',
+    savepath='./intrinsic_ffunc_3mth_snr32_paris1_13_seed',
     print_iter=100,
     callback=combined_callback,
     external_lhs_points=external_lhs_points,
