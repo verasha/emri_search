@@ -1,0 +1,5 @@
+/nfs/home/svu/e1498138/localgit/FEWNEW/work/search/run_lhs_snr32.py:145: DeprecationWarning: Passing a seed or integer to random_state is deprecated and will raise an error in a future version. Please use seed parameter
+  sampling = LHS(xlimits=xlimits, random_state=args.seed)
+=>> PBS: job killed: walltime 172829 exceeded limit 172800
+/nfs/home/svu/e1498138/localgit/FEWNEW/work/search/run_lhs_snr32.py:145: DeprecationWarning: Passing a seed or integer to random_state is deprecated and will raise an error in a future version. Please use seed parameter
+  sampling = LHS(xlimits=xlimits, random_state=args.seed)

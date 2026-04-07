@@ -1,0 +1,119 @@
+dt=10s  T=0.25yr
+Building waveform generators...
+Initializing loglike...
+SNR = 5.942134448355127
+Evaluating 10000 remaining samples in 100 batches of 100  (checkpoint every 10 batches)
+  [100/10000]  elapsed=32s  rate=3.1/s  eta=3160s  finite=100
+  [200/10000]  elapsed=65s  rate=3.1/s  eta=3167s  finite=200
+  [300/10000]  elapsed=97s  rate=3.1/s  eta=3132s  finite=300
+  [400/10000]  elapsed=128s  rate=3.1/s  eta=3069s  finite=400
+  [500/10000]  elapsed=159s  rate=3.1/s  eta=3021s  finite=500
+  [600/10000]  elapsed=190s  rate=3.2/s  eta=2982s  finite=600
+  [700/10000]  elapsed=223s  rate=3.1/s  eta=2963s  finite=700
+  [800/10000]  elapsed=254s  rate=3.1/s  eta=2921s  finite=800
+  [900/10000]  elapsed=285s  rate=3.2/s  eta=2884s  finite=900
+  [1000/10000]  elapsed=317s  rate=3.2/s  eta=2850s  finite=1000
+  -> checkpoint saved: /scratch/e1498138/lhs_snr32_checkpoints_1e4/lhs_snr32_ckpt_001000.pkl
+  [1100/10000]  elapsed=348s  rate=3.2/s  eta=2814s  finite=1100
+  [1200/10000]  elapsed=379s  rate=3.2/s  eta=2777s  finite=1200
+  [1300/10000]  elapsed=411s  rate=3.2/s  eta=2754s  finite=1300
+  [1400/10000]  elapsed=442s  rate=3.2/s  eta=2716s  finite=1400
+  [1500/10000]  elapsed=474s  rate=3.2/s  eta=2685s  finite=1500
+  [1600/10000]  elapsed=505s  rate=3.2/s  eta=2652s  finite=1600
+  [1700/10000]  elapsed=538s  rate=3.2/s  eta=2627s  finite=1700
+  [1800/10000]  elapsed=568s  rate=3.2/s  eta=2586s  finite=1800
+  [1900/10000]  elapsed=598s  rate=3.2/s  eta=2551s  finite=1900
+  [2000/10000]  elapsed=629s  rate=3.2/s  eta=2515s  finite=2000
+  -> checkpoint saved: /scratch/e1498138/lhs_snr32_checkpoints_1e4/lhs_snr32_ckpt_002000.pkl
+  [2100/10000]  elapsed=661s  rate=3.2/s  eta=2485s  finite=2100
+  [2200/10000]  elapsed=692s  rate=3.2/s  eta=2452s  finite=2200
+  [2300/10000]  elapsed=722s  rate=3.2/s  eta=2416s  finite=2300
+  [2400/10000]  elapsed=754s  rate=3.2/s  eta=2387s  finite=2400
+  [2500/10000]  elapsed=786s  rate=3.2/s  eta=2359s  finite=2500
+  [2600/10000]  elapsed=817s  rate=3.2/s  eta=2325s  finite=2600
+  [2700/10000]  elapsed=848s  rate=3.2/s  eta=2293s  finite=2700
+  [2800/10000]  elapsed=881s  rate=3.2/s  eta=2267s  finite=2800
+  [2900/10000]  elapsed=913s  rate=3.2/s  eta=2235s  finite=2900
+  [3000/10000]  elapsed=944s  rate=3.2/s  eta=2203s  finite=3000
+  -> checkpoint saved: /scratch/e1498138/lhs_snr32_checkpoints_1e4/lhs_snr32_ckpt_003000.pkl
+  [3100/10000]  elapsed=975s  rate=3.2/s  eta=2170s  finite=3100
+  [3200/10000]  elapsed=1007s  rate=3.2/s  eta=2140s  finite=3200
+  [3300/10000]  elapsed=1039s  rate=3.2/s  eta=2108s  finite=3300
+  [3400/10000]  elapsed=1070s  rate=3.2/s  eta=2078s  finite=3400
+  [3500/10000]  elapsed=1103s  rate=3.2/s  eta=2048s  finite=3500
+  [3600/10000]  elapsed=1134s  rate=3.2/s  eta=2015s  finite=3600
+  [3700/10000]  elapsed=1164s  rate=3.2/s  eta=1982s  finite=3700
+  [3800/10000]  elapsed=1195s  rate=3.2/s  eta=1950s  finite=3800
+  [3900/10000]  elapsed=1226s  rate=3.2/s  eta=1918s  finite=3900
+  [4000/10000]  elapsed=1258s  rate=3.2/s  eta=1887s  finite=4000
+  -> checkpoint saved: /scratch/e1498138/lhs_snr32_checkpoints_1e4/lhs_snr32_ckpt_004000.pkl
+  [4100/10000]  elapsed=1289s  rate=3.2/s  eta=1855s  finite=4100
+  [4200/10000]  elapsed=1321s  rate=3.2/s  eta=1824s  finite=4200
+  [4300/10000]  elapsed=1354s  rate=3.2/s  eta=1795s  finite=4300
+  [4400/10000]  elapsed=1385s  rate=3.2/s  eta=1762s  finite=4400
+  [4500/10000]  elapsed=1416s  rate=3.2/s  eta=1730s  finite=4500
+  [4600/10000]  elapsed=1446s  rate=3.2/s  eta=1698s  finite=4600
+  [4700/10000]  elapsed=1477s  rate=3.2/s  eta=1666s  finite=4700
+  [4800/10000]  elapsed=1508s  rate=3.2/s  eta=1633s  finite=4800
+  [4900/10000]  elapsed=1540s  rate=3.2/s  eta=1603s  finite=4900
+  [5000/10000]  elapsed=1571s  rate=3.2/s  eta=1571s  finite=5000
+  -> checkpoint saved: /scratch/e1498138/lhs_snr32_checkpoints_1e4/lhs_snr32_ckpt_005000.pkl
+  [5100/10000]  elapsed=1602s  rate=3.2/s  eta=1539s  finite=5100
+  [5200/10000]  elapsed=1633s  rate=3.2/s  eta=1508s  finite=5200
+  [5300/10000]  elapsed=1666s  rate=3.2/s  eta=1478s  finite=5300
+  [5400/10000]  elapsed=1696s  rate=3.2/s  eta=1445s  finite=5400
+  [5500/10000]  elapsed=1728s  rate=3.2/s  eta=1414s  finite=5500
+  [5600/10000]  elapsed=1761s  rate=3.2/s  eta=1383s  finite=5600
+  [5700/10000]  elapsed=1791s  rate=3.2/s  eta=1351s  finite=5700
+  [5800/10000]  elapsed=1823s  rate=3.2/s  eta=1320s  finite=5800
+  [5900/10000]  elapsed=1854s  rate=3.2/s  eta=1289s  finite=5900
+  [6000/10000]  elapsed=1886s  rate=3.2/s  eta=1257s  finite=6000
+  -> checkpoint saved: /scratch/e1498138/lhs_snr32_checkpoints_1e4/lhs_snr32_ckpt_006000.pkl
+  [6100/10000]  elapsed=1917s  rate=3.2/s  eta=1226s  finite=6100
+  [6200/10000]  elapsed=1947s  rate=3.2/s  eta=1193s  finite=6200
+  [6300/10000]  elapsed=1978s  rate=3.2/s  eta=1162s  finite=6300
+  [6400/10000]  elapsed=2009s  rate=3.2/s  eta=1130s  finite=6400
+  [6500/10000]  elapsed=2039s  rate=3.2/s  eta=1098s  finite=6500
+  [6600/10000]  elapsed=2071s  rate=3.2/s  eta=1067s  finite=6600
+  [6700/10000]  elapsed=2103s  rate=3.2/s  eta=1036s  finite=6700
+  [6800/10000]  elapsed=2134s  rate=3.2/s  eta=1004s  finite=6800
+  [6900/10000]  elapsed=2166s  rate=3.2/s  eta=973s  finite=6900
+  [7000/10000]  elapsed=2197s  rate=3.2/s  eta=941s  finite=7000
+  -> checkpoint saved: /scratch/e1498138/lhs_snr32_checkpoints_1e4/lhs_snr32_ckpt_007000.pkl
+  [7100/10000]  elapsed=2228s  rate=3.2/s  eta=910s  finite=7100
+  [7200/10000]  elapsed=2259s  rate=3.2/s  eta=878s  finite=7200
+  [7300/10000]  elapsed=2292s  rate=3.2/s  eta=848s  finite=7300
+  [7400/10000]  elapsed=2323s  rate=3.2/s  eta=816s  finite=7400
+  [7500/10000]  elapsed=2354s  rate=3.2/s  eta=785s  finite=7500
+  [7600/10000]  elapsed=2384s  rate=3.2/s  eta=753s  finite=7600
+  [7700/10000]  elapsed=2415s  rate=3.2/s  eta=721s  finite=7700
+  [7800/10000]  elapsed=2445s  rate=3.2/s  eta=690s  finite=7800
+  [7900/10000]  elapsed=2477s  rate=3.2/s  eta=658s  finite=7900
+  [8000/10000]  elapsed=2508s  rate=3.2/s  eta=627s  finite=8000
+  -> checkpoint saved: /scratch/e1498138/lhs_snr32_checkpoints_1e4/lhs_snr32_ckpt_008000.pkl
+  [8100/10000]  elapsed=2540s  rate=3.2/s  eta=596s  finite=8100
+  [8200/10000]  elapsed=2571s  rate=3.2/s  eta=564s  finite=8200
+  [8300/10000]  elapsed=2602s  rate=3.2/s  eta=533s  finite=8300
+  [8400/10000]  elapsed=2634s  rate=3.2/s  eta=502s  finite=8400
+  [8500/10000]  elapsed=2666s  rate=3.2/s  eta=470s  finite=8500
+  [8600/10000]  elapsed=2697s  rate=3.2/s  eta=439s  finite=8600
+  [8700/10000]  elapsed=2728s  rate=3.2/s  eta=408s  finite=8700
+  [8800/10000]  elapsed=2758s  rate=3.2/s  eta=376s  finite=8800
+  [8900/10000]  elapsed=2792s  rate=3.2/s  eta=345s  finite=8900
+  [9000/10000]  elapsed=2823s  rate=3.2/s  eta=314s  finite=9000
+  -> checkpoint saved: /scratch/e1498138/lhs_snr32_checkpoints_1e4/lhs_snr32_ckpt_009000.pkl
+  [9100/10000]  elapsed=2855s  rate=3.2/s  eta=282s  finite=9100
+  [9200/10000]  elapsed=2887s  rate=3.2/s  eta=251s  finite=9200
+  [9300/10000]  elapsed=2917s  rate=3.2/s  eta=220s  finite=9300
+  [9400/10000]  elapsed=2949s  rate=3.2/s  eta=188s  finite=9400
+  [9500/10000]  elapsed=2981s  rate=3.2/s  eta=157s  finite=9500
+  [9600/10000]  elapsed=3012s  rate=3.2/s  eta=126s  finite=9600
+  [9700/10000]  elapsed=3044s  rate=3.2/s  eta=94s  finite=9700
+  [9800/10000]  elapsed=3073s  rate=3.2/s  eta=63s  finite=9800
+  [9900/10000]  elapsed=3105s  rate=3.2/s  eta=31s  finite=9900
+  [10000/10000]  elapsed=3136s  rate=3.2/s  eta=0s  finite=10000
+  -> checkpoint saved: /scratch/e1498138/lhs_snr32_checkpoints_1e4/lhs_snr32_ckpt_010000.pkl
+
+Done!  Final output: /scratch/e1498138/lhs_snr32_1e5.pkl
+Total finite evaluations: 10000 / 10000
+Job completed at Wed Apr  1 06:28:46 PM +08 2026

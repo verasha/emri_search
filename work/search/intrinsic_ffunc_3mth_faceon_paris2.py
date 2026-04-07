@@ -143,7 +143,7 @@ data_snr = gwf.rhostat(data)
 print('SNR calculated:', data_snr)
 print("Setting up log_density and prior functions...")
 
-# anneal11: starts at S=3 (from paris2_S3_stable best fit), ramps to S=10, then S=30
+# anneal11: starts at S=3 (from paris2_S3_stable best fit), ramps to S=10, then S=30, then S=100
 anneal_state = {
     'S':              3.0,       # start already at S=3
     'stage':          0,         # index into S_schedule
@@ -153,7 +153,8 @@ anneal_state = {
 }
 
 # S schedule: jump to next S after 10000 iters of no improvement, consistent across all stages
-S_schedule     = [3.0, 10.0, 30.0]
+#paris 2: 3,10,30,100
+S_schedule     = [3.0, 10.0, 30.0, 100]
 stuck_iters    = 10000  # iters of no improvement before jump/stop
 
 
@@ -206,7 +207,7 @@ print('Done setting up log-likelihood and prior.')
 print('Setting up ParisMC sampler...')
 config = parismc.SamplerConfig(
     merge_confidence=0.9,
-    alpha=int(1e3),          # large alpha: stable IS weights for single-process run
+    alpha=int(1e4),          # NOTE: changed here for paris2_2 from 1e3 to 1e4
     trail_size=int(1e3),
     boundary_limiting=True,
     use_beta=True,           # beta correction on (as in paris2_S3_stable)
@@ -303,10 +304,12 @@ def combined_callback(sampler, i):
 print('Running sampling...')
 sampler.run_sampling(
     num_iterations=int(1e5),
-    savepath='./intrinsic_ffunc_3mth_snr32_anneal12',
+    savepath='./intrinsic_ffunc_3mth_snr32_paris2_2',
     print_iter=100,
     callback=combined_callback,
     external_lhs_points=external_lhs_points,
     external_lhs_log_densities=external_lhs_log_densities,
+    stop_max_ld_stable_iters=int(1e4)
+
 )
 print('Done running sampling.')

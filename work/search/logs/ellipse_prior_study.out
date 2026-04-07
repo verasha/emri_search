@@ -1,0 +1,153 @@
+Job completed at Fri Apr  3 06:31:40 PM +08 2026
+Using dt=10s, T=0.25 years
+SNR: 5.942134448355127
+Setup done.
+PARIS2 weighted mean:       [6.00694417 1.00284835 0.71449168 8.91697366 0.39756209]
+PARIS2 1-sigma (diagonal):  [0.01028171 0.00543358 0.02150125 0.12277664 0.00415253]
+Ellipse samples inside prior box: 50000 / 50000
+Saved: ./search/plots/ellipse_prior_corner.png
+Saved: ./search/plots/ellipse_volume_efficiency.png
+
+=== Volume summary ===
+  n_sigma=1:  V_ellipse=1.225e-15  V_cov_box=1.960e-08  V_prior=2.484e-01  ellipse/prior=0.000000%
+  n_sigma=3:  V_ellipse=2.977e-13  V_cov_box=4.762e-06  V_prior=2.484e-01  ellipse/prior=0.000000%
+  n_sigma=5:  V_ellipse=3.828e-12  V_cov_box=6.124e-05  V_prior=2.484e-01  ellipse/prior=0.000000%
+
+Done.
+Job completed at Fri Apr  3 06:39:08 PM +08 2026
+Using dt=10s, T=0.25 years
+SNR: 5.942134448355127
+Setup done.
+Kept 87054 / 100000 points (logden >= 5.8)
+PARIS2 weighted mean:       [6.00475649 1.00152488 0.7102947  8.94121186 0.39857429]
+PARIS2 1-sigma (diagonal):  [0.0075988  0.00443527 0.01566144 0.08928872 0.00330656]
+Ellipse samples inside prior box: 50000 / 50000
+Saved: ./search/plots/ellipse_prior_corner.png
+Saved: ./search/plots/ellipse_volume_efficiency.png
+
+=== Volume summary ===
+  n_sigma=1:  V_ellipse=2.064e-16  V_cov_box=4.987e-09  V_prior=2.484e-01  ellipse/prior=0.000000%
+  n_sigma=3:  V_ellipse=5.016e-14  V_cov_box=1.212e-06  V_prior=2.484e-01  ellipse/prior=0.000000%
+  n_sigma=5:  V_ellipse=6.450e-13  V_cov_box=1.558e-05  V_prior=2.484e-01  ellipse/prior=0.000000%
+
+Done.
+Job completed at Fri Apr  3 08:50:20 PM +08 2026
+Using dt=10s, T=0.25 years
+SNR: 5.942134448355127
+Setup done.
+PARIS2 mean (resampled):    [6.0068304  1.00279454 0.71426195 8.91829123 0.39760572]
+PARIS2 1-sigma (diagonal):  [0.01018617 0.0054248  0.02128421 0.12153312 0.00413692]
+Ellipse samples inside prior box: 50000 / 50000
+Saved: ./search/plots/ellipse_prior_corner.png
+Saved: ./search/plots/ellipse_volume_efficiency.png
+
+=== Volume summary ===
+  n_sigma=1:  V_ellipse=1.226e-15  V_cov_box=1.892e-08  V_prior=2.484e-01  ellipse/prior=0.000000%
+  n_sigma=3:  V_ellipse=2.978e-13  V_cov_box=4.598e-06  V_prior=2.484e-01  ellipse/prior=0.000000%
+  n_sigma=5:  V_ellipse=3.830e-12  V_cov_box=5.913e-05  V_prior=2.484e-01  ellipse/prior=0.000000%
+
+Done.
+Job completed at Sat Apr  4 10:30:02 AM +08 2026
+Using dt=10s, T=0.25 years
+SNR: 5.942134448355127
+Setup done.
+PARIS2 mean (resampled):    [6.0068304  1.00279454 0.71426195 8.91829123 0.39760572]
+PARIS2 1-sigma (diagonal):  [0.01018617 0.0054248  0.02128421 0.12153312 0.00413692]
+Saved: ./search/plots/ellipse_prior_corner.png
+Saved: ./search/plots/ellipse_volume_efficiency.png
+
+=== Volume summary ===
+  n_sigma=1:  V_ellipse=1.226e-15  V_cov_box=1.892e-08  V_prior=2.484e-01  ellipse/prior=0.000000%
+  n_sigma=3:  V_ellipse=2.978e-13  V_cov_box=4.598e-06  V_prior=2.484e-01  ellipse/prior=0.000000%
+  n_sigma=5:  V_ellipse=3.830e-12  V_cov_box=5.913e-05  V_prior=2.484e-01  ellipse/prior=0.000000%
+
+Done.
+Job completed at Sat Apr  4 10:36:30 AM +08 2026
+Using dt=10s, T=0.25 years
+SNR: 5.942134448355127
+Setup done.
+PARIS2 mean (sampler):      [6.00694417 1.00284835 0.71449168 8.91697366 0.39756209]
+PARIS2 1-sigma (diagonal):  [0.01026957 0.00543705 0.02146606 0.12258738 0.00415367]
+Saved: ./search/plots/ellipse_prior_corner.png
+Saved: ./search/plots/ellipse_volume_efficiency.png
+
+=== Volume summary ===
+  n_sigma=1:  V_ellipse=1.239e-15  V_cov_box=1.953e-08  V_prior=2.484e-01  ellipse/prior=0.000000%
+  n_sigma=3:  V_ellipse=3.012e-13  V_cov_box=4.746e-06  V_prior=2.484e-01  ellipse/prior=0.000000%
+  n_sigma=5:  V_ellipse=3.873e-12  V_cov_box=6.103e-05  V_prior=2.484e-01  ellipse/prior=0.000000%
+
+Done.
+Job completed at Sat Apr  4 10:42:30 AM +08 2026
+Using dt=10s, T=0.25 years
+SNR: 5.942134448355127
+Setup done.
+Posterior mean:             [6.01345179 1.00530417 0.72828516 8.83816895 0.39541246]
+Posterior 1-sigma (diag):   [0.00929708 0.00521965 0.01918811 0.11027935 0.00390186]
+Saved: ./search/plots/ellipse_prior_corner.png
+Saved: ./search/plots/ellipse_volume_efficiency.png
+
+=== Volume summary ===
+  n_sigma=1:  V_ellipse=9.815e-16  V_cov_box=1.282e-08  V_prior=2.484e-01  ellipse/prior=0.000000%
+  n_sigma=3:  V_ellipse=2.385e-13  V_cov_box=3.116e-06  V_prior=2.484e-01  ellipse/prior=0.000000%
+  n_sigma=5:  V_ellipse=3.067e-12  V_cov_box=4.007e-05  V_prior=2.484e-01  ellipse/prior=0.000000%
+
+Done.
+Job completed at Sat Apr  4 10:49:23 AM +08 2026
+Using dt=10s, T=0.25 years
+SNR: 5.942134448355127
+Setup done.
+Posterior mean:             [6.01345179 1.00530417 0.72828516 8.83816895 0.39541246]
+Posterior 1-sigma (diag):   [0.00929708 0.00521965 0.01918811 0.11027935 0.00390186]
+KDE bin widths:             [0.02    0.0125  0.01725 0.075   0.0075 ]
+True 1-sigma:               [0.00929708 0.00521965 0.01918811 0.11027935 0.00390186]
+Apparent 1-sigma (w/ KDE):  [0.02205529 0.01354602 0.02580205 0.13336617 0.00845426]
+Saved: ./search/plots/ellipse_prior_corner.png
+Saved: ./search/plots/ellipse_volume_efficiency.png
+
+=== Volume summary ===
+  n_sigma=1:  V_ellipse=9.815e-16  V_cov_box=1.282e-08  V_prior=2.484e-01  ellipse/prior=0.000000%
+  n_sigma=3:  V_ellipse=2.385e-13  V_cov_box=3.116e-06  V_prior=2.484e-01  ellipse/prior=0.000000%
+  n_sigma=5:  V_ellipse=3.067e-12  V_cov_box=4.007e-05  V_prior=2.484e-01  ellipse/prior=0.000000%
+
+Done.
+Job completed at Sat Apr  4 10:55:39 AM +08 2026
+Using dt=10s, T=0.25 years
+SNR: 5.942134448355127
+Setup done.
+anneal11 maxld/S = 5.8971
+mu_center (maxld): [6.00561    1.00178061 0.7123057  8.9301433  0.39838519]
+mu_center (maxld):          [6.00561    1.00178061 0.7123057  8.9301433  0.39838519]
+Posterior 1-sigma (diag):   [0.11104533 0.05399014 0.23644147 1.34680056 0.04206197]
+KDE bin widths:             [0.02    0.0125  0.01725 0.075   0.0075 ]
+True 1-sigma:               [0.11104533 0.05399014 0.23644147 1.34680056 0.04206197]
+Apparent 1-sigma (w/ KDE):  [0.11283202 0.05541827 0.23706988 1.34888722 0.0427254 ]
+Saved: ./search/plots/ellipse_prior_corner.png
+Saved: ./search/plots/ellipse_volume_efficiency.png
+
+=== Volume summary ===
+  n_sigma=1:  V_ellipse=7.043e-10  V_cov_box=2.570e-03  V_prior=2.484e-01  ellipse/prior=0.000000%
+  n_sigma=3:  V_ellipse=1.711e-07  V_cov_box=6.244e-01  V_prior=2.484e-01  ellipse/prior=0.000069%
+  n_sigma=5:  V_ellipse=2.201e-06  V_cov_box=8.030e+00  V_prior=2.484e-01  ellipse/prior=0.000886%
+
+Done.
+Job completed at Tue Apr  7 11:58:20 AM +08 2026
+Using dt=10s, T=0.25 years
+SNR: 5.942134448355127
+Setup done.
+paris2 maxld = 590.5817
+mu_center (maxld): [6.01487994 1.00500901 0.73205648 8.81696887 0.39543265]
+mu_center (maxld):          [6.01487994 1.00500901 0.73205648 8.81696887 0.39543265]
+Posterior 1-sigma (diag):   [0.00929708 0.00521965 0.01918811 0.11027935 0.00390186]
+KDE bin widths:             [0.02    0.0125  0.01725 0.075   0.0075 ]
+True 1-sigma:               [0.00929708 0.00521965 0.01918811 0.11027935 0.00390186]
+Apparent 1-sigma (w/ KDE):  [0.02205529 0.01354602 0.02580205 0.13336617 0.00845426]
+Saved: ./search/plots/ellipse_prior_corner.png
+Saved: ./search/plots/ellipse_volume_efficiency.png
+
+=== Volume summary ===
+  n_sigma=1:  V_ellipse=9.815e-16  V_cov_box=1.282e-08  V_prior=2.484e-01  ellipse/prior=0.000000%
+  n_sigma=3:  V_ellipse=2.385e-13  V_cov_box=3.116e-06  V_prior=2.484e-01  ellipse/prior=0.000000%
+  n_sigma=5:  V_ellipse=3.067e-12  V_cov_box=4.007e-05  V_prior=2.484e-01  ellipse/prior=0.000000%
+
+Done.
+Job completed at Tue Apr  7 12:34:21 PM +08 2026

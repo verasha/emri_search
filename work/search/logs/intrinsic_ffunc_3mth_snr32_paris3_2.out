@@ -1,0 +1,25 @@
+Using dt=10s, T=0.25 years
+Initializing waveform generators...
+Initializing loglike_pure (non-timemax, non-phasemax)...
+SNR: 5.942134448355127
+Loading paris2_1 sampler to get ellipse center and covariance...
+Paris2_1 maxld internal logden: 590.5817
+Paris2_1 maxld point (phys):    [6.01487994 1.00500901 0.73205648 8.81696887 0.39543265]
+Paris2_1 posterior 1-sigma (diag): [0.00929708 0.00521965 0.01918811 0.11027935 0.00390186]
+Mahalanobis distance (maxld_pt -> true point): 2.689σ
+OK: true point is inside the 3σ ellipse.
+Ellipse prior (3σ) bounds:
+  logm1: [5.98699, 6.04277]  (mu=6.01488)
+  logm2: [0.98935, 1.02067]  (mu=1.00501)
+  a: [0.67449, 0.78962]  (mu=0.73206)
+  p0: [8.48613, 9.14781]  (mu=8.81697)
+  e0: [0.38373, 0.40714]  (mu=0.39543)
+Testing log_density at maxld center...
+  logden at mu_center: [1.49499066]
+Init cov (unit-cube space) diagonal: [0.02777778 0.02777778 0.02777778 0.02777778 0.02777778]
+Starting point (phys): [6.01487994 1.00500901 0.73205648 8.81696887 0.39543265]
+Starting point (unit): [0.5 0.5 0.5 0.5 0.5]
+Starting log_density:  [1.49499066]
+Running paris3 sampling...
+Done.
+Job completed at Sat Apr  4 10:53:13 PM +08 2026

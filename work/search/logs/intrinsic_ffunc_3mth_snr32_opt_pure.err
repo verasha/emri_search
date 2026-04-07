@@ -1,0 +1,2 @@
+/nfs/home/svu/e1498138/localgit/FEWNEW/work/search/intrinsic_ffunc_3mth_faceon_opt_pure.py:186: RuntimeWarning: Maximum number of iterations has been exceeded.
+  result = minimize(

@@ -1,0 +1,54 @@
+Using dt = 10 seconds, T = 0.25 years
+Creating GenerateEMRIWaveform class...
+Done initializing waveform generator.
+Creating GravWaveAnalysis class...
+Initializing loglike class...
+Done initializing loglike class.
+SNR: 5.942134448355127
+Loading paris2_1 sampler to get ellipse center and covariance...
+stage 2 maxld: 177.0243
+stage 2 maxld point:    [6.00597255 1.00197611 0.71300743 8.9263246  0.39821827]
+stage 2 posterior 1-sigma (diag, using S): [0.09163883 0.04788246 0.19483062 1.11129725 0.03616253]
+Mahalanobis distance (maxld_pt -> true point): 0.081σ
+OK: true point is inside the 3σ ellipse.
+Ellipse prior (3σ) bounds:
+  logm1: [5.73106, 6.28089]  (mu=6.00597)
+  logm2: [0.85833, 1.14562]  (mu=1.00198)
+  a: [0.30000, 0.99000]  (mu=0.71301)
+  p0: [8.00000, 11.00000]  (mu=8.92632)
+  e0: [0.28973, 0.50000]  (mu=0.39822)
+Testing log_density at maxld center...
+  logden at mu_center: [0.00307932]
+Init cov (unit-cube space) diagonal: [0.02777778 0.02777778 0.07972899 0.13722018 0.02957779]
+Starting point (phys): [6.00597255 1.00197611 0.71300743 8.9263246  0.39821827]
+Starting point (unit): [0.5        0.5        0.59856149 0.30877487 0.51594588]
+Starting log_density:  [0.00307932]
+Running paris3 sampling...
+Using dt = 10 seconds, T = 0.25 years
+Creating GenerateEMRIWaveform class...
+Done initializing waveform generator.
+Creating GravWaveAnalysis class...
+Initializing loglike class...
+Done initializing loglike class.
+SNR: 5.942134448355127
+Loading paris2_1 sampler to get ellipse center and covariance...
+stage 2 maxld: 177.0243
+stage 2 maxld point:    [6.00597255 1.00197611 0.71300743 8.9263246  0.39821827]
+stage 2 posterior 1-sigma (diag, using S): [0.09163883 0.04788246 0.19483062 1.11129725 0.03616253]
+Mahalanobis distance (maxld_pt -> true point): 0.081σ
+OK: true point is inside the 1σ ellipse.
+Ellipse prior (1σ) bounds:
+  logm1: [5.91433, 6.09761]  (mu=6.00597)
+  logm2: [0.95409, 1.04986]  (mu=1.00198)
+  a: [0.51818, 0.90784]  (mu=0.71301)
+  p0: [8.00000, 10.03762]  (mu=8.92632)
+  e0: [0.36206, 0.43438]  (mu=0.39822)
+Testing log_density at maxld center...
+  logden at mu_center: [0.00307932]
+Init cov (unit-cube space) diagonal: [0.25       0.25       0.25       0.29744954 0.25      ]
+Starting point (phys): [6.00597255 1.00197611 0.71300743 8.9263246  0.39821827]
+Starting point (unit): [0.5        0.5        0.5        0.45461065 0.5       ]
+Starting log_density:  [0.00307932]
+Running paris3 sampling...
+Done.
+Job completed at Mon Apr  6 07:03:50 PM +08 2026

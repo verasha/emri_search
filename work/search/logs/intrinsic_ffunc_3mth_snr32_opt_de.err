@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "/nfs/home/svu/e1498138/localgit/FEWNEW/work/search/intrinsic_ffunc_3mth_faceon_opt_de.py", line 221, in <module>
+    _sampler = parismc.Sampler.load_state(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nfs/home/svu/e1498138/localgit/parismc/parismc/sampler.py", line 1580, in load_state
+    with open(filename, 'rb') as f:
+         ^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: './intrinsic_ffunc_3mth_snr32_anneal12/sampler_state.pkl'
+Traceback (most recent call last):
+  File "/nfs/home/svu/e1498138/localgit/FEWNEW/work/search/intrinsic_ffunc_3mth_faceon_opt_de.py", line 221, in <module>
+    _sampler = parismc.Sampler.load_state(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/nfs/home/svu/e1498138/localgit/parismc/parismc/sampler.py", line 1581, in load_state
+    sampler = pickle.load(f)
+              ^^^^^^^^^^^^^^
+AttributeError: Can't get attribute 'prior_transform' on <module '__main__' from '/nfs/home/svu/e1498138/localgit/FEWNEW/work/search/intrinsic_ffunc_3mth_faceon_opt_de.py'>

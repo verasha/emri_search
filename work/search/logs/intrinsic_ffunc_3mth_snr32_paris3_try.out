@@ -1,0 +1,228 @@
+startup
+Using dt=10s, T=0.25 years
+Initializing waveform generators...
+Initializing loglike_pure...
+SNR: 5.942134448355127
+Computing Fisher matrix via StableEMRIFisher (centred on anneal12 best)...
+Job completed at Mon Apr  6 10:26:00 PM +08 2026
+startup
+Using dt=10s, T=0.25 years
+Initializing waveform generators...
+Initializing loglike_pure...
+SNR: 5.942134448355127
+Computing Fisher matrix via StableEMRIFisher (centred on anneal12 best)...
+wave ndim: 2
+Computing SNR for parameters: (np.float64(1012903.7057022306), np.float64(10.09356258026355), np.float64(0.71049625), np.float64(8.94018508), np.float64(0.39701817), 1.0, 1.8, 3.141592653589793, 0.0, 0.0, 0.0, 0.4, 0.0, 0.5)
+SNR:  5.964414450022792
+T:  0.25 dt:  10
+Body is not plunging, Fisher should be stable.
+wave ndim: 2
+Computing SNR for parameters: (np.float64(1012903.7057022306), np.float64(10.09356258026355), np.float64(0.71049625), np.float64(8.94018508), np.float64(0.39701817), 1.0, 1.8, 3.141592653589793, 0.0, 0.0, 0.0, 0.4, 0.0, 0.5)
+Waveform Generated. SNR: 5.964414450022792
+The optimal source SNR is <= 20. The Fisher approximation may not be valid!
+calculating stable deltas...
+Gamma_ii for m1: 0.4754407861357638
+Gamma_ii for m1: 0.4754407861362526
+Gamma_ii for m1: 0.4754407861331373
+Gamma_ii for m1: 0.4754407861742804
+Gamma_ii for m1: 0.47544078707044063
+Gamma_ii for m1: 0.4754407882821969
+Gamma_ii for m1: 0.4754407862086565
+Gamma_ii for m1: 0.47544089988080324
+[np.float64(1.028164204663683e-12), np.float64(6.552532742483381e-12), np.float64(8.653684253298044e-11), np.float64(1.8849039164774903e-09), np.float64(2.54870066002197e-09), np.float64(4.361301039142081e-09), np.float64(2.3908785882630697e-07)]
+0
+Gamma_ii for m2: 2278117.842447948
+Gamma_ii for m2: 2278117.8426997433
+Gamma_ii for m2: 2278117.8432872533
+Gamma_ii for m2: 2278117.839243838
+Gamma_ii for m2: 2278117.7124920795
+Gamma_ii for m2: 2278117.4777431744
+Gamma_ii for m2: 2278117.930136063
+Gamma_ii for m2: 2278122.7240007035
+[np.float64(1.1052771745221404e-10), np.float64(2.5789269276220677e-10), np.float64(1.7748929046319545e-09), np.float64(5.56388100267268e-08), np.float64(1.0304512710709943e-07), np.float64(1.9858185686377482e-07), np.float64(2.1043048251538287e-06)]
+0
+Gamma_ii for a: 955723176.206331
+Gamma_ii for a: 955723244.7828265
+Gamma_ii for a: 955721028.4063661
+Gamma_ii for a: 955736737.9143564
+Gamma_ii for a: 955665805.2208006
+Gamma_ii for a: 955610084.7491415
+Gamma_ii for a: 955108423.8038006
+Gamma_ii for a: 969124534.0099446
+[np.float64(7.175350803966695e-08), np.float64(2.31906214738075e-06), np.float64(1.6437066157489052e-05), np.float64(7.42233248989422e-05), np.float64(5.830879408708915e-05), np.float64(0.0005252397872724904), np.float64(0.014462651304625986)]
+0
+Gamma_ii for p0: 11331949606.433636
+Gamma_ii for p0: 11331949585.196968
+Gamma_ii for p0: 11331949599.171108
+Gamma_ii for p0: 11331949064.869234
+Gamma_ii for p0: 11331926680.098589
+Gamma_ii for p0: 11332003574.973747
+Gamma_ii for p0: 11331708383.969019
+Gamma_ii for p0: 11333069230.383848
+[np.float64(1.874052427906871e-09), np.float64(1.2331629297273337e-09), np.float64(4.715004198326162e-08), np.float64(1.975371997813425e-06), np.float64(6.785638095643477e-06), np.float64(2.60500001170101e-05), np.float64(0.00012007748185115098)]
+1
+Gamma_ii for e0: 543905129692.63275
+Gamma_ii for e0: 543905139574.4551
+Gamma_ii for e0: 543905271906.4792
+Gamma_ii for e0: 543904869416.0577
+Gamma_ii for e0: 543902331036.7169
+Gamma_ii for e0: 543896906138.07874
+Gamma_ii for e0: 543904069098.4436
+Gamma_ii for e0: 543917175577.2834
+[np.float64(1.8168282679570882e-08), np.float64(2.4329976366112573e-07), np.float64(7.400015041985325e-07), np.float64(4.666976396149919e-06), np.float64(9.974130348898103e-06), np.float64(1.3169528914797856e-05), np.float64(2.409646068975893e-05)]
+0
+stable deltas: {'m1': 19.556108841767237, 'm2': 0.0001948761835005578, 'a': 1.3717534962550665e-05, 'p0': 3.3325377762661325e-05, 'e0': 7.665220791443844e-06}
+Time taken to compute stable deltas is 72.5510094165802 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 8.371955394744873 seconds
+[FISHER] array([[ 4.75440786e-01, -1.00907746e+03, -1.81675815e+04,
+         7.33737490e+04,  5.08427840e+05],
+       [-1.00907746e+03,  2.27811784e+06,  3.70067893e+07,
+        -1.56045636e+08, -1.07384945e+09],
+       [-1.81675815e+04,  3.70067893e+07,  9.55723245e+08,
+        -2.75710545e+09, -1.94960303e+10],
+       [ 7.33737490e+04, -1.56045636e+08, -2.75710545e+09,
+         1.13319496e+10,  7.84509272e+10],
+       [ 5.08427840e+05, -1.07384945e+09, -1.94960303e+10,
+         7.84509272e+10,  5.43905140e+11]])
+[FISHER_IS_PD] True
+[FISHER_INV] array([[ 1.45742229e+10,  6.78594572e+04,  1.29327845e+04,
+        -7.37124302e+04, -2.39402663e+03],
+       [ 6.78594574e+04,  3.52021834e-01,  5.90539061e-02,
+        -3.36801848e-01, -1.20423294e-02],
+       [ 1.29327845e+04,  5.90539059e-02,  1.15137252e-02,
+        -6.56173187e-02, -2.09551478e-03],
+       [-7.37124301e+04, -3.36801847e-01, -6.56173187e-02,
+         3.73957924e-01,  1.19490579e-02],
+       [-2.39402664e+03, -1.20423294e-02, -2.09551478e-03,
+         1.19490580e-02,  4.15493863e-04]])
+[FISHER_INV_IS_PD] True
+[FISHER_STD] array([1.20723746e+05, 5.93314280e-01, 1.07302028e-01, 6.11520993e-01,
+       2.03836666e-02])
+shape of waveform_tmpl:  (2, 788954)
+Job completed at Mon Apr  6 11:09:03 PM +08 2026
+startup
+Using dt=10s, T=0.25 years
+Initializing waveform generators...
+Initializing loglike_pure...
+SNR: 5.942134448355127
+Computing Fisher matrix via StableEMRIFisher (centred on anneal12 best)...
+wave ndim: 2
+Computing SNR for parameters: (np.float64(1012903.7057022306), np.float64(10.09356258026355), np.float64(0.71049625), np.float64(8.94018508), np.float64(0.39701817), 1.0, 1.8, 3.141592653589793, 0.0, 0.0, 0.0, 0.4, 0.0, 0.5)
+SNR:  5.964414450022792
+T:  0.25 dt:  10
+Body is not plunging, Fisher should be stable.
+wave ndim: 2
+Computing SNR for parameters: (np.float64(1012903.7057022306), np.float64(10.09356258026355), np.float64(0.71049625), np.float64(8.94018508), np.float64(0.39701817), 1.0, 1.8, 3.141592653589793, 0.0, 0.0, 0.0, 0.4, 0.0, 0.5)
+Waveform Generated. SNR: 5.964414450022792
+The optimal source SNR is <= 20. The Fisher approximation may not be valid!
+calculating stable deltas...
+Gamma_ii for m1: 0.4754407861357638
+Gamma_ii for m1: 0.4754407861362526
+Gamma_ii for m1: 0.4754407861331373
+Gamma_ii for m1: 0.4754407861742804
+Gamma_ii for m1: 0.47544078707044063
+Gamma_ii for m1: 0.4754407882821969
+Gamma_ii for m1: 0.4754407862086565
+Gamma_ii for m1: 0.47544089988080324
+[np.float64(1.028164204663683e-12), np.float64(6.552532742483381e-12), np.float64(8.653684253298044e-11), np.float64(1.8849039164774903e-09), np.float64(2.54870066002197e-09), np.float64(4.361301039142081e-09), np.float64(2.3908785882630697e-07)]
+0
+Gamma_ii for m2: 2278117.842447948
+Gamma_ii for m2: 2278117.8426997433
+Gamma_ii for m2: 2278117.8432872533
+Gamma_ii for m2: 2278117.839243838
+Gamma_ii for m2: 2278117.7124920795
+Gamma_ii for m2: 2278117.4777431744
+Gamma_ii for m2: 2278117.930136063
+Gamma_ii for m2: 2278122.7240007035
+[np.float64(1.1052771745221404e-10), np.float64(2.5789269276220677e-10), np.float64(1.7748929046319545e-09), np.float64(5.56388100267268e-08), np.float64(1.0304512710709943e-07), np.float64(1.9858185686377482e-07), np.float64(2.1043048251538287e-06)]
+0
+Gamma_ii for a: 955723176.206331
+Gamma_ii for a: 955723244.7828265
+Gamma_ii for a: 955721028.4063661
+Gamma_ii for a: 955736737.9143564
+Gamma_ii for a: 955665805.2208006
+Gamma_ii for a: 955610084.7491415
+Gamma_ii for a: 955108423.8038006
+Gamma_ii for a: 969124534.0099446
+[np.float64(7.175350803966695e-08), np.float64(2.31906214738075e-06), np.float64(1.6437066157489052e-05), np.float64(7.42233248989422e-05), np.float64(5.830879408708915e-05), np.float64(0.0005252397872724904), np.float64(0.014462651304625986)]
+0
+Gamma_ii for p0: 11331949606.433636
+Gamma_ii for p0: 11331949585.196968
+Gamma_ii for p0: 11331949599.171108
+Gamma_ii for p0: 11331949064.869234
+Gamma_ii for p0: 11331926680.098589
+Gamma_ii for p0: 11332003574.973747
+Gamma_ii for p0: 11331708383.969019
+Gamma_ii for p0: 11333069230.383848
+[np.float64(1.874052427906871e-09), np.float64(1.2331629297273337e-09), np.float64(4.715004198326162e-08), np.float64(1.975371997813425e-06), np.float64(6.785638095643477e-06), np.float64(2.60500001170101e-05), np.float64(0.00012007748185115098)]
+1
+Gamma_ii for e0: 543905129692.63275
+Gamma_ii for e0: 543905139574.4551
+Gamma_ii for e0: 543905271906.4792
+Gamma_ii for e0: 543904869416.0577
+Gamma_ii for e0: 543902331036.7169
+Gamma_ii for e0: 543896906138.07874
+Gamma_ii for e0: 543904069098.4436
+Gamma_ii for e0: 543917175577.2834
+[np.float64(1.8168282679570882e-08), np.float64(2.4329976366112573e-07), np.float64(7.400015041985325e-07), np.float64(4.666976396149919e-06), np.float64(9.974130348898103e-06), np.float64(1.3169528914797856e-05), np.float64(2.409646068975893e-05)]
+0
+stable deltas: {'m1': 19.556108841767237, 'm2': 0.0001948761835005578, 'a': 1.3717534962550665e-05, 'p0': 3.3325377762661325e-05, 'e0': 7.665220791443844e-06}
+Time taken to compute stable deltas is 70.7618522644043 seconds
+calculating Fisher matrix...
+Finished derivatives
+Calculated Fisher is *atleast* positive-definite.
+Time taken to compute FM is 8.436265707015991 seconds
+[FISHER] array([[ 4.75440786e-01, -1.00907746e+03, -1.81675815e+04,
+         7.33737490e+04,  5.08427840e+05],
+       [-1.00907746e+03,  2.27811784e+06,  3.70067893e+07,
+        -1.56045636e+08, -1.07384945e+09],
+       [-1.81675815e+04,  3.70067893e+07,  9.55723245e+08,
+        -2.75710545e+09, -1.94960303e+10],
+       [ 7.33737490e+04, -1.56045636e+08, -2.75710545e+09,
+         1.13319496e+10,  7.84509272e+10],
+       [ 5.08427840e+05, -1.07384945e+09, -1.94960303e+10,
+         7.84509272e+10,  5.43905140e+11]])
+[FISHER_IS_PD] True
+[FISHER_INV] array([[ 1.45742229e+10,  6.78594572e+04,  1.29327845e+04,
+        -7.37124302e+04, -2.39402663e+03],
+       [ 6.78594574e+04,  3.52021834e-01,  5.90539061e-02,
+        -3.36801848e-01, -1.20423294e-02],
+       [ 1.29327845e+04,  5.90539059e-02,  1.15137252e-02,
+        -6.56173187e-02, -2.09551478e-03],
+       [-7.37124301e+04, -3.36801847e-01, -6.56173187e-02,
+         3.73957924e-01,  1.19490579e-02],
+       [-2.39402664e+03, -1.20423294e-02, -2.09551478e-03,
+         1.19490580e-02,  4.15493863e-04]])
+[FISHER_INV_IS_PD] True
+[FISHER_STD] array([1.20723746e+05, 5.93314280e-01, 1.07302028e-01, 6.11520993e-01,
+       2.03836666e-02])
+shape of waveform_tmpl:  (2, 788954)
+[MODEL] SNR in fisher calculation: 5.964414
+Target SNR for scaling:  5.942134448355127
+F: scale 0.9925429768474839
+[DIAG_STD] array([1.20723746e+05, 5.93314280e-01, 1.07302028e-01, 6.11520993e-01,
+       2.03836666e-02])
+[DIAG_EIGVALS] array([1.45742229e+10, 3.52021834e-01, 1.15137252e-02, 3.73957924e-01,
+       4.15493863e-04])
+[DIAG_B] array([3.62171239e+05, 1.77994284e+00, 3.21906084e-01, 1.83456298e+00,
+       6.11509998e-02])
+Fisher meta: {'diag_sigma': [120723.74634843472, 0.5933142796721824, 0.10730202803028943, 0.6115209925463787, 0.02038366658606766], 'eigvals': [14574222932.401207, 0.3520218344629207, 0.011513725219413018, 0.37395792432490815, 0.00041549386349197125], 'snr_model': 5.964414450022792, 'scale_applied': 0.9925429768474839, 'using_evec': False}
+Fisher 1-sigma (log-mass space): [0.05242966 0.02576731 0.10730203 0.61152099 0.02038367]
+Mahalanobis distance (center -> true point): 0.276σ  (should be 0)
+Ellipse prior (3σ) bounds:
+  logm1: [5.84828, 6.16286]  sigma=0.05243
+  logm2: [0.92674, 1.08135]  sigma=0.02577
+  a: [0.38859, 0.99000]  sigma=0.10730
+  p0: [8.00000, 10.77475]  sigma=0.61152
+  e0: [0.33587, 0.45817]  sigma=0.02038
+Testing log_density at true params...
+  logden at true: [-0.07634739]
+Init cov (unit-cube) diagonal: [0.02777778 0.02777778 0.0318328  0.04857084 0.02777778]
+Starting point (phys): [6.00556816 1.00404448 0.71049625 8.94018508 0.39701817]
+Starting log_density:  [-0.07634739]
+Running paris3_try sampling...
+Done.
+Job completed at Tue Apr  7 01:02:16 PM +08 2026

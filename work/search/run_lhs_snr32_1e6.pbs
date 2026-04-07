@@ -2,11 +2,10 @@
 #PBS -q auto_free
 #PBS -o logs/lhs_samples_snr32_1e6.out
 #PBS -e logs/lhs_samples_snr32_1e6.err
-#PBS -N lhs_resume
+#PBS -N lhs_1e5
 #PBS -l walltime=48:00:00
 #PBS -l select=1:ncpus=4:mpiprocs=1:ompthreads=4:ngpus=1:mem=32gb
 
-# Change to the working directory
 cd $PBS_O_WORKDIR;
 
 mkdir -p logs
@@ -15,6 +14,6 @@ source /scratch/e1498138/anaconda3/bin/activate fewsm
 
 export CUDA_VISIBLE_DEVICES=0
 
-python run_lhs_snr32.py --n-samples 1000000 --resume --seed 67 --outdir /scratch/e1498138/lhs_snr32_checkpoints_1e6
+python -u run_lhs_snr32.py --n-samples 1000000 --seed 67 --outdir /scratch/e1498138/lhs_snr32_checkpoints_1e6
 
 echo "Job completed at $(date)"

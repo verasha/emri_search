@@ -1,9 +1,9 @@
 #!/bin/bash
 #PBS -q auto_free
-#PBS -o logs/intrinsic_ffunc_3mth_snr32_paris2_2.out
-#PBS -e logs/intrinsic_ffunc_3mth_snr32_paris2_2.err
-#PBS -N intrinsic_snr32
-#PBS -l walltime=48:00:00
+#PBS -o logs/intrinsic_ffunc_3mth_snr32_opt_de.out
+#PBS -e logs/intrinsic_ffunc_3mth_snr32_opt_de.err
+#PBS -N intrinsic_snr32_opt_de
+#PBS -l walltime=12:00:00
 #PBS -l select=1:ncpus=4:mpiprocs=1:ompthreads=4:ngpus=1:mem=32gb
 
 # Change to the working directory
@@ -19,6 +19,6 @@ source /scratch/e1498138/anaconda3/bin/activate fewsm
 export CUDA_VISIBLE_DEVICES=0
 
 # Run the Python script
-python intrinsic_ffunc_3mth_faceon_paris2.py
+python intrinsic_ffunc_3mth_faceon_opt_de.py
 
 echo "Job completed at $(date)"
