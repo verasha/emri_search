@@ -39,6 +39,8 @@ import parismc
 # import gc
 import pickle
 import cupy as cp
+from scipy.optimize import differential_evolution                                                                                                                                                                          
+
 
 # tune few configuration
 cfg_set = few.get_config_setter(reset=True)
@@ -199,82 +201,30 @@ def log_density(params):
         out[i] = eval_one(params[i])
     return out
 
+# -----------------------------
+# PARIS global context (picklable functions require module scope)
+# -----------------------------
+_PARIS_EARLY_STOP_HIT = False
+
+mu_center  = np.array([6.01487994, 1.00500901, 0.73205648, 8.81696887, 0.39543265])                                                                                                                                        
+sigma_diag = np.array([0.00929708, 0.00521965, 0.01918811, 0.11027935, 0.00390186])                                                                                                                                        
+
+N_sigma = 2                                                                                                                                                                                                           
+half = N_sigma * sigma_diag                                                                                                                                                                                              
+bounds = [(mu_center[i] - half[i], mu_center[i] + half[i]) for i in range(5)]     
+
+print('bounds:', bounds)
+
 
 _PARIS_EARLY_STOP_HIT = False
 
-# ─────────────────────────────────────────────
-# Load anneal12 → compute DE bounds from posterior
-# (same approach as paris2_Sdel_new.ipynb + ellipse_prior_study.py)
-# ─────────────────────────────────────────────
-_p2_lo = np.array([5.6, 0.8, 0.3,  8.0, 0.2])
-_p2_hi = np.array([6.4, 1.3, 0.99, 11.0, 0.5])
-S_ANNEAL = 30   # anneal12 final annealing factor
-
-def prior_transform(u):
-    out = np.zeros_like(u)
-    widths = _p2_hi - _p2_lo
-    for d in range(5):
-        out[:, d] = widths[d] * u[:, d] + _p2_lo[d]
-    return out
-
-print('Loading anneal12 sampler...')
-_sampler = parismc.Sampler.load_state(
-    './search/intrinsic_ffunc_3mth_snr32_anneal12/sampler_state.pkl'
-)
-
-# Best-fit (maxld) point in physical space
-_pts_u   = _sampler.searched_points_list[0]       # unit-cube
-_logdens = _sampler.searched_log_densities_list[0]
-mu_center = prior_transform(_pts_u[np.argmax(_logdens)].reshape(1, -1))[0]
-print(f'anneal12 maxld/S = {np.max(_logdens)/S_ANNEAL:.4f}')
-print(f'mu_center: {mu_center}')
-
-# Importance-weighted covariance (same as ellipse_prior_study.py)
-_samples, _weights = _sampler.get_samples_with_weights(flatten=True)
-_weights = _weights / _weights.sum()
-_rng = np.random.default_rng(0)
-_idx = _rng.choice(len(_samples), size=50_000, replace=True, p=_weights)
-_post = _samples[_idx]
-cov_posterior = np.cov(_post.T)   # annealed (no de-anneal)
-sigma_diag    = np.sqrt(np.diag(cov_posterior))
-print(f'Posterior 1-sigma (annealed): {sigma_diag}')
-del _sampler, _samples, _weights, _idx, _post
-
-# DE bounds: mu_center ± N_SIGMA * sigma_diag, clipped to flat prior
-N_SIGMA_DE = 2.0
-half   = N_SIGMA_DE * sigma_diag
-lo     = np.clip(mu_center - half, _p2_lo, _p2_hi)
-hi     = np.clip(mu_center + half, _p2_lo, _p2_hi)
-bounds = [(lo[d], hi[d]) for d in range(5)]
-
-labels = ['logm1', 'logm2', 'a', 'p0', 'e0']
-print(f'\nDE bounds (N_sigma={N_SIGMA_DE}):')
-for d, lab in enumerate(labels):
-    print(f'  {lab}: [{lo[d]:.5f}, {hi[d]:.5f}]  (mu={mu_center[d]:.5f}, true={param_true[d]:.5f})')
-
-# ─────────────────────────────────────────────
-# Differential evolution
-# ─────────────────────────────────────────────
-
+                               
 def neg_logden(x):
     val = log_density(np.array([x]))[0]
-    return -val if np.isfinite(val) else 1e10
-
-def _stop_callback(xk, convergence):
-    return _PARIS_EARLY_STOP_HIT
-
-from scipy.optimize import differential_evolution
-
-result_new = differential_evolution(
-    neg_logden, bounds=bounds,
-    maxiter=2000, tol=1e-8, seed=42, disp=True,
-    popsize=20, mutation=(0.5, 1.0), recombination=0.7,
-    callback=_stop_callback, polish=False,
-)
-
-print(f'\n=== DE Result ===')
-print(f'Peak   : {result_new.x}')
-print(f'loglike: {-result_new.fun:.8f}')
-print(f'Target : {_TARGET_LOGLIKE:.8f}')
-print(f'True   : {param_true}')
-print(f'Diff   : {result_new.x - np.array(param_true)}')
+    return -val if np.isfinite(val) else 1e10  
+                                                                                                                                                                                
+result_new = differential_evolution(                                                                                                                                                                                        
+    neg_logden, bounds=bounds,  
+    maxiter=2000, tol=1e-8, seed=42, disp=True,                                                                                                                                                                            
+    popsize=15, mutation=(0.5, 1.0), recombination=0.7                                                                                                                                                                     
+)        

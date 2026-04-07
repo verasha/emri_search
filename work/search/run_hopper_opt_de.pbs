@@ -13,7 +13,7 @@ cd $PBS_O_WORKDIR;
 mkdir -p logs
 
 # Activate conda environment
-source /scratch/e1498138/anaconda3/bin/activate fewsm
+source /home/svu/e1498138/emri_search_uv/.venv/bin/activate
 
 # Set CUDA environment variables
 export CUDA_VISIBLE_DEVICES=0
