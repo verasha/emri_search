@@ -1,0 +1,20 @@
+Using dt=10s, T=0.25 years
+SNR: 5.942134448355127
+Setup done.
+paris2_2 maxld = 590.4841
+mu_center (maxld): [6.00428558 1.00036002 0.7101336  8.94251488 0.3992983 ]
+mu_center (maxld):          [6.00428558 1.00036002 0.7101336  8.94251488 0.3992983 ]
+Posterior 1-sigma (diag):   [0.01023484 0.00542509 0.02138723 0.12213123 0.0041441 ]
+KDE bin widths:             [0.02    0.0125  0.01725 0.075   0.0075 ]
+True 1-sigma:               [0.01023484 0.00542509 0.02138723 0.12213123 0.0041441 ]
+Apparent 1-sigma (w/ KDE):  [0.02246669 0.0136265  0.02747683 0.14332145 0.00856875]
+Saved: ./search/plots/ellipse_prior_corner_2.png
+Saved: ./search/plots/ellipse_volume_efficiency_2.png
+
+=== Volume summary ===
+  n_sigma=1:  V_ellipse=1.207e-15  V_cov_box=1.923e-08  V_prior=2.484e-01  ellipse/prior=0.000000%
+  n_sigma=3:  V_ellipse=2.933e-13  V_cov_box=4.674e-06  V_prior=2.484e-01  ellipse/prior=0.000000%
+  n_sigma=5:  V_ellipse=3.771e-12  V_cov_box=6.010e-05  V_prior=2.484e-01  ellipse/prior=0.000000%
+
+Done.
+Job completed at Tue Apr  7 06:00:43 PM +08 2026

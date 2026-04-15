@@ -1,10 +1,10 @@
 #!/bin/bash
-#PBS -P CFP03-CF-051
-#PBS -N intrinsic_snr32_opt_de
+#PBS -q auto_free
+#PBS -N opt_de
 #PBS -l walltime=12:00:00
-#PBS -l select=1:ngpu=1
-#PBS -o logs/hopper_opt_de.out
-#PBS -e logs/hopper_opt_de.err
+#PBS -l select=1:ncpus=4:mpiprocs=1:ompthreads=4:ngpus=1:mem=32gb
+#PBS -o logs/intrinsic_ffunc_3mth_faceon_opt_de_3mth.out
+#PBS -e logs/intrinsic_ffunc_3mth_faceon_opt_de_3mth.err
 
 # Change to the working directory
 cd $PBS_O_WORKDIR;

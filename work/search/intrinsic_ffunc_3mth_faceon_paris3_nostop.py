@@ -46,7 +46,7 @@ cfg_set.set_log_level("info")
 use_gpu = True
 force_backend = "cuda12x"
 dt = 10     # Time step
-T = 6/12     # Total time (6 months; ellipse prior loaded from 3mth paris2 run)
+T = 12/12    
 
 print(f"Using dt = {dt} seconds, T = {T} years")
 
@@ -145,8 +145,8 @@ print('SNR:', data_snr)
 # only stop once hit target
 # actually might not be super accurate ?
 # _TARGET_LOGLIKE = 5.90716261
-_TARGET_LOGLIKE = 8.808058559014441
-_EARLY_STOP_HIT = False
+# _TARGET_LOGLIKE = 8.808058559014441
+# _EARLY_STOP_HIT = False
 
 # LOAD PARIS STAGE 2
 
@@ -226,16 +226,50 @@ def inverse_prior_transform(params):
 # log_density: NON-phasemax  + ellipse guard
 # ─────────────────────────────────────────────
 
+# def log_density(params):
+#     global _EARLY_STOP_HIT
+#     params = np.asarray(params)
+#     n_samples = params.shape[0]
+#     log_likes = np.zeros(n_samples)
+
+#     for i in range(n_samples):
+#         if _EARLY_STOP_HIT:
+#             log_likes[i] = -np.inf
+#             continue
+
+#         logm1, logm2, a_i, p0_i, e0_i = params[i]
+
+#         # Ellipse guard: reject points outside N_SIGMA_PRIOR ellipse
+#         diff  = params[i] - mu_center
+#         maha2 = diff @ cov_inv @ diff
+#         if maha2 > N_SIGMA_PRIOR ** 2:
+#             log_likes[i] = -np.inf
+#             continue
+
+#         try:
+#             loglike = loglike_obj(np.array([
+#                 10**logm1, 10**logm2, a_i, p0_i, e0_i,
+#                 xI0, dist, qS, phiS, qK, phiK, Phi_phi0, Phi_theta0, Phi_r0
+#             ])) 
+#         except Exception:
+#             loglike = -np.inf
+
+#         if np.isfinite(loglike) and loglike >= _TARGET_LOGLIKE:
+#             _EARLY_STOP_HIT = True
+#             print(f'[EARLY-STOP] loglike {loglike:.6f} >= target {_TARGET_LOGLIKE:.6f}; future calls => -inf', flush=True)
+
+#         log_likes[i] = loglike
+
+#     return log_likes
+
+# NOTE: below without early stop
+
 def log_density(params):
-    global _EARLY_STOP_HIT
     params = np.asarray(params)
     n_samples = params.shape[0]
     log_likes = np.zeros(n_samples)
 
     for i in range(n_samples):
-        if _EARLY_STOP_HIT:
-            log_likes[i] = -np.inf
-            continue
 
         logm1, logm2, a_i, p0_i, e0_i = params[i]
 
@@ -254,14 +288,9 @@ def log_density(params):
         except Exception:
             loglike = -np.inf
 
-        if np.isfinite(loglike) and loglike >= _TARGET_LOGLIKE:
-            _EARLY_STOP_HIT = True
-            print(f'[EARLY-STOP] loglike {loglike:.6f} >= target {_TARGET_LOGLIKE:.6f}; future calls => -inf', flush=True)
-
         log_likes[i] = loglike
 
     return log_likes
-
 print('Testing log_density at maxld center...')
 print('  logden at mu_center:', log_density(mu_center.reshape(1, -1)))
 
@@ -314,16 +343,16 @@ external_lhs_points        = start_u.reshape(1, -1)
 external_lhs_log_densities = start_logd
 
 def paris3_callback(sampler, i):
-    global _EARLY_STOP_HIT
-    if _EARLY_STOP_HIT:
-        sampler.stop_sampling = True
+    # global _EARLY_STOP_HIT
+    # if _EARLY_STOP_HIT:
+    #     sampler.stop_sampling = True
     if i % 1000 == 0 and i > 0:
         sampler.save_state()
 
 print('Running paris3 sampling...')
 sampler.run_sampling(
     num_iterations=int(2e5),
-    savepath='./intrinsic_ffunc_3mth_snr32_paris3_6',
+    savepath='./intrinsic_ffunc_3mth_snr32_paris3_7',
     print_iter=100,
     callback=paris3_callback,
     external_lhs_points=external_lhs_points,

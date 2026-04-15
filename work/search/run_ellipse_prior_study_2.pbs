@@ -1,0 +1,19 @@
+#!/bin/bash
+#PBS -q auto_free
+#PBS -o logs/ellipse_prior_study_2.out
+#PBS -e logs/ellipse_prior_study_2.err
+#PBS -N ellipse_prior_2
+#PBS -l walltime=4:00:00
+#PBS -l select=1:ncpus=4:mpiprocs=1:ompthreads=4:ngpus=1:mem=32gb
+
+export CUDA_VISIBLE_DEVICES=0
+
+cd $PBS_O_WORKDIR;
+
+mkdir -p logs
+
+source /scratch/e1498138/anaconda3/bin/activate fewsm
+
+python -u study/ellipse_prior_study_2.py
+
+echo "Job completed at $(date)"

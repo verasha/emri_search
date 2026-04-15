@@ -179,9 +179,12 @@ class GravWaveAnalysis:
         """
 
         df = 1/(self.N*self.dt)  # Frequency resolution
+        # print('df: ', df)
 
         # Get sensitivity (using rfft frequencies for this method since h1f/h2f come from freq_wave which uses rfft)
         Sn = get_sensitivity(self.fft_freqs_rfft[1:], sens_fn=CornishLISASens, return_type="PSD")
+        # print('rffts:', self.fft_freqs_rfft[1:])
+        # print('Sn: ', Sn)
         # Sn = LISA_Noise(self.fft_freqs_rfft[1:])
 
         # Compute the inner product using backend operations

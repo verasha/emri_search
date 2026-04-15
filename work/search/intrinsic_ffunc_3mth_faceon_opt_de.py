@@ -165,42 +165,67 @@ data_snr = gwf.rhostat(data)
 print('SNR calculated:', data_snr)
 print("Setting up log_density and prior functions...")
 # make this from log_density([param_true])
-_TARGET_LOGLIKE = 5.90716261
+# _TARGET_LOGLIKE = 5.90716261 
+# _TARGET_LOGLIKE = 8.808058559014441
+_TARGET_LOGLIKE = 13.934662556800951
 
+
+# NOTE: below is with target loglike & early stop
+# def log_density(params):
+#     global _PARIS_EARLY_STOP_HIT
+#     params = np.asarray(params)
+
+#     def eval_one(x):
+#         global _PARIS_EARLY_STOP_HIT
+#         if _PARIS_EARLY_STOP_HIT:
+#             return float('-inf')
+#         try:
+#             logm1, logm2, a, p0, e0 = x
+#             m1 = 10**logm1
+#             m2 = 10**logm2
+
+#             fstat = loglike_obj(np.array([m1, m2, a, p0, e0, xI0, dist, qS, phiS, qK, phiK, Phi_phi0, Phi_theta0, Phi_r0]))            
+#         except Exception:
+#             return float('-inf')
+        
+#         if fstat >= _TARGET_LOGLIKE:
+#             _PARIS_EARLY_STOP_HIT = True
+#             try:
+#                 print(f"[EARLY-STOP] SNR {fstat:.6f} >= {_TARGET_LOGLIKE}; future calls => -inf")
+#             except Exception:
+#                 pass
+
+#         return fstat
+        
+#     if params.ndim == 1:
+#         return eval_one(params)
+#     out = np.zeros(params.shape[0], dtype=float)
+#     for i in range(params.shape[0]):
+#         out[i] = eval_one(params[i])
+#     return out
+
+# NOTE: below without
 
 def log_density(params):
-    global _PARIS_EARLY_STOP_HIT
     params = np.asarray(params)
+    n_samples = params.shape[0]
+    log_likes = np.zeros(n_samples)
 
-    def eval_one(x):
-        global _PARIS_EARLY_STOP_HIT
-        if _PARIS_EARLY_STOP_HIT:
-            return float('-inf')
+    for i in range(n_samples):
+
+        logm1, logm2, a_i, p0_i, e0_i = params[i]
+
         try:
-            logm1, logm2, a, p0, e0 = x
-            m1 = 10**logm1
-            m2 = 10**logm2
-
-            fstat = loglike_obj(np.array([m1, m2, a, p0, e0, xI0, dist, qS, phiS, qK, phiK, Phi_phi0, Phi_theta0, Phi_r0]))            
+            loglike = loglike_obj(np.array([
+                10**logm1, 10**logm2, a_i, p0_i, e0_i,
+                xI0, dist, qS, phiS, qK, phiK, Phi_phi0, Phi_theta0, Phi_r0
+            ])) 
         except Exception:
-            return float('-inf')
-        
-        if fstat >= _TARGET_LOGLIKE:
-            _PARIS_EARLY_STOP_HIT = True
-            try:
-                print(f"[EARLY-STOP] SNR {fstat:.6f} >= {_TARGET_LOGLIKE}; future calls => -inf")
-            except Exception:
-                pass
+            loglike = -np.inf
 
-        return fstat
-        
-    if params.ndim == 1:
-        return eval_one(params)
-    out = np.zeros(params.shape[0], dtype=float)
-    for i in range(params.shape[0]):
-        out[i] = eval_one(params[i])
-    return out
+        log_likes[i] = loglike
 
+    return log_likes
 # -----------------------------
 # PARIS global context (picklable functions require module scope)
 # -----------------------------
@@ -216,15 +241,18 @@ bounds = [(mu_center[i] - half[i], mu_center[i] + half[i]) for i in range(5)]
 print('bounds:', bounds)
 
 
-_PARIS_EARLY_STOP_HIT = False
+# _PARIS_EARLY_STOP_HIT = False
 
                                
 def neg_logden(x):
     val = log_density(np.array([x]))[0]
     return -val if np.isfinite(val) else 1e10  
                                                                                                                                                                                 
-result_new = differential_evolution(                                                                                                                                                                                        
+result = differential_evolution(                                                                                                                                                                                        
     neg_logden, bounds=bounds,  
     maxiter=2000, tol=1e-8, seed=42, disp=True,                                                                                                                                                                            
     popsize=15, mutation=(0.5, 1.0), recombination=0.7                                                                                                                                                                     
 )        
+
+print('best fit: ', result.x)
+print('logden:', -result.fun)
