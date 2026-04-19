@@ -1,10 +1,10 @@
 #!/bin/bash
 #PBS -q auto_free
 #PBS -N opt_de
-#PBS -l walltime=12:00:00
+#PBS -l walltime=48can:00:00
 #PBS -l select=1:ncpus=4:mpiprocs=1:ompthreads=4:ngpus=1:mem=32gb
-#PBS -o logs/intrinsic_ffunc_3mth_faceon_opt_de_3mth.out
-#PBS -e logs/intrinsic_ffunc_3mth_faceon_opt_de_3mth.err
+#PBS -o logs/intrinsic_ffunc_3mth_faceon_opt_de_2yr.out
+#PBS -e logs/intrinsic_ffunc_3mth_faceon_opt_de_2yr.err
 
 # Change to the working directory
 cd $PBS_O_WORKDIR;

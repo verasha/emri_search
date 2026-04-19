@@ -1,0 +1,4 @@
+LHS points inside ellipse: 16579 / 100000  (16.6%)
+Max Mahalanobis distance: 3.0000  (should be <= 3.0)
+Saved: ./plots/lhs_ellipse_check.png
+Job completed at Thu Apr 16 09:39:28 PM +08 2026

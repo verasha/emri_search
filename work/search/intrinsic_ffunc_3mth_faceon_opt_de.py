@@ -50,7 +50,7 @@ cfg_set.set_log_level("info")
 use_gpu = True
 force_backend = "cuda12x"  
 dt = 10     # Time step
-T = 3/12     # Total time
+T = 24/12     # Total time
 
 
 
@@ -167,7 +167,7 @@ print("Setting up log_density and prior functions...")
 # make this from log_density([param_true])
 # _TARGET_LOGLIKE = 5.90716261 
 # _TARGET_LOGLIKE = 8.808058559014441
-_TARGET_LOGLIKE = 13.934662556800951
+# _TARGET_LOGLIKE = 13.934662556800951
 
 
 # NOTE: below is with target loglike & early stop

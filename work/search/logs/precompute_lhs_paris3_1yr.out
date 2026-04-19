@@ -1,0 +1,57 @@
+Using dt = 10 seconds, T = 1.0 years
+Creating GenerateEMRIWaveform class...
+Done initializing waveform generator.
+Done initializing loglike class.
+SNR: 14.0812757390131
+Loading paris2 sampler...
+stage 2 maxld: 590.5817
+stage 2 maxld point: [6.01487994 1.00500901 0.73205648 8.81696887 0.39543265]
+stage 2 posterior 1-sigma (diag): [0.00929708 0.00521965 0.01918811 0.11027935 0.00390186]
+Ellipse prior (3σ) bounds:
+  logm1: [5.98699, 6.04277]  (mu=6.01488)
+  logm2: [0.98935, 1.02067]  (mu=1.00501)
+  a: [0.67449, 0.78962]  (mu=0.73206)
+  p0: [8.48613, 9.14781]  (mu=8.81697)
+  e0: [0.38373, 0.40714]  (mu=0.39543)
+Generating 100000 LHS points in Cholesky space...
+LHS points inside ellipse: 16351 / 100000 (16.4%)
+Evaluating log_density on 16351 points...
+  [0/16351]  elapsed=0s  rate=0.0/s  ETA=0s
+  [500/16351]  elapsed=247s  rate=2.0/s  ETA=7837s
+  [1000/16351]  elapsed=494s  rate=2.0/s  ETA=7584s
+  [1500/16351]  elapsed=741s  rate=2.0/s  ETA=7336s
+  [2000/16351]  elapsed=987s  rate=2.0/s  ETA=7084s
+  [2500/16351]  elapsed=1233s  rate=2.0/s  ETA=6832s
+  [3000/16351]  elapsed=1479s  rate=2.0/s  ETA=6583s
+  [3500/16351]  elapsed=1725s  rate=2.0/s  ETA=6334s
+  [4000/16351]  elapsed=1971s  rate=2.0/s  ETA=6086s
+  [4500/16351]  elapsed=2217s  rate=2.0/s  ETA=5838s
+  [5000/16351]  elapsed=2463s  rate=2.0/s  ETA=5591s
+  [5500/16351]  elapsed=2709s  rate=2.0/s  ETA=5344s
+  [6000/16351]  elapsed=2955s  rate=2.0/s  ETA=5097s
+  [6500/16351]  elapsed=3200s  rate=2.0/s  ETA=4850s
+  [7000/16351]  elapsed=3446s  rate=2.0/s  ETA=4604s
+  [7500/16351]  elapsed=3692s  rate=2.0/s  ETA=4357s
+  [8000/16351]  elapsed=3938s  rate=2.0/s  ETA=4111s
+  [8500/16351]  elapsed=4184s  rate=2.0/s  ETA=3865s
+  [9000/16351]  elapsed=4430s  rate=2.0/s  ETA=3618s
+  [9500/16351]  elapsed=4676s  rate=2.0/s  ETA=3372s
+  [10000/16351]  elapsed=4922s  rate=2.0/s  ETA=3126s
+  [10500/16351]  elapsed=5168s  rate=2.0/s  ETA=2880s
+  [11000/16351]  elapsed=5414s  rate=2.0/s  ETA=2633s
+  [11500/16351]  elapsed=5659s  rate=2.0/s  ETA=2387s
+  [12000/16351]  elapsed=5905s  rate=2.0/s  ETA=2141s
+  [12500/16351]  elapsed=6151s  rate=2.0/s  ETA=1895s
+  [13000/16351]  elapsed=6397s  rate=2.0/s  ETA=1649s
+  [13500/16351]  elapsed=6643s  rate=2.0/s  ETA=1403s
+  [14000/16351]  elapsed=6889s  rate=2.0/s  ETA=1157s
+  [14500/16351]  elapsed=7135s  rate=2.0/s  ETA=911s
+  [15000/16351]  elapsed=7381s  rate=2.0/s  ETA=665s
+  [15500/16351]  elapsed=7627s  rate=2.0/s  ETA=419s
+  [16000/16351]  elapsed=7873s  rate=2.0/s  ETA=173s
+Done. 16351 evals in 8045s (2.0/s)
+Finite log_densities: 16351 / 16351
+Max log_density: 2.674547
+Mean log_density (finite): 0.009883
+Saved to ./precomputed_lhs_paris3_1yr_1e+05.pkl
+Job completed at Fri Apr 17 02:50:21 PM +08 2026

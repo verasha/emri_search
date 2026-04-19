@@ -143,6 +143,69 @@ data     = loglike_obj.signal
 data_snr = float(gwf.rhostat(data))
 print('SNR:', data_snr)
 
+# LOAD PARIS STAGE 2
+
+print('Loading paris2_1 sampler to get ellipse center and covariance...')
+
+os.chdir('/nfs/home/svu/e1498138/localgit/FEWNEW/work/search')
+sys.path.insert(0, '/nfs/home/svu/e1498138/localgit/FEWNEW/work/search')
+
+# prior bounds
+_p2_lo = np.array([5.6, 0.8, 0.3, 8.0, 0.2])
+_p2_hi = np.array([6.4, 1.3, 0.99, 11.0, 0.5])
+
+def log_density(params):      
+    raise RuntimeError("stub")
+
+def prior_transform(u):
+    return _p2_lo + (_p2_hi - _p2_lo) * u
+
+sampler_2 = parismc.Sampler.load_state(
+    './intrinsic_ffunc_3mth_snr32_paris2/sampler_state.pkl'
+)
+
+# Max logden point from paris2 (in physical space)
+all_pts_u  = sampler_2.searched_points_list[0]
+all_logden = sampler_2.searched_log_densities_list[0]
+maxld_idx  = np.argmax(all_logden)
+mu_center  = prior_transform(all_pts_u[maxld_idx].reshape(1, -1))[0]
+print(f'stage 2 maxld: {all_logden[maxld_idx]:.4f}')
+print(f'stage 2 maxld point:    {mu_center}')
+
+# Posterior covariance from paris2: importance-weight resample then np.cov (no de-anneal)
+samples_p2, weights_p2 = sampler_2.get_samples_with_weights(flatten=True)
+weights_p2 = weights_p2 / weights_p2.sum()
+rng_rs = np.random.default_rng(0)
+idx_rs = rng_rs.choice(len(samples_p2), size=50_000, replace=True, p=weights_p2)
+cov_posterior = np.cov(samples_p2[idx_rs].T)  # annealed posterior covariance (no de-anneal)
+print('stage 2 posterior 1-sigma (diag):', np.sqrt(np.diag(cov_posterior)))
+
+del sampler_2, samples_p2, weights_p2, idx_rs  # free memory
+
+# ELLIPSOIDAL PRIORS
+
+N_SIGMA_PRIOR = 3.0  
+
+# Tight bounding box: mu_center ± N_SIGMA_PRIOR * sigma, clipped to original prior
+sigma_diag  = np.sqrt(np.diag(cov_posterior))
+ellipse_lo  = np.clip(mu_center - N_SIGMA_PRIOR * sigma_diag, _p2_lo, _p2_hi)
+ellipse_hi  = np.clip(mu_center + N_SIGMA_PRIOR * sigma_diag, _p2_lo, _p2_hi)
+cov_inv     = np.linalg.inv(cov_posterior)
+
+
+print(f'Ellipse prior ({N_SIGMA_PRIOR:.0f}σ) bounds:')
+param_names = ['logm1', 'logm2', 'a', 'p0', 'e0']
+for i, name in enumerate(param_names):
+    print(f'  {name}: [{ellipse_lo[i]:.5f}, {ellipse_hi[i]:.5f}]  (mu={mu_center[i]:.5f})')
+
+# REDEFINE PRIOR TRANSFORM AND LOGDEN
+def prior_transform(u):
+    return ellipse_lo + (ellipse_hi - ellipse_lo) * u
+
+def inverse_prior_transform(params):
+    params = np.asarray(params)
+    return (params - ellipse_lo) / (ellipse_hi - ellipse_lo)
+
 
 def log_density(params):
     params = np.asarray(params)
@@ -165,39 +228,8 @@ def log_density(params):
 
     return log_likes
 
-def prior_transform(u):
-    # hypercube 3sigma bounds
-    logm1lim = [5.98699, 6.04277]
-    logm2lim = [0.98935, 1.02067]
-    alim = [0.67449, 0.78962]
-    p0lim = [8.48613, 9.14781]
-    e0lim = [0.38373, 0.40714]
-
-    transformed = np.zeros_like(u)
-
-    # Uniform in log for masses
-
-    # m1
-    transformed[:, 0] = (logm1lim[1] - logm1lim[0]) * u[:, 0] + logm1lim[0]
-
-    # m2
-    transformed[:, 1] = (logm2lim[1] - logm2lim[0]) * u[:, 1] + logm2lim[0]
-
-    # Linear in others
-
-    # a
-    transformed[:, 2] = (alim[1] - alim[0]) * u[:, 2] + alim[0]
-
-    # p0
-    transformed[:, 3] = (p0lim[1] - p0lim[0]) * u[:, 3] + p0lim[0]
-
-    # e0
-    transformed[:, 4] = (e0lim[1] - e0lim[0]) * u[:, 4] + e0lim[0]
-
-    return transformed
-
-print('Done setting up log-likelihood and prior.')
-print('Setting up ParisMC sampler...')
+print('Testing log_density at maxld center...')
+print('  logden at mu_center:', log_density(mu_center.reshape(1, -1)))
 
 config = parismc.SamplerConfig(
     merge_confidence=0.9,
@@ -211,16 +243,13 @@ config = parismc.SamplerConfig(
     use_pool=False,
     keep_dead_processes=True
 )
-print('Done setting up ParisMC sampler.')
-print('Setting up initial covariance matrix...')
 
 ndim   = 5
-n_seed = 75
-init_cov      = np.eye(ndim) * 1e-10
-init_cov_list = [init_cov] * n_seed
+n_seed = 1
+init_cov      = np.eye(ndim) * 1e-4
+init_cov_list = [init_cov]
 
-print('Done setting up initial covariance matrix.')
-print('Initializing sampler...')
+print('Init cov (unit-cube space) diagonal:', np.diag(init_cov))
 
 sampler = parismc.Sampler(
     ndim=ndim,
@@ -230,18 +259,26 @@ sampler = parismc.Sampler(
     prior_transform=prior_transform,
     config=config
 )
-print('Done initializing sampler.')
 
-print('Evaluating log_density on ellipse LHS points...')
-import pickle
+# Generate LHS in hypercube then truncate based on ellipsoid
 
-savepath = f'/nfs/home/svu/e1498138/localgit/FEWNEW/work/search/precomputed_lhs_paris3_1yr_1e+05.pkl'
+N_LHS = int(1e6)
+_lhs_sampler = LHS(xlimits=np.zeros((ndim, 2)) + np.array([0.0, 1.0]))
+lhs_u_raw    = _lhs_sampler(N_LHS)
+lhs_phys_raw = np.array([prior_transform(u) for u in lhs_u_raw])
+# Filter: keep only points inside N_SIGMA_PRIOR ellipse
+diffs       = lhs_phys_raw - mu_center
+maha2_vals  = np.einsum('ij,jk,ik->i', diffs, cov_inv, diffs)
+inside_mask = maha2_vals <= N_SIGMA_PRIOR ** 2
+lhs_u_inside    = lhs_u_raw[inside_mask]
+lhs_phys_inside = lhs_phys_raw[inside_mask]
+print(f'LHS points inside {N_SIGMA_PRIOR:.0f}σ ellipse: {inside_mask.sum()} / {N_LHS}')
 
-with open(savepath, 'rb') as f:
-    data = pickle.load(f)
+print('Evaluating log_density on ellipse-filtered LHS points...')
+lhs_logden = log_density(lhs_phys_inside)
 
-external_lhs_points = data['lhs_u']
-external_lhs_log_densities = data['log_densities']
+external_lhs_points        = lhs_u_inside
+external_lhs_log_densities = lhs_logden
 
 def paris3_callback(sampler, i):
     if i % 1000 == 0 and i > 0:
