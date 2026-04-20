@@ -84,3 +84,39 @@
 [2]  iter=  2000  max_logden=8.627877  accepts=11  elapsed=1393s
 [2]  iter=  2500  max_logden=8.627877  accepts=11  elapsed=1745s
 [2]  iter=  3000  max_logden=8.627877  accepts=11  elapsed=2090s
+[2]  iter=  3500  max_logden=8.627877  accepts=11  elapsed=2435s
+[2]  iter=  4000  max_logden=8.627877  accepts=11  elapsed=2779s
+[2]  iter=  4500  max_logden=8.663799  accepts=12  elapsed=3124s
+[2]  iter=  5000  max_logden=8.663799  accepts=12  elapsed=3469s
+[2]  iter=  5500  max_logden=8.663799  accepts=12  elapsed=3814s
+[2]  iter=  6000  max_logden=8.663799  accepts=12  elapsed=4159s
+[2]  iter=  6500  max_logden=8.663799  accepts=12  elapsed=4504s
+[2]  iter=  7000  max_logden=8.663799  accepts=12  elapsed=4848s
+[2]  iter=  7500  max_logden=8.663799  accepts=12  elapsed=5193s
+[2]  iter=  8000  max_logden=8.663799  accepts=12  elapsed=5538s
+[2]  iter=  8500  max_logden=8.663799  accepts=12  elapsed=5883s
+[2]  iter=  9000  max_logden=8.673049  accepts=13  elapsed=6228s
+[2]  iter=  9500  max_logden=8.673049  accepts=13  elapsed=6573s
+[2]  iter= 10000  max_logden=8.673049  accepts=13  elapsed=6918s
+[2] Done. 10000 iters in 6918s
+[2] Final max logden: 8.673049
+[2] Final p_max: [6.01154934 1.00352219 0.72502429 8.85689865 0.39660511]
+[2] Saved to /nfs/home/svu/e1498138/localgit/FEWNEW/work/search/greedy_timeonly_results/seed02.pkl
+======== Finished seed 2 at Mon Apr 20 06:41:58 PM +08 2026 ========
+======== Starting seed 3 at Mon Apr 20 06:41:58 PM +08 2026 ========
+[seed_idx=3] Starting
+[3] Initializing waveform generators...
+[3] Initializing loglike_timeonly...
+[3] SNR: 14.0813
+[3] Starting from LHS rank 3: [6.00340019 1.00161225 0.70695418 8.96006019 0.39866183]  logden=1.4594
+[3] cov_prop diag sigma: [0.00092971 0.00052197 0.00191881 0.01102793 0.00039019]
+[3] Evaluating start with timeonly loglike...
+[3] Starting logden (timeonly): 3.7042
+[3] Running 10000 iterations...
+[3]  iter=   500  max_logden=13.540105  accepts=7  elapsed=347s
+[3]  iter=  1000  max_logden=13.589634  accepts=8  elapsed=693s
+[3]  iter=  1500  max_logden=13.718460  accepts=9  elapsed=1040s
+[3]  iter=  2000  max_logden=13.722204  accepts=10  elapsed=1387s
+[3]  iter=  2500  max_logden=13.722204  accepts=10  elapsed=1733s
+[3]  iter=  3000  max_logden=13.722204  accepts=10  elapsed=2080s
+[3]  iter=  3500  max_logden=13.722204  accepts=10  elapsed=2426s
