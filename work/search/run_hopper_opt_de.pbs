@@ -2,7 +2,7 @@
 #PBS -P CFP03-CF-051
 #PBS -N intrinsic_snr32_opt_de
 #PBS -l walltime=12:00:00
-#PBS -l select=1:ngpu=1
+#PBS -l select=1:ngpus=1
 #PBS -o logs/hopper_opt_de.out
 #PBS -e logs/hopper_opt_de.err
 

@@ -1,0 +1,268 @@
+import numpy as np
+from modeselectoralthopper import ModeSelector
+from few.utils.constants import Gpc, MRSUN_SI, YRSID_SI
+
+class LogLikePure:
+    """
+    Log-likelihood class for gravitational wave parameter estimation.
+
+    Non-phase-maximized version: uses Re(<x|h>) instead of |<x|h>| for Xstat.
+    All other statistics are identical to LogLike.
+    """
+
+
+    def __init__(self, params,
+                 waveform_gen,
+                 gwf,
+                 M_init = 100,
+                 M_mode=5,
+                 N_traj = 5000,
+                 mode_threshold=0.01,
+                 verbose=False,
+                 waveform_gen_sep=None,
+                 noise_weighted=False,
+                 mode_select=None,
+                 ell=2,
+                 n_vals=None
+                 ):
+        """
+        Initialize the LogLikePure class.
+
+        Parameters and some notes:
+        - params: List of DATA/SIGNAL parameters
+                  [m1, m2, a, p0, e0, xI0, dist, qS, phiS, qK, phiK, Phi_phi0, Phi_theta0, Phi_r0]
+        - waveform_gen: Waveform generator object (separate_modes=True)
+        - gwf: GravWaveAnalysis object
+        - dt: Time step (uses gwf if None)
+        - T: Total time (uses gwf if None)
+        - M_init: Initial number of modes to consider for selection for modeselector class (default = 100)
+        - M_mode: Number of modes to generate at each point (default = 5)
+        - N_traj: Number of trajectory points for mode selection (default = 5000)
+        - mode_threshold: Threshold for mode selection (default = 0.01)
+        - verbose: Whether to print debug information during mode selection (default = False)
+        - waveform_gen_sep: Separate waveform generator function (if None, uses waveform_gen)
+        - noise_weighted: Whether to use noise-weighted power for mode selection
+        - mode_select: Pre-selected modes to use with [(l, m, n)] structure (if None, perform mode selection)
+        TODO: Save mode info as we move?
+        """
+        self.params = params
+        self.waveform_gen = waveform_gen
+        self.waveform_gen_sep = waveform_gen_sep if waveform_gen_sep is not None else waveform_gen
+        self.M_init = M_init
+        self.M_mode = M_mode
+        self.N_traj = N_traj
+        self.mode_threshold = mode_threshold
+        self.verbose = verbose
+        self.mode_select = mode_select
+
+        # Initialize based on GravWaveAnalysis object
+        self.gwf = gwf
+        self.dt = gwf.dt
+        self.T = gwf.T
+
+        # Get components from the waveform generator
+        self.traj = getattr(waveform_gen.waveform_generator, 'inspiral_generator', None)
+        self.amp = getattr(waveform_gen.waveform_generator, 'amplitude_generator', None)
+        self.interpolate_mode_sum = getattr(waveform_gen.waveform_generator, 'create_waveform', None)
+        self.ylm_gen = getattr(waveform_gen.waveform_generator, 'ylm_gen', None)
+
+        # Calc delta_T
+        self.delta_T = self.T * YRSID_SI / self.N_traj
+        if self.mode_select:
+            if self.verbose:
+                print(f"Using externally provided modes for mode selection: {self.mode_select}")
+            # Set selected_labels directly from mode_select
+            self.selected_labels = self.mode_select
+        if not self.mode_select:
+            if self.verbose:
+                print(f"Delta_T for mode selection: {self.delta_T} seconds")
+
+        # Generate data signal with data parameters
+        m1, m2, a, p0, e0, xI0, dist, qS, phiS, qK, phiK, Phi_phi0, Phi_theta0, Phi_r0 = params
+
+        # Generate w GenerateEMRIWaveform
+        self.signal = waveform_gen(m1, m2, a, p0, e0, xI0, dist,
+                                   qS, phiS, qK, phiK, Phi_phi0, Phi_theta0, Phi_r0,
+                                   T=self.T, dt=self.dt)
+
+        # Do mode selection once at initialization with data parameters
+        if not self.mode_select:
+            if self.verbose:
+                print("Generating modes at initialization...")
+
+            mode_selector = ModeSelector(self.params, self.traj, self.amp,
+                                        self.ylm_gen, self.delta_T, self.gwf,
+                                        verbose=self.verbose)
+            # Use n-indexed mode selection
+            self.selected_modes, self.selected_labels = mode_selector.select_modes(
+                ell=ell,
+                n_vals=n_vals,
+                M_sel=M_mode  # Can limit to top M_mode by SNR
+            )
+
+
+            # Flatten the nested structure for waveform generation
+            self.flattened_modes = []
+            for group in self.selected_labels:
+                self.flattened_modes.extend(group)
+
+            # Debug mode selection
+            if self.verbose:
+                print(f"Selected modes: {self.selected_labels}")
+                print(f"Number of selected modes: {len(self.selected_labels)}")
+                print(f"Flattened modes: {self.flattened_modes}")
+                print(f"Selected modes structure: {self.selected_modes}")
+
+    def _generate_selected_waveforms(self, params, selected_labels):
+        """
+        Generate waveforms for selected mode groups, summing each n-group.
+
+        For n-indexed selection:
+        - selected_labels is a list of groups: [group_n1, group_n2, ...]
+        - Each group contains modes with same n: [(l,m1,n), (l,m2,n), ...]
+        - We generate each group with waveform_gen (which sums automatically)
+
+        Returns: Array of shape (N_samples, N_groups) where each column is summed n-group
+        """
+        m1, m2, a, p0, e0, xI0, dist, qS, phiS, qK, phiK, Phi_phi0, Phi_theta0, Phi_r0 = params
+
+        # Generate each n-group summed
+        waveforms_per_group = []
+
+        for group in self.selected_labels:
+            # Generate this n-group (waveform_gen sums all modes in the group)
+            waveform_group = self.waveform_gen(
+                m1, m2, a, p0, e0, xI0, dist,
+                qS, phiS, qK, phiK,
+                Phi_phi0, Phi_theta0, Phi_r0,
+                dt=self.dt,
+                T=self.T,
+                mode_selection=group,  # Pass the group (list of modes with same n)
+                include_minus_mkn=False,
+            )
+            waveforms_per_group.append(waveform_group)
+
+        # Stack into array: shape (N_samples, N_groups)
+        waveforms_stacked = self.gwf.xp.stack(waveforms_per_group, axis=1)
+
+        return waveforms_stacked
+
+
+    def __call__(self, theta_template):
+        """
+        Evaluate non-phase-maximized log-likelihood for template parameters.
+
+        Uses Re(<x|h>) instead of |<x|h>| for Xstat — sensitive to phase alignment.
+
+        Parameters:
+        theta_template: Template parameters (m1, m2, a, p0, e0, xI0, dist, qS, phiS, qK, phiK, Phi_phi0, Phi_theta0, Phi_r0)
+
+        Returns:
+        float: Log-likelihood value
+        """
+
+        # Use the pre-selected modes from initialization
+        if self.mode_select:
+            if self.verbose:
+                print(f"Using externally provided modes: {self.mode_select}")
+            waveform_combined = self._generate_selected_waveforms(theta_template, self.mode_select)
+        else:
+            if self.verbose:
+                print(f"Evaluating log-likelihood at parameters: {theta_template}")
+                print(f"Using selected modes: {self.selected_labels}")
+
+            waveform_combined = self._generate_selected_waveforms(theta_template, self.flattened_modes)
+
+        m1_t, m2_t, a_t, p0_t, e0_t, xI0_t, dist_t, qS_t, phiS_t, qK_t, phiK_t, Phi_phi0_t, Phi_theta0_t, Phi_r0_t = theta_template
+
+        # Generate h_temp
+        h_temp = self.waveform_gen(
+            m1_t, m2_t, a_t, p0_t, e0_t, xI0_t, dist_t,
+            qS_t, phiS_t, qK_t, phiK_t,
+            Phi_phi0_t, Phi_theta0_t, Phi_r0_t,
+            dt=self.dt,
+            T=self.T
+        )
+
+        # Calculate total optimal SNR from h_temp
+        rho_tot = self.gwf.rhostat(h_temp)
+
+        # Split the combined waveform into individual mode waveforms
+        waveform_per_mode = []
+        for i in range(waveform_combined.shape[1]):  # N modes
+            waveform_per_mode.append(waveform_combined[:, i])
+
+        # Calculate rho_m for each mode
+        rho_m = self.gwf.xp.empty(len(waveform_per_mode), dtype=self.gwf.xp.float64)
+        for idx, wf in enumerate(waveform_per_mode):
+            rho_m[idx] = self.gwf.rhostat(wf)
+
+        # Find actual dominant mode (always calculate, regardless of verbose)
+        max_rho_idx = rho_m.argmax()
+
+        # Debug inner product calculations
+        if self.verbose:
+            print(f"Waveform amplitudes:")
+            for i, wf in enumerate(waveform_per_mode):
+                wf_max = self.gwf.xp.max(self.gwf.xp.abs(wf))
+                inner_prod = self.gwf.inner(wf, wf)
+                print(f"  Mode {i}: max(|h|) = {wf_max}, <hf|hf> = {inner_prod}, rho = {rho_m[i]}")
+
+            # Debug rho values
+            print(f"Individual rho values: {rho_m}")
+            print(f"Max rho: {max(rho_m)}, Min rho: {min(rho_m)}")
+            print(f"Dominant mode rho (first): {rho_m[0]}")
+
+            # Find actual dominant mode
+            max_rho_idx = rho_m.argmax()
+            print(f"Actually dominant mode index: {max_rho_idx}")
+            print(f"Actually dominant mode rho: {rho_m[max_rho_idx]}")
+            print(f"Mode 0 rho: {rho_m[0]}")
+
+        # Calculate Xm for each mode (same as LogLike: real part of inner product)
+        X_modes = self.gwf.Xmstat(self.signal, waveform_per_mode, rho_m)
+
+        # NON-PHASE-MAXIMIZED: use Re(<x|h>) / rho instead of |<x|h>| / rho
+        xf = self.gwf.freq_wave(self.signal)
+        hf = self.gwf.freq_wave(h_temp)
+        calc_inner_real = self.gwf.inner(xf, hf, return_complex=False)
+        calc_SNR = self.gwf.xp.sqrt(self.gwf.inner(hf, hf))
+        X_scalar = calc_inner_real / calc_SNR
+
+        # Calculate optimal SNR of actually most dominant mode (not just mode 0)
+        rho_dom_M = rho_m[max_rho_idx]
+
+        if self.verbose:
+            print(f"Using actually dominant mode {max_rho_idx} for rho_dom_M: {rho_dom_M}")
+
+        # Calculate beta parameter
+        beta = self.gwf.calc_beta(rho_dom_M, rho_tot)
+
+        if self.verbose:
+            print('beta', beta)
+            print(f"rho_dom_M: {rho_dom_M}, rho_tot: {rho_tot}, beta: {beta}")
+            print(f"X_scalar (non-phase-max): {X_scalar}")
+
+        # Calculate chi sq
+        chi_sq = self.gwf.chi_sq(X_modes, rho_m)
+        if self.verbose:
+            print(f"chi_sq: {chi_sq}")
+
+        # Calculate f statistic
+        f_exp = -0.5 * beta * chi_sq
+        if self.verbose:
+            print(f"f_exp: {f_exp}")
+
+        f_stat = X_scalar * self.gwf.xp.exp(f_exp)
+
+        # Convert to float, handling both GPU and CPU backends
+        f_stat_real = self.gwf.xp.real(f_stat)
+        if hasattr(f_stat_real, 'get'):  # CuPy array
+            logl_res = float(f_stat_real.get())
+        else:  # NumPy array
+            logl_res = float(f_stat_real)
+
+        if self.verbose:
+            print(f"Log-likelihood (non-phase-max): {logl_res}")
+
+        return logl_res

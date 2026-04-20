@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "/nfs/home/svu/e1498138/emri_search/work/search/intrinsic_ffunc_3mth_faceon_opt_de.py", line 24, in <module>
+    from smt.sampling_methods import LHS
+ModuleNotFoundError: No module named 'smt'
+Traceback (most recent call last):
+  File "/nfs/home/svu/e1498138/emri_search/work/search/intrinsic_ffunc_3mth_faceon_opt_de.py", line 7, in <module>
+    import few
+ModuleNotFoundError: No module named 'few'
+Traceback (most recent call last):
+  File "/nfs/home/svu/e1498138/emri_search/work/search/intrinsic_ffunc_3mth_faceon_opt_de.py", line 32, in <module>
+    os.chdir('/nfs/home/svu/e1498138/localgit/FEWNEW/work/')
+FileNotFoundError: [Errno 2] No such file or directory: '/nfs/home/svu/e1498138/localgit/FEWNEW/work/'

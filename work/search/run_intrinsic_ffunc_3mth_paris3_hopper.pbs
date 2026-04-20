@@ -1,0 +1,19 @@
+#!/bin/bash                                                                                                                                                                                                          
+#PBS -P CFP03-CF-051
+#PBS -o logs/intrinsic_ffunc_3mth_snr32_paris3_1yr_hopper.out                                                                                                                                                               
+#PBS -e logs/intrinsic_ffunc_3mth_snr32_paris3_1yr_hopper.err
+#PBS -N paris3_1yr     
+#PBS -l select=1:ngpus=1
+#PBS -l walltime=48:00:00
+                                                                                                                                                                                                                    
+cd $PBS_O_WORKDIR;
+                                                                                                                                                                                                                    
+mkdir -p logs   
+
+source /nfs/home/svu/e1498138/emri_search_uv/.venv/bin/activate
+
+export CUDA_VISIBLE_DEVICES=0                                                                                                                                                                                        
+
+python -u intrinsic_ffunc_3mth_faceon_paris3_hopper.py                                                                                                                                                                      
+                
+echo "Job completed at $(date)"

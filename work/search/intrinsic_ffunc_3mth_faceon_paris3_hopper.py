@@ -29,11 +29,11 @@ import sys
 
 # Changing directory to FEWNEW/work
 # to import stuffs
-os.chdir('/nfs/home/svu/e1498138/localgit/FEWNEW/work/')
-sys.path.insert(0, '/nfs/home/svu/e1498138/localgit/FEWNEW/work/')
+os.chdir('/home/svu/e1498138/emri_search/work/')
+sys.path.insert(0, '/home/svu/e1498138/emri_search/work/')
 
 import GWfuncs
-import loglike_pure   # NON-timemax, NON-phasemax
+import loglike_pure_hopper as loglike_pure   # NON-timemax, NON-phasemax
 import parismc
 import cupy as cp
 
@@ -235,7 +235,7 @@ print('Done initializing sampler.')
 print('Evaluating log_density on ellipse LHS points...')
 import pickle
 
-savepath = f'/nfs/home/svu/e1498138/localgit/FEWNEW/work/search/precomputed_lhs_paris3_1yr_1e+05.pkl'
+savepath = f'/home/svu/e1498138/emri_search/work/search/precomputed_lhs_paris3_1yr_1e+05.pkl'
 
 with open(savepath, 'rb') as f:
     data = pickle.load(f)
