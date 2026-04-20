@@ -298,6 +298,23 @@ class GravWaveAnalysis:
 
         return X_modes
 
+    def Xmstat_phasemax(self, x, hm_arr, rho_modes):
+        """
+        Calculate X_m statistic with phase maximization for each mode.
+
+        Mirrors Xmstat_timemax but uses |<x|hm>| instead of max_τ |<x|hm(τ)>|.
+        Each mode is independently phase-maximized.
+        """
+        xf = self.freq_wave(x)
+
+        X_modes = self.xp.empty(len(hm_arr), dtype=self.xp.float64)
+        for idx, hm in enumerate(hm_arr):
+            hmf = self.freq_wave(hm)
+            inner_product = self.inner(xf, hmf, return_complex=True)
+            X_modes[idx] = self.xp.abs(inner_product) / rho_modes[idx]
+
+        return X_modes
+
     def Xmstat_timemax(self, x, hm_arr, rho_modes):
         """
         Calculate X_m statistic with time maximization for each mode
@@ -324,6 +341,20 @@ class GravWaveAnalysis:
 
             # X_m = <x|hm>_max / rho_m
             X_modes[idx] = inner_product / rho_modes[idx]
+
+        return X_modes
+
+    def Xmstat_timeonly(self, x, hm_arr, rho_modes):
+        """
+        Calculate X_m statistic with time-only maximization for each mode.
+
+        Mirrors Xmstat_timemax but uses inner_timeonly (max_τ Re(...)) instead of
+        inner_timemax (max_τ |...|). Phase is NOT maximized per mode.
+        """
+        X_modes = self.xp.empty(len(hm_arr), dtype=self.xp.float64)
+
+        for idx, hm in enumerate(hm_arr):
+            X_modes[idx] = self.inner_timeonly(x, hm) / rho_modes[idx]
 
         return X_modes
 
@@ -400,7 +431,35 @@ class GravWaveAnalysis:
 
         # Return maximum correlation
         return self.xp.max(self.xp.abs(S))
-    
+
+    def inner_timeonly(self, h1, h2):
+        """
+        max_τ Re(<h1|h2(τ)>) — time-shift maximized, phase NOT maximized.
+
+        Same as inner_timemax but uses Re() instead of abs() before taking the max.
+        """
+        H1 = self.xp.fft.fft(h1) * self.dt
+        H2 = self.xp.fft.fft(h2) * self.dt
+
+        Sn = self.xp.asarray(get_sensitivity(self.xp.abs(self.fft_freqs[1:]), sens_fn=CornishLISASens, return_type="PSD"))
+
+        Y = self.xp.zeros_like(H1)
+        Y[1:] = H1[1:] * self.xp.conj(H2[1:]) / (0.5 * Sn)
+
+        S = self.xp.fft.ifft(Y) / self.dt
+
+        return self.xp.max(self.xp.real(S))  # Re() not abs()
+
+    def Xstat_timeonly(self, x, h):
+        """
+        Time-maximized (no phasemax) detection statistic.
+
+        Returns max_τ Re(<x|h(τ)>) / sqrt(<h|h>)
+        """
+        calc_inner = self.inner_timeonly(x, h)
+        calc_SNR = self.xp.sqrt(self.inner(self.freq_wave(h), self.freq_wave(h)))
+        return calc_inner / calc_SNR
+
     def calc_beta(self, rho_dom_M, rho_tot):
         """
         Calculate beta parameter for F-statistic.

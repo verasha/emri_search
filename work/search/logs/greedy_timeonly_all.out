@@ -1,0 +1,86 @@
+======== Starting seed 0 at Mon Apr 20 12:50:31 PM +08 2026 ========
+[seed_idx=0] Starting
+[0] Initializing waveform generators...
+[0] Initializing loglike_timeonly...
+[0] SNR: 14.0813
+[0] Starting from LHS rank 0: [6.01448138 1.00559399 0.73052065 8.82542789 0.39503829]  logden=2.6745
+[0] cov_prop diag sigma: [0.00092971 0.00052197 0.00191881 0.01102793 0.00039019]
+[0] Evaluating start with timeonly loglike...
+[0] Starting logden (timeonly): 3.9411
+[0] Running 10000 iterations...
+[0]  iter=   500  max_logden=8.058545  accepts=11  elapsed=347s
+[0]  iter=  1000  max_logden=8.321058  accepts=12  elapsed=694s
+[0]  iter=  1500  max_logden=8.321058  accepts=12  elapsed=1041s
+[0]  iter=  2000  max_logden=8.321058  accepts=12  elapsed=1387s
+[0]  iter=  2500  max_logden=8.481034  accepts=15  elapsed=1734s
+[0]  iter=  3000  max_logden=8.633151  accepts=16  elapsed=2081s
+[0]  iter=  3500  max_logden=8.708129  accepts=18  elapsed=2428s
+[0]  iter=  4000  max_logden=8.741463  accepts=19  elapsed=2775s
+[0]  iter=  4500  max_logden=8.802156  accepts=20  elapsed=3122s
+[0]  iter=  5000  max_logden=8.802156  accepts=20  elapsed=3469s
+[0]  iter=  5500  max_logden=8.802156  accepts=20  elapsed=3815s
+[0]  iter=  6000  max_logden=8.802156  accepts=20  elapsed=4162s
+[0]  iter=  6500  max_logden=8.802156  accepts=20  elapsed=4509s
+[0]  iter=  7000  max_logden=8.838491  accepts=21  elapsed=4856s
+[0]  iter=  7500  max_logden=8.838491  accepts=21  elapsed=5203s
+[0]  iter=  8000  max_logden=8.838491  accepts=21  elapsed=5550s
+[0]  iter=  8500  max_logden=8.838491  accepts=21  elapsed=5896s
+[0]  iter=  9000  max_logden=8.838491  accepts=21  elapsed=6243s
+[0]  iter=  9500  max_logden=8.838491  accepts=21  elapsed=6590s
+[0]  iter= 10000  max_logden=8.838491  accepts=21  elapsed=6937s
+[0] Done. 10000 iters in 6937s
+[0] Final max logden: 8.838491
+[0] Final p_max: [6.01106286 1.0032367  0.72406219 8.86154496 0.3967807 ]
+[0] Saved to /nfs/home/svu/e1498138/localgit/FEWNEW/work/search/greedy_timeonly_results/seed00.pkl
+======== Finished seed 0 at Mon Apr 20 02:48:02 PM +08 2026 ========
+======== Starting seed 1 at Mon Apr 20 02:48:02 PM +08 2026 ========
+[seed_idx=1] Starting
+[1] Initializing waveform generators...
+[1] Initializing loglike_timeonly...
+[1] SNR: 14.0813
+[1] Starting from LHS rank 1: [6.00927966 1.00377633 0.71964106 8.88847421 0.3967391 ]  logden=1.5018
+[1] cov_prop diag sigma: [0.00092971 0.00052197 0.00191881 0.01102793 0.00039019]
+[1] Evaluating start with timeonly loglike...
+[1] Starting logden (timeonly): 3.3703
+[1] Running 10000 iterations...
+[1]  iter=   500  max_logden=8.430899  accepts=13  elapsed=347s
+[1]  iter=  1000  max_logden=8.844947  accepts=17  elapsed=693s
+[1]  iter=  1500  max_logden=8.844947  accepts=17  elapsed=1040s
+[1]  iter=  2000  max_logden=8.844947  accepts=17  elapsed=1386s
+[1]  iter=  2500  max_logden=8.844947  accepts=17  elapsed=1732s
+[1]  iter=  3000  max_logden=8.844947  accepts=17  elapsed=2077s
+[1]  iter=  3500  max_logden=8.844947  accepts=17  elapsed=2422s
+[1]  iter=  4000  max_logden=8.844947  accepts=17  elapsed=2768s
+[1]  iter=  4500  max_logden=8.844947  accepts=17  elapsed=3114s
+[1]  iter=  5000  max_logden=8.867835  accepts=18  elapsed=3459s
+[1]  iter=  5500  max_logden=8.867835  accepts=18  elapsed=3805s
+[1]  iter=  6000  max_logden=8.867835  accepts=18  elapsed=4151s
+[1]  iter=  6500  max_logden=8.867835  accepts=18  elapsed=4497s
+[1]  iter=  7000  max_logden=8.867835  accepts=18  elapsed=4842s
+[1]  iter=  7500  max_logden=8.867835  accepts=18  elapsed=5188s
+[1]  iter=  8000  max_logden=8.867835  accepts=18  elapsed=5534s
+[1]  iter=  8500  max_logden=8.867835  accepts=18  elapsed=5880s
+[1]  iter=  9000  max_logden=8.867835  accepts=18  elapsed=6226s
+[1]  iter=  9500  max_logden=8.867835  accepts=18  elapsed=6572s
+[1]  iter= 10000  max_logden=8.867835  accepts=18  elapsed=6917s
+[1] Done. 10000 iters in 6917s
+[1] Final max logden: 8.867835
+[1] Final p_max: [6.01137716 1.00336921 0.72468811 8.85906967 0.39674246]
+[1] Saved to /nfs/home/svu/e1498138/localgit/FEWNEW/work/search/greedy_timeonly_results/seed01.pkl
+======== Finished seed 1 at Mon Apr 20 04:45:01 PM +08 2026 ========
+======== Starting seed 2 at Mon Apr 20 04:45:01 PM +08 2026 ========
+[seed_idx=2] Starting
+[2] Initializing waveform generators...
+[2] Initializing loglike_timeonly...
+[2] SNR: 14.0813
+[2] Starting from LHS rank 2: [6.01797392 1.00670711 0.73802486 8.78235968 0.39404161]  logden=1.4789
+[2] cov_prop diag sigma: [0.00092971 0.00052197 0.00191881 0.01102793 0.00039019]
+[2] Evaluating start with timeonly loglike...
+[2] Starting logden (timeonly): 2.5762
+[2] Running 10000 iterations...
+[2]  iter=   500  max_logden=8.627877  accepts=11  elapsed=346s
+[2]  iter=  1000  max_logden=8.627877  accepts=11  elapsed=692s
+[2]  iter=  1500  max_logden=8.627877  accepts=11  elapsed=1038s
+[2]  iter=  2000  max_logden=8.627877  accepts=11  elapsed=1393s
+[2]  iter=  2500  max_logden=8.627877  accepts=11  elapsed=1745s
+[2]  iter=  3000  max_logden=8.627877  accepts=11  elapsed=2090s

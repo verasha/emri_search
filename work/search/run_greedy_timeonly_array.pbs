@@ -1,0 +1,22 @@
+#!/bin/bash
+#PBS -q auto_free
+#PBS -N greedy_to
+#PBS -l walltime=48:00:00
+#PBS -l select=1:ncpus=4:mpiprocs=1:ompthreads=4:ngpus=1:mem=32gb
+#PBS -o logs/greedy_timeonly_all.out
+#PBS -e logs/greedy_timeonly_all.err
+
+cd $PBS_O_WORKDIR;
+mkdir -p logs greedy_timeonly_results
+
+source /scratch/e1498138/anaconda3/bin/activate fewsm
+
+export CUDA_VISIBLE_DEVICES=0
+
+for SEED_IDX in $(seq 0 9); do
+    echo "======== Starting seed $SEED_IDX at $(date) ========"
+    python -u greedy_timeonly_parallel.py --seed-idx $SEED_IDX
+    echo "======== Finished seed $SEED_IDX at $(date) ========"
+done
+
+echo "All seeds done at $(date)"

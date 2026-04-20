@@ -1,0 +1,18 @@
+#!/bin/bash
+#PBS -q auto_free
+#PBS -N paris3_res
+#PBS -l walltime=24:00:00
+#PBS -l select=1:ncpus=4:mpiprocs=1:ompthreads=4:ngpus=1:mem=32gb
+#PBS -o logs/resume_paris3_1yr.out
+#PBS -e logs/resume_paris3_1yr.err
+
+cd $PBS_O_WORKDIR;
+mkdir -p logs
+
+source /scratch/e1498138/anaconda3/bin/activate fewsm
+
+export CUDA_VISIBLE_DEVICES=0
+
+python -u resume_intrinsic_ffunc_3mth_faceon_paris3.py
+
+echo "Job completed at $(date)"
