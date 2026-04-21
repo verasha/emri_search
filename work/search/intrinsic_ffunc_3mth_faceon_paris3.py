@@ -215,7 +215,7 @@ print('Done setting up ParisMC sampler.')
 print('Setting up initial covariance matrix...')
 
 ndim   = 5
-n_seed = 75
+n_seed = 10
 init_cov      = np.eye(ndim) * 1e-10
 init_cov_list = [init_cov] * n_seed
 
@@ -249,12 +249,12 @@ def callback(sampler, i):
 
 print('Running paris3 sampling...')
 sampler.run_sampling(
-    num_iterations=int(1e5),
-    savepath='./intrinsic_ffunc_3mth_snr32_paris3_1yr_hopper',
+    num_iterations=int(4000),
+    savepath='./intrinsic_ffunc_3mth_snr32_paris3_1yr_new2',
     print_iter=100,
     callback=callback,
     external_lhs_points=external_lhs_points,
-    external_lhs_log_densities=external_lhs_log_densities,
-    stop_max_ld_stable_iters=int(1e4)
+    external_lhs_log_densities=external_lhs_log_densities
+    # stop_max_ld_stable_iters=int(1e4)
 )
 print('Done.')
