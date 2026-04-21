@@ -274,6 +274,7 @@ class ModeSelector:
         for n in n_vals:
             # find all modes with given l and n
             mask = (self.amp.l_arr == ell) & (self.amp.n_arr == n)
+            # print(type(mask), type(self.amp.l_arr), type(self.amp.n_arr))
             mode_indices = np.where(mask)[0]
 
             # convert to cpu if needed

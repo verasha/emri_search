@@ -254,7 +254,6 @@ sampler.run_sampling(
     print_iter=100,
     callback=callback,
     external_lhs_points=external_lhs_points,
-    external_lhs_log_densities=external_lhs_log_densities,
-    stop_max_ld_stable_iters=int(1e4)
+    external_lhs_log_densities=external_lhs_log_densities
 )
 print('Done.')

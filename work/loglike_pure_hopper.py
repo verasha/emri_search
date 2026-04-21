@@ -140,7 +140,7 @@ class LogLikePure:
                 mode_selection=group,  # Pass the group (list of modes with same n)
                 include_minus_mkn=False,
             )
-            waveforms_per_group.append(waveform_group)
+            waveforms_per_group.append(self.gwf.xp.asarray(waveform_group))
 
         # Stack into array: shape (N_samples, N_groups)
         waveforms_stacked = self.gwf.xp.stack(waveforms_per_group, axis=1)

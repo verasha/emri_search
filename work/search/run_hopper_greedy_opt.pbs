@@ -1,0 +1,24 @@
+#!/bin/bash
+#PBS -P CFP03-CF-051
+#PBS -N greedy_opt
+#PBS -l walltime=24:00:00
+#PBS -l select=1:ngpus=1
+#PBS -o logs/greedy_pure_opt.out
+#PBS -e logs/greedy_pure_opt.err
+
+# Change to the working directory
+cd $PBS_O_WORKDIR;
+
+# Create logs directory if it doesn't exist
+mkdir -p logs
+
+# Activate conda environment
+source /home/svu/e1498138/emri_search_uv/.venv/bin/activate
+
+# Set CUDA environment variables
+export CUDA_VISIBLE_DEVICES=0
+
+# Run the Python script
+python -u greedy_pure_opt.py
+
+echo "Job completed at $(date)"

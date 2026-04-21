@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/nfs/home/svu/e1498138/emri_search/work/search/greedy_pure_opt.py", line 83, in <module>
+    with open(seed_path, 'rb') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/nfs/home/svu/e1498138/emri_search/work/search/greedy_timeonly_results/seed08.pkl'

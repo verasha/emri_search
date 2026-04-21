@@ -29,3 +29,54 @@ Traceback (most recent call last):
   File "/nfs/home/svu/e1498138/emri_search/work/search/intrinsic_ffunc_3mth_faceon_paris3_hopper.py", line 240, in <module>
     with open(savepath, 'rb') as f:
 FileNotFoundError: [Errno 2] No such file or directory: '/home/svu/e1498138/emri_search/work/search/precomputed_lhs_paris3_1yr_1e+05.pkl'
+Sampling:   0%|          | 0/99999 [00:00<?, ?it/s]Detected problematic log_density (NaN or Inf) 1 times. Check your implementation.
+  Normalized point: [0.49284621 0.51866462 0.48666736 0.51276267 0.48316073]
+  Unnormalized point: [6.01448096 1.00559458 0.73052001 8.82541481 0.39504079]
+/nfs/home/svu/e1498138/parismc/parismc/sampler.py:1213: RuntimeWarning: divide by zero encountered in log
+  logZ = c_term - np.log(Nsum) + np.log(wsum)
+/nfs/home/svu/e1498138/parismc/parismc/sampler.py:1213: RuntimeWarning: invalid value encountered in scalar add
+  logZ = c_term - np.log(Nsum) + np.log(wsum)
+samples: 0.0, evals: 75, n_proc: 75, logZ: NULL, dlogZ: NULL, max_ld: -inf:   0%|          | 0/99999 [08:33<?, ?it/s]samples: 0.0, evals: 75, n_proc: 75, logZ: NULL, dlogZ: NULL, max_ld: -inf:   0%|          | 100/99999 [08:33<142:27:34,  5.13s/it]Unexpected error: local variable 'should_stop' referenced before assignment
+Traceback (most recent call last):
+  File "/nfs/home/svu/e1498138/emri_search/work/search/intrinsic_ffunc_3mth_faceon_paris3_hopper.py", line 251, in <module>
+    sampler.run_sampling(
+  File "/nfs/home/svu/e1498138/parismc/parismc/sampler.py", line 1406, in run_sampling
+    if self._report_progress(i, stop_dlogZ, stop_max_ld_stable_iters, pbar):
+  File "/nfs/home/svu/e1498138/parismc/parismc/sampler.py", line 1294, in _report_progress
+    if should_stop:
+UnboundLocalError: local variable 'should_stop' referenced before assignment
+samples: 0.0, evals: 75, n_proc: 75, logZ: NULL, dlogZ: NULL, max_ld: -inf:   0%|          | 100/99999 [08:35<143:00:53,  5.15s/it]
+Sampling:   0%|          | 0/99999 [00:00<?, ?it/s]Detected problematic log_density (NaN or Inf) 1 times. Check your implementation.
+  Normalized point: [0.49284621 0.51866462 0.48666736 0.51276267 0.48316073]
+  Unnormalized point: [6.01448096 1.00559458 0.73052001 8.82541481 0.39504079]
+/nfs/home/svu/e1498138/parismc/parismc/sampler.py:1213: RuntimeWarning: divide by zero encountered in log
+  logZ = c_term - np.log(Nsum) + np.log(wsum)
+/nfs/home/svu/e1498138/parismc/parismc/sampler.py:1213: RuntimeWarning: invalid value encountered in scalar add
+  logZ = c_term - np.log(Nsum) + np.log(wsum)
+samples: 0.0, evals: 75, n_proc: 75, logZ: NULL, dlogZ: NULL, max_ld: -inf:   0%|          | 0/99999 [08:44<?, ?it/s]samples: 0.0, evals: 75, n_proc: 75, logZ: NULL, dlogZ: NULL, max_ld: -inf:   0%|          | 100/99999 [08:44<145:30:32,  5.24s/it]Unexpected error: local variable 'should_stop' referenced before assignment
+Traceback (most recent call last):
+  File "/nfs/home/svu/e1498138/emri_search/work/search/intrinsic_ffunc_3mth_faceon_paris3_hopper.py", line 251, in <module>
+    sampler.run_sampling(
+  File "/nfs/home/svu/e1498138/parismc/parismc/sampler.py", line 1406, in run_sampling
+    if self._report_progress(i, stop_dlogZ, stop_max_ld_stable_iters, pbar):
+  File "/nfs/home/svu/e1498138/parismc/parismc/sampler.py", line 1294, in _report_progress
+    if should_stop:
+UnboundLocalError: local variable 'should_stop' referenced before assignment
+samples: 0.0, evals: 75, n_proc: 75, logZ: NULL, dlogZ: NULL, max_ld: -inf:   0%|          | 100/99999 [08:46<146:07:28,  5.27s/it]
+Sampling:   0%|          | 0/99999 [00:00<?, ?it/s]Detected problematic log_density (NaN or Inf) 1 times. Check your implementation.
+  Normalized point: [0.49284621 0.51866462 0.48666736 0.51276267 0.48316073]
+  Unnormalized point: [6.01448096 1.00559458 0.73052001 8.82541481 0.39504079]
+/nfs/home/svu/e1498138/parismc/parismc/sampler.py:1213: RuntimeWarning: divide by zero encountered in log
+  logZ = c_term - np.log(Nsum) + np.log(wsum)
+/nfs/home/svu/e1498138/parismc/parismc/sampler.py:1213: RuntimeWarning: invalid value encountered in scalar add
+  logZ = c_term - np.log(Nsum) + np.log(wsum)
+samples: 0.0, evals: 75, n_proc: 75, logZ: NULL, dlogZ: NULL, max_ld: -inf:   0%|          | 0/99999 [08:27<?, ?it/s]samples: 0.0, evals: 75, n_proc: 75, logZ: NULL, dlogZ: NULL, max_ld: -inf:   0%|          | 100/99999 [08:27<140:53:14,  5.08s/it]Unexpected error: local variable 'should_stop' referenced before assignment
+Traceback (most recent call last):
+  File "/nfs/home/svu/e1498138/emri_search/work/search/intrinsic_ffunc_3mth_faceon_paris3_hopper.py", line 251, in <module>
+    sampler.run_sampling(
+  File "/nfs/home/svu/e1498138/parismc/parismc/sampler.py", line 1407, in run_sampling
+    if self._report_progress(i, stop_dlogZ, stop_max_ld_stable_iters, pbar):
+  File "/nfs/home/svu/e1498138/parismc/parismc/sampler.py", line 1295, in _report_progress
+    if should_stop:
+UnboundLocalError: local variable 'should_stop' referenced before assignment
+samples: 0.0, evals: 75, n_proc: 75, logZ: NULL, dlogZ: NULL, max_ld: -inf:   0%|          | 100/99999 [16:57<282:20:05, 10.17s/it]

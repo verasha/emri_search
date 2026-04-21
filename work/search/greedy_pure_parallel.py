@@ -29,11 +29,11 @@ print(f"[seed_idx={SEED_IDX}] Starting")
 import few
 from few.waveform import GenerateEMRIWaveform, FastKerrEccentricEquatorialFlux
 
-os.chdir('/nfs/home/svu/e1498138/localgit/FEWNEW/work/')
-sys.path.insert(0, '/nfs/home/svu/e1498138/localgit/FEWNEW/work/')
+os.chdir('/nfs/home/svu/e1498138/emri_search/work/')
+sys.path.insert(0, '/nfs/home/svu/e1498138/emri_search/work/')
 
 import GWfuncs
-import loglike_pure
+import loglike_pure_hopper as loglike_pure
 
 cfg_set = few.get_config_setter(reset=True)
 cfg_set.set_log_level("warning")
@@ -80,7 +80,7 @@ loglike_obj = loglike_pure.LogLikePure(
 print(f"[{SEED_IDX}] SNR: {float(gwf.rhostat(loglike_obj.signal)):.4f}")
 
 # ── Load precomputed LHS ──────────────────────────────────────────────────────
-pkl_path = '/nfs/home/svu/e1498138/localgit/FEWNEW/work/search/precomputed_lhs_paris3_1yr_1e+05.pkl'
+pkl_path = '/nfs/home/svu/e1498138/emri_search/work/search/precomputed_lhs_paris3_1yr_1e+05.pkl'
 with open(pkl_path, 'rb') as f:
     lhs_data = pickle.load(f)
 
@@ -159,8 +159,8 @@ print(f"[{SEED_IDX}] Final max logden: {logden_max:.6f}")
 print(f"[{SEED_IDX}] Final p_max: {p_max}")
 
 # ── Save ──────────────────────────────────────────────────────────────────────
-os.makedirs('/nfs/home/svu/e1498138/localgit/FEWNEW/work/search/greedy_pure_results', exist_ok=True)
-savepath = f'/nfs/home/svu/e1498138/localgit/FEWNEW/work/search/greedy_pure_results/seed{SEED_IDX:02d}.pkl'
+os.makedirs('/nfs/home/svu/e1498138/emri_search/work/search/greedy_pure_results', exist_ok=True)
+savepath = f'/nfs/home/svu/e1498138/emri_search/work/search/greedy_pure_results/seed{SEED_IDX:02d}.pkl'
 results = {
     'seed_idx':         SEED_IDX,
     'history_logden':   np.array(history_logden),
