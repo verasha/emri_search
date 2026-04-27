@@ -641,3 +641,4 @@ Running greedy hill-climb for 10000 iterations...
   iter=  4000  max_logden=20.257544  accepts=5  p_max=[6.00000419 1.0000011  0.70000898 8.99994726 0.39999883]  elapsed=2813s
   iter=  4100  max_logden=20.257544  accepts=5  p_max=[6.00000419 1.0000011  0.70000898 8.99994726 0.39999883]  elapsed=2883s
   iter=  4200  max_logden=20.257544  accepts=5  p_max=[6.00000419 1.0000011  0.70000898 8.99994726 0.39999883]  elapsed=2954s
+  iter=  4300  max_logden=20.257544  accepts=5  p_max=[6.00000419 1.0000011  0.70000898 8.99994726 0.39999883]  elapsed=3024s
