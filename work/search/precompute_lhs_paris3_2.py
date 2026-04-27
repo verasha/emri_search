@@ -142,7 +142,7 @@ def inverse_prior_transform(params):
 
 # ── Generate LHS in Cholesky space, filter by sphere ─────────────────────────
 ndim = 5
-N_LHS = int(5e5)
+N_LHS = int(1e5)
 _L = np.linalg.cholesky(cov_posterior)
 
 print(f'Generating {N_LHS} LHS points in Cholesky space...')

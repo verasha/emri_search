@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/nfs/home/svu/e1498138/localgit/FEWNEW/work/search/greedy_pure_opt.py", line 16, in <module>
+    os.chdir('/nfs/home/svu/e1498138/emri_search/work/')
+FileNotFoundError: [Errno 2] No such file or directory: '/nfs/home/svu/e1498138/emri_search/work/'

@@ -55,3 +55,192 @@ Max log_density: 2.674547
 Mean log_density (finite): 0.009883
 Saved to ./precomputed_lhs_paris3_1yr_1e+05.pkl
 Job completed at Fri Apr 17 02:50:21 PM +08 2026
+Using dt = 10 seconds, T = 1.0 years
+Creating GenerateEMRIWaveform class...
+Done initializing waveform generator.
+Done initializing loglike class.
+SNR: 14.0812757390131
+Loading paris2 sampler...
+stage 2 maxld: 590.5817
+stage 2 maxld point: [6.01487994 1.00500901 0.73205648 8.81696887 0.39543265]
+stage 2 posterior 1-sigma (diag): [0.00929708 0.00521965 0.01918811 0.11027935 0.00390186]
+Ellipse prior (3σ) bounds:
+  logm1: [5.98699, 6.04277]  (mu=6.01488)
+  logm2: [0.98935, 1.02067]  (mu=1.00501)
+  a: [0.67449, 0.78962]  (mu=0.73206)
+  p0: [8.48613, 9.14781]  (mu=8.81697)
+  e0: [0.38373, 0.40714]  (mu=0.39543)
+Generating 500000 LHS points in Cholesky space...
+LHS points inside ellipse: 82365 / 500000 (16.5%)
+Evaluating log_density on 82365 points...
+  [0/82365]  elapsed=0s  rate=0.0/s  ETA=0s
+  [500/82365]  elapsed=246s  rate=2.0/s  ETA=40351s
+  [1000/82365]  elapsed=493s  rate=2.0/s  ETA=40127s
+  [1500/82365]  elapsed=740s  rate=2.0/s  ETA=39874s
+  [2000/82365]  elapsed=986s  rate=2.0/s  ETA=39632s
+  [2500/82365]  elapsed=1232s  rate=2.0/s  ETA=39372s
+  [3000/82365]  elapsed=1479s  rate=2.0/s  ETA=39118s
+  [3500/82365]  elapsed=1725s  rate=2.0/s  ETA=38864s
+  [4000/82365]  elapsed=1970s  rate=2.0/s  ETA=38604s
+  [4500/82365]  elapsed=2216s  rate=2.0/s  ETA=38350s
+  [5000/82365]  elapsed=2462s  rate=2.0/s  ETA=38100s
+  [5500/82365]  elapsed=2708s  rate=2.0/s  ETA=37848s
+  [6000/82365]  elapsed=2954s  rate=2.0/s  ETA=37598s
+  [6500/82365]  elapsed=3200s  rate=2.0/s  ETA=37349s
+  [7000/82365]  elapsed=3446s  rate=2.0/s  ETA=37099s
+  [7500/82365]  elapsed=3692s  rate=2.0/s  ETA=36852s
+  [8000/82365]  elapsed=3938s  rate=2.0/s  ETA=36604s
+  [8500/82365]  elapsed=4184s  rate=2.0/s  ETA=36355s
+  [9000/82365]  elapsed=4429s  rate=2.0/s  ETA=36108s
+  [9500/82365]  elapsed=4675s  rate=2.0/s  ETA=35860s
+  [10000/82365]  elapsed=4921s  rate=2.0/s  ETA=35613s
+  [10500/82365]  elapsed=5167s  rate=2.0/s  ETA=35366s
+  [11000/82365]  elapsed=5413s  rate=2.0/s  ETA=35119s
+  [11500/82365]  elapsed=5659s  rate=2.0/s  ETA=34872s
+  [12000/82365]  elapsed=5905s  rate=2.0/s  ETA=34625s
+  [12500/82365]  elapsed=6151s  rate=2.0/s  ETA=34378s
+  [13000/82365]  elapsed=6397s  rate=2.0/s  ETA=34132s
+  [13500/82365]  elapsed=6643s  rate=2.0/s  ETA=33885s
+  [14000/82365]  elapsed=6889s  rate=2.0/s  ETA=33638s
+  [14500/82365]  elapsed=7134s  rate=2.0/s  ETA=33391s
+  [15000/82365]  elapsed=7380s  rate=2.0/s  ETA=33145s
+  [15500/82365]  elapsed=7626s  rate=2.0/s  ETA=32899s
+  [16000/82365]  elapsed=7872s  rate=2.0/s  ETA=32652s
+  [16500/82365]  elapsed=8118s  rate=2.0/s  ETA=32406s
+  [17000/82365]  elapsed=8364s  rate=2.0/s  ETA=32159s
+  [17500/82365]  elapsed=8610s  rate=2.0/s  ETA=31913s
+  [18000/82365]  elapsed=8856s  rate=2.0/s  ETA=31667s
+  [18500/82365]  elapsed=9102s  rate=2.0/s  ETA=31420s
+  [19000/82365]  elapsed=9348s  rate=2.0/s  ETA=31174s
+  [19500/82365]  elapsed=9593s  rate=2.0/s  ETA=30928s
+  [20000/82365]  elapsed=9839s  rate=2.0/s  ETA=30682s
+  [20500/82365]  elapsed=10085s  rate=2.0/s  ETA=30435s
+  [21000/82365]  elapsed=10331s  rate=2.0/s  ETA=30189s
+  [21500/82365]  elapsed=10577s  rate=2.0/s  ETA=29943s
+  [22000/82365]  elapsed=10823s  rate=2.0/s  ETA=29697s
+  [22500/82365]  elapsed=11069s  rate=2.0/s  ETA=29451s
+  [23000/82365]  elapsed=11315s  rate=2.0/s  ETA=29204s
+  [23500/82365]  elapsed=11561s  rate=2.0/s  ETA=28958s
+  [24000/82365]  elapsed=11807s  rate=2.0/s  ETA=28712s
+  [24500/82365]  elapsed=12052s  rate=2.0/s  ETA=28466s
+  [25000/82365]  elapsed=12298s  rate=2.0/s  ETA=28220s
+  [25500/82365]  elapsed=12544s  rate=2.0/s  ETA=27974s
+  [26000/82365]  elapsed=12790s  rate=2.0/s  ETA=27728s
+  [26500/82365]  elapsed=13036s  rate=2.0/s  ETA=27482s
+  [27000/82365]  elapsed=13282s  rate=2.0/s  ETA=27235s
+  [27500/82365]  elapsed=13528s  rate=2.0/s  ETA=26989s
+  [28000/82365]  elapsed=13774s  rate=2.0/s  ETA=26743s
+  [28500/82365]  elapsed=14020s  rate=2.0/s  ETA=26497s
+  [29000/82365]  elapsed=14266s  rate=2.0/s  ETA=26251s
+  [29500/82365]  elapsed=14511s  rate=2.0/s  ETA=26005s
+  [30000/82365]  elapsed=14757s  rate=2.0/s  ETA=25759s
+  [30500/82365]  elapsed=15003s  rate=2.0/s  ETA=25513s
+  [31000/82365]  elapsed=15249s  rate=2.0/s  ETA=25267s
+  [31500/82365]  elapsed=15495s  rate=2.0/s  ETA=25021s
+  [32000/82365]  elapsed=15741s  rate=2.0/s  ETA=24775s
+  [32500/82365]  elapsed=15987s  rate=2.0/s  ETA=24529s
+  [33000/82365]  elapsed=16233s  rate=2.0/s  ETA=24283s
+  [33500/82365]  elapsed=16479s  rate=2.0/s  ETA=24037s
+  [34000/82365]  elapsed=16725s  rate=2.0/s  ETA=23791s
+  [34500/82365]  elapsed=16970s  rate=2.0/s  ETA=23545s
+  [35000/82365]  elapsed=17216s  rate=2.0/s  ETA=23299s
+  [35500/82365]  elapsed=17462s  rate=2.0/s  ETA=23053s
+  [36000/82365]  elapsed=17708s  rate=2.0/s  ETA=22807s
+  [36500/82365]  elapsed=17954s  rate=2.0/s  ETA=22561s
+  [37000/82365]  elapsed=18200s  rate=2.0/s  ETA=22315s
+  [37500/82365]  elapsed=18446s  rate=2.0/s  ETA=22069s
+  [38000/82365]  elapsed=18692s  rate=2.0/s  ETA=21823s
+  [38500/82365]  elapsed=18938s  rate=2.0/s  ETA=21577s
+  [39000/82365]  elapsed=19184s  rate=2.0/s  ETA=21331s
+  [39500/82365]  elapsed=19430s  rate=2.0/s  ETA=21085s
+  [40000/82365]  elapsed=19675s  rate=2.0/s  ETA=20839s
+  [40500/82365]  elapsed=19921s  rate=2.0/s  ETA=20593s
+  [41000/82365]  elapsed=20167s  rate=2.0/s  ETA=20347s
+  [41500/82365]  elapsed=20413s  rate=2.0/s  ETA=20101s
+  [42000/82365]  elapsed=20659s  rate=2.0/s  ETA=19855s
+  [42500/82365]  elapsed=20905s  rate=2.0/s  ETA=19609s
+  [43000/82365]  elapsed=21151s  rate=2.0/s  ETA=19363s
+  [43500/82365]  elapsed=21397s  rate=2.0/s  ETA=19117s
+  [44000/82365]  elapsed=21643s  rate=2.0/s  ETA=18871s
+  [44500/82365]  elapsed=21889s  rate=2.0/s  ETA=18625s
+  [45000/82365]  elapsed=22134s  rate=2.0/s  ETA=18379s
+  [45500/82365]  elapsed=22380s  rate=2.0/s  ETA=18133s
+  [46000/82365]  elapsed=22626s  rate=2.0/s  ETA=17887s
+  [46500/82365]  elapsed=22872s  rate=2.0/s  ETA=17641s
+  [47000/82365]  elapsed=23118s  rate=2.0/s  ETA=17395s
+  [47500/82365]  elapsed=23364s  rate=2.0/s  ETA=17149s
+  [48000/82365]  elapsed=23610s  rate=2.0/s  ETA=16903s
+  [48500/82365]  elapsed=23856s  rate=2.0/s  ETA=16657s
+  [49000/82365]  elapsed=24102s  rate=2.0/s  ETA=16411s
+  [49500/82365]  elapsed=24348s  rate=2.0/s  ETA=16165s
+  [50000/82365]  elapsed=24593s  rate=2.0/s  ETA=15919s
+  [50500/82365]  elapsed=24839s  rate=2.0/s  ETA=15673s
+  [51000/82365]  elapsed=25085s  rate=2.0/s  ETA=15427s
+  [51500/82365]  elapsed=25331s  rate=2.0/s  ETA=15181s
+  [52000/82365]  elapsed=25577s  rate=2.0/s  ETA=14936s
+  [52500/82365]  elapsed=25823s  rate=2.0/s  ETA=14690s
+  [53000/82365]  elapsed=26069s  rate=2.0/s  ETA=14444s
+  [53500/82365]  elapsed=26315s  rate=2.0/s  ETA=14198s
+  [54000/82365]  elapsed=26561s  rate=2.0/s  ETA=13952s
+  [54500/82365]  elapsed=26807s  rate=2.0/s  ETA=13706s
+  [55000/82365]  elapsed=27052s  rate=2.0/s  ETA=13460s
+  [55500/82365]  elapsed=27298s  rate=2.0/s  ETA=13214s
+  [56000/82365]  elapsed=27544s  rate=2.0/s  ETA=12968s
+  [56500/82365]  elapsed=27790s  rate=2.0/s  ETA=12722s
+  [57000/82365]  elapsed=28036s  rate=2.0/s  ETA=12476s
+  [57500/82365]  elapsed=28282s  rate=2.0/s  ETA=12230s
+  [58000/82365]  elapsed=28528s  rate=2.0/s  ETA=11984s
+  [58500/82365]  elapsed=28774s  rate=2.0/s  ETA=11738s
+  [59000/82365]  elapsed=29020s  rate=2.0/s  ETA=11492s
+  [59500/82365]  elapsed=29266s  rate=2.0/s  ETA=11246s
+  [60000/82365]  elapsed=29511s  rate=2.0/s  ETA=11000s
+  [60500/82365]  elapsed=29757s  rate=2.0/s  ETA=10754s
+  [61000/82365]  elapsed=30003s  rate=2.0/s  ETA=10509s
+  [61500/82365]  elapsed=30249s  rate=2.0/s  ETA=10263s
+  [62000/82365]  elapsed=30495s  rate=2.0/s  ETA=10017s
+  [62500/82365]  elapsed=30741s  rate=2.0/s  ETA=9771s
+  [63000/82365]  elapsed=30987s  rate=2.0/s  ETA=9525s
+  [63500/82365]  elapsed=31233s  rate=2.0/s  ETA=9279s
+  [64000/82365]  elapsed=31479s  rate=2.0/s  ETA=9033s
+  [64500/82365]  elapsed=31725s  rate=2.0/s  ETA=8787s
+  [65000/82365]  elapsed=31971s  rate=2.0/s  ETA=8541s
+  [65500/82365]  elapsed=32216s  rate=2.0/s  ETA=8295s
+  [66000/82365]  elapsed=32462s  rate=2.0/s  ETA=8049s
+  [66500/82365]  elapsed=32708s  rate=2.0/s  ETA=7803s
+  [67000/82365]  elapsed=32954s  rate=2.0/s  ETA=7557s
+  [67500/82365]  elapsed=33200s  rate=2.0/s  ETA=7311s
+  [68000/82365]  elapsed=33446s  rate=2.0/s  ETA=7065s
+  [68500/82365]  elapsed=33692s  rate=2.0/s  ETA=6820s
+  [69000/82365]  elapsed=33938s  rate=2.0/s  ETA=6574s
+  [69500/82365]  elapsed=34184s  rate=2.0/s  ETA=6328s
+  [70000/82365]  elapsed=34430s  rate=2.0/s  ETA=6082s
+  [70500/82365]  elapsed=34675s  rate=2.0/s  ETA=5836s
+  [71000/82365]  elapsed=34921s  rate=2.0/s  ETA=5590s
+  [71500/82365]  elapsed=35167s  rate=2.0/s  ETA=5344s
+  [72000/82365]  elapsed=35413s  rate=2.0/s  ETA=5098s
+  [72500/82365]  elapsed=35659s  rate=2.0/s  ETA=4852s
+  [73000/82365]  elapsed=35905s  rate=2.0/s  ETA=4606s
+  [73500/82365]  elapsed=36151s  rate=2.0/s  ETA=4360s
+  [74000/82365]  elapsed=36397s  rate=2.0/s  ETA=4114s
+  [74500/82365]  elapsed=36643s  rate=2.0/s  ETA=3868s
+  [75000/82365]  elapsed=36889s  rate=2.0/s  ETA=3622s
+  [75500/82365]  elapsed=37134s  rate=2.0/s  ETA=3377s
+  [76000/82365]  elapsed=37380s  rate=2.0/s  ETA=3131s
+  [76500/82365]  elapsed=37626s  rate=2.0/s  ETA=2885s
+  [77000/82365]  elapsed=37872s  rate=2.0/s  ETA=2639s
+  [77500/82365]  elapsed=38118s  rate=2.0/s  ETA=2393s
+  [78000/82365]  elapsed=38364s  rate=2.0/s  ETA=2147s
+  [78500/82365]  elapsed=38610s  rate=2.0/s  ETA=1901s
+  [79000/82365]  elapsed=38856s  rate=2.0/s  ETA=1655s
+  [79500/82365]  elapsed=39102s  rate=2.0/s  ETA=1409s
+  [80000/82365]  elapsed=39348s  rate=2.0/s  ETA=1163s
+  [80500/82365]  elapsed=39593s  rate=2.0/s  ETA=917s
+  [81000/82365]  elapsed=39839s  rate=2.0/s  ETA=671s
+  [81500/82365]  elapsed=40085s  rate=2.0/s  ETA=425s
+  [82000/82365]  elapsed=40331s  rate=2.0/s  ETA=180s
+Done. 82365 evals in 40511s (2.0/s)
+Finite log_densities: 82365 / 82365
+Max log_density: 3.761313
+Mean log_density (finite): 0.010127
+Saved to ./precomputed_lhs_paris3_1yr_5e+05.pkl
+Job completed at Fri Apr 24 09:56:55 AM +08 2026

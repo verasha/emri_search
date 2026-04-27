@@ -1,0 +1,34 @@
+#!/bin/bash
+#PBS -q auto_free
+#PBS -N paris3_stage
+#PBS -l walltime=48:00:00
+#PBS -l select=1:ncpus=4:mpiprocs=1:ompthreads=4:ngpus=1:mem=32gb
+#PBS -o logs/paris3_stage_vanda.out
+#PBS -e logs/paris3_stage_vanda.err
+
+cd $PBS_O_WORKDIR
+mkdir -p logs paris3_stage_results
+
+source /scratch/e1498138/anaconda3/bin/activate fewsm
+
+export CUDA_VISIBLE_DEVICES=0
+
+echo "Job started at $(date)"
+echo "Running from: $PBS_O_WORKDIR"
+
+# Default: start from timemax_6m, assuming the 3m timemax stage is already done elsewhere.
+python -u paris3_stage.py \
+  --start-stage timemax_6m \
+  --output-root /nfs/home/svu/e1498138/localgit/FEWNEW/work/search/paris3_stage_results
+
+# Example: start even later from an existing paris2 best-fit instead.
+# python -u paris3_stage.py \
+#   --start-stage pure_1y \
+#   --seed-logm1 6.03302293 \
+#   --seed-logm2 1.12261954 \
+#   --seed-a 0.69265393 \
+#   --seed-p0 9.04744717 \
+#   --seed-e0 0.31691929 \
+#   --output-root /nfs/home/svu/e1498138/localgit/FEWNEW/work/search/paris3_stage_results
+
+echo "Job completed at $(date)"

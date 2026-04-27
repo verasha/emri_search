@@ -18,6 +18,7 @@ sys.path.insert(0, '/home/svu/e1498138/localgit/FEWNEW/work/')
 import GWfuncs
 # import loglike_pure_hopper as loglike_pure
 import loglike_pure 
+import parismc
 
 cfg_set = few.get_config_setter(reset=True)
 cfg_set.set_log_level("warning")
@@ -25,7 +26,7 @@ cfg_set.set_log_level("warning")
 use_gpu = True
 force_backend = "cuda12x"
 dt = 10
-T = (12+6)/12
+T = 12/12
 
 print(f"dt={dt}s, T={T}yr")
 
@@ -78,15 +79,80 @@ ellipse_lo = lhs_data['ellipse_lo']
 ellipse_hi = lhs_data['ellipse_hi']
 
 # ── Load result as starting point and proposal covariance ─────────────
-# seed_path = '/home/svu/e1498138/localgit/FEWNEW/work/search/greedy_timeonly_results/seed08.pkl'
-seed_path = '/home/svu/e1498138/localgit/FEWNEW/work/search/greedy_pure_paris3_results_1_25yr.pkl'
-print(f"Loading prev results from {seed_path}...")
-with open(seed_path, 'rb') as f:
-    seed_data = pickle.load(f)
 
-p_max      = seed_data['p_max_final'].copy()
-cov_prop   = seed_data['cov_prop']
-print(f"cov_prop (diag): {np.sqrt(np.diag(cov_prop))}")
+def log_density(params):
+    params = np.asarray(params)
+
+    n_samples = params.shape[0] 
+    log_likes = np.zeros(n_samples)
+
+
+    for i in range(n_samples):
+        logm1, logm2, a, p0, e0 = params[i]
+        m1 = 10**logm1
+        m2 = 10**logm2
+
+        try:
+            loglike = loglike_obj(np.array([m1, m2, a, p0, e0, xI0, dist, qS, phiS, qK, phiK, Phi_phi0, Phi_theta0, Phi_r0]))
+        except Exception:
+            loglike = -np.inf
+        log_likes[i] = loglike
+        print(loglike)
+
+    return log_likes
+
+def prior_transform(u):
+    u = np.asarray(u)
+    out = np.zeros_like(u, dtype=float)
+
+    logm1lim = [5.98699, 6.04277]
+    logm2lim = [0.98935, 1.02067]
+    alim     = [0.67449, 0.78962]
+    p0lim    = [8.48613, 9.14781]
+    e0lim    = [0.38373, 0.40714]
+
+    out[:, 0] = (logm1lim[1] - logm1lim[0]) * u[:, 0] + logm1lim[0]
+    out[:, 1] = (logm2lim[1] - logm2lim[0]) * u[:, 1] + logm2lim[0]
+    out[:, 2] = (alim[1]     - alim[0])     * u[:, 2] + alim[0]
+    out[:, 3] = (p0lim[1]    - p0lim[0])    * u[:, 3] + p0lim[0]
+    out[:, 4] = (e0lim[1]    - e0lim[0])    * u[:, 4] + e0lim[0]
+    return out
+
+
+sampler_path = "/home/svu/e1498138/localgit/FEWNEW/work/intrinsic_ffunc_3mth_snr32_paris3_1yr/sampler_state.pkl"
+
+sampler = parismc.Sampler.load_state(sampler_path)
+
+# find process with largest max log-density
+best_proc = int(np.argmax(sampler.max_logden_list))
+
+# best point in that process
+lds = np.asarray(sampler.searched_log_densities_list[best_proc])
+pts = np.asarray(sampler.searched_points_list[best_proc])
+best_idx = int(np.argmax(lds))
+p_max = prior_transform(pts[best_idx:best_idx+1])[0]
+
+# fixed proposal covariance from parismc sampler (read once, not updated)
+scales = np.array([
+    6.04277 - 5.98699,
+    1.02067 - 0.98935,
+    0.78962 - 0.67449,
+    9.14781 - 8.48613,
+    0.40714 - 0.38373,
+])
+S = np.diag(scales)
+SCALE = 1e-6
+cov_prop = SCALE * S @ np.asarray(sampler.now_covariances[best_proc]) @ S
+
+# seed_path = '/home/svu/e1498138/localgit/FEWNEW/work/search/greedy_timeonly_results/seed08.pkl'
+# seed_path = '/home/svu/e1498138/localgit/FEWNEW/work/search/greedy_pure_results.pkl'
+# print(f"Loading prev results from {seed_path}...")
+# with open(seed_path, 'rb') as f:
+#     seed_data = pickle.load(f)
+
+# p_max      = seed_data['p_max_final'].copy()
+# cov_prop   = seed_data['cov_prop']
+print(f"cov_prop = {SCALE} * S@cov_parismc@S  (diag sigma: {np.sqrt(np.diag(cov_prop))})")
 
 # ── Loglike wrapper ───────────────────────────────────────────────────────────
 def eval_loglike(phys_params):
@@ -147,7 +213,7 @@ print(f"Final max logden: {logden_max:.6f}")
 print(f"Final p_max: {p_max}")
 
 # ── Save results ──────────────────────────────────────────────────────────────
-savepath = '/home/svu/e1498138/localgit/FEWNEW/work/search/greedy_pure_paris3_results_1_5yr.pkl'
+savepath = '/home/svu/e1498138/localgit/FEWNEW/work/search/greedy_pure_paris3_results_1yr.pkl'
 results = {
     'history_logden': np.array(history_logden),
     'history_params': np.array(history_params),
