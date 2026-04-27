@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python test:*)",
+      "Bash(python3:*)",
+      "Bash(git log:*)",
+      "Bash(pip install:*)",
+      "Bash(git rev-list --objects --all)",
+      "Bash(git cat-file --batch-check='%\\(objecttype\\) %\\(objectname\\) %\\(objectsize\\) %\\(rest\\)')",
+      "Bash(git filter-repo:*)",
+      "Bash(git remote add origin git@github.com:verasha/FEWNEW.git)",
+      "Bash(git push:*)",
+      "Bash(du:*)",
+      "Bash(git:*)",
+      "Bash(tail -c 5000 /nfs/home/svu/e1498138/localgit/FEWNEW/work/search/logs/intrinsic_ffunc_3mth_snr32_anneal7.err)",
+      "Bash(tail -c 5000 /nfs/home/svu/e1498138/localgit/FEWNEW/work/search/logs/intrinsic_ffunc_3mth_snr32_anneal8.err)",
+      "Bash(ls /nfs/home/svu/e1498138/localgit/FEWNEW/work/search/intrinsic_ffunc_3mth_snr32_anneal12*)",
+      "Bash(ls /nfs/home/svu/e1498138/localgit/FEWNEW/work/search/logs/intrinsic_ffunc_3mth_snr32_paris2_S30_new*)"
+    ],
+    "deny": []
+  }
+}
