@@ -1,8 +1,8 @@
 #!/bin/bash
 #PBS -q auto_free
-#PBS -o logs/intrinsic_ffunc_3mth_snr32_paris2_3.out
-#PBS -e logs/intrinsic_ffunc_3mth_snr32_paris2_3.err
-#PBS -N intrinsic_snr32
+#PBS -o logs/int_3mth_snr32_paris2_1.out
+#PBS -e logs/int_3mth_snr32_paris2_1.err
+#PBS -N paris2
 #PBS -l walltime=48:00:00
 #PBS -l select=1:ncpus=4:mpiprocs=1:ompthreads=4:ngpus=1:mem=32gb
 

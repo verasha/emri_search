@@ -13,6 +13,6 @@ source /scratch/e1498138/anaconda3/bin/activate fewsm
 
 export CUDA_VISIBLE_DEVICES=0
 
-python -u greedy_pure_opt.py
+python -u greedy_pure_opt_alt.py
 
 echo "Job completed at $(date)"

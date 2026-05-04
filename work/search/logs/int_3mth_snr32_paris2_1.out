@@ -1,0 +1,245 @@
+Using dt = 10 seconds, T = 0.25 years
+Initializing waveform generator...
+Creating GenerateEMRIWaveform class...
+Done initializing waveform generator.
+Creating GravWaveAnalysis class...
+Initializing loglike class...
+Done initializing loglike class.
+Calculating SNR...
+SNR calculated: 5.942134448355127
+Setting up log_density and prior functions...
+Done setting up log-likelihood and prior.
+Setting up ParisMC sampler...
+Done setting up ParisMC sampler.
+Setting up initial covariance matrix...
+Done setting up initial covariance matrix.
+Initializing sampler...
+Done initializing sampler.
+Starting point (phys): [6.02770973, 1.11882518, 0.68188057, 9.12351337, 0.32140942]
+Starting log_density (S=3): [8.83164434]
+Running sampling...
+S=3 improved -> 0.01688 at iter 4
+S=3 improved -> 0.13929 at iter 6
+S=3 improved -> 0.25640 at iter 8
+S=3 improved -> 0.26094 at iter 11
+S=3 improved -> 0.30546 at iter 15
+S=3 improved -> 0.44863 at iter 23
+S=3 improved -> 0.49925 at iter 106
+S=3 improved -> 2.46676 at iter 308
+S=3 improved -> 3.72765 at iter 642
+S=3 improved -> 4.33489 at iter 8846
+Stuck 10000 iters at S=3. Jumping -> S=10 at iter 18846
+S=10 improved -> 5.48027 at iter 26575
+Stuck 10000 iters at S=10. Jumping -> S=30 at iter 36575
+S=30 improved -> 7.10032 at iter 36613
+S=30 improved -> 10.74745 at iter 38758
+S=30 improved -> 11.86274 at iter 39041
+S=30 improved -> 12.13583 at iter 44615
+S=30 improved -> 19.66509 at iter 48611
+S=30 improved -> 20.15573 at iter 49000
+S=30 improved -> 27.37244 at iter 49022
+S=30 improved -> 35.73583 at iter 49026
+S=30 improved -> 38.43809 at iter 49032
+S=30 improved -> 38.80229 at iter 49048
+S=30 improved -> 39.04872 at iter 49067
+S=30 improved -> 40.49869 at iter 49106
+S=30 improved -> 40.88585 at iter 49350
+S=30 improved -> 41.15694 at iter 49501
+S=30 improved -> 42.54340 at iter 49502
+S=30 improved -> 42.59416 at iter 49515
+S=30 improved -> 43.00900 at iter 49564
+S=30 improved -> 43.07274 at iter 49625
+S=30 improved -> 43.22710 at iter 49653
+S=30 improved -> 43.32767 at iter 49721
+S=30 improved -> 43.63283 at iter 49725
+S=30 improved -> 43.71662 at iter 49726
+S=30 improved -> 44.46930 at iter 49733
+S=30 improved -> 44.98676 at iter 49735
+S=30 improved -> 45.39583 at iter 49785
+S=30 improved -> 45.80791 at iter 49786
+S=30 improved -> 46.36893 at iter 49814
+S=30 improved -> 46.51454 at iter 49915
+S=30 improved -> 49.26823 at iter 49916
+S=30 improved -> 49.54600 at iter 49933
+S=30 improved -> 50.00109 at iter 49980
+S=30 improved -> 50.44058 at iter 49988
+S=30 improved -> 50.96873 at iter 50004
+S=30 improved -> 53.79373 at iter 50009
+S=30 improved -> 54.36694 at iter 50010
+S=30 improved -> 54.46819 at iter 50020
+S=30 improved -> 56.53355 at iter 50021
+S=30 improved -> 56.74311 at iter 50023
+S=30 improved -> 57.46961 at iter 50031
+S=30 improved -> 58.13027 at iter 50034
+S=30 improved -> 58.80459 at iter 50067
+S=30 improved -> 60.66549 at iter 50069
+S=30 improved -> 61.53371 at iter 50085
+S=30 improved -> 62.48159 at iter 50099
+S=30 improved -> 62.60956 at iter 50109
+S=30 improved -> 64.47720 at iter 50133
+S=30 improved -> 66.04371 at iter 50249
+S=30 improved -> 66.29831 at iter 50270
+S=30 improved -> 66.41840 at iter 50298
+S=30 improved -> 68.12182 at iter 50347
+S=30 improved -> 68.24393 at iter 50364
+S=30 improved -> 69.56862 at iter 50389
+S=30 improved -> 93.66425 at iter 50403
+S=30 improved -> 98.32155 at iter 50428
+S=30 improved -> 112.51243 at iter 50448
+S=30 improved -> 112.53083 at iter 50512
+S=30 improved -> 113.11439 at iter 50514
+S=30 improved -> 114.09880 at iter 50533
+S=30 improved -> 114.80074 at iter 50535
+S=30 improved -> 115.22063 at iter 50536
+S=30 improved -> 115.38195 at iter 50538
+S=30 improved -> 115.40630 at iter 50549
+S=30 improved -> 115.57504 at iter 50556
+S=30 improved -> 116.42391 at iter 50561
+S=30 improved -> 116.96401 at iter 50568
+S=30 improved -> 117.12318 at iter 50570
+S=30 improved -> 117.27111 at iter 50583
+S=30 improved -> 117.28763 at iter 50585
+S=30 improved -> 117.43473 at iter 50588
+S=30 improved -> 118.89266 at iter 50591
+S=30 improved -> 119.16870 at iter 50596
+S=30 improved -> 119.52411 at iter 50604
+S=30 improved -> 119.80875 at iter 50608
+S=30 improved -> 119.93384 at iter 50612
+S=30 improved -> 120.17046 at iter 50614
+S=30 improved -> 120.18429 at iter 50618
+S=30 improved -> 120.55039 at iter 50629
+S=30 improved -> 120.92459 at iter 50656
+S=30 improved -> 121.14435 at iter 50659
+S=30 improved -> 121.32382 at iter 50662
+S=30 improved -> 121.76215 at iter 50682
+S=30 improved -> 122.25800 at iter 50717
+S=30 improved -> 122.36436 at iter 50747
+S=30 improved -> 122.58284 at iter 50756
+S=30 improved -> 122.84421 at iter 50764
+S=30 improved -> 123.54842 at iter 50808
+S=30 improved -> 123.56948 at iter 50827
+S=30 improved -> 124.22818 at iter 50919
+S=30 improved -> 124.43573 at iter 50955
+S=30 improved -> 124.70052 at iter 50970
+S=30 improved -> 125.04746 at iter 50986
+S=30 improved -> 125.05925 at iter 51003
+S=30 improved -> 125.26718 at iter 51005
+S=30 improved -> 125.66744 at iter 51008
+S=30 improved -> 125.99935 at iter 51011
+S=30 improved -> 126.80881 at iter 51014
+S=30 improved -> 127.03132 at iter 51015
+S=30 improved -> 127.77893 at iter 51036
+S=30 improved -> 128.95112 at iter 51043
+S=30 improved -> 128.99656 at iter 51078
+S=30 improved -> 129.03363 at iter 51104
+S=30 improved -> 129.42357 at iter 51148
+S=30 improved -> 129.52056 at iter 51346
+S=30 improved -> 129.59678 at iter 51381
+S=30 improved -> 129.88489 at iter 51412
+S=30 improved -> 129.94149 at iter 51424
+S=30 improved -> 129.96426 at iter 51482
+S=30 improved -> 130.45398 at iter 51523
+S=30 improved -> 130.50111 at iter 51524
+S=30 improved -> 130.57461 at iter 51544
+S=30 improved -> 130.86464 at iter 51549
+S=30 improved -> 131.61596 at iter 51604
+S=30 improved -> 131.69341 at iter 51614
+S=30 improved -> 131.82068 at iter 51623
+S=30 improved -> 132.29609 at iter 51636
+S=30 improved -> 132.61748 at iter 51651
+S=30 improved -> 132.68484 at iter 51806
+S=30 improved -> 132.87880 at iter 51817
+S=30 improved -> 133.00417 at iter 51881
+S=30 improved -> 133.65466 at iter 51907
+S=30 improved -> 133.67952 at iter 51945
+S=30 improved -> 134.47291 at iter 51976
+S=30 improved -> 135.11800 at iter 51980
+S=30 improved -> 135.50769 at iter 52008
+S=30 improved -> 136.66815 at iter 52018
+S=30 improved -> 136.69152 at iter 52063
+S=30 improved -> 137.41618 at iter 52087
+S=30 improved -> 137.52928 at iter 52103
+S=30 improved -> 138.19804 at iter 52115
+S=30 improved -> 138.61160 at iter 52176
+S=30 improved -> 139.20523 at iter 52449
+S=30 improved -> 139.67891 at iter 52462
+S=30 improved -> 140.91900 at iter 52511
+S=30 improved -> 141.18937 at iter 52518
+S=30 improved -> 142.49263 at iter 52521
+S=30 improved -> 143.39794 at iter 52523
+S=30 improved -> 145.19189 at iter 52567
+S=30 improved -> 145.97772 at iter 52587
+S=30 improved -> 147.89503 at iter 52602
+S=30 improved -> 149.59540 at iter 52603
+S=30 improved -> 150.83485 at iter 52661
+S=30 improved -> 153.05907 at iter 52686
+S=30 improved -> 153.16457 at iter 52689
+S=30 improved -> 153.78635 at iter 52706
+S=30 improved -> 153.98040 at iter 52718
+S=30 improved -> 154.05913 at iter 52733
+S=30 improved -> 154.33396 at iter 52748
+S=30 improved -> 154.36447 at iter 52760
+S=30 improved -> 154.46457 at iter 52793
+S=30 improved -> 155.87378 at iter 52803
+S=30 improved -> 156.70906 at iter 52810
+S=30 improved -> 157.78862 at iter 52817
+S=30 improved -> 158.05466 at iter 52859
+S=30 improved -> 158.26662 at iter 52863
+S=30 improved -> 159.05275 at iter 52905
+S=30 improved -> 159.08782 at iter 52910
+S=30 improved -> 159.91805 at iter 52928
+S=30 improved -> 159.93164 at iter 52929
+S=30 improved -> 160.65222 at iter 52954
+S=30 improved -> 162.37975 at iter 52957
+S=30 improved -> 162.56291 at iter 52967
+S=30 improved -> 162.95272 at iter 52990
+S=30 improved -> 163.26461 at iter 53074
+S=30 improved -> 163.29412 at iter 53112
+S=30 improved -> 163.56111 at iter 53116
+S=30 improved -> 164.42487 at iter 53125
+S=30 improved -> 165.02165 at iter 53141
+S=30 improved -> 166.06805 at iter 53189
+S=30 improved -> 166.74217 at iter 53218
+S=30 improved -> 166.82825 at iter 53255
+S=30 improved -> 167.61620 at iter 53265
+S=30 improved -> 169.24698 at iter 53311
+S=30 improved -> 169.33614 at iter 53328
+S=30 improved -> 169.53207 at iter 53480
+S=30 improved -> 171.49574 at iter 53483
+S=30 improved -> 171.87083 at iter 53490
+S=30 improved -> 172.46481 at iter 53564
+S=30 improved -> 172.51967 at iter 53715
+S=30 improved -> 172.60683 at iter 53739
+S=30 improved -> 172.61880 at iter 53744
+S=30 improved -> 173.15911 at iter 53825
+S=30 improved -> 173.22465 at iter 53996
+S=30 improved -> 173.64095 at iter 54014
+S=30 improved -> 173.87577 at iter 54945
+S=30 improved -> 175.09138 at iter 55844
+S=30 improved -> 175.29712 at iter 61333
+S=30 improved -> 175.44453 at iter 64451
+S=30 improved -> 175.46765 at iter 65247
+S=30 improved -> 175.48490 at iter 66217
+S=30 improved -> 176.28313 at iter 67842
+S=30 improved -> 176.62454 at iter 74334
+Stuck 10000 iters at S=30. Jumping -> S=100 at iter 84334
+S=100 improved -> 506.88256 at iter 84335
+S=100 improved -> 563.08631 at iter 84337
+S=100 improved -> 579.87090 at iter 84380
+S=100 improved -> 580.98584 at iter 84503
+S=100 improved -> 581.78638 at iter 84505
+S=100 improved -> 585.03787 at iter 84511
+S=100 improved -> 588.06693 at iter 84524
+S=100 improved -> 588.32194 at iter 84572
+S=100 improved -> 588.36869 at iter 84836
+S=100 improved -> 588.85596 at iter 84850
+S=100 improved -> 589.18202 at iter 85366
+S=100 improved -> 589.24314 at iter 85585
+S=100 improved -> 589.46551 at iter 85747
+S=100 improved -> 589.58263 at iter 85826
+S=100 improved -> 589.88616 at iter 85859
+S=100 improved -> 589.95482 at iter 87141
+S=100 improved -> 590.39044 at iter 87442
+S=100 improved -> 590.41281 at iter 91197
+Done running sampling.
+Job completed at Fri May  1 03:58:08 PM +08 2026

@@ -27,10 +27,12 @@ from smt.sampling_methods import LHS
 import os
 import sys
 
-# Changing directory to FEWNEW/work
-# to import stuffs
-os.chdir('/nfs/home/svu/e1498138/localgit/FEWNEW/work/')
-sys.path.insert(0, '/nfs/home/svu/e1498138/localgit/FEWNEW/work/')
+# Changing directory to work dir
+# to import my modules
+dir_work ='/nfs/home/svu/e1498138/localgit/FEWNEW/work/'
+
+os.chdir(dir_work)
+sys.path.insert(0, dir_work)
 
 import GWfuncs
 import loglike_timemax  # TIME-MAXIMIZED VERSION
@@ -234,35 +236,41 @@ config = parismc.SamplerConfig(
     alpha=int(1e3),                    # Use recent samples for weighting.  # NOTE: changed so can forget cov from prev stage
     trail_size=int(1e3),          # Maximum trials per iteration
     boundary_limiting=True,        # Enable boundary constraints
-    # previously use beta was false
-    use_beta=True,                # Use beta correction for boundaries #NOTE: changed so cov is smaller
+    use_beta=True,                # Use beta correction for boundaries
     integral_num=int(1e5),        # MC samples for beta estimation
     gamma=500,                    # Covariance update frequency NOTE: changed from 100
     exclude_scale_z=np.inf,       # No exclusion based on weights
     use_pool=False,               # Set to True for multiprocessing
     keep_dead_processes=True,
-    seed = 80
-    #12_seed: 48
-    #11_seed: 64
-    #10_seed: 29
-    #9_SEED: 2
-    # paris6_seed : seed=9#paris5_seed: 132 #paris4_seed: 534
+    seed = 6342
+    #10: 9658
+     #9: 233
+    #8: 34
+    #7: 930924
 )
+
+# SEEDS for 1e5 LHS runs
+    #6th try: seed = 5490
+    #5th try:45695
+    #4th try: 3403940
+    #3rd try: 12. maybe throw away
+    #2nd try: 2348
+    # 1st try: 452
 
 print('Done setting up ParisMC sampler.')
 print('Setting up initial covariance matrix...')
 
 # Change to the search directory
-os.chdir('/nfs/home/svu/e1498138/localgit/FEWNEW/work/search')
-sys.path.insert(0, '/nfs/home/svu/e1498138/localgit/FEWNEW/work/search')
+dir_search =  os.path.join(dir_work, 'search') 
+os.chdir(dir_search)
+sys.path.insert(0, dir_search)
 
 
 ndim = 5
 n_seed = 10
-
 sigma = 1e-5
 init_cov_list = [sigma**2 * np.eye(ndim) for _ in range(n_seed)]
-
+#NOTE: could try larger cov so it explores more?
 print('Done setting up initial covariance matrix.')
 
 print('Initializing sampler...')
@@ -278,7 +286,13 @@ print('Done initializing sampler.')
 
 print('Loading external LHS samples from pkl...')
 import pickle as _pkl
-with open('/scratch/e1498138/lhs/lhs_snr32_checkpoints/lhs_snr32_final.pkl', 'rb') as _f:
+dir_scratch='/scratch/e1498138/'
+
+lhs_1e5='lhs/lhs_snr32_1e5.pkl'  
+lhs_5e5='lhs/lhs_snr32_checkpoints/lhs_snr32_final.pkl' 
+
+filepath_lhs= dir_scratch+lhs_5e5
+with open(filepath_lhs, 'rb') as _f:
     _phys_pts, _logden = _pkl.load(_f)
 external_lhs_points          = inverse_prior_transform(_phys_pts)
 external_lhs_log_densities   = _logden
@@ -286,15 +300,18 @@ print(f'Loaded {len(_logden)} LHS samples.')
 
 print('Running sampling...')
 
-def combined_callback(sampler, i):
+def callback(sampler, i):
     if i % 1000 == 0 and i > 0:
         sampler.save_state()
 
+#1-6: 1e5 runs
+#7+: 5e5 runs
+savepath = dir_scratch+'paris1/int_3mth_snr32_11'
 sampler.run_sampling(
     num_iterations=int(5e3),
-    savepath='./intrinsic_ffunc_3mth_snr32_paris1_13_seed',
-    print_iter=100,
-    callback=combined_callback,
+    savepath=savepath,
+    print_iter=10,
+    callback=callback,
     external_lhs_points=external_lhs_points,
     external_lhs_log_densities=external_lhs_log_densities,
 )

@@ -214,7 +214,7 @@ for i in range(start_idx, n_total, batch_size):
 # ---------------------------------------------------------------------------
 # Save final output  (physical_points, logden)  — ready for run_sampling()
 # ---------------------------------------------------------------------------
-out_path = os.path.join(args.outdir, "/scratch/e1498138/lhs_snr32_1e5.pkl")
+out_path = os.path.join(args.outdir, "/scratch/e1498138/lhs/lhs_snr32_1e5_3.pkl")
 with open(out_path, "wb") as f:
     pickle.dump((phys_pts, logden), f)
 

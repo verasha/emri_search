@@ -11,6 +11,7 @@ import sys
 
 import few
 from few.waveform import GenerateEMRIWaveform, FastKerrEccentricEquatorialFlux
+import parismc
 
 os.chdir('/home/svu/e1498138/localgit/FEWNEW/work/')
 sys.path.insert(0, '/home/svu/e1498138/localgit/FEWNEW/work/')
@@ -18,7 +19,6 @@ sys.path.insert(0, '/home/svu/e1498138/localgit/FEWNEW/work/')
 import GWfuncs
 # import loglike_pure_hopper as loglike_pure
 import loglike_pure 
-import parismc
 
 cfg_set = few.get_config_setter(reset=True)
 cfg_set.set_log_level("warning")
@@ -26,7 +26,7 @@ cfg_set.set_log_level("warning")
 use_gpu = True
 force_backend = "cuda12x"
 dt = 10
-T = 12/12
+T = (12+12)/12
 
 print(f"dt={dt}s, T={T}yr")
 
@@ -70,7 +70,7 @@ data_snr = float(gwf.rhostat(loglike_obj.signal))
 print(f"SNR: {data_snr:.4f}")
 
 # ── Load precomputed LHS for prior bounds ─────────────────────────────────────
-pkl_path = '/home/svu/e1498138/localgit/FEWNEW/work/search/precomputed_lhs_paris3_1yr_1e+05.pkl'
+pkl_path = '/scratch/e1498138/paris3/precomputed_lhs_paris3_1yr_1e+05.pkl'
 print(f"Loading precomputed LHS from {pkl_path}...")
 with open(pkl_path, 'rb') as f:
     lhs_data = pickle.load(f)
@@ -118,19 +118,13 @@ def prior_transform(u):
     out[:, 4] = (e0lim[1]    - e0lim[0])    * u[:, 4] + e0lim[0]
     return out
 
-
-sampler_path = "/scratch/e1498138/localgit/FEWNEW/work/intrinsic_ffunc_3mth_snr32_paris3_1yr/sampler_state.pkl"
+sampler_path = "/scratch/e1498138/paris3/int_1yr_snr32/sampler_state.pkl"
 
 sampler = parismc.Sampler.load_state(sampler_path)
 
 # find process with largest max log-density
 best_proc = int(np.argmax(sampler.max_logden_list))
 
-# best point in that process
-lds = np.asarray(sampler.searched_log_densities_list[best_proc])
-pts = np.asarray(sampler.searched_points_list[best_proc])
-best_idx = int(np.argmax(lds))
-p_max = prior_transform(pts[best_idx:best_idx+1])[0]
 
 # fixed proposal covariance from parismc sampler (read once, not updated)
 scales = np.array([
@@ -143,16 +137,9 @@ scales = np.array([
 S = np.diag(scales)
 SCALE = 1e-6
 cov_prop = SCALE * S @ np.asarray(sampler.now_covariances[best_proc]) @ S
+p_max = [6.00000179, 1.00000052, 0.70000374, 8.99997771, 0.39999947]
 
-# seed_path = '/home/svu/e1498138/localgit/FEWNEW/work/search/greedy_timeonly_results/seed08.pkl'
-# seed_path = '/home/svu/e1498138/localgit/FEWNEW/work/search/greedy_pure_results.pkl'
-# print(f"Loading prev results from {seed_path}...")
-# with open(seed_path, 'rb') as f:
-#     seed_data = pickle.load(f)
-
-# p_max      = seed_data['p_max_final'].copy()
-# cov_prop   = seed_data['cov_prop']
-print(f"cov_prop = {SCALE} * S@cov_parismc@S  (diag sigma: {np.sqrt(np.diag(cov_prop))})")
+print(f"cov_prop (diag): {np.sqrt(np.diag(cov_prop))}")
 
 # ── Loglike wrapper ───────────────────────────────────────────────────────────
 def eval_loglike(phys_params):
@@ -213,7 +200,7 @@ print(f"Final max logden: {logden_max:.6f}")
 print(f"Final p_max: {p_max}")
 
 # ── Save results ──────────────────────────────────────────────────────────────
-savepath = '/home/svu/e1498138/localgit/FEWNEW/work/search/greedy_pure_paris3_results_1yr.pkl'
+savepath = '/scratch/e1498138/paris3/greedy/2yr.pkl'
 results = {
     'history_logden': np.array(history_logden),
     'history_params': np.array(history_params),

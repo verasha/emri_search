@@ -27,12 +27,10 @@ from smt.sampling_methods import LHS
 import os
 import sys
 
-# Changing directory to work dir
-# to import my modules
-dir_work ='/nfs/home/svu/e1498138/localgit/FEWNEW/work/'
-
-os.chdir(dir_work)
-sys.path.insert(0, dir_work)
+# Changing directory to FEWNEW/work
+# to import stuffs
+os.chdir('/nfs/home/svu/e1498138/localgit/FEWNEW/work/')
+sys.path.insert(0, '/nfs/home/svu/e1498138/localgit/FEWNEW/work/')
 
 import GWfuncs
 import loglike_timemax  # TIME-MAXIMIZED VERSION
@@ -145,9 +143,9 @@ data_snr = gwf.rhostat(data)
 print('SNR calculated:', data_snr)
 print("Setting up log_density and prior functions...")
 
-# annealing dict
+# anneal11: starts at S=3 (from paris2_S3_stable best fit), ramps to S=10, then S=30, then S=100
 anneal_state = {
-    'S':              3.0,       # start at S=3
+    'S':              3.0,       # start already at S=3
     'stage':          0,         # index into S_schedule
     'ref_max_ld':     None,      # max_ld at last check
     'ref_iter':       0,
@@ -155,7 +153,8 @@ anneal_state = {
 }
 
 # S schedule: jump to next S after 10000 iters of no improvement, consistent across all stages
-S_schedule     = [3.0, 10.0, 30.0, 100.0]
+#paris 2: 3,10,30,100
+S_schedule     = [3.0, 10.0, 30.0, 100]
 stuck_iters    = 10000  # iters of no improvement before jump/stop
 
 
@@ -209,10 +208,10 @@ print('Setting up ParisMC sampler...')
 config = parismc.SamplerConfig(
     merge_confidence=0.9,
     #NOTE: paris2_1: 1e3, paris2_2: 1e4, paris2_3: 1e5
-    alpha=int(1e3),       
+    alpha=int(1e5),          # NOTE: changed here for paris2_2 from 1e3 to 1e4
     trail_size=int(1e3),
     boundary_limiting=True,
-    use_beta=True,    
+    use_beta=True,           # beta correction on (as in paris2_S3_stable)
     integral_num=int(1e5),
     gamma=500,
     exclude_scale_z=np.inf,
@@ -223,21 +222,19 @@ config = parismc.SamplerConfig(
 print('Done setting up ParisMC sampler.')
 print('Setting up initial covariance matrix...')
 
-# Change to the search directory
-dir_search =  os.path.join(dir_work, 'search') 
-os.chdir(dir_search)
-sys.path.insert(0, dir_search)
+os.chdir('/nfs/home/svu/e1498138/localgit/FEWNEW/work/search')
+sys.path.insert(0, '/nfs/home/svu/e1498138/localgit/FEWNEW/work/search')
 
 ndim = 5
 n_seed = 1  # start already merged
 
-# cov from int_3mth_snr32_8
-paris1_cov = np.array([[ 0.32580461, -0.01958738, -0.01455947, -0.02914656,  0.00807874],
-        [-0.01958738,  0.32676416,  0.00838532,  0.03719362,  0.03428513],
-        [-0.01455947,  0.00838532,  0.34989971,  0.0246193 , -0.00297592],
-        [-0.02914656,  0.03719362,  0.0246193 ,  0.08372122, -0.01206537],
-        [ 0.00807874,  0.03428513, -0.00297592, -0.01206537,  0.11495474]])
-init_cov_list = [paris1_cov / anneal_state['S']]
+# inv_cov from paris2_S3_stable; divide by S=3 to match sharpened proposal scale
+inv_cov = np.array([[ 0.06176978,  0.00182774,  0.00349099, -0.00387599,  0.00082357],
+        [ 0.00182774,  0.07612409,  0.00390862,  0.01214081, -0.00472933],
+        [ 0.00349099,  0.00390862,  0.08585764,  0.01038404, -0.0123366 ],
+        [-0.00387599,  0.01214081,  0.01038404,  0.08207651,  0.01714665],
+        [ 0.00082357, -0.00472933, -0.0123366 ,  0.01714665,  0.06624379]])
+init_cov_list = [np.linalg.inv(inv_cov) / anneal_state['S']]
 
 print('Done setting up initial covariance matrix.')
 
@@ -252,8 +249,8 @@ sampler = parismc.Sampler(
 )
 print('Done initializing sampler.')
 
-# Start from best fit
-best_fit = [6.02770973, 1.11882518, 0.68188057, 9.12351337, 0.32140942]
+# Start from paris2_S3_stable best fit
+best_fit = [6.03302293, 1.12261954, 0.69265393, 9.04744717, 0.31691929]
 external_lhs_points        = inverse_prior_transform(np.array([best_fit]))
 external_lhs_log_densities = log_density(prior_transform(external_lhs_points))
 print('Starting point (phys):', best_fit)
@@ -280,22 +277,20 @@ def anneal_callback(sampler, i):
     if current_max > state['ref_max_ld']:
         state['ref_max_ld'] = current_max
         state['ref_iter']   = i
-        print(f"S={S:.0f} improved -> {current_max:.5f} at iter {i}", flush=True)
+        print(f"[Anneal11] S={S:.0f} improved -> {current_max:.5f} at iter {i}", flush=True)
         return
 
     # check if stuck for stuck_iters
     if i - state['ref_iter'] >= stuck_iters:
-        # JUMP
         if stage < len(S_schedule) - 1:
             new_S = S_schedule[stage + 1]
             state['stage']      = stage + 1
             state['S']          = new_S
             state['ref_max_ld'] = sampler.max_logden_list[0]
             state['ref_iter']   = i
-            print(f"Stuck {stuck_iters} iters at S={S:.0f}. Jumping -> S={new_S:.0f} at iter {i}", flush=True)
+            print(f"[Anneal11] Stuck {stuck_iters} iters at S={S:.0f}. Jumping -> S={new_S:.0f} at iter {i}", flush=True)
         else:
-            # STOPPING
-            print(f"Stuck {stuck_iters} iters at S={S:.0f} (final stage). Stopping at iter {i}.", flush=True)
+            print(f"[Anneal11] Stuck {stuck_iters} iters at S={S:.0f} (final stage). Stopping at iter {i}.", flush=True)
             _stop_flag[0] = True
 
 
@@ -305,13 +300,12 @@ def combined_callback(sampler, i):
         sampler.stop_sampling = True
     if i % 1000 == 0 and i > 0:
         sampler.save_state()
-dir_scratch='/scratch/e1498138/'
-savepath = dir_scratch+'paris2/int_3mth_snr32_1'
+
 
 print('Running sampling...')
 sampler.run_sampling(
     num_iterations=int(1e5),
-    savepath=savepath,
+    savepath='./intrinsic_ffunc_3mth_snr32_paris2_3',
     print_iter=100,
     callback=combined_callback,
     external_lhs_points=external_lhs_points,
