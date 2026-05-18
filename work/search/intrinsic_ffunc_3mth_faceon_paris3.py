@@ -167,11 +167,11 @@ def log_density(params):
 
 def prior_transform(u):
     # hypercube 3sigma bounds
-    logm1lim = [5.98699, 6.04277]
-    logm2lim = [0.98935, 1.02067]
-    alim = [0.67449, 0.78962]
-    p0lim = [8.48613, 9.14781]
-    e0lim = [0.38373, 0.40714]
+    logm1lim = [5.98048, 6.03302]
+    logm2lim = [0.98948, 1.01795]
+    alim = [0.65790, 0.76934]
+    p0lim = [8.60482, 9.24008]
+    e0lim = [0.38645, 0.40777]
 
     transformed = np.zeros_like(u)
 
@@ -215,7 +215,7 @@ print('Done setting up ParisMC sampler.')
 print('Setting up initial covariance matrix...')
 
 ndim   = 5
-n_seed = 10
+n_seed = 75
 init_cov      = np.eye(ndim) * 1e-10
 init_cov_list = [init_cov] * n_seed
 
@@ -235,7 +235,8 @@ print('Done initializing sampler.')
 print('Evaluating log_density on ellipse LHS points...')
 import pickle
 
-savepath = f'/nfs/home/svu/e1498138/localgit/FEWNEW/work/search/precomputed_lhs_paris3_1yr_1e+05.pkl'
+dir_scratch='/scratch/e1498138'
+savepath = f'{dir_scratch}/paris3/paris3_lhs_5e5.pkl'
 
 with open(savepath, 'rb') as f:
     data = pickle.load(f)
@@ -248,9 +249,11 @@ def callback(sampler, i):
         sampler.save_state()
 
 print('Running paris3 sampling...')
+filepath=f'{dir_scratch}/paris3/int_3mth_snr32_1'
+
 sampler.run_sampling(
-    num_iterations=int(4000),
-    savepath='./intrinsic_ffunc_3mth_snr32_paris3_1yr_new2',
+    num_iterations=int(2e4),
+    savepath=filepath,
     print_iter=100,
     callback=callback,
     external_lhs_points=external_lhs_points,

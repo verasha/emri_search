@@ -15,7 +15,6 @@ from stableemrifisher.utils import generate_PSD, inner_product
 
 from fastlisaresponse import ResponseWrapper
 from lisatools.detector import EqualArmlengthOrbits
-from lisatools.sensitivity import get_sensitivity, A1TDISens, E1TDISens, T1TDISens
 from few.waveform import GenerateEMRIWaveform
 from few.waveform.waveform import SuperKludgeWaveform
 import matplotlib.pyplot as plt

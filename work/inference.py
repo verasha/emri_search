@@ -1083,7 +1083,7 @@ def main():
             except ImportError:
                 USE_GPU = False
 
-            try:
+            try
                 add_kwargs['evolve_1PA'] = False
                 if analytic_model == '1PA':
                     add_kwargs['evolve_1PA'] = True

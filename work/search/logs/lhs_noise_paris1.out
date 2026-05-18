@@ -1,0 +1,1573 @@
+Using dt=10s, T=0.25yr, TDI gen=1
+Building ResponseWrapper...
+Building GravWaveAnalysis...
+Initializing LogLike...
+LogLike initialized.
+SNR (time-max): 1539.1741
+Evaluating 500000 remaining samples in 50000 batches of 10  (checkpoint every 10 batches)
+  [10/500000]  elapsed=9s  rate=1.1/s  eta=439479s  finite=10
+  [20/500000]  elapsed=18s  rate=1.1/s  eta=437626s  finite=20
+  [warn] sample 2 failed: 
+  [warn] sample 7 failed: 
+  [30/500000]  elapsed=25s  rate=1.2/s  eta=411896s  finite=28
+  [40/500000]  elapsed=34s  rate=1.2/s  eta=419254s  finite=38
+  [50/500000]  elapsed=42s  rate=1.2/s  eta=421192s  finite=48
+  [warn] sample 0 failed: 
+  [warn] sample 9 failed: 
+  [60/500000]  elapsed=49s  rate=1.2/s  eta=410496s  finite=56
+  [warn] sample 2 failed: 
+  [70/500000]  elapsed=57s  rate=1.2/s  eta=410335s  finite=64
+  [80/500000]  elapsed=66s  rate=1.2/s  eta=413553s  finite=74
+  [90/500000]  elapsed=75s  rate=1.2/s  eta=415852s  finite=84
+  [100/500000]  elapsed=84s  rate=1.2/s  eta=419652s  finite=94
+  -> checkpoint saved: /scratch/e1498138/lhs_noise_paris1_checkpoints/lhs_noise_paris1_ckpt_000100.pkl
+  [warn] sample 0 failed: 
+  [110/500000]  elapsed=92s  rate=1.2/s  eta=420146s  finite=103
+  [120/500000]  elapsed=101s  rate=1.2/s  eta=421535s  finite=112
+  [warn] sample 8 failed: 
+  [130/500000]  elapsed=109s  rate=1.2/s  eta=419451s  finite=119
+  [140/500000]  elapsed=118s  rate=1.2/s  eta=420592s  finite=128
+  [150/500000]  elapsed=127s  rate=1.2/s  eta=421556s  finite=138
+  [warn] sample 9 failed: 
+  [160/500000]  elapsed=135s  rate=1.2/s  eta=420306s  finite=147
+  [warn] sample 4 failed: 
+  [170/500000]  elapsed=143s  rate=1.2/s  eta=418995s  finite=156
+  [180/500000]  elapsed=151s  rate=1.2/s  eta=419524s  finite=165
+  [190/500000]  elapsed=160s  rate=1.2/s  eta=419820s  finite=173
+  [warn] sample 6 failed: 
+  [200/500000]  elapsed=167s  rate=1.2/s  eta=418446s  finite=181
+  -> checkpoint saved: /scratch/e1498138/lhs_noise_paris1_checkpoints/lhs_noise_paris1_ckpt_000200.pkl
+  [210/500000]  elapsed=177s  rate=1.2/s  eta=420100s  finite=190
+  [warn] sample 5 failed: 
+  [220/500000]  elapsed=185s  rate=1.2/s  eta=419823s  finite=198
+  [warn] sample 9 failed: 
+  [230/500000]  elapsed=193s  rate=1.2/s  eta=419286s  finite=205
+  [240/500000]  elapsed=202s  rate=1.2/s  eta=421017s  finite=215
+  [250/500000]  elapsed=211s  rate=1.2/s  eta=421827s  finite=224
+  [260/500000]  elapsed=220s  rate=1.2/s  eta=422363s  finite=233
+  [270/500000]  elapsed=229s  rate=1.2/s  eta=423669s  finite=243
+  [280/500000]  elapsed=238s  rate=1.2/s  eta=424336s  finite=252
+  [warn] sample 1 failed: 
+  [290/500000]  elapsed=246s  rate=1.2/s  eta=423157s  finite=258
+  [300/500000]  elapsed=254s  rate=1.2/s  eta=423461s  finite=266
+  -> checkpoint saved: /scratch/e1498138/lhs_noise_paris1_checkpoints/lhs_noise_paris1_ckpt_000300.pkl
+  [warn] sample 7 failed: 
+  [310/500000]  elapsed=263s  rate=1.2/s  eta=423171s  finite=274
+  [320/500000]  elapsed=271s  rate=1.2/s  eta=423751s  finite=284
+  [330/500000]  elapsed=280s  rate=1.2/s  eta=424230s  finite=293
+  [340/500000]  elapsed=289s  rate=1.2/s  eta=424710s  finite=303
+  [350/500000]  elapsed=298s  rate=1.2/s  eta=425022s  finite=312
+  [360/500000]  elapsed=306s  rate=1.2/s  eta=425135s  finite=320
+  [warn] sample 5 failed: 
+  [370/500000]  elapsed=315s  rate=1.2/s  eta=424919s  finite=329
+  [380/500000]  elapsed=324s  rate=1.2/s  eta=425737s  finite=339
+  [390/500000]  elapsed=333s  rate=1.2/s  eta=426394s  finite=348
+  [400/500000]  elapsed=342s  rate=1.2/s  eta=427576s  finite=357
+  -> checkpoint saved: /scratch/e1498138/lhs_noise_paris1_checkpoints/lhs_noise_paris1_ckpt_000400.pkl
+  [warn] sample 2 failed: 
+  [410/500000]  elapsed=351s  rate=1.2/s  eta=427316s  finite=365
+  [420/500000]  elapsed=360s  rate=1.2/s  eta=427841s  finite=373
+  [430/500000]  elapsed=369s  rate=1.2/s  eta=428314s  finite=383
+  [440/500000]  elapsed=377s  rate=1.2/s  eta=428555s  finite=392
+  [450/500000]  elapsed=386s  rate=1.2/s  eta=428730s  finite=400
+  [460/500000]  elapsed=395s  rate=1.2/s  eta=429227s  finite=409
+  [warn] sample 8 failed: 
+  [470/500000]  elapsed=403s  rate=1.2/s  eta=428736s  finite=418
+  [warn] sample 2 failed: 
+  [480/500000]  elapsed=412s  rate=1.2/s  eta=428246s  finite=427
+  [warn] sample 7 failed: 
+  [490/500000]  elapsed=420s  rate=1.2/s  eta=427716s  finite=436
+  [500/500000]  elapsed=428s  rate=1.2/s  eta=427829s  finite=445
+  -> checkpoint saved: /scratch/e1498138/lhs_noise_paris1_checkpoints/lhs_noise_paris1_ckpt_000500.pkl
+  [warn] sample 3 failed: 
+  [510/500000]  elapsed=436s  rate=1.2/s  eta=427240s  finite=453
+  [520/500000]  elapsed=445s  rate=1.2/s  eta=427463s  finite=462
+  [530/500000]  elapsed=454s  rate=1.2/s  eta=427712s  finite=472
+  [540/500000]  elapsed=463s  rate=1.2/s  eta=428049s  finite=480
+  [550/500000]  elapsed=473s  rate=1.2/s  eta=429198s  finite=489
+  [warn] sample 1 failed: 
+  [warn] sample 9 failed: 
+  [560/500000]  elapsed=480s  rate=1.2/s  eta=427926s  finite=496
+  [570/500000]  elapsed=489s  rate=1.2/s  eta=428240s  finite=505
+  [580/500000]  elapsed=497s  rate=1.2/s  eta=428297s  finite=515
+  [590/500000]  elapsed=506s  rate=1.2/s  eta=428571s  finite=524
+  [600/500000]  elapsed=515s  rate=1.2/s  eta=428964s  finite=533
+  -> checkpoint saved: /scratch/e1498138/lhs_noise_paris1_checkpoints/lhs_noise_paris1_ckpt_000600.pkl
+  [610/500000]  elapsed=524s  rate=1.2/s  eta=429373s  finite=543
+  [warn] sample 5 failed: 
+  [620/500000]  elapsed=532s  rate=1.2/s  eta=428898s  finite=551
+  [630/500000]  elapsed=541s  rate=1.2/s  eta=429047s  finite=561
+  [640/500000]  elapsed=550s  rate=1.2/s  eta=429183s  finite=569
+  [warn] sample 2 failed: 
+  [650/500000]  elapsed=558s  rate=1.2/s  eta=428672s  finite=575
+  [660/500000]  elapsed=567s  rate=1.2/s  eta=428767s  finite=585
+  [warn] sample 9 failed: 
+  [670/500000]  elapsed=575s  rate=1.2/s  eta=428480s  finite=594
+  [680/500000]  elapsed=584s  rate=1.2/s  eta=428853s  finite=604
+  [warn] sample 5 failed: 
+  [690/500000]  elapsed=592s  rate=1.2/s  eta=428512s  finite=613
+  [warn] sample 0 failed: 
+  [700/500000]  elapsed=600s  rate=1.2/s  eta=428037s  finite=621
+  -> checkpoint saved: /scratch/e1498138/lhs_noise_paris1_checkpoints/lhs_noise_paris1_ckpt_000700.pkl
+  [warn] sample 4 failed: 
+  [710/500000]  elapsed=608s  rate=1.2/s  eta=427689s  finite=630
+  [warn] sample 9 failed: 
+  [720/500000]  elapsed=616s  rate=1.2/s  eta=427219s  finite=639
+  [730/500000]  elapsed=625s  rate=1.2/s  eta=427425s  finite=649
+  [warn] sample 4 failed: 
+  [740/500000]  elapsed=633s  rate=1.2/s  eta=427010s  finite=658
+  [750/500000]  elapsed=641s  rate=1.2/s  eta=427010s  finite=668
+  [warn] sample 4 failed: 
+  [760/500000]  elapsed=650s  rate=1.2/s  eta=426852s  finite=677
+  [770/500000]  elapsed=659s  rate=1.2/s  eta=427141s  finite=687
+  [780/500000]  elapsed=668s  rate=1.2/s  eta=427218s  finite=697
+  [790/500000]  elapsed=677s  rate=1.2/s  eta=427643s  finite=707
+  [800/500000]  elapsed=686s  rate=1.2/s  eta=427981s  finite=716
+  -> checkpoint saved: /scratch/e1498138/lhs_noise_paris1_checkpoints/lhs_noise_paris1_ckpt_000800.pkl
+  [810/500000]  elapsed=695s  rate=1.2/s  eta=428351s  finite=725
+  [warn] sample 7 failed: 
+  [820/500000]  elapsed=703s  rate=1.2/s  eta=428173s  finite=734
+  [warn] sample 0 failed: 
+  [830/500000]  elapsed=711s  rate=1.2/s  eta=427865s  finite=743
+  [840/500000]  elapsed=720s  rate=1.2/s  eta=428012s  finite=753
+  [850/500000]  elapsed=729s  rate=1.2/s  eta=428266s  finite=762
+  [860/500000]  elapsed=738s  rate=1.2/s  eta=428285s  finite=772
+  [warn] sample 5 failed: 
+  [870/500000]  elapsed=746s  rate=1.2/s  eta=428071s  finite=780
+  [warn] sample 9 failed: 
+  [880/500000]  elapsed=754s  rate=1.2/s  eta=427869s  finite=787
+  [890/500000]  elapsed=763s  rate=1.2/s  eta=427908s  finite=795
+  [900/500000]  elapsed=772s  rate=1.2/s  eta=427918s  finite=804
+  -> checkpoint saved: /scratch/e1498138/lhs_noise_paris1_checkpoints/lhs_noise_paris1_ckpt_000900.pkl
+  [910/500000]  elapsed=781s  rate=1.2/s  eta=428169s  finite=812
+  [920/500000]  elapsed=790s  rate=1.2/s  eta=428361s  finite=822
+  [930/500000]  elapsed=798s  rate=1.2/s  eta=428386s  finite=831
+  [warn] sample 7 failed: 
+  [940/500000]  elapsed=806s  rate=1.2/s  eta=427993s  finite=840
+  [warn] sample 5 failed: 
+  [950/500000]  elapsed=814s  rate=1.2/s  eta=427728s  finite=848
+  [960/500000]  elapsed=823s  rate=1.2/s  eta=427871s  finite=858
+  [970/500000]  elapsed=832s  rate=1.2/s  eta=428009s  finite=868
+  [980/500000]  elapsed=841s  rate=1.2/s  eta=428233s  finite=878
+  [990/500000]  elapsed=850s  rate=1.2/s  eta=428401s  finite=887
+  [warn] sample 3 failed: 
+  [1000/500000]  elapsed=858s  rate=1.2/s  eta=428373s  finite=896
+  -> checkpoint saved: /scratch/e1498138/lhs_noise_paris1_checkpoints/lhs_noise_paris1_ckpt_001000.pkl
+  [1010/500000]  elapsed=868s  rate=1.2/s  eta=428754s  finite=905
+  [1020/500000]  elapsed=877s  rate=1.2/s  eta=428933s  finite=915
+  [warn] sample 3 failed: 
+  [warn] sample 9 failed: 
+  [1030/500000]  elapsed=884s  rate=1.2/s  eta=428413s  finite=922
+  [1040/500000]  elapsed=893s  rate=1.2/s  eta=428630s  finite=932
+  [warn] sample 5 failed: 
+  [1050/500000]  elapsed=901s  rate=1.2/s  eta=428305s  finite=940
+  [1060/500000]  elapsed=910s  rate=1.2/s  eta=428435s  finite=948
+  [1070/500000]  elapsed=919s  rate=1.2/s  eta=428597s  finite=956
+  [1080/500000]  elapsed=928s  rate=1.2/s  eta=428723s  finite=965
+  [warn] sample 5 failed: 
+  [1090/500000]  elapsed=936s  rate=1.2/s  eta=428412s  finite=972
+  [1100/500000]  elapsed=945s  rate=1.2/s  eta=428688s  finite=982
+  -> checkpoint saved: /scratch/e1498138/lhs_noise_paris1_checkpoints/lhs_noise_paris1_ckpt_001100.pkl
+  [1110/500000]  elapsed=954s  rate=1.2/s  eta=428879s  finite=991
+  [warn] sample 4 failed: 
+  [1120/500000]  elapsed=962s  rate=1.2/s  eta=428596s  finite=1000
+  [warn] sample 4 failed: 
+  [1130/500000]  elapsed=970s  rate=1.2/s  eta=428292s  finite=1008
+  [1140/500000]  elapsed=979s  rate=1.2/s  eta=428325s  finite=1018
+  [1150/500000]  elapsed=988s  rate=1.2/s  eta=428600s  finite=1028
+  [1160/500000]  elapsed=997s  rate=1.2/s  eta=428786s  finite=1037
+  [1170/500000]  elapsed=1006s  rate=1.2/s  eta=428825s  finite=1046
+  [warn] sample 2 failed: 
+  [warn] sample 7 failed: 
+  [1180/500000]  elapsed=1013s  rate=1.2/s  eta=428235s  finite=1053
+  [1190/500000]  elapsed=1022s  rate=1.2/s  eta=428288s  finite=1062
+  [1200/500000]  elapsed=1031s  rate=1.2/s  eta=428489s  finite=1072
+  -> checkpoint saved: /scratch/e1498138/lhs_noise_paris1_checkpoints/lhs_noise_paris1_ckpt_001200.pkl
+  [1210/500000]  elapsed=1040s  rate=1.2/s  eta=428752s  finite=1082
+  [1220/500000]  elapsed=1050s  rate=1.2/s  eta=429083s  finite=1090
+  [1230/500000]  elapsed=1058s  rate=1.2/s  eta=429109s  finite=1100
+  [1240/500000]  elapsed=1067s  rate=1.2/s  eta=429129s  finite=1109
+  [1250/500000]  elapsed=1076s  rate=1.2/s  eta=429327s  finite=1119
+  [1260/500000]  elapsed=1085s  rate=1.2/s  eta=429315s  finite=1129
+  [1270/500000]  elapsed=1093s  rate=1.2/s  eta=429296s  finite=1138
+  [1280/500000]  elapsed=1102s  rate=1.2/s  eta=429349s  finite=1148
+  [1290/500000]  elapsed=1111s  rate=1.2/s  eta=429373s  finite=1158
+  [warn] sample 9 failed: 
+  [1300/500000]  elapsed=1118s  rate=1.2/s  eta=429065s  finite=1166
+  -> checkpoint saved: /scratch/e1498138/lhs_noise_paris1_checkpoints/lhs_noise_paris1_ckpt_001300.pkl
+  [1310/500000]  elapsed=1128s  rate=1.2/s  eta=429246s  finite=1175
+  [warn] sample 6 failed: 
+  [1320/500000]  elapsed=1136s  rate=1.2/s  eta=429142s  finite=1182
+  [1330/500000]  elapsed=1145s  rate=1.2/s  eta=429226s  finite=1191
+  [1340/500000]  elapsed=1154s  rate=1.2/s  eta=429279s  finite=1201
+  [1350/500000]  elapsed=1163s  rate=1.2/s  eta=429438s  finite=1211
+  [warn] sample 1 failed: 
+  [1360/500000]  elapsed=1171s  rate=1.2/s  eta=429183s  finite=1219
+  [warn] sample 4 failed: 
+  [1370/500000]  elapsed=1179s  rate=1.2/s  eta=428955s  finite=1228
+  [1380/500000]  elapsed=1187s  rate=1.2/s  eta=428994s  finite=1237
+  [warn] sample 1 failed: 
+  [1390/500000]  elapsed=1196s  rate=1.2/s  eta=428882s  finite=1246
+  [1400/500000]  elapsed=1204s  rate=1.2/s  eta=428875s  finite=1255
+  -> checkpoint saved: /scratch/e1498138/lhs_noise_paris1_checkpoints/lhs_noise_paris1_ckpt_001400.pkl
+  [warn] sample 3 failed: 
+  [1410/500000]  elapsed=1212s  rate=1.2/s  eta=428702s  finite=1263
+  [1420/500000]  elapsed=1221s  rate=1.2/s  eta=428860s  finite=1272
+  [1430/500000]  elapsed=1230s  rate=1.2/s  eta=428908s  finite=1282
+  [warn] sample 1 failed: 
+  [1440/500000]  elapsed=1238s  rate=1.2/s  eta=428657s  finite=1290
+  [1450/500000]  elapsed=1247s  rate=1.2/s  eta=428692s  finite=1299
+  [1460/500000]  elapsed=1256s  rate=1.2/s  eta=428839s  finite=1309
+  [1470/500000]  elapsed=1265s  rate=1.2/s  eta=428971s  finite=1318
+  [warn] sample 8 failed: 
+  [1480/500000]  elapsed=1273s  rate=1.2/s  eta=428765s  finite=1327
+  [1490/500000]  elapsed=1282s  rate=1.2/s  eta=428823s  finite=1337
+  [1500/500000]  elapsed=1290s  rate=1.2/s  eta=428841s  finite=1347
+  -> checkpoint saved: /scratch/e1498138/lhs_noise_paris1_checkpoints/lhs_noise_paris1_ckpt_001500.pkl
+  [1510/500000]  elapsed=1299s  rate=1.2/s  eta=428918s  finite=1356
+  [1520/500000]  elapsed=1308s  rate=1.2/s  eta=429007s  finite=1366
+  [1530/500000]  elapsed=1317s  rate=1.2/s  eta=429034s  finite=1375
+  [1540/500000]  elapsed=1326s  rate=1.2/s  eta=429047s  finite=1385
+  [1550/500000]  elapsed=1335s  rate=1.2/s  eta=429179s  finite=1395
+  [1560/500000]  elapsed=1344s  rate=1.2/s  eta=429337s  finite=1404
+  [warn] sample 0 failed: 
+  [1570/500000]  elapsed=1352s  rate=1.2/s  eta=429143s  finite=1413
+  [warn] sample 0 failed: 
+  [warn] sample 7 failed: 
+  [1580/500000]  elapsed=1359s  rate=1.2/s  eta=428694s  finite=1421
+  [1590/500000]  elapsed=1368s  rate=1.2/s  eta=428691s  finite=1429
+  [1600/500000]  elapsed=1376s  rate=1.2/s  eta=428751s  finite=1439
+  -> checkpoint saved: /scratch/e1498138/lhs_noise_paris1_checkpoints/lhs_noise_paris1_ckpt_001600.pkl
+  [1610/500000]  elapsed=1385s  rate=1.2/s  eta=428821s  finite=1448
+  [1620/500000]  elapsed=1394s  rate=1.2/s  eta=428816s  finite=1458
+  [1630/500000]  elapsed=1403s  rate=1.2/s  eta=428825s  finite=1468
+  [1640/500000]  elapsed=1411s  rate=1.2/s  eta=428817s  finite=1478
+  [1650/500000]  elapsed=1420s  rate=1.2/s  eta=428820s  finite=1488
+  [warn] sample 6 failed: 
+  [1660/500000]  elapsed=1428s  rate=1.2/s  eta=428676s  finite=1497
+  [1670/500000]  elapsed=1437s  rate=1.2/s  eta=428702s  finite=1505
+  [warn] sample 1 failed: 
+  [1680/500000]  elapsed=1445s  rate=1.2/s  eta=428583s  finite=1514
+  [1690/500000]  elapsed=1454s  rate=1.2/s  eta=428630s  finite=1524
+  [1700/500000]  elapsed=1462s  rate=1.2/s  eta=428663s  finite=1533
+  -> checkpoint saved: /scratch/e1498138/lhs_noise_paris1_checkpoints/lhs_noise_paris1_ckpt_001700.pkl
+  [1710/500000]  elapsed=1472s  rate=1.2/s  eta=428823s  finite=1543
+  [1720/500000]  elapsed=1481s  rate=1.2/s  eta=428942s  finite=1551
+  [1730/500000]  elapsed=1489s  rate=1.2/s  eta=428965s  finite=1561
+  [warn] sample 2 failed: 
+  [warn] sample 3 failed: 
+  [1740/500000]  elapsed=1497s  rate=1.2/s  eta=428694s  finite=1569
+  [1750/500000]  elapsed=1506s  rate=1.2/s  eta=428815s  finite=1579
+  [1760/500000]  elapsed=1515s  rate=1.2/s  eta=428834s  finite=1586
+  [1770/500000]  elapsed=1524s  rate=1.2/s  eta=428975s  finite=1595
+  [1780/500000]  elapsed=1533s  rate=1.2/s  eta=428987s  finite=1605
+  [warn] sample 2 failed: 
+  [1790/500000]  elapsed=1541s  rate=1.2/s  eta=428793s  finite=1613
+  [1800/500000]  elapsed=1549s  rate=1.2/s  eta=428828s  finite=1623
+  -> checkpoint saved: /scratch/e1498138/lhs_noise_paris1_checkpoints/lhs_noise_paris1_ckpt_001800.pkl
+  [1810/500000]  elapsed=1559s  rate=1.2/s  eta=428992s  finite=1633
+  [warn] sample 1 failed: 
+  [1820/500000]  elapsed=1567s  rate=1.2/s  eta=428858s  finite=1640
+  [1830/500000]  elapsed=1576s  rate=1.2/s  eta=428958s  finite=1649
+  [1840/500000]  elapsed=1585s  rate=1.2/s  eta=429006s  finite=1659
+  [1850/500000]  elapsed=1593s  rate=1.2/s  eta=429021s  finite=1669
+  [1860/500000]  elapsed=1602s  rate=1.2/s  eta=429025s  finite=1679
+  [1870/500000]  elapsed=1610s  rate=1.2/s  eta=428989s  finite=1688
+  [1880/500000]  elapsed=1619s  rate=1.2/s  eta=429069s  finite=1698
+  [1890/500000]  elapsed=1628s  rate=1.2/s  eta=429184s  finite=1707
+  [1900/500000]  elapsed=1637s  rate=1.2/s  eta=429275s  finite=1717
+  -> checkpoint saved: /scratch/e1498138/lhs_noise_paris1_checkpoints/lhs_noise_paris1_ckpt_001900.pkl
+  [warn] sample 1 failed: 
+  [warn] sample 3 failed: 
+  [1910/500000]  elapsed=1645s  rate=1.2/s  eta=429020s  finite=1723
+  [warn] sample 3 failed: 
+  [1920/500000]  elapsed=1653s  rate=1.2/s  eta=428814s  finite=1730
+  [warn] sample 1 failed: 
+  [1930/500000]  elapsed=1661s  rate=1.2/s  eta=428615s  finite=1738
+  [1940/500000]  elapsed=1669s  rate=1.2/s  eta=428603s  finite=1747
+  [1950/500000]  elapsed=1678s  rate=1.2/s  eta=428680s  finite=1756
+  [1960/500000]  elapsed=1688s  rate=1.2/s  eta=428811s  finite=1766
+  [1970/500000]  elapsed=1696s  rate=1.2/s  eta=428849s  finite=1776
+  [1980/500000]  elapsed=1705s  rate=1.2/s  eta=428872s  finite=1786
+  [1990/500000]  elapsed=1714s  rate=1.2/s  eta=428852s  finite=1796
+  [2000/500000]  elapsed=1722s  rate=1.2/s  eta=428862s  finite=1806
+  -> checkpoint saved: /scratch/e1498138/lhs_noise_paris1_checkpoints/lhs_noise_paris1_ckpt_002000.pkl
+  [2010/500000]  elapsed=1731s  rate=1.2/s  eta=428951s  finite=1816
+  [2020/500000]  elapsed=1741s  rate=1.2/s  eta=429082s  finite=1826
+  [2030/500000]  elapsed=1749s  rate=1.2/s  eta=429098s  finite=1835
+  [2040/500000]  elapsed=1758s  rate=1.2/s  eta=429076s  finite=1845
+  [warn] sample 6 failed: 
+  [2050/500000]  elapsed=1766s  rate=1.2/s  eta=428984s  finite=1854
+  [warn] sample 1 failed: 
+  [2060/500000]  elapsed=1774s  rate=1.2/s  eta=428853s  finite=1863
+  [2070/500000]  elapsed=1783s  rate=1.2/s  eta=428848s  finite=1872
+  [2080/500000]  elapsed=1792s  rate=1.2/s  eta=428926s  finite=1882
+  [2090/500000]  elapsed=1801s  rate=1.2/s  eta=429013s  finite=1891
+  [warn] sample 9 failed: 
+  [2100/500000]  elapsed=1809s  rate=1.2/s  eta=428851s  finite=1897
+  -> checkpoint saved: /scratch/e1498138/lhs_noise_paris1_checkpoints/lhs_noise_paris1_ckpt_002100.pkl
+  [warn] sample 0 failed: 
+  [2110/500000]  elapsed=1817s  rate=1.2/s  eta=428683s  finite=1905
+  [2120/500000]  elapsed=1825s  rate=1.2/s  eta=428710s  finite=1914
+  [warn] sample 8 failed: 
+  [2130/500000]  elapsed=1834s  rate=1.2/s  eta=428595s  finite=1922
+  [warn] sample 0 failed: 
+  [2140/500000]  elapsed=1842s  rate=1.2/s  eta=428466s  finite=1930
+  [warn] sample 3 failed: 
+  [2150/500000]  elapsed=1850s  rate=1.2/s  eta=428285s  finite=1936
+  [2160/500000]  elapsed=1858s  rate=1.2/s  eta=428338s  finite=1946
+  [2170/500000]  elapsed=1867s  rate=1.2/s  eta=428400s  finite=1956
+  [2180/500000]  elapsed=1876s  rate=1.2/s  eta=428447s  finite=1965
+  [2190/500000]  elapsed=1885s  rate=1.2/s  eta=428524s  finite=1974
+  [2200/500000]  elapsed=1894s  rate=1.2/s  eta=428632s  finite=1984
+  -> checkpoint saved: /scratch/e1498138/lhs_noise_paris1_checkpoints/lhs_noise_paris1_ckpt_002200.pkl
+  [2210/500000]  elapsed=1903s  rate=1.2/s  eta=428739s  finite=1994
+  [warn] sample 5 failed: 
+  [2220/500000]  elapsed=1911s  rate=1.2/s  eta=428545s  finite=2003
+  [2230/500000]  elapsed=1920s  rate=1.2/s  eta=428576s  finite=2012
+  [2240/500000]  elapsed=1929s  rate=1.2/s  eta=428680s  finite=2022
+  [warn] sample 8 failed: 
+  [2250/500000]  elapsed=1937s  rate=1.2/s  eta=428615s  finite=2030
+  [warn] sample 7 failed: 
+  [warn] sample 8 failed: 
+  [2260/500000]  elapsed=1945s  rate=1.2/s  eta=428361s  finite=2036
+  [warn] sample 4 failed: 
+  [2270/500000]  elapsed=1953s  rate=1.2/s  eta=428220s  finite=2045
+  [warn] sample 5 failed: 
+  [2280/500000]  elapsed=1961s  rate=1.2/s  eta=428071s  finite=2054
+  [2290/500000]  elapsed=1970s  rate=1.2/s  eta=428132s  finite=2064
+  [warn] sample 8 failed: 
+  [2300/500000]  elapsed=1978s  rate=1.2/s  eta=427991s  finite=2073
+  -> checkpoint saved: /scratch/e1498138/lhs_noise_paris1_checkpoints/lhs_noise_paris1_ckpt_002300.pkl
+  [warn] sample 5 failed: 
+  [2310/500000]  elapsed=1986s  rate=1.2/s  eta=427861s  finite=2081
+  [warn] sample 4 failed: 
+  [2320/500000]  elapsed=1994s  rate=1.2/s  eta=427758s  finite=2089
+  [2330/500000]  elapsed=2003s  rate=1.2/s  eta=427863s  finite=2096
+  [warn] sample 5 failed: 
+  [2340/500000]  elapsed=2011s  rate=1.2/s  eta=427768s  finite=2104
+  [2350/500000]  elapsed=2020s  rate=1.2/s  eta=427795s  finite=2114
+  [warn] sample 2 failed: 
+  [2360/500000]  elapsed=2028s  rate=1.2/s  eta=427642s  finite=2122
+  [warn] sample 4 failed: 
+  [2370/500000]  elapsed=2036s  rate=1.2/s  eta=427544s  finite=2130
+  [2380/500000]  elapsed=2045s  rate=1.2/s  eta=427538s  finite=2139
+  [2390/500000]  elapsed=2053s  rate=1.2/s  eta=427534s  finite=2149
+  [2400/500000]  elapsed=2062s  rate=1.2/s  eta=427557s  finite=2158
+  -> checkpoint saved: /scratch/e1498138/lhs_noise_paris1_checkpoints/lhs_noise_paris1_ckpt_002400.pkl
+  [2410/500000]  elapsed=2071s  rate=1.2/s  eta=427568s  finite=2167
+  [2420/500000]  elapsed=2079s  rate=1.2/s  eta=427560s  finite=2176
+  [2430/500000]  elapsed=2088s  rate=1.2/s  eta=427619s  finite=2186
+  [warn] sample 0 failed: 
+  [2440/500000]  elapsed=2097s  rate=1.2/s  eta=427607s  finite=2195
+  [2450/500000]  elapsed=2106s  rate=1.2/s  eta=427706s  finite=2205
+  [2460/500000]  elapsed=2115s  rate=1.2/s  eta=427720s  finite=2215
+  [2470/500000]  elapsed=2124s  rate=1.2/s  eta=427769s  finite=2225
+  [2480/500000]  elapsed=2133s  rate=1.2/s  eta=427813s  finite=2234
+  [warn] sample 1 failed: 
+  [warn] sample 6 failed: 
+  [2490/500000]  elapsed=2140s  rate=1.2/s  eta=427490s  finite=2240
+  [2500/500000]  elapsed=2148s  rate=1.2/s  eta=427508s  finite=2248
+  -> checkpoint saved: /scratch/e1498138/lhs_noise_paris1_checkpoints/lhs_noise_paris1_ckpt_002500.pkl
+  [2510/500000]  elapsed=2157s  rate=1.2/s  eta=427543s  finite=2256
+  [2520/500000]  elapsed=2166s  rate=1.2/s  eta=427539s  finite=2265
+  [2530/500000]  elapsed=2174s  rate=1.2/s  eta=427551s  finite=2274
+  [2540/500000]  elapsed=2183s  rate=1.2/s  eta=427562s  finite=2284
+  [2550/500000]  elapsed=2192s  rate=1.2/s  eta=427625s  finite=2292
+  [warn] sample 3 failed: 
+  [2560/500000]  elapsed=2200s  rate=1.2/s  eta=427538s  finite=2301
+  [2570/500000]  elapsed=2209s  rate=1.2/s  eta=427577s  finite=2311
+  [warn] sample 3 failed: 
+  [warn] sample 9 failed: 
+  [2580/500000]  elapsed=2216s  rate=1.2/s  eta=427269s  finite=2317
+  [warn] sample 0 failed: 
+  [2590/500000]  elapsed=2224s  rate=1.2/s  eta=427116s  finite=2326
+  [2600/500000]  elapsed=2233s  rate=1.2/s  eta=427120s  finite=2336
+  -> checkpoint saved: /scratch/e1498138/lhs_noise_paris1_checkpoints/lhs_noise_paris1_ckpt_002600.pkl
+  [2610/500000]  elapsed=2242s  rate=1.2/s  eta=427268s  finite=2345
+  [2620/500000]  elapsed=2251s  rate=1.2/s  eta=427289s  finite=2354
+  [warn] sample 0 failed: 
+  [warn] sample 9 failed: 
+  [2630/500000]  elapsed=2258s  rate=1.2/s  eta=427001s  finite=2361
+  [2640/500000]  elapsed=2267s  rate=1.2/s  eta=427002s  finite=2371
+  [2650/500000]  elapsed=2276s  rate=1.2/s  eta=427089s  finite=2381
+  [2660/500000]  elapsed=2284s  rate=1.2/s  eta=427095s  finite=2391
+  [warn] sample 1 failed: 
+  [warn] sample 4 failed: 
+  [warn] sample 8 failed: 
+  [2670/500000]  elapsed=2291s  rate=1.2/s  eta=426671s  finite=2397
+  [2680/500000]  elapsed=2299s  rate=1.2/s  eta=426681s  finite=2406
+  [warn] sample 9 failed: 
+  [2690/500000]  elapsed=2307s  rate=1.2/s  eta=426575s  finite=2413
+  [2700/500000]  elapsed=2316s  rate=1.2/s  eta=426604s  finite=2422
+  -> checkpoint saved: /scratch/e1498138/lhs_noise_paris1_checkpoints/lhs_noise_paris1_ckpt_002700.pkl
+  [2710/500000]  elapsed=2325s  rate=1.2/s  eta=426613s  finite=2432
+  [2720/500000]  elapsed=2333s  rate=1.2/s  eta=426610s  finite=2441
+  [2730/500000]  elapsed=2342s  rate=1.2/s  eta=426620s  finite=2451
+  [warn] sample 7 failed: 
+  [2740/500000]  elapsed=2350s  rate=1.2/s  eta=426485s  finite=2458
+  [2750/500000]  elapsed=2359s  rate=1.2/s  eta=426478s  finite=2468
+  [warn] sample 2 failed: 
+  [2760/500000]  elapsed=2367s  rate=1.2/s  eta=426363s  finite=2477
+  [warn] sample 1 failed: 
+  [2770/500000]  elapsed=2375s  rate=1.2/s  eta=426319s  finite=2485
+  [2780/500000]  elapsed=2384s  rate=1.2/s  eta=426400s  finite=2495
+  [warn] sample 9 failed: 
+  [2790/500000]  elapsed=2392s  rate=1.2/s  eta=426318s  finite=2502
+  [2800/500000]  elapsed=2401s  rate=1.2/s  eta=426308s  finite=2512
+  -> checkpoint saved: /scratch/e1498138/lhs_noise_paris1_checkpoints/lhs_noise_paris1_ckpt_002800.pkl
+  [2810/500000]  elapsed=2410s  rate=1.2/s  eta=426351s  finite=2520
+  [warn] sample 7 failed: 
+  [2820/500000]  elapsed=2418s  rate=1.2/s  eta=426282s  finite=2528
+  [2830/500000]  elapsed=2427s  rate=1.2/s  eta=426379s  finite=2538
+  [warn] sample 9 failed: 
+  [2840/500000]  elapsed=2435s  rate=1.2/s  eta=426288s  finite=2545
+  [2850/500000]  elapsed=2444s  rate=1.2/s  eta=426313s  finite=2554
+  [2860/500000]  elapsed=2453s  rate=1.2/s  eta=426325s  finite=2564
+  [warn] sample 3 failed: 
+  [2870/500000]  elapsed=2460s  rate=1.2/s  eta=426196s  finite=2572
+  [warn] sample 0 failed: 
+  [warn] sample 9 failed: 
+  [2880/500000]  elapsed=2468s  rate=1.2/s  eta=425953s  finite=2579
+  [2890/500000]  elapsed=2476s  rate=1.2/s  eta=425942s  finite=2589
+  [warn] sample 6 failed: 
+  [2900/500000]  elapsed=2484s  rate=1.2/s  eta=425827s  finite=2597
+  -> checkpoint saved: /scratch/e1498138/lhs_noise_paris1_checkpoints/lhs_noise_paris1_ckpt_002900.pkl
+  [warn] sample 4 failed: 
+  [2910/500000]  elapsed=2492s  rate=1.2/s  eta=425763s  finite=2606
+  [2920/500000]  elapsed=2501s  rate=1.2/s  eta=425767s  finite=2616
+  [2930/500000]  elapsed=2510s  rate=1.2/s  eta=425804s  finite=2626
+  [2940/500000]  elapsed=2519s  rate=1.2/s  eta=425871s  finite=2635
+  [warn] sample 4 failed: 
+  [2950/500000]  elapsed=2527s  rate=1.2/s  eta=425753s  finite=2644
+  [2960/500000]  elapsed=2535s  rate=1.2/s  eta=425756s  finite=2653
+  [2970/500000]  elapsed=2545s  rate=1.2/s  eta=425865s  finite=2661
+  [2980/500000]  elapsed=2554s  rate=1.2/s  eta=425952s  finite=2671
+  [2990/500000]  elapsed=2563s  rate=1.2/s  eta=426007s  finite=2681
+  [3000/500000]  elapsed=2571s  rate=1.2/s  eta=426002s  finite=2690
+  -> checkpoint saved: /scratch/e1498138/lhs_noise_paris1_checkpoints/lhs_noise_paris1_ckpt_003000.pkl
+  [3010/500000]  elapsed=2580s  rate=1.2/s  eta=426046s  finite=2700
+  [3020/500000]  elapsed=2589s  rate=1.2/s  eta=426041s  finite=2709
+  [3030/500000]  elapsed=2598s  rate=1.2/s  eta=426036s  finite=2719
+  [warn] sample 9 failed: 
+  [3040/500000]  elapsed=2606s  rate=1.2/s  eta=425993s  finite=2728
+  [3050/500000]  elapsed=2615s  rate=1.2/s  eta=426049s  finite=2736
+  [3060/500000]  elapsed=2624s  rate=1.2/s  eta=426096s  finite=2745
+  [warn] sample 0 failed: 
+  [3070/500000]  elapsed=2632s  rate=1.2/s  eta=425965s  finite=2752
+  [warn] sample 4 failed: 
+  [3080/500000]  elapsed=2639s  rate=1.2/s  eta=425839s  finite=2760
+  [3090/500000]  elapsed=2648s  rate=1.2/s  eta=425851s  finite=2770
+  [3100/500000]  elapsed=2657s  rate=1.2/s  eta=425857s  finite=2780
+  -> checkpoint saved: /scratch/e1498138/lhs_noise_paris1_checkpoints/lhs_noise_paris1_ckpt_003100.pkl
+  [3110/500000]  elapsed=2666s  rate=1.2/s  eta=425897s  finite=2790
+  [3120/500000]  elapsed=2674s  rate=1.2/s  eta=425904s  finite=2800
+  [3130/500000]  elapsed=2683s  rate=1.2/s  eta=425888s  finite=2809
+  [3140/500000]  elapsed=2691s  rate=1.2/s  eta=425890s  finite=2819
+  [warn] sample 8 failed: 
+  [3150/500000]  elapsed=2699s  rate=1.2/s  eta=425790s  finite=2827
+  [3160/500000]  elapsed=2708s  rate=1.2/s  eta=425785s  finite=2836
+  [3170/500000]  elapsed=2717s  rate=1.2/s  eta=425808s  finite=2846
+  [3180/500000]  elapsed=2726s  rate=1.2/s  eta=425878s  finite=2855
+  [3190/500000]  elapsed=2736s  rate=1.2/s  eta=426097s  finite=2864
+  [3200/500000]  elapsed=2745s  rate=1.2/s  eta=426152s  finite=2872
+  -> checkpoint saved: /scratch/e1498138/lhs_noise_paris1_checkpoints/lhs_noise_paris1_ckpt_003200.pkl
+  [3210/500000]  elapsed=2754s  rate=1.2/s  eta=426267s  finite=2881
+  [3220/500000]  elapsed=2764s  rate=1.2/s  eta=426353s  finite=2891
+  [warn] sample 4 failed: 
+  [3230/500000]  elapsed=2771s  rate=1.2/s  eta=426246s  finite=2898
+  [3240/500000]  elapsed=2780s  rate=1.2/s  eta=426246s  finite=2908
+  [warn] sample 6 failed: 
+  [3250/500000]  elapsed=2788s  rate=1.2/s  eta=426192s  finite=2917
+  [3260/500000]  elapsed=2797s  rate=1.2/s  eta=426194s  finite=2927
+  [warn] sample 1 failed: 
+  [3270/500000]  elapsed=2805s  rate=1.2/s  eta=426082s  finite=2936
+  [warn] sample 6 failed: 
+  [warn] sample 8 failed: 
+  [3280/500000]  elapsed=2812s  rate=1.2/s  eta=425878s  finite=2944
+  [3290/500000]  elapsed=2821s  rate=1.2/s  eta=425943s  finite=2953
+  [warn] sample 4 failed: 
+  [3300/500000]  elapsed=2829s  rate=1.2/s  eta=425879s  finite=2961
+  -> checkpoint saved: /scratch/e1498138/lhs_noise_paris1_checkpoints/lhs_noise_paris1_ckpt_003300.pkl
+  [3310/500000]  elapsed=2839s  rate=1.2/s  eta=425956s  finite=2971
+  [3320/500000]  elapsed=2847s  rate=1.2/s  eta=425968s  finite=2979
+  [warn] sample 7 failed: 
+  [3330/500000]  elapsed=2855s  rate=1.2/s  eta=425848s  finite=2988
+  [3340/500000]  elapsed=2864s  rate=1.2/s  eta=425849s  finite=2997
+  [3350/500000]  elapsed=2873s  rate=1.2/s  eta=425863s  finite=3007
+  [3360/500000]  elapsed=2881s  rate=1.2/s  eta=425864s  finite=3014
+  [3370/500000]  elapsed=2890s  rate=1.2/s  eta=425864s  finite=3023
+  [3380/500000]  elapsed=2899s  rate=1.2/s  eta=425908s  finite=3033
+  [3390/500000]  elapsed=2908s  rate=1.2/s  eta=425963s  finite=3042
+  [3400/500000]  elapsed=2916s  rate=1.2/s  eta=425954s  finite=3050
+  -> checkpoint saved: /scratch/e1498138/lhs_noise_paris1_checkpoints/lhs_noise_paris1_ckpt_003400.pkl
+  [3410/500000]  elapsed=2925s  rate=1.2/s  eta=425984s  finite=3060
+  [warn] sample 0 failed: 
+  [3420/500000]  elapsed=2933s  rate=1.2/s  eta=425891s  finite=3069
+  [3430/500000]  elapsed=2942s  rate=1.2/s  eta=425961s  finite=3079
+  [3440/500000]  elapsed=2951s  rate=1.2/s  eta=425955s  finite=3089
+  [3450/500000]  elapsed=2960s  rate=1.2/s  eta=425961s  finite=3099
+  [3460/500000]  elapsed=2969s  rate=1.2/s  eta=426035s  finite=3108
+  [warn] sample 6 failed: 
+  [3470/500000]  elapsed=2977s  rate=1.2/s  eta=425972s  finite=3116
+  [warn] sample 2 failed: 
+  [warn] sample 9 failed: 
+  [3480/500000]  elapsed=2984s  rate=1.2/s  eta=425771s  finite=3122
+  [3490/500000]  elapsed=2993s  rate=1.2/s  eta=425800s  finite=3131
+  [warn] sample 0 failed: 
+  [3500/500000]  elapsed=3001s  rate=1.2/s  eta=425707s  finite=3139
+  -> checkpoint saved: /scratch/e1498138/lhs_noise_paris1_checkpoints/lhs_noise_paris1_ckpt_003500.pkl
+  [3510/500000]  elapsed=3010s  rate=1.2/s  eta=425763s  finite=3148
+  [3520/500000]  elapsed=3019s  rate=1.2/s  eta=425828s  finite=3158
+  [warn] sample 8 failed: 
+  [3530/500000]  elapsed=3027s  rate=1.2/s  eta=425776s  finite=3165
+  [warn] sample 0 failed: 
+  [3540/500000]  elapsed=3035s  rate=1.2/s  eta=425699s  finite=3173
+  [3550/500000]  elapsed=3044s  rate=1.2/s  eta=425695s  finite=3183
+  [3560/500000]  elapsed=3053s  rate=1.2/s  eta=425772s  finite=3192
+  [3570/500000]  elapsed=3062s  rate=1.2/s  eta=425812s  finite=3202
+  [warn] sample 7 failed: 
+  [3580/500000]  elapsed=3070s  rate=1.2/s  eta=425706s  finite=3210
+  [3590/500000]  elapsed=3079s  rate=1.2/s  eta=425706s  finite=3220
+  [3600/500000]  elapsed=3087s  rate=1.2/s  eta=425719s  finite=3230
+  -> checkpoint saved: /scratch/e1498138/lhs_noise_paris1_checkpoints/lhs_noise_paris1_ckpt_003600.pkl
+  [3610/500000]  elapsed=3096s  rate=1.2/s  eta=425760s  finite=3236
+  [warn] sample 2 failed: 
+  [3620/500000]  elapsed=3105s  rate=1.2/s  eta=425712s  finite=3244
+  [3630/500000]  elapsed=3113s  rate=1.2/s  eta=425739s  finite=3254
+  [3640/500000]  elapsed=3122s  rate=1.2/s  eta=425773s  finite=3264
+  [3650/500000]  elapsed=3131s  rate=1.2/s  eta=425778s  finite=3274
+  [warn] sample 3 failed: 
+  [warn] sample 5 failed: 
+  [3660/500000]  elapsed=3138s  rate=1.2/s  eta=425566s  finite=3281
+  [3670/500000]  elapsed=3147s  rate=1.2/s  eta=425577s  finite=3290
+  [warn] sample 6 failed: 
+  [3680/500000]  elapsed=3155s  rate=1.2/s  eta=425488s  finite=3299
+  [3690/500000]  elapsed=3163s  rate=1.2/s  eta=425476s  finite=3306
+  [warn] sample 0 failed: 
+  [3700/500000]  elapsed=3171s  rate=1.2/s  eta=425379s  finite=3315
+  -> checkpoint saved: /scratch/e1498138/lhs_noise_paris1_checkpoints/lhs_noise_paris1_ckpt_003700.pkl
+  [warn] sample 7 failed: 
+  [3710/500000]  elapsed=3179s  rate=1.2/s  eta=425302s  finite=3324
+  [3720/500000]  elapsed=3188s  rate=1.2/s  eta=425294s  finite=3331
+  [3730/500000]  elapsed=3197s  rate=1.2/s  eta=425311s  finite=3341
+  [3740/500000]  elapsed=3206s  rate=1.2/s  eta=425406s  finite=3351
+  [warn] sample 5 failed: 
+  [3750/500000]  elapsed=3214s  rate=1.2/s  eta=425350s  finite=3359
+  [3760/500000]  elapsed=3223s  rate=1.2/s  eta=425369s  finite=3369
+  [warn] sample 3 failed: 
+  [warn] sample 5 failed: 
+  [warn] sample 6 failed: 
+  [3770/500000]  elapsed=3229s  rate=1.2/s  eta=425085s  finite=3376
+  [3780/500000]  elapsed=3238s  rate=1.2/s  eta=425127s  finite=3386
+  [3790/500000]  elapsed=3247s  rate=1.2/s  eta=425158s  finite=3395
+  [3800/500000]  elapsed=3256s  rate=1.2/s  eta=425176s  finite=3404
+  -> checkpoint saved: /scratch/e1498138/lhs_noise_paris1_checkpoints/lhs_noise_paris1_ckpt_003800.pkl
+  [3810/500000]  elapsed=3265s  rate=1.2/s  eta=425222s  finite=3413
+  [warn] sample 0 failed: 
+  [3820/500000]  elapsed=3273s  rate=1.2/s  eta=425182s  finite=3422
+  [3830/500000]  elapsed=3282s  rate=1.2/s  eta=425234s  finite=3431
+  [3840/500000]  elapsed=3291s  rate=1.2/s  eta=425263s  finite=3440
+  [3850/500000]  elapsed=3300s  rate=1.2/s  eta=425286s  finite=3449
+  [3860/500000]  elapsed=3309s  rate=1.2/s  eta=425306s  finite=3459
+  [warn] sample 4 failed: 
+  [3870/500000]  elapsed=3317s  rate=1.2/s  eta=425203s  finite=3467
+  [3880/500000]  elapsed=3326s  rate=1.2/s  eta=425252s  finite=3476
+  [warn] sample 7 failed: 
+  [3890/500000]  elapsed=3335s  rate=1.2/s  eta=425286s  finite=3484
+  [3900/500000]  elapsed=3343s  rate=1.2/s  eta=425302s  finite=3494
+  -> checkpoint saved: /scratch/e1498138/lhs_noise_paris1_checkpoints/lhs_noise_paris1_ckpt_003900.pkl
+  [3910/500000]  elapsed=3353s  rate=1.2/s  eta=425363s  finite=3503
+  [3920/500000]  elapsed=3361s  rate=1.2/s  eta=425385s  finite=3513
+  [3930/500000]  elapsed=3370s  rate=1.2/s  eta=425423s  finite=3521
+  [warn] sample 1 failed: 
+  [warn] sample 4 failed: 
+  [3940/500000]  elapsed=3377s  rate=1.2/s  eta=425233s  finite=3528
+  [3950/500000]  elapsed=3386s  rate=1.2/s  eta=425254s  finite=3537
+  [3960/500000]  elapsed=3395s  rate=1.2/s  eta=425264s  finite=3547
+  [warn] sample 6 failed: 
+  [3970/500000]  elapsed=3403s  rate=1.2/s  eta=425164s  finite=3555
+  [3980/500000]  elapsed=3412s  rate=1.2/s  eta=425225s  finite=3564
+  [3990/500000]  elapsed=3421s  rate=1.2/s  eta=425246s  finite=3574
+  [4000/500000]  elapsed=3429s  rate=1.2/s  eta=425233s  finite=3582
+  -> checkpoint saved: /scratch/e1498138/lhs_noise_paris1_checkpoints/lhs_noise_paris1_ckpt_004000.pkl
+  [warn] sample 5 failed: 
+  [4010/500000]  elapsed=3437s  rate=1.2/s  eta=425177s  finite=3591
+  [4020/500000]  elapsed=3447s  rate=1.2/s  eta=425224s  finite=3601
+  [4030/500000]  elapsed=3456s  rate=1.2/s  eta=425291s  finite=3611
+  [4040/500000]  elapsed=3464s  rate=1.2/s  eta=425298s  finite=3618
+  [4050/500000]  elapsed=3473s  rate=1.2/s  eta=425320s  finite=3627
+  [warn] sample 0 failed: 
+  [4060/500000]  elapsed=3481s  rate=1.2/s  eta=425225s  finite=3635
+  [4070/500000]  elapsed=3490s  rate=1.2/s  eta=425234s  finite=3644
+  [4080/500000]  elapsed=3499s  rate=1.2/s  eta=425253s  finite=3653
+  [4090/500000]  elapsed=3507s  rate=1.2/s  eta=425261s  finite=3661
+  [warn] sample 9 failed: 
+  [4100/500000]  elapsed=3515s  rate=1.2/s  eta=425180s  finite=3669
+  -> checkpoint saved: /scratch/e1498138/lhs_noise_paris1_checkpoints/lhs_noise_paris1_ckpt_004100.pkl
+  [warn] sample 6 failed: 
+  [4110/500000]  elapsed=3523s  rate=1.2/s  eta=425103s  finite=3677
+  [warn] sample 9 failed: 
+  [4120/500000]  elapsed=3531s  rate=1.2/s  eta=425006s  finite=3685
+  [warn] sample 9 failed: 
+  [4130/500000]  elapsed=3539s  rate=1.2/s  eta=424932s  finite=3694
+  [4140/500000]  elapsed=3548s  rate=1.2/s  eta=424943s  finite=3704
+  [4150/500000]  elapsed=3557s  rate=1.2/s  eta=424964s  finite=3714
+  [warn] sample 6 failed: 
+  [warn] sample 9 failed: 
+  [4160/500000]  elapsed=3564s  rate=1.2/s  eta=424826s  finite=3722
+  [4170/500000]  elapsed=3573s  rate=1.2/s  eta=424859s  finite=3731
+  [warn] sample 2 failed: 
+  [4180/500000]  elapsed=3581s  rate=1.2/s  eta=424816s  finite=3740
+  [4190/500000]  elapsed=3590s  rate=1.2/s  eta=424869s  finite=3750
+  [4200/500000]  elapsed=3599s  rate=1.2/s  eta=424883s  finite=3760
+  -> checkpoint saved: /scratch/e1498138/lhs_noise_paris1_checkpoints/lhs_noise_paris1_ckpt_004200.pkl
+  [4210/500000]  elapsed=3608s  rate=1.2/s  eta=424896s  finite=3769
+  [4220/500000]  elapsed=3617s  rate=1.2/s  eta=424887s  finite=3779
+  [warn] sample 5 failed: 
+  [4230/500000]  elapsed=3625s  rate=1.2/s  eta=424808s  finite=3788
+  [warn] sample 1 failed: 
+  [4240/500000]  elapsed=3633s  rate=1.2/s  eta=424750s  finite=3795
+  [warn] sample 2 failed: 
+  [4250/500000]  elapsed=3641s  rate=1.2/s  eta=424667s  finite=3803
+  [warn] sample 0 failed: 
+  [warn] sample 4 failed: 
+  [4260/500000]  elapsed=3648s  rate=1.2/s  eta=424527s  finite=3810
+  [warn] sample 1 failed: 
+  [warn] sample 3 failed: 
+  [warn] sample 9 failed: 
+  [4270/500000]  elapsed=3655s  rate=1.2/s  eta=424299s  finite=3815
+  [4280/500000]  elapsed=3663s  rate=1.2/s  eta=424303s  finite=3825
+  [4290/500000]  elapsed=3672s  rate=1.2/s  eta=424301s  finite=3834
+  [4300/500000]  elapsed=3681s  rate=1.2/s  eta=424303s  finite=3844
+  -> checkpoint saved: /scratch/e1498138/lhs_noise_paris1_checkpoints/lhs_noise_paris1_ckpt_004300.pkl
+  [4310/500000]  elapsed=3690s  rate=1.2/s  eta=424351s  finite=3854
+  [4320/500000]  elapsed=3698s  rate=1.2/s  eta=424351s  finite=3864
+  [4330/500000]  elapsed=3707s  rate=1.2/s  eta=424357s  finite=3874
+  [4340/500000]  elapsed=3716s  rate=1.2/s  eta=424359s  finite=3883
+  [warn] sample 9 failed: 
+  [4350/500000]  elapsed=3724s  rate=1.2/s  eta=424281s  finite=3892
+  [4360/500000]  elapsed=3733s  rate=1.2/s  eta=424312s  finite=3901
+  [warn] sample 4 failed: 
+  [4370/500000]  elapsed=3740s  rate=1.2/s  eta=424229s  finite=3910
+  [4380/500000]  elapsed=3749s  rate=1.2/s  eta=424273s  finite=3920
+  [4390/500000]  elapsed=3758s  rate=1.2/s  eta=424288s  finite=3930
+  [4400/500000]  elapsed=3767s  rate=1.2/s  eta=424294s  finite=3940
+  -> checkpoint saved: /scratch/e1498138/lhs_noise_paris1_checkpoints/lhs_noise_paris1_ckpt_004400.pkl
+  [4410/500000]  elapsed=3776s  rate=1.2/s  eta=424342s  finite=3950
+  [warn] sample 4 failed: 
+  [4420/500000]  elapsed=3784s  rate=1.2/s  eta=424311s  finite=3958
+  [warn] sample 6 failed: 
+  [4430/500000]  elapsed=3793s  rate=1.2/s  eta=424263s  finite=3967
+  [4440/500000]  elapsed=3802s  rate=1.2/s  eta=424307s  finite=3976
+  [4450/500000]  elapsed=3811s  rate=1.2/s  eta=424364s  finite=3985
+  [4460/500000]  elapsed=3819s  rate=1.2/s  eta=424367s  finite=3994
+  [4470/500000]  elapsed=3828s  rate=1.2/s  eta=424366s  finite=4003
+  [4480/500000]  elapsed=3837s  rate=1.2/s  eta=424387s  finite=4012
+  [4490/500000]  elapsed=3846s  rate=1.2/s  eta=424388s  finite=4021
+  [warn] sample 0 failed: 
+  [4500/500000]  elapsed=3854s  rate=1.2/s  eta=424313s  finite=4030
+  -> checkpoint saved: /scratch/e1498138/lhs_noise_paris1_checkpoints/lhs_noise_paris1_ckpt_004500.pkl
+  [warn] sample 4 failed: 
+  [warn] sample 9 failed: 
+  [4510/500000]  elapsed=3861s  rate=1.2/s  eta=424168s  finite=4038
+  [4520/500000]  elapsed=3870s  rate=1.2/s  eta=424218s  finite=4048
+  [warn] sample 0 failed: 
+  [4530/500000]  elapsed=3878s  rate=1.2/s  eta=424169s  finite=4055
+  [4540/500000]  elapsed=3887s  rate=1.2/s  eta=424172s  finite=4065
+  [4550/500000]  elapsed=3896s  rate=1.2/s  eta=424186s  finite=4075
+  [4560/500000]  elapsed=3904s  rate=1.2/s  eta=424183s  finite=4084
+  [4570/500000]  elapsed=3913s  rate=1.2/s  eta=424175s  finite=4093
+  [warn] sample 3 failed: 
+  [4580/500000]  elapsed=3921s  rate=1.2/s  eta=424101s  finite=4102
+  [4590/500000]  elapsed=3930s  rate=1.2/s  eta=424156s  finite=4112
+  [warn] sample 5 failed: 
+  [warn] sample 6 failed: 
+  [4600/500000]  elapsed=3937s  rate=1.2/s  eta=424017s  finite=4120
+  -> checkpoint saved: /scratch/e1498138/lhs_noise_paris1_checkpoints/lhs_noise_paris1_ckpt_004600.pkl
+  [warn] sample 1 failed: 
+  [4610/500000]  elapsed=3945s  rate=1.2/s  eta=423954s  finite=4126
+  [warn] sample 5 failed: 
+  [4620/500000]  elapsed=3953s  rate=1.2/s  eta=423896s  finite=4133
+  [4630/500000]  elapsed=3962s  rate=1.2/s  eta=423891s  finite=4143
+  [4640/500000]  elapsed=3971s  rate=1.2/s  eta=423899s  finite=4152
+  [4650/500000]  elapsed=3980s  rate=1.2/s  eta=423925s  finite=4160
+  [4660/500000]  elapsed=3988s  rate=1.2/s  eta=423961s  finite=4170
+  [4670/500000]  elapsed=3997s  rate=1.2/s  eta=423968s  finite=4180
+  [4680/500000]  elapsed=4006s  rate=1.2/s  eta=423965s  finite=4190
+  [4690/500000]  elapsed=4015s  rate=1.2/s  eta=423975s  finite=4200
+  [4700/500000]  elapsed=4023s  rate=1.2/s  eta=423974s  finite=4209
+  -> checkpoint saved: /scratch/e1498138/lhs_noise_paris1_checkpoints/lhs_noise_paris1_ckpt_004700.pkl
+  [warn] sample 0 failed: 
+  [warn] sample 8 failed: 
+  [4710/500000]  elapsed=4030s  rate=1.2/s  eta=423830s  finite=4215
+  [4720/500000]  elapsed=4039s  rate=1.2/s  eta=423825s  finite=4224
+  [4730/500000]  elapsed=4048s  rate=1.2/s  eta=423863s  finite=4233
+  [4740/500000]  elapsed=4057s  rate=1.2/s  eta=423915s  finite=4241
+  [4750/500000]  elapsed=4066s  rate=1.2/s  eta=423932s  finite=4251
+  [warn] sample 7 failed: 
+  [4760/500000]  elapsed=4074s  rate=1.2/s  eta=423875s  finite=4260
+  [warn] sample 0 failed: 
+  [4770/500000]  elapsed=4082s  rate=1.2/s  eta=423825s  finite=4268
+  [4780/500000]  elapsed=4091s  rate=1.2/s  eta=423825s  finite=4277
+  [4790/500000]  elapsed=4100s  rate=1.2/s  eta=423830s  finite=4287
+  [4800/500000]  elapsed=4108s  rate=1.2/s  eta=423845s  finite=4294
+  -> checkpoint saved: /scratch/e1498138/lhs_noise_paris1_checkpoints/lhs_noise_paris1_ckpt_004800.pkl
+  [4810/500000]  elapsed=4117s  rate=1.2/s  eta=423855s  finite=4303
+  [warn] sample 8 failed: 
+  [4820/500000]  elapsed=4125s  rate=1.2/s  eta=423795s  finite=4312
+  [4830/500000]  elapsed=4134s  rate=1.2/s  eta=423837s  finite=4321
+  [warn] sample 4 failed: 
+  [4840/500000]  elapsed=4142s  rate=1.2/s  eta=423773s  finite=4328
+  [4850/500000]  elapsed=4151s  rate=1.2/s  eta=423780s  finite=4338
+  [4860/500000]  elapsed=4160s  rate=1.2/s  eta=423779s  finite=4347
+  [4870/500000]  elapsed=4169s  rate=1.2/s  eta=423834s  finite=4355
+  [4880/500000]  elapsed=4178s  rate=1.2/s  eta=423891s  finite=4364
+  [4890/500000]  elapsed=4187s  rate=1.2/s  eta=423912s  finite=4373
+  [4900/500000]  elapsed=4196s  rate=1.2/s  eta=423917s  finite=4383
+  -> checkpoint saved: /scratch/e1498138/lhs_noise_paris1_checkpoints/lhs_noise_paris1_ckpt_004900.pkl
+  [warn] sample 0 failed: 
+  [4910/500000]  elapsed=4203s  rate=1.2/s  eta=423851s  finite=4391
+  [4920/500000]  elapsed=4212s  rate=1.2/s  eta=423872s  finite=4401
+  [warn] sample 4 failed: 
+  [4930/500000]  elapsed=4220s  rate=1.2/s  eta=423806s  finite=4410
+  [4940/500000]  elapsed=4229s  rate=1.2/s  eta=423825s  finite=4419
+  [4950/500000]  elapsed=4238s  rate=1.2/s  eta=423828s  finite=4429
+  [4960/500000]  elapsed=4246s  rate=1.2/s  eta=423818s  finite=4438
+  [4970/500000]  elapsed=4255s  rate=1.2/s  eta=423825s  finite=4447
+  [4980/500000]  elapsed=4264s  rate=1.2/s  eta=423820s  finite=4456
+  [4990/500000]  elapsed=4272s  rate=1.2/s  eta=423825s  finite=4466
+  [5000/500000]  elapsed=4281s  rate=1.2/s  eta=423827s  finite=4476
+  -> checkpoint saved: /scratch/e1498138/lhs_noise_paris1_checkpoints/lhs_noise_paris1_ckpt_005000.pkl
+  [5010/500000]  elapsed=4290s  rate=1.2/s  eta=423857s  finite=4485
+  [5020/500000]  elapsed=4299s  rate=1.2/s  eta=423851s  finite=4495
+  [warn] sample 3 failed: 
+  [5030/500000]  elapsed=4307s  rate=1.2/s  eta=423778s  finite=4504
+  [warn] sample 2 failed: 
+  [5040/500000]  elapsed=4315s  rate=1.2/s  eta=423721s  finite=4513
+  [warn] sample 1 failed: 
+  [5050/500000]  elapsed=4323s  rate=1.2/s  eta=423653s  finite=4521
+  [warn] sample 6 failed: 
+  [5060/500000]  elapsed=4330s  rate=1.2/s  eta=423581s  finite=4529
+  [warn] sample 8 failed: 
+  [5070/500000]  elapsed=4338s  rate=1.2/s  eta=423497s  finite=4537
+  [warn] sample 1 failed: 
+  [5080/500000]  elapsed=4346s  rate=1.2/s  eta=423435s  finite=4546
+  [5090/500000]  elapsed=4355s  rate=1.2/s  eta=423446s  finite=4556
+  [warn] sample 0 failed: 
+  [warn] sample 2 failed: 
+  [5100/500000]  elapsed=4362s  rate=1.2/s  eta=423298s  finite=4562
+  -> checkpoint saved: /scratch/e1498138/lhs_noise_paris1_checkpoints/lhs_noise_paris1_ckpt_005100.pkl
+  [warn] sample 9 failed: 
+  [5110/500000]  elapsed=4370s  rate=1.2/s  eta=423245s  finite=4571
+  [warn] sample 9 failed: 
+  [5120/500000]  elapsed=4378s  rate=1.2/s  eta=423209s  finite=4580
+  [5130/500000]  elapsed=4387s  rate=1.2/s  eta=423202s  finite=4589
+  [5140/500000]  elapsed=4396s  rate=1.2/s  eta=423200s  finite=4599
+  [5150/500000]  elapsed=4405s  rate=1.2/s  eta=423251s  finite=4609
+  [warn] sample 4 failed: 
+  [5160/500000]  elapsed=4413s  rate=1.2/s  eta=423183s  finite=4617
+  [warn] sample 9 failed: 
+  [5170/500000]  elapsed=4421s  rate=1.2/s  eta=423112s  finite=4625
+  [5180/500000]  elapsed=4429s  rate=1.2/s  eta=423101s  finite=4634
+  [5190/500000]  elapsed=4438s  rate=1.2/s  eta=423113s  finite=4643
+  [5200/500000]  elapsed=4447s  rate=1.2/s  eta=423108s  finite=4653
+  -> checkpoint saved: /scratch/e1498138/lhs_noise_paris1_checkpoints/lhs_noise_paris1_ckpt_005200.pkl
+  [warn] sample 3 failed: 
+  [warn] sample 5 failed: 
+  [5210/500000]  elapsed=4454s  rate=1.2/s  eta=422972s  finite=4661
+  [5220/500000]  elapsed=4463s  rate=1.2/s  eta=422983s  finite=4671
+  [5230/500000]  elapsed=4471s  rate=1.2/s  eta=422973s  finite=4680
+  [5240/500000]  elapsed=4480s  rate=1.2/s  eta=422972s  finite=4689
+  [5250/500000]  elapsed=4488s  rate=1.2/s  eta=422965s  finite=4699
+  [warn] sample 8 failed: 
+  [5260/500000]  elapsed=4496s  rate=1.2/s  eta=422896s  finite=4707
+  [warn] sample 0 failed: 
+  [5270/500000]  elapsed=4504s  rate=1.2/s  eta=422822s  finite=4715
+  [5280/500000]  elapsed=4513s  rate=1.2/s  eta=422836s  finite=4724
+  [5290/500000]  elapsed=4521s  rate=1.2/s  eta=422838s  finite=4731
+  [5300/500000]  elapsed=4531s  rate=1.2/s  eta=422882s  finite=4740
+  -> checkpoint saved: /scratch/e1498138/lhs_noise_paris1_checkpoints/lhs_noise_paris1_ckpt_005300.pkl
+  [5310/500000]  elapsed=4540s  rate=1.2/s  eta=422922s  finite=4750
+  [warn] sample 1 failed: 
+  [5320/500000]  elapsed=4548s  rate=1.2/s  eta=422859s  finite=4759
+  [5330/500000]  elapsed=4556s  rate=1.2/s  eta=422865s  finite=4768
+  [5340/500000]  elapsed=4565s  rate=1.2/s  eta=422877s  finite=4777
+  [5350/500000]  elapsed=4574s  rate=1.2/s  eta=422881s  finite=4787
+  [5360/500000]  elapsed=4583s  rate=1.2/s  eta=422923s  finite=4796
+  [5370/500000]  elapsed=4591s  rate=1.2/s  eta=422921s  finite=4805
+  [5380/500000]  elapsed=4600s  rate=1.2/s  eta=422944s  finite=4815
+  [5390/500000]  elapsed=4609s  rate=1.2/s  eta=422969s  finite=4824
+  [5400/500000]  elapsed=4618s  rate=1.2/s  eta=422993s  finite=4834
+  -> checkpoint saved: /scratch/e1498138/lhs_noise_paris1_checkpoints/lhs_noise_paris1_ckpt_005400.pkl
+  [5410/500000]  elapsed=4627s  rate=1.2/s  eta=423006s  finite=4844
+  [5420/500000]  elapsed=4636s  rate=1.2/s  eta=423035s  finite=4853
+  [5430/500000]  elapsed=4645s  rate=1.2/s  eta=423067s  finite=4862
+  [warn] sample 0 failed: 
+  [5440/500000]  elapsed=4653s  rate=1.2/s  eta=422993s  finite=4870
+  [5450/500000]  elapsed=4661s  rate=1.2/s  eta=422992s  finite=4879
+  [5460/500000]  elapsed=4670s  rate=1.2/s  eta=423003s  finite=4888
+  [5470/500000]  elapsed=4679s  rate=1.2/s  eta=423016s  finite=4898
+  [5480/500000]  elapsed=4688s  rate=1.2/s  eta=423007s  finite=4906
+  [warn] sample 0 failed: 
+  [warn] sample 8 failed: 
+  [5490/500000]  elapsed=4695s  rate=1.2/s  eta=422862s  finite=4913
+  [5500/500000]  elapsed=4703s  rate=1.2/s  eta=422867s  finite=4922
+  -> checkpoint saved: /scratch/e1498138/lhs_noise_paris1_checkpoints/lhs_noise_paris1_ckpt_005500.pkl
+  [warn] sample 4 failed: 
+  [5510/500000]  elapsed=4711s  rate=1.2/s  eta=422803s  finite=4930
+  [warn] sample 4 failed: 
+  [5520/500000]  elapsed=4719s  rate=1.2/s  eta=422733s  finite=4937
+  [warn] sample 3 failed: 
+  [warn] sample 5 failed: 
+  [5530/500000]  elapsed=4726s  rate=1.2/s  eta=422600s  finite=4945
+  [warn] sample 0 failed: 
+  [warn] sample 4 failed: 
+  [5540/500000]  elapsed=4734s  rate=1.2/s  eta=422484s  finite=4953
+  [5550/500000]  elapsed=4742s  rate=1.2/s  eta=422474s  finite=4963
+  [5560/500000]  elapsed=4751s  rate=1.2/s  eta=422510s  finite=4973
+  [warn] sample 2 failed: 
+  [5570/500000]  elapsed=4759s  rate=1.2/s  eta=422476s  finite=4982
+  [warn] sample 4 failed: 
+  [5580/500000]  elapsed=4768s  rate=1.2/s  eta=422434s  finite=4991
+  [warn] sample 8 failed: 
+  [5590/500000]  elapsed=4775s  rate=1.2/s  eta=422369s  finite=5000
+  [5600/500000]  elapsed=4784s  rate=1.2/s  eta=422363s  finite=5009
+  -> checkpoint saved: /scratch/e1498138/lhs_noise_paris1_checkpoints/lhs_noise_paris1_ckpt_005600.pkl
+  [5610/500000]  elapsed=4793s  rate=1.2/s  eta=422386s  finite=5019
+  [warn] sample 6 failed: 
+  [5620/500000]  elapsed=4801s  rate=1.2/s  eta=422343s  finite=5028
+  [5630/500000]  elapsed=4810s  rate=1.2/s  eta=422340s  finite=5037
+  [5640/500000]  elapsed=4818s  rate=1.2/s  eta=422341s  finite=5047
+  [5650/500000]  elapsed=4827s  rate=1.2/s  eta=422340s  finite=5057
+  [5660/500000]  elapsed=4836s  rate=1.2/s  eta=422373s  finite=5065
+  [warn] sample 0 failed: 
+  [5670/500000]  elapsed=4844s  rate=1.2/s  eta=422323s  finite=5074
+  [warn] sample 2 failed: 
+  [5680/500000]  elapsed=4852s  rate=1.2/s  eta=422256s  finite=5083
+  [warn] sample 6 failed: 
+  [5690/500000]  elapsed=4860s  rate=1.2/s  eta=422199s  finite=5092
+  [warn] sample 6 failed: 
+  [5700/500000]  elapsed=4868s  rate=1.2/s  eta=422139s  finite=5101
+  -> checkpoint saved: /scratch/e1498138/lhs_noise_paris1_checkpoints/lhs_noise_paris1_ckpt_005700.pkl
+  [5710/500000]  elapsed=4877s  rate=1.2/s  eta=422154s  finite=5110
+  [warn] sample 2 failed: 
+  [warn] sample 5 failed: 
+  [5720/500000]  elapsed=4884s  rate=1.2/s  eta=422052s  finite=5118
+  [warn] sample 4 failed: 
+  [5730/500000]  elapsed=4892s  rate=1.2/s  eta=422014s  finite=5127
+  [5740/500000]  elapsed=4901s  rate=1.2/s  eta=422051s  finite=5135
+  [5750/500000]  elapsed=4910s  rate=1.2/s  eta=422061s  finite=5145
+  [5760/500000]  elapsed=4919s  rate=1.2/s  eta=422073s  finite=5154
+  [5770/500000]  elapsed=4928s  rate=1.2/s  eta=422071s  finite=5164
+  [5780/500000]  elapsed=4936s  rate=1.2/s  eta=422077s  finite=5173
+  [warn] sample 1 failed: 
+  [5790/500000]  elapsed=4944s  rate=1.2/s  eta=422028s  finite=5182
+  [warn] sample 9 failed: 
+  [5800/500000]  elapsed=4952s  rate=1.2/s  eta=421968s  finite=5191
+  -> checkpoint saved: /scratch/e1498138/lhs_noise_paris1_checkpoints/lhs_noise_paris1_ckpt_005800.pkl
+  [5810/500000]  elapsed=4962s  rate=1.2/s  eta=422024s  finite=5201
+  [warn] sample 3 failed: 
+  [5820/500000]  elapsed=4969s  rate=1.2/s  eta=421959s  finite=5209
+  [5830/500000]  elapsed=4978s  rate=1.2/s  eta=421965s  finite=5217
+  [warn] sample 0 failed: 
+  [5840/500000]  elapsed=4986s  rate=1.2/s  eta=421893s  finite=5224
+  [5850/500000]  elapsed=4995s  rate=1.2/s  eta=421893s  finite=5234
+  [5860/500000]  elapsed=5003s  rate=1.2/s  eta=421907s  finite=5244
+  [5870/500000]  elapsed=5012s  rate=1.2/s  eta=421904s  finite=5253
+  [warn] sample 1 failed: 
+  [warn] sample 9 failed: 
+  [5880/500000]  elapsed=5019s  rate=1.2/s  eta=421770s  finite=5261
+  [5890/500000]  elapsed=5028s  rate=1.2/s  eta=421769s  finite=5271
+  [5900/500000]  elapsed=5036s  rate=1.2/s  eta=421776s  finite=5279
+  -> checkpoint saved: /scratch/e1498138/lhs_noise_paris1_checkpoints/lhs_noise_paris1_ckpt_005900.pkl
+  [warn] sample 9 failed: 
+  [5910/500000]  elapsed=5045s  rate=1.2/s  eta=421743s  finite=5287
+  [warn] sample 7 failed: 
+  [5920/500000]  elapsed=5053s  rate=1.2/s  eta=421704s  finite=5296
+  [5930/500000]  elapsed=5062s  rate=1.2/s  eta=421715s  finite=5306
+  [5940/500000]  elapsed=5070s  rate=1.2/s  eta=421719s  finite=5315
+  [warn] sample 0 failed: 
+  [warn] sample 5 failed: 
+  [5950/500000]  elapsed=5077s  rate=1.2/s  eta=421589s  finite=5322
+  [5960/500000]  elapsed=5086s  rate=1.2/s  eta=421591s  finite=5331
+  [5970/500000]  elapsed=5095s  rate=1.2/s  eta=421612s  finite=5340
+  [5980/500000]  elapsed=5104s  rate=1.2/s  eta=421615s  finite=5348
+  [warn] sample 9 failed: 
+  [5990/500000]  elapsed=5112s  rate=1.2/s  eta=421571s  finite=5357
+  [6000/500000]  elapsed=5120s  rate=1.2/s  eta=421577s  finite=5366
+  -> checkpoint saved: /scratch/e1498138/lhs_noise_paris1_checkpoints/lhs_noise_paris1_ckpt_006000.pkl
+  [6010/500000]  elapsed=5130s  rate=1.2/s  eta=421629s  finite=5375
+  [6020/500000]  elapsed=5139s  rate=1.2/s  eta=421657s  finite=5385
+  [6030/500000]  elapsed=5148s  rate=1.2/s  eta=421684s  finite=5395
+  [6040/500000]  elapsed=5156s  rate=1.2/s  eta=421698s  finite=5405
+  [warn] sample 7 failed: 
+  [6050/500000]  elapsed=5164s  rate=1.2/s  eta=421640s  finite=5414
+  [6060/500000]  elapsed=5173s  rate=1.2/s  eta=421632s  finite=5423
+  [6070/500000]  elapsed=5181s  rate=1.2/s  eta=421625s  finite=5433
+  [warn] sample 4 failed: 
+  [6080/500000]  elapsed=5190s  rate=1.2/s  eta=421583s  finite=5442
+  [6090/500000]  elapsed=5198s  rate=1.2/s  eta=421587s  finite=5452
+  [6100/500000]  elapsed=5207s  rate=1.2/s  eta=421583s  finite=5462
+  -> checkpoint saved: /scratch/e1498138/lhs_noise_paris1_checkpoints/lhs_noise_paris1_ckpt_006100.pkl
+  [6110/500000]  elapsed=5216s  rate=1.2/s  eta=421599s  finite=5469
+  [6120/500000]  elapsed=5224s  rate=1.2/s  eta=421594s  finite=5477
+  [6130/500000]  elapsed=5233s  rate=1.2/s  eta=421592s  finite=5487
+  [warn] sample 4 failed: 
+  [6140/500000]  elapsed=5241s  rate=1.2/s  eta=421532s  finite=5495
+  [warn] sample 4 failed: 
+  [6150/500000]  elapsed=5249s  rate=1.2/s  eta=421501s  finite=5504
+  [warn] sample 6 failed: 
+  [6160/500000]  elapsed=5257s  rate=1.2/s  eta=421447s  finite=5511
+  [6170/500000]  elapsed=5266s  rate=1.2/s  eta=421456s  finite=5521
+  [warn] sample 6 failed: 
+  [6180/500000]  elapsed=5274s  rate=1.2/s  eta=421412s  finite=5530
+  [6190/500000]  elapsed=5282s  rate=1.2/s  eta=421410s  finite=5538
+  [warn] sample 0 failed: 
+  [6200/500000]  elapsed=5290s  rate=1.2/s  eta=421353s  finite=5547
+  -> checkpoint saved: /scratch/e1498138/lhs_noise_paris1_checkpoints/lhs_noise_paris1_ckpt_006200.pkl
+  [warn] sample 8 failed: 
+  [6210/500000]  elapsed=5298s  rate=1.2/s  eta=421301s  finite=5554
+  [6220/500000]  elapsed=5307s  rate=1.2/s  eta=421316s  finite=5564
+  [warn] sample 9 failed: 
+  [6230/500000]  elapsed=5315s  rate=1.2/s  eta=421257s  finite=5573
+  [6240/500000]  elapsed=5324s  rate=1.2/s  eta=421258s  finite=5582
+  [warn] sample 5 failed: 
+  [6250/500000]  elapsed=5332s  rate=1.2/s  eta=421194s  finite=5591
+  [6260/500000]  elapsed=5341s  rate=1.2/s  eta=421226s  finite=5600
+  [warn] sample 6 failed: 
+  [6270/500000]  elapsed=5349s  rate=1.2/s  eta=421174s  finite=5608
+  [6280/500000]  elapsed=5357s  rate=1.2/s  eta=421191s  finite=5618
+  [6290/500000]  elapsed=5367s  rate=1.2/s  eta=421241s  finite=5628
+  [6300/500000]  elapsed=5376s  rate=1.2/s  eta=421256s  finite=5638
+  -> checkpoint saved: /scratch/e1498138/lhs_noise_paris1_checkpoints/lhs_noise_paris1_ckpt_006300.pkl
+  [6310/500000]  elapsed=5384s  rate=1.2/s  eta=421262s  finite=5647
+  [6320/500000]  elapsed=5393s  rate=1.2/s  eta=421270s  finite=5656
+  [warn] sample 4 failed: 
+  [warn] sample 5 failed: 
+  [6330/500000]  elapsed=5400s  rate=1.2/s  eta=421174s  finite=5664
+  [6340/500000]  elapsed=5409s  rate=1.2/s  eta=421178s  finite=5674
+  [6350/500000]  elapsed=5418s  rate=1.2/s  eta=421186s  finite=5683
+  [6360/500000]  elapsed=5427s  rate=1.2/s  eta=421192s  finite=5692
+  [6370/500000]  elapsed=5435s  rate=1.2/s  eta=421178s  finite=5701
+  [warn] sample 6 failed: 
+  [6380/500000]  elapsed=5443s  rate=1.2/s  eta=421107s  finite=5710
+  [6390/500000]  elapsed=5451s  rate=1.2/s  eta=421099s  finite=5718
+  [6400/500000]  elapsed=5460s  rate=1.2/s  eta=421093s  finite=5727
+  -> checkpoint saved: /scratch/e1498138/lhs_noise_paris1_checkpoints/lhs_noise_paris1_ckpt_006400.pkl
+  [6410/500000]  elapsed=5468s  rate=1.2/s  eta=421088s  finite=5736
+  [6420/500000]  elapsed=5477s  rate=1.2/s  eta=421076s  finite=5746
+  [6430/500000]  elapsed=5486s  rate=1.2/s  eta=421098s  finite=5756
+  [6440/500000]  elapsed=5494s  rate=1.2/s  eta=421096s  finite=5766
+  [6450/500000]  elapsed=5503s  rate=1.2/s  eta=421088s  finite=5776
+  [6460/500000]  elapsed=5512s  rate=1.2/s  eta=421089s  finite=5786
+  [6470/500000]  elapsed=5520s  rate=1.2/s  eta=421102s  finite=5795
+  [6480/500000]  elapsed=5529s  rate=1.2/s  eta=421118s  finite=5805
+  [6490/500000]  elapsed=5538s  rate=1.2/s  eta=421116s  finite=5814
+  [warn] sample 3 failed: 
+  [6500/500000]  elapsed=5546s  rate=1.2/s  eta=421052s  finite=5822
+  -> checkpoint saved: /scratch/e1498138/lhs_noise_paris1_checkpoints/lhs_noise_paris1_ckpt_006500.pkl
+  [6510/500000]  elapsed=5554s  rate=1.2/s  eta=421050s  finite=5832
+  [6520/500000]  elapsed=5563s  rate=1.2/s  eta=421042s  finite=5841
+  [6530/500000]  elapsed=5572s  rate=1.2/s  eta=421038s  finite=5850
+  [6540/500000]  elapsed=5580s  rate=1.2/s  eta=421031s  finite=5859
+  [6550/500000]  elapsed=5589s  rate=1.2/s  eta=421021s  finite=5869
+  [warn] sample 2 failed: 
+  [6560/500000]  elapsed=5596s  rate=1.2/s  eta=420952s  finite=5875
+  [warn] sample 4 failed: 
+  [6570/500000]  elapsed=5604s  rate=1.2/s  eta=420895s  finite=5882
+  [6580/500000]  elapsed=5613s  rate=1.2/s  eta=420896s  finite=5890
+  [warn] sample 1 failed: 
+  [6590/500000]  elapsed=5621s  rate=1.2/s  eta=420831s  finite=5899
+  [6600/500000]  elapsed=5629s  rate=1.2/s  eta=420832s  finite=5909
+  -> checkpoint saved: /scratch/e1498138/lhs_noise_paris1_checkpoints/lhs_noise_paris1_ckpt_006600.pkl
+  [warn] sample 6 failed: 
+  [6610/500000]  elapsed=5638s  rate=1.2/s  eta=420802s  finite=5916
+  [warn] sample 1 failed: 
+  [6620/500000]  elapsed=5646s  rate=1.2/s  eta=420763s  finite=5924
+  [6630/500000]  elapsed=5654s  rate=1.2/s  eta=420772s  finite=5932
+  [6640/500000]  elapsed=5663s  rate=1.2/s  eta=420780s  finite=5942
+  [6650/500000]  elapsed=5672s  rate=1.2/s  eta=420772s  finite=5952
+  [6660/500000]  elapsed=5680s  rate=1.2/s  eta=420770s  finite=5961
+  [warn] sample 9 failed: 
+  [6670/500000]  elapsed=5688s  rate=1.2/s  eta=420718s  finite=5970
+  [warn] sample 5 failed: 
+  [6680/500000]  elapsed=5696s  rate=1.2/s  eta=420663s  finite=5979
+  [6690/500000]  elapsed=5705s  rate=1.2/s  eta=420662s  finite=5988
+  [6700/500000]  elapsed=5713s  rate=1.2/s  eta=420656s  finite=5997
+  -> checkpoint saved: /scratch/e1498138/lhs_noise_paris1_checkpoints/lhs_noise_paris1_ckpt_006700.pkl
+  [6710/500000]  elapsed=5722s  rate=1.2/s  eta=420669s  finite=6007
+  [warn] sample 9 failed: 
+  [6720/500000]  elapsed=5730s  rate=1.2/s  eta=420620s  finite=6016
+  [warn] sample 8 failed: 
+  [6730/500000]  elapsed=5738s  rate=1.2/s  eta=420587s  finite=6025
+  [6740/500000]  elapsed=5747s  rate=1.2/s  eta=420575s  finite=6035
+  [6750/500000]  elapsed=5755s  rate=1.2/s  eta=420572s  finite=6045
+  [warn] sample 3 failed: 
+  [6760/500000]  elapsed=5763s  rate=1.2/s  eta=420516s  finite=6053
+  [warn] sample 9 failed: 
+  [6770/500000]  elapsed=5771s  rate=1.2/s  eta=420461s  finite=6061
+  [warn] sample 8 failed: 
+  [6780/500000]  elapsed=5779s  rate=1.2/s  eta=420400s  finite=6069
+  [6790/500000]  elapsed=5788s  rate=1.2/s  eta=420398s  finite=6079
+  [6800/500000]  elapsed=5796s  rate=1.2/s  eta=420399s  finite=6089
+  -> checkpoint saved: /scratch/e1498138/lhs_noise_paris1_checkpoints/lhs_noise_paris1_ckpt_006800.pkl
+  [warn] sample 2 failed: 
+  [6810/500000]  elapsed=5804s  rate=1.2/s  eta=420363s  finite=6098
+  [6820/500000]  elapsed=5813s  rate=1.2/s  eta=420384s  finite=6107
+  [6830/500000]  elapsed=5822s  rate=1.2/s  eta=420411s  finite=6117
+  [6840/500000]  elapsed=5831s  rate=1.2/s  eta=420427s  finite=6126
+  [warn] sample 0 failed: 
+  [warn] sample 1 failed: 
+  [6850/500000]  elapsed=5838s  rate=1.2/s  eta=420324s  finite=6134
+  [6860/500000]  elapsed=5848s  rate=1.2/s  eta=420361s  finite=6144
+  [warn] sample 7 failed: 
+  [6870/500000]  elapsed=5856s  rate=1.2/s  eta=420311s  finite=6153
+  [warn] sample 5 failed: 
+  [6880/500000]  elapsed=5864s  rate=1.2/s  eta=420263s  finite=6162
+  [warn] sample 8 failed: 
+  [6890/500000]  elapsed=5872s  rate=1.2/s  eta=420218s  finite=6171
+  [warn] sample 4 failed: 
+  [6900/500000]  elapsed=5880s  rate=1.2/s  eta=420176s  finite=6179
+  -> checkpoint saved: /scratch/e1498138/lhs_noise_paris1_checkpoints/lhs_noise_paris1_ckpt_006900.pkl
+  [6910/500000]  elapsed=5888s  rate=1.2/s  eta=420184s  finite=6189
+  [warn] sample 6 failed: 
+  [6920/500000]  elapsed=5896s  rate=1.2/s  eta=420145s  finite=6197
+  [6930/500000]  elapsed=5905s  rate=1.2/s  eta=420146s  finite=6203
+  [6940/500000]  elapsed=5914s  rate=1.2/s  eta=420146s  finite=6212
+  [6950/500000]  elapsed=5922s  rate=1.2/s  eta=420151s  finite=6221
+  [warn] sample 8 failed: 
+  [6960/500000]  elapsed=5930s  rate=1.2/s  eta=420099s  finite=6230
+  [6970/500000]  elapsed=5939s  rate=1.2/s  eta=420117s  finite=6238
+  [6980/500000]  elapsed=5948s  rate=1.2/s  eta=420121s  finite=6248
+  [6990/500000]  elapsed=5957s  rate=1.2/s  eta=420122s  finite=6258
+  [7000/500000]  elapsed=5966s  rate=1.2/s  eta=420152s  finite=6267
+  -> checkpoint saved: /scratch/e1498138/lhs_noise_paris1_checkpoints/lhs_noise_paris1_ckpt_007000.pkl
+  [7010/500000]  elapsed=5974s  rate=1.2/s  eta=420159s  finite=6276
+  [7020/500000]  elapsed=5983s  rate=1.2/s  eta=420186s  finite=6286
+  [7030/500000]  elapsed=5993s  rate=1.2/s  eta=420220s  finite=6295
+  [7040/500000]  elapsed=6001s  rate=1.2/s  eta=420241s  finite=6304
+  [7050/500000]  elapsed=6011s  rate=1.2/s  eta=420270s  finite=6314
+  [7060/500000]  elapsed=6020s  rate=1.2/s  eta=420307s  finite=6324
+  [7070/500000]  elapsed=6029s  rate=1.2/s  eta=420336s  finite=6333
+  [warn] sample 9 failed: 
+  [7080/500000]  elapsed=6037s  rate=1.2/s  eta=420310s  finite=6342
+  [7090/500000]  elapsed=6046s  rate=1.2/s  eta=420335s  finite=6352
+  [warn] sample 8 failed: 
+  [7100/500000]  elapsed=6055s  rate=1.2/s  eta=420345s  finite=6361
+  -> checkpoint saved: /scratch/e1498138/lhs_noise_paris1_checkpoints/lhs_noise_paris1_ckpt_007100.pkl
+  [warn] sample 4 failed: 
+  [7110/500000]  elapsed=6063s  rate=1.2/s  eta=420332s  finite=6370
+  [7120/500000]  elapsed=6072s  rate=1.2/s  eta=420341s  finite=6380
+  [7130/500000]  elapsed=6081s  rate=1.2/s  eta=420343s  finite=6390
+  [warn] sample 0 failed: 
+  [7140/500000]  elapsed=6089s  rate=1.2/s  eta=420326s  finite=6399
+  [7150/500000]  elapsed=6098s  rate=1.2/s  eta=420324s  finite=6408
+  [warn] sample 7 failed: 
+  [7160/500000]  elapsed=6106s  rate=1.2/s  eta=420276s  finite=6417
+  [7170/500000]  elapsed=6115s  rate=1.2/s  eta=420283s  finite=6427
+  [7180/500000]  elapsed=6123s  rate=1.2/s  eta=420277s  finite=6437
+  [7190/500000]  elapsed=6132s  rate=1.2/s  eta=420276s  finite=6447
+  [7200/500000]  elapsed=6140s  rate=1.2/s  eta=420273s  finite=6457
+  -> checkpoint saved: /scratch/e1498138/lhs_noise_paris1_checkpoints/lhs_noise_paris1_ckpt_007200.pkl
+  [warn] sample 4 failed: 
+  [7210/500000]  elapsed=6149s  rate=1.2/s  eta=420260s  finite=6466
+  [warn] sample 6 failed: 
+  [warn] sample 8 failed: 
+  [7220/500000]  elapsed=6156s  rate=1.2/s  eta=420157s  finite=6473
+  [7230/500000]  elapsed=6165s  rate=1.2/s  eta=420162s  finite=6483
+  [7240/500000]  elapsed=6174s  rate=1.2/s  eta=420194s  finite=6491
+  [7250/500000]  elapsed=6183s  rate=1.2/s  eta=420202s  finite=6500
+  [7260/500000]  elapsed=6191s  rate=1.2/s  eta=420208s  finite=6507
+  [warn] sample 2 failed: 
+  [warn] sample 6 failed: 
+  [7270/500000]  elapsed=6199s  rate=1.2/s  eta=420124s  finite=6515
+  [7280/500000]  elapsed=6208s  rate=1.2/s  eta=420161s  finite=6524
+  [7290/500000]  elapsed=6217s  rate=1.2/s  eta=420195s  finite=6534
+  [warn] sample 3 failed: 
+  [7300/500000]  elapsed=6226s  rate=1.2/s  eta=420183s  finite=6543
+  -> checkpoint saved: /scratch/e1498138/lhs_noise_paris1_checkpoints/lhs_noise_paris1_ckpt_007300.pkl
+  [warn] sample 3 failed: 
+  [7310/500000]  elapsed=6234s  rate=1.2/s  eta=420150s  finite=6552
+  [7320/500000]  elapsed=6243s  rate=1.2/s  eta=420160s  finite=6561
+  [7330/500000]  elapsed=6251s  rate=1.2/s  eta=420165s  finite=6570
+  [7340/500000]  elapsed=6260s  rate=1.2/s  eta=420165s  finite=6580
+  [warn] sample 3 failed: 
+  [7350/500000]  elapsed=6268s  rate=1.2/s  eta=420116s  finite=6588
+  [7360/500000]  elapsed=6277s  rate=1.2/s  eta=420128s  finite=6598
+  [warn] sample 7 failed: 
+  [7370/500000]  elapsed=6285s  rate=1.2/s  eta=420091s  finite=6605
+  [7380/500000]  elapsed=6293s  rate=1.2/s  eta=420091s  finite=6615
+  [7390/500000]  elapsed=6302s  rate=1.2/s  eta=420088s  finite=6625
+  [7400/500000]  elapsed=6311s  rate=1.2/s  eta=420081s  finite=6633
+  -> checkpoint saved: /scratch/e1498138/lhs_noise_paris1_checkpoints/lhs_noise_paris1_ckpt_007400.pkl
+  [warn] sample 9 failed: 
+  [7410/500000]  elapsed=6319s  rate=1.2/s  eta=420036s  finite=6642
+  [7420/500000]  elapsed=6327s  rate=1.2/s  eta=420051s  finite=6652
+  [warn] sample 4 failed: 
+  [7430/500000]  elapsed=6335s  rate=1.2/s  eta=419989s  finite=6660
+  [7440/500000]  elapsed=6344s  rate=1.2/s  eta=419992s  finite=6669
+  [warn] sample 9 failed: 
+  [7450/500000]  elapsed=6352s  rate=1.2/s  eta=419936s  finite=6678
+  [warn] sample 9 failed: 
+  [7460/500000]  elapsed=6359s  rate=1.2/s  eta=419875s  finite=6687
+  [warn] sample 7 failed: 
+  [warn] sample 9 failed: 
+  [7470/500000]  elapsed=6366s  rate=1.2/s  eta=419763s  finite=6695
+  [7480/500000]  elapsed=6375s  rate=1.2/s  eta=419750s  finite=6704
+  [warn] sample 6 failed: 
+  [7490/500000]  elapsed=6383s  rate=1.2/s  eta=419705s  finite=6713
+  [warn] sample 9 failed: 
+  [7500/500000]  elapsed=6391s  rate=1.2/s  eta=419644s  finite=6721
+  -> checkpoint saved: /scratch/e1498138/lhs_noise_paris1_checkpoints/lhs_noise_paris1_ckpt_007500.pkl
+  [warn] sample 0 failed: 
+  [warn] sample 1 failed: 
+  [warn] sample 8 failed: 
+  [7510/500000]  elapsed=6397s  rate=1.2/s  eta=419497s  finite=6727
+  [7520/500000]  elapsed=6406s  rate=1.2/s  eta=419519s  finite=6736
+  [warn] sample 6 failed: 
+  [7530/500000]  elapsed=6414s  rate=1.2/s  eta=419476s  finite=6745
+  [7540/500000]  elapsed=6422s  rate=1.2/s  eta=419468s  finite=6755
+  [7550/500000]  elapsed=6431s  rate=1.2/s  eta=419460s  finite=6763
+  [7560/500000]  elapsed=6439s  rate=1.2/s  eta=419446s  finite=6772
+  [warn] sample 6 failed: 
+  [7570/500000]  elapsed=6447s  rate=1.2/s  eta=419393s  finite=6781
+  [7580/500000]  elapsed=6456s  rate=1.2/s  eta=419396s  finite=6789
+  [7590/500000]  elapsed=6464s  rate=1.2/s  eta=419385s  finite=6798
+  [7600/500000]  elapsed=6473s  rate=1.2/s  eta=419388s  finite=6808
+  -> checkpoint saved: /scratch/e1498138/lhs_noise_paris1_checkpoints/lhs_noise_paris1_ckpt_007600.pkl
+  [7610/500000]  elapsed=6482s  rate=1.2/s  eta=419384s  finite=6816
+  [7620/500000]  elapsed=6490s  rate=1.2/s  eta=419376s  finite=6826
+  [warn] sample 1 failed: 
+  [7630/500000]  elapsed=6498s  rate=1.2/s  eta=419332s  finite=6834
+  [7640/500000]  elapsed=6507s  rate=1.2/s  eta=419324s  finite=6844
+  [7650/500000]  elapsed=6515s  rate=1.2/s  eta=419323s  finite=6854
+  [warn] sample 7 failed: 
+  [7660/500000]  elapsed=6523s  rate=1.2/s  eta=419270s  finite=6861
+  [7670/500000]  elapsed=6532s  rate=1.2/s  eta=419280s  finite=6870
+  [7680/500000]  elapsed=6541s  rate=1.2/s  eta=419279s  finite=6877
+  [7690/500000]  elapsed=6549s  rate=1.2/s  eta=419266s  finite=6886
+  [7700/500000]  elapsed=6557s  rate=1.2/s  eta=419251s  finite=6895
+  -> checkpoint saved: /scratch/e1498138/lhs_noise_paris1_checkpoints/lhs_noise_paris1_ckpt_007700.pkl
+  [7710/500000]  elapsed=6566s  rate=1.2/s  eta=419276s  finite=6902
+  [7720/500000]  elapsed=6575s  rate=1.2/s  eta=419278s  finite=6911
+  [7730/500000]  elapsed=6584s  rate=1.2/s  eta=419265s  finite=6921
+  [7740/500000]  elapsed=6592s  rate=1.2/s  eta=419264s  finite=6928
+  [warn] sample 9 failed: 
+  [7750/500000]  elapsed=6600s  rate=1.2/s  eta=419213s  finite=6936
+  [warn] sample 6 failed: 
+  [7760/500000]  elapsed=6608s  rate=1.2/s  eta=419174s  finite=6945
+  [7770/500000]  elapsed=6617s  rate=1.2/s  eta=419179s  finite=6955
+  [7780/500000]  elapsed=6625s  rate=1.2/s  eta=419176s  finite=6964
+  [7790/500000]  elapsed=6634s  rate=1.2/s  eta=419167s  finite=6972
+  [7800/500000]  elapsed=6643s  rate=1.2/s  eta=419178s  finite=6982
+  -> checkpoint saved: /scratch/e1498138/lhs_noise_paris1_checkpoints/lhs_noise_paris1_ckpt_007800.pkl
+  [7810/500000]  elapsed=6652s  rate=1.2/s  eta=419183s  finite=6992
+  [warn] sample 0 failed: 
+  [7820/500000]  elapsed=6659s  rate=1.2/s  eta=419132s  finite=6999
+  [7830/500000]  elapsed=6668s  rate=1.2/s  eta=419143s  finite=7006
+  [7840/500000]  elapsed=6677s  rate=1.2/s  eta=419138s  finite=7016
+  [7850/500000]  elapsed=6686s  rate=1.2/s  eta=419149s  finite=7025
+  [7860/500000]  elapsed=6695s  rate=1.2/s  eta=419167s  finite=7034
+  [7870/500000]  elapsed=6704s  rate=1.2/s  eta=419191s  finite=7043
+  [7880/500000]  elapsed=6713s  rate=1.2/s  eta=419229s  finite=7052
+  [7890/500000]  elapsed=6722s  rate=1.2/s  eta=419268s  finite=7062
+  [7900/500000]  elapsed=6731s  rate=1.2/s  eta=419271s  finite=7072
+  -> checkpoint saved: /scratch/e1498138/lhs_noise_paris1_checkpoints/lhs_noise_paris1_ckpt_007900.pkl
+  [warn] sample 9 failed: 
+  [7910/500000]  elapsed=6739s  rate=1.2/s  eta=419235s  finite=7081
+  [7920/500000]  elapsed=6748s  rate=1.2/s  eta=419259s  finite=7091
+  [warn] sample 3 failed: 
+  [7930/500000]  elapsed=6756s  rate=1.2/s  eta=419214s  finite=7098
+  [7940/500000]  elapsed=6765s  rate=1.2/s  eta=419222s  finite=7108
+  [warn] sample 6 failed: 
+  [7950/500000]  elapsed=6773s  rate=1.2/s  eta=419176s  finite=7115
+  [warn] sample 9 failed: 
+  [7960/500000]  elapsed=6780s  rate=1.2/s  eta=419122s  finite=7121
+  [7970/500000]  elapsed=6789s  rate=1.2/s  eta=419118s  finite=7130
+  [7980/500000]  elapsed=6798s  rate=1.2/s  eta=419122s  finite=7139
+  [warn] sample 4 failed: 
+  [7990/500000]  elapsed=6806s  rate=1.2/s  eta=419087s  finite=7147
+  [8000/500000]  elapsed=6815s  rate=1.2/s  eta=419101s  finite=7157
+  -> checkpoint saved: /scratch/e1498138/lhs_noise_paris1_checkpoints/lhs_noise_paris1_ckpt_008000.pkl
+  [8010/500000]  elapsed=6823s  rate=1.2/s  eta=419100s  finite=7165
+  [warn] sample 1 failed: 
+  [8020/500000]  elapsed=6831s  rate=1.2/s  eta=419053s  finite=7172
+  [8030/500000]  elapsed=6840s  rate=1.2/s  eta=419053s  finite=7181
+  [8040/500000]  elapsed=6848s  rate=1.2/s  eta=419044s  finite=7191
+  [warn] sample 0 failed: 
+  [8050/500000]  elapsed=6856s  rate=1.2/s  eta=418989s  finite=7197
+  [8060/500000]  elapsed=6865s  rate=1.2/s  eta=418981s  finite=7206
+  [8070/500000]  elapsed=6873s  rate=1.2/s  eta=418970s  finite=7215
+  [8080/500000]  elapsed=6882s  rate=1.2/s  eta=418989s  finite=7225
+  [8090/500000]  elapsed=6891s  rate=1.2/s  eta=418976s  finite=7234
+  [8100/500000]  elapsed=6899s  rate=1.2/s  eta=418972s  finite=7243
+  -> checkpoint saved: /scratch/e1498138/lhs_noise_paris1_checkpoints/lhs_noise_paris1_ckpt_008100.pkl
+  [8110/500000]  elapsed=6908s  rate=1.2/s  eta=418979s  finite=7253
+  [8120/500000]  elapsed=6916s  rate=1.2/s  eta=418965s  finite=7260
+  [8130/500000]  elapsed=6925s  rate=1.2/s  eta=418971s  finite=7269
+  [8140/500000]  elapsed=6934s  rate=1.2/s  eta=418961s  finite=7279
+  [warn] sample 5 failed: 
+  [8150/500000]  elapsed=6941s  rate=1.2/s  eta=418912s  finite=7288
+  [8160/500000]  elapsed=6950s  rate=1.2/s  eta=418937s  finite=7298
+  [warn] sample 6 failed: 
+  [8170/500000]  elapsed=6959s  rate=1.2/s  eta=418911s  finite=7307
+  [8180/500000]  elapsed=6968s  rate=1.2/s  eta=418923s  finite=7317
+  [warn] sample 3 failed: 
+  [8190/500000]  elapsed=6975s  rate=1.2/s  eta=418873s  finite=7325
+  [warn] sample 6 failed: 
+  [warn] sample 8 failed: 
+  [8200/500000]  elapsed=6983s  rate=1.2/s  eta=418781s  finite=7332
+  -> checkpoint saved: /scratch/e1498138/lhs_noise_paris1_checkpoints/lhs_noise_paris1_ckpt_008200.pkl
+  [8210/500000]  elapsed=6991s  rate=1.2/s  eta=418792s  finite=7342
+  [8220/500000]  elapsed=7000s  rate=1.2/s  eta=418797s  finite=7351
+  [8230/500000]  elapsed=7009s  rate=1.2/s  eta=418823s  finite=7361
+  [8240/500000]  elapsed=7018s  rate=1.2/s  eta=418842s  finite=7369
+  [8250/500000]  elapsed=7027s  rate=1.2/s  eta=418836s  finite=7379
+  [warn] sample 1 failed: 
+  [8260/500000]  elapsed=7035s  rate=1.2/s  eta=418788s  finite=7387
+  [8270/500000]  elapsed=7044s  rate=1.2/s  eta=418805s  finite=7396
+  [warn] sample 0 failed: 
+  [8280/500000]  elapsed=7052s  rate=1.2/s  eta=418789s  finite=7404
+  [warn] sample 9 failed: 
+  [8290/500000]  elapsed=7060s  rate=1.2/s  eta=418766s  finite=7412
+  [8300/500000]  elapsed=7069s  rate=1.2/s  eta=418787s  finite=7421
+  -> checkpoint saved: /scratch/e1498138/lhs_noise_paris1_checkpoints/lhs_noise_paris1_ckpt_008300.pkl
+  [8310/500000]  elapsed=7078s  rate=1.2/s  eta=418808s  finite=7430
+  [8320/500000]  elapsed=7087s  rate=1.2/s  eta=418819s  finite=7440
+  [8330/500000]  elapsed=7096s  rate=1.2/s  eta=418846s  finite=7449
+  [warn] sample 5 failed: 
+  [warn] sample 6 failed: 
+  [8340/500000]  elapsed=7104s  rate=1.2/s  eta=418779s  finite=7456
+  [warn] sample 9 failed: 
+  [8350/500000]  elapsed=7112s  rate=1.2/s  eta=418735s  finite=7464
+  [8360/500000]  elapsed=7120s  rate=1.2/s  eta=418733s  finite=7474
+  [8370/500000]  elapsed=7129s  rate=1.2/s  eta=418733s  finite=7484
+  [8380/500000]  elapsed=7138s  rate=1.2/s  eta=418735s  finite=7492
+  [warn] sample 0 failed: 
+  [8390/500000]  elapsed=7146s  rate=1.2/s  eta=418690s  finite=7501
+  [8400/500000]  elapsed=7154s  rate=1.2/s  eta=418692s  finite=7511
+  -> checkpoint saved: /scratch/e1498138/lhs_noise_paris1_checkpoints/lhs_noise_paris1_ckpt_008400.pkl
+  [8410/500000]  elapsed=7163s  rate=1.2/s  eta=418702s  finite=7521
+  [warn] sample 5 failed: 
+  [8420/500000]  elapsed=7171s  rate=1.2/s  eta=418672s  finite=7530
+  [8430/500000]  elapsed=7180s  rate=1.2/s  eta=418693s  finite=7540
+  [8440/500000]  elapsed=7189s  rate=1.2/s  eta=418717s  finite=7550
+  [8450/500000]  elapsed=7198s  rate=1.2/s  eta=418727s  finite=7560
+  [warn] sample 3 failed: 
+  [8460/500000]  elapsed=7206s  rate=1.2/s  eta=418692s  finite=7569
+  [8470/500000]  elapsed=7215s  rate=1.2/s  eta=418676s  finite=7579
+  [warn] sample 6 failed: 
+  [8480/500000]  elapsed=7222s  rate=1.2/s  eta=418622s  finite=7588
+  [warn] sample 0 failed: 
+  [8490/500000]  elapsed=7230s  rate=1.2/s  eta=418566s  finite=7596
+  [8500/500000]  elapsed=7238s  rate=1.2/s  eta=418554s  finite=7605
+  -> checkpoint saved: /scratch/e1498138/lhs_noise_paris1_checkpoints/lhs_noise_paris1_ckpt_008500.pkl
+  [8510/500000]  elapsed=7247s  rate=1.2/s  eta=418557s  finite=7615
+  [8520/500000]  elapsed=7256s  rate=1.2/s  eta=418552s  finite=7624
+  [warn] sample 7 failed: 
+  [8530/500000]  elapsed=7263s  rate=1.2/s  eta=418497s  finite=7631
+  [8540/500000]  elapsed=7272s  rate=1.2/s  eta=418480s  finite=7640
+  [8550/500000]  elapsed=7280s  rate=1.2/s  eta=418468s  finite=7650
+  [8560/500000]  elapsed=7289s  rate=1.2/s  eta=418463s  finite=7660
+  [warn] sample 8 failed: 
+  [8570/500000]  elapsed=7297s  rate=1.2/s  eta=418409s  finite=7668
+  [warn] sample 0 failed: 
+  [8580/500000]  elapsed=7304s  rate=1.2/s  eta=418348s  finite=7677
+  [8590/500000]  elapsed=7313s  rate=1.2/s  eta=418343s  finite=7685
+  [8600/500000]  elapsed=7321s  rate=1.2/s  eta=418335s  finite=7694
+  -> checkpoint saved: /scratch/e1498138/lhs_noise_paris1_checkpoints/lhs_noise_paris1_ckpt_008600.pkl
+  [warn] sample 1 failed: 
+  [8610/500000]  elapsed=7329s  rate=1.2/s  eta=418294s  finite=7703
+  [warn] sample 1 failed: 
+  [warn] sample 7 failed: 
+  [8620/500000]  elapsed=7336s  rate=1.2/s  eta=418197s  finite=7711
+  [8630/500000]  elapsed=7345s  rate=1.2/s  eta=418188s  finite=7720
+  [8640/500000]  elapsed=7353s  rate=1.2/s  eta=418176s  finite=7730
+  [8650/500000]  elapsed=7362s  rate=1.2/s  eta=418174s  finite=7740
+  [8660/500000]  elapsed=7370s  rate=1.2/s  eta=418171s  finite=7749
+  [8670/500000]  elapsed=7379s  rate=1.2/s  eta=418169s  finite=7758
+  [8680/500000]  elapsed=7388s  rate=1.2/s  eta=418162s  finite=7767
+  [8690/500000]  elapsed=7396s  rate=1.2/s  eta=418148s  finite=7776
+  [warn] sample 0 failed: 
+  [warn] sample 7 failed: 
+  [8700/500000]  elapsed=7403s  rate=1.2/s  eta=418061s  finite=7783
+  -> checkpoint saved: /scratch/e1498138/lhs_noise_paris1_checkpoints/lhs_noise_paris1_ckpt_008700.pkl
+  [8710/500000]  elapsed=7412s  rate=1.2/s  eta=418056s  finite=7793
+  [warn] sample 3 failed: 
+  [8720/500000]  elapsed=7419s  rate=1.2/s  eta=418002s  finite=7800
+  [8730/500000]  elapsed=7428s  rate=1.2/s  eta=417985s  finite=7809
+  [warn] sample 4 failed: 
+  [8740/500000]  elapsed=7436s  rate=1.2/s  eta=417937s  finite=7818
+  [8750/500000]  elapsed=7444s  rate=1.2/s  eta=417928s  finite=7826
+  [8760/500000]  elapsed=7452s  rate=1.2/s  eta=417912s  finite=7836
+  [8770/500000]  elapsed=7461s  rate=1.2/s  eta=417901s  finite=7846
+  [8780/500000]  elapsed=7469s  rate=1.2/s  eta=417887s  finite=7856
+  [8790/500000]  elapsed=7478s  rate=1.2/s  eta=417876s  finite=7866
+  [8800/500000]  elapsed=7486s  rate=1.2/s  eta=417865s  finite=7874
+  -> checkpoint saved: /scratch/e1498138/lhs_noise_paris1_checkpoints/lhs_noise_paris1_ckpt_008800.pkl
+  [8810/500000]  elapsed=7495s  rate=1.2/s  eta=417862s  finite=7883
+  [8820/500000]  elapsed=7503s  rate=1.2/s  eta=417849s  finite=7892
+  [warn] sample 3 failed: 
+  [8830/500000]  elapsed=7511s  rate=1.2/s  eta=417797s  finite=7901
+  [warn] sample 2 failed: 
+  [8840/500000]  elapsed=7519s  rate=1.2/s  eta=417741s  finite=7908
+  [8850/500000]  elapsed=7527s  rate=1.2/s  eta=417735s  finite=7918
+  [8860/500000]  elapsed=7536s  rate=1.2/s  eta=417723s  finite=7928
+  [8870/500000]  elapsed=7544s  rate=1.2/s  eta=417719s  finite=7936
+  [8880/500000]  elapsed=7553s  rate=1.2/s  eta=417716s  finite=7946
+  [8890/500000]  elapsed=7561s  rate=1.2/s  eta=417705s  finite=7956
+  [8900/500000]  elapsed=7570s  rate=1.2/s  eta=417699s  finite=7965
+  -> checkpoint saved: /scratch/e1498138/lhs_noise_paris1_checkpoints/lhs_noise_paris1_ckpt_008900.pkl
+  [warn] sample 8 failed: 
+  [8910/500000]  elapsed=7578s  rate=1.2/s  eta=417649s  finite=7972
+  [warn] sample 2 failed: 
+  [8920/500000]  elapsed=7585s  rate=1.2/s  eta=417600s  finite=7979
+  [8930/500000]  elapsed=7594s  rate=1.2/s  eta=417584s  finite=7989
+  [8940/500000]  elapsed=7602s  rate=1.2/s  eta=417575s  finite=7999
+  [8950/500000]  elapsed=7611s  rate=1.2/s  eta=417564s  finite=8009
+  [warn] sample 6 failed: 
+  [8960/500000]  elapsed=7618s  rate=1.2/s  eta=417518s  finite=8017
+  [8970/500000]  elapsed=7627s  rate=1.2/s  eta=417505s  finite=8027
+  [8980/500000]  elapsed=7635s  rate=1.2/s  eta=417496s  finite=8036
+  [warn] sample 5 failed: 
+  [8990/500000]  elapsed=7643s  rate=1.2/s  eta=417451s  finite=8045
+  [9000/500000]  elapsed=7652s  rate=1.2/s  eta=417436s  finite=8055
+  -> checkpoint saved: /scratch/e1498138/lhs_noise_paris1_checkpoints/lhs_noise_paris1_ckpt_009000.pkl
+  [9010/500000]  elapsed=7660s  rate=1.2/s  eta=417440s  finite=8064
+  [9020/500000]  elapsed=7669s  rate=1.2/s  eta=417429s  finite=8073
+  [warn] sample 0 failed: 
+  [9030/500000]  elapsed=7677s  rate=1.2/s  eta=417391s  finite=8082
+  [9040/500000]  elapsed=7685s  rate=1.2/s  eta=417384s  finite=8092
+  [warn] sample 4 failed: 
+  [9050/500000]  elapsed=7693s  rate=1.2/s  eta=417331s  finite=8101
+  [9060/500000]  elapsed=7701s  rate=1.2/s  eta=417319s  finite=8110
+  [9070/500000]  elapsed=7710s  rate=1.2/s  eta=417316s  finite=8120
+  [9080/500000]  elapsed=7718s  rate=1.2/s  eta=417300s  finite=8128
+  [warn] sample 2 failed: 
+  [9090/500000]  elapsed=7726s  rate=1.2/s  eta=417243s  finite=8135
+  [9100/500000]  elapsed=7735s  rate=1.2/s  eta=417242s  finite=8144
+  -> checkpoint saved: /scratch/e1498138/lhs_noise_paris1_checkpoints/lhs_noise_paris1_ckpt_009100.pkl
+  [warn] sample 3 failed: 
+  [warn] sample 6 failed: 
+  [9110/500000]  elapsed=7742s  rate=1.2/s  eta=417154s  finite=8152
+  [9120/500000]  elapsed=7750s  rate=1.2/s  eta=417151s  finite=8160
+  [9130/500000]  elapsed=7759s  rate=1.2/s  eta=417139s  finite=8170
+  [9140/500000]  elapsed=7767s  rate=1.2/s  eta=417140s  finite=8179
+  [9150/500000]  elapsed=7776s  rate=1.2/s  eta=417133s  finite=8188
+  [9160/500000]  elapsed=7784s  rate=1.2/s  eta=417118s  finite=8196
+  [warn] sample 5 failed: 
+  [9170/500000]  elapsed=7792s  rate=1.2/s  eta=417084s  finite=8204
+  [9180/500000]  elapsed=7801s  rate=1.2/s  eta=417075s  finite=8213
+  [warn] sample 5 failed: 
+  [9190/500000]  elapsed=7809s  rate=1.2/s  eta=417031s  finite=8221
+  [warn] sample 1 failed: 
+  [9200/500000]  elapsed=7816s  rate=1.2/s  eta=416984s  finite=8230
+  -> checkpoint saved: /scratch/e1498138/lhs_noise_paris1_checkpoints/lhs_noise_paris1_ckpt_009200.pkl
+  [9210/500000]  elapsed=7825s  rate=1.2/s  eta=416988s  finite=8240
+  [warn] sample 5 failed: 
+  [9220/500000]  elapsed=7833s  rate=1.2/s  eta=416933s  finite=8248
+  [9230/500000]  elapsed=7841s  rate=1.2/s  eta=416924s  finite=8256
+  [9240/500000]  elapsed=7850s  rate=1.2/s  eta=416929s  finite=8265
+  [9250/500000]  elapsed=7858s  rate=1.2/s  eta=416925s  finite=8275
+  [9260/500000]  elapsed=7867s  rate=1.2/s  eta=416912s  finite=8285
+  [warn] sample 3 failed: 
+  [9270/500000]  elapsed=7875s  rate=1.2/s  eta=416859s  finite=8293
+  [warn] sample 8 failed: 
+  [9280/500000]  elapsed=7882s  rate=1.2/s  eta=416817s  finite=8302
+  [9290/500000]  elapsed=7891s  rate=1.2/s  eta=416819s  finite=8312
+  [warn] sample 2 failed: 
+  [9300/500000]  elapsed=7899s  rate=1.2/s  eta=416766s  finite=8321
+  -> checkpoint saved: /scratch/e1498138/lhs_noise_paris1_checkpoints/lhs_noise_paris1_ckpt_009300.pkl
+  [warn] sample 1 failed: 
+  [warn] sample 5 failed: 
+  [9310/500000]  elapsed=7906s  rate=1.2/s  eta=416677s  finite=8327
+  [9320/500000]  elapsed=7914s  rate=1.2/s  eta=416669s  finite=8335
+  [warn] sample 5 failed: 
+  [9330/500000]  elapsed=7922s  rate=1.2/s  eta=416619s  finite=8340
+  [9340/500000]  elapsed=7930s  rate=1.2/s  eta=416606s  finite=8350
+  [9350/500000]  elapsed=7939s  rate=1.2/s  eta=416602s  finite=8360
+  [9360/500000]  elapsed=7948s  rate=1.2/s  eta=416610s  finite=8370
+  [warn] sample 3 failed: 
+  [9370/500000]  elapsed=7955s  rate=1.2/s  eta=416556s  finite=8379
+  [9380/500000]  elapsed=7964s  rate=1.2/s  eta=416541s  finite=8389
+  [9390/500000]  elapsed=7972s  rate=1.2/s  eta=416540s  finite=8398
+  [9400/500000]  elapsed=7981s  rate=1.2/s  eta=416542s  finite=8407
+  -> checkpoint saved: /scratch/e1498138/lhs_noise_paris1_checkpoints/lhs_noise_paris1_ckpt_009400.pkl
+  [9410/500000]  elapsed=7989s  rate=1.2/s  eta=416532s  finite=8414
+  [9420/500000]  elapsed=7998s  rate=1.2/s  eta=416527s  finite=8424
+  [9430/500000]  elapsed=8007s  rate=1.2/s  eta=416520s  finite=8433
+  [warn] sample 7 failed: 
+  [9440/500000]  elapsed=8014s  rate=1.2/s  eta=416480s  finite=8442
+  [9450/500000]  elapsed=8023s  rate=1.2/s  eta=416470s  finite=8452
+  [9460/500000]  elapsed=8031s  rate=1.2/s  eta=416458s  finite=8461
+  [9470/500000]  elapsed=8040s  rate=1.2/s  eta=416460s  finite=8470
+  [warn] sample 0 failed: 
+  [9480/500000]  elapsed=8048s  rate=1.2/s  eta=416410s  finite=8478
+  [9490/500000]  elapsed=8056s  rate=1.2/s  eta=416402s  finite=8487
+  [9500/500000]  elapsed=8065s  rate=1.2/s  eta=416392s  finite=8497
+  -> checkpoint saved: /scratch/e1498138/lhs_noise_paris1_checkpoints/lhs_noise_paris1_ckpt_009500.pkl
+  [9510/500000]  elapsed=8073s  rate=1.2/s  eta=416386s  finite=8506
+  [9520/500000]  elapsed=8082s  rate=1.2/s  eta=416378s  finite=8515
+  [9530/500000]  elapsed=8090s  rate=1.2/s  eta=416372s  finite=8524
+  [warn] sample 1 failed: 
+  [9540/500000]  elapsed=8098s  rate=1.2/s  eta=416330s  finite=8532
+  [9550/500000]  elapsed=8107s  rate=1.2/s  eta=416325s  finite=8542
+  [warn] sample 9 failed: 
+  [9560/500000]  elapsed=8114s  rate=1.2/s  eta=416279s  finite=8550
+  [9570/500000]  elapsed=8123s  rate=1.2/s  eta=416276s  finite=8559
+  [warn] sample 6 failed: 
+  [warn] sample 7 failed: 
+  [9580/500000]  elapsed=8130s  rate=1.2/s  eta=416190s  finite=8567
+  [warn] sample 6 failed: 
+  [9590/500000]  elapsed=8138s  rate=1.2/s  eta=416146s  finite=8575
+  [warn] sample 2 failed: 
+  [warn] sample 4 failed: 
+  [warn] sample 6 failed: 
+  [9600/500000]  elapsed=8144s  rate=1.2/s  eta=416021s  finite=8582
+  -> checkpoint saved: /scratch/e1498138/lhs_noise_paris1_checkpoints/lhs_noise_paris1_ckpt_009600.pkl
+  [warn] sample 5 failed: 
+  [9610/500000]  elapsed=8152s  rate=1.2/s  eta=415975s  finite=8590
+  [9620/500000]  elapsed=8160s  rate=1.2/s  eta=415970s  finite=8600
+  [9630/500000]  elapsed=8169s  rate=1.2/s  eta=415960s  finite=8609
+  [9640/500000]  elapsed=8177s  rate=1.2/s  eta=415953s  finite=8619
+  [9650/500000]  elapsed=8186s  rate=1.2/s  eta=415947s  finite=8627
+  [9660/500000]  elapsed=8194s  rate=1.2/s  eta=415938s  finite=8635
+  [warn] sample 7 failed: 
+  [9670/500000]  elapsed=8202s  rate=1.2/s  eta=415895s  finite=8644
+  [9680/500000]  elapsed=8210s  rate=1.2/s  eta=415883s  finite=8652
+  [9690/500000]  elapsed=8219s  rate=1.2/s  eta=415877s  finite=8662
+  [9700/500000]  elapsed=8227s  rate=1.2/s  eta=415865s  finite=8671
+  -> checkpoint saved: /scratch/e1498138/lhs_noise_paris1_checkpoints/lhs_noise_paris1_ckpt_009700.pkl
+  [9710/500000]  elapsed=8236s  rate=1.2/s  eta=415864s  finite=8681
+  [warn] sample 4 failed: 
+  [warn] sample 6 failed: 
+  [9720/500000]  elapsed=8243s  rate=1.2/s  eta=415784s  finite=8688
+  [warn] sample 2 failed: 
+  [9730/500000]  elapsed=8251s  rate=1.2/s  eta=415743s  finite=8697
+  [warn] sample 1 failed: 
+  [9740/500000]  elapsed=8259s  rate=1.2/s  eta=415694s  finite=8706
+  [9750/500000]  elapsed=8267s  rate=1.2/s  eta=415681s  finite=8716
+  [warn] sample 1 failed: 
+  [9760/500000]  elapsed=8275s  rate=1.2/s  eta=415642s  finite=8725
+  [9770/500000]  elapsed=8283s  rate=1.2/s  eta=415639s  finite=8735
+  [warn] sample 8 failed: 
+  [9780/500000]  elapsed=8291s  rate=1.2/s  eta=415593s  finite=8741
+  [warn] sample 0 failed: 
+  [warn] sample 1 failed: 
+  [9790/500000]  elapsed=8298s  rate=1.2/s  eta=415507s  finite=8749
+  [9800/500000]  elapsed=8307s  rate=1.2/s  eta=415501s  finite=8758
+  -> checkpoint saved: /scratch/e1498138/lhs_noise_paris1_checkpoints/lhs_noise_paris1_ckpt_009800.pkl
+  [9810/500000]  elapsed=8315s  rate=1.2/s  eta=415494s  finite=8767
+  [9820/500000]  elapsed=8324s  rate=1.2/s  eta=415488s  finite=8775
+  [9830/500000]  elapsed=8332s  rate=1.2/s  eta=415481s  finite=8782
+  [9840/500000]  elapsed=8341s  rate=1.2/s  eta=415469s  finite=8791
+  [9850/500000]  elapsed=8349s  rate=1.2/s  eta=415459s  finite=8800
+  [9860/500000]  elapsed=8358s  rate=1.2/s  eta=415457s  finite=8810
+  [warn] sample 8 failed: 
+  [9870/500000]  elapsed=8365s  rate=1.2/s  eta=415416s  finite=8818
+  [warn] sample 9 failed: 
+  [9880/500000]  elapsed=8373s  rate=1.2/s  eta=415373s  finite=8826
+  [9890/500000]  elapsed=8382s  rate=1.2/s  eta=415367s  finite=8834
+  [9900/500000]  elapsed=8390s  rate=1.2/s  eta=415357s  finite=8842
+  -> checkpoint saved: /scratch/e1498138/lhs_noise_paris1_checkpoints/lhs_noise_paris1_ckpt_009900.pkl
+  [warn] sample 9 failed: 
+  [9910/500000]  elapsed=8398s  rate=1.2/s  eta=415318s  finite=8851
+  [9920/500000]  elapsed=8407s  rate=1.2/s  eta=415313s  finite=8861
+  [warn] sample 0 failed: 
+  [9930/500000]  elapsed=8414s  rate=1.2/s  eta=415263s  finite=8868
+  [9940/500000]  elapsed=8423s  rate=1.2/s  eta=415272s  finite=8878
+  [9950/500000]  elapsed=8431s  rate=1.2/s  eta=415262s  finite=8888
+  [warn] sample 9 failed: 
+  [9960/500000]  elapsed=8439s  rate=1.2/s  eta=415211s  finite=8896
+  [9970/500000]  elapsed=8447s  rate=1.2/s  eta=415197s  finite=8905
+  [9980/500000]  elapsed=8456s  rate=1.2/s  eta=415187s  finite=8915
+  [warn] sample 5 failed: 
+  [warn] sample 6 failed: 
+  [9990/500000]  elapsed=8463s  rate=1.2/s  eta=415106s  finite=8922
+  [warn] sample 8 failed: 
+  [10000/500000]  elapsed=8471s  rate=1.2/s  eta=415063s  finite=8931
+  -> checkpoint saved: /scratch/e1498138/lhs_noise_paris1_checkpoints/lhs_noise_paris1_ckpt_010000.pkl
+  [10010/500000]  elapsed=8479s  rate=1.2/s  eta=415058s  finite=8940
+  [10020/500000]  elapsed=8488s  rate=1.2/s  eta=415050s  finite=8950
+  [warn] sample 3 failed: 
+  [10030/500000]  elapsed=8495s  rate=1.2/s  eta=415008s  finite=8959
+  [10040/500000]  elapsed=8504s  rate=1.2/s  eta=414996s  finite=8969
+  [10050/500000]  elapsed=8512s  rate=1.2/s  eta=414986s  finite=8979
+  [10060/500000]  elapsed=8521s  rate=1.2/s  eta=414978s  finite=8988
+  [10070/500000]  elapsed=8529s  rate=1.2/s  eta=414965s  finite=8998
+  [10080/500000]  elapsed=8538s  rate=1.2/s  eta=414952s  finite=9006
+  [10090/500000]  elapsed=8546s  rate=1.2/s  eta=414941s  finite=9015
+  [warn] sample 9 failed: 
+  [10100/500000]  elapsed=8554s  rate=1.2/s  eta=414903s  finite=9024
+  -> checkpoint saved: /scratch/e1498138/lhs_noise_paris1_checkpoints/lhs_noise_paris1_ckpt_010100.pkl
+  [10110/500000]  elapsed=8562s  rate=1.2/s  eta=414891s  finite=9032
+  [10120/500000]  elapsed=8571s  rate=1.2/s  eta=414884s  finite=9042
+  [10130/500000]  elapsed=8579s  rate=1.2/s  eta=414888s  finite=9051
+  [warn] sample 6 failed: 
+  [10140/500000]  elapsed=8587s  rate=1.2/s  eta=414840s  finite=9060
+  [warn] sample 5 failed: 
+  [10150/500000]  elapsed=8595s  rate=1.2/s  eta=414789s  finite=9068
+  [10160/500000]  elapsed=8603s  rate=1.2/s  eta=414787s  finite=9078
+  [10170/500000]  elapsed=8612s  rate=1.2/s  eta=414775s  finite=9088
+  [10180/500000]  elapsed=8620s  rate=1.2/s  eta=414780s  finite=9098
+  [10190/500000]  elapsed=8629s  rate=1.2/s  eta=414776s  finite=9108
+  [10200/500000]  elapsed=8638s  rate=1.2/s  eta=414770s  finite=9118
+  -> checkpoint saved: /scratch/e1498138/lhs_noise_paris1_checkpoints/lhs_noise_paris1_ckpt_010200.pkl
+  [warn] sample 1 failed: 
+  [10210/500000]  elapsed=8645s  rate=1.2/s  eta=414732s  finite=9127
+  [warn] sample 6 failed: 
+  [10220/500000]  elapsed=8653s  rate=1.2/s  eta=414685s  finite=9135
+  [warn] sample 9 failed: 
+  [10230/500000]  elapsed=8661s  rate=1.2/s  eta=414642s  finite=9143
+  [10240/500000]  elapsed=8669s  rate=1.2/s  eta=414639s  finite=9153
+  [10250/500000]  elapsed=8678s  rate=1.2/s  eta=414632s  finite=9163
+  [10260/500000]  elapsed=8686s  rate=1.2/s  eta=414619s  finite=9173
+  [10270/500000]  elapsed=8695s  rate=1.2/s  eta=414617s  finite=9182
+  [warn] sample 1 failed: 
+  [warn] sample 8 failed: 
+  [10280/500000]  elapsed=8702s  rate=1.2/s  eta=414535s  finite=9189
+  [warn] sample 7 failed: 
+  [10290/500000]  elapsed=8710s  rate=1.2/s  eta=414495s  finite=9198
+  [10300/500000]  elapsed=8718s  rate=1.2/s  eta=414489s  finite=9205
+  -> checkpoint saved: /scratch/e1498138/lhs_noise_paris1_checkpoints/lhs_noise_paris1_ckpt_010300.pkl
+  [10310/500000]  elapsed=8727s  rate=1.2/s  eta=414499s  finite=9215
+  [10320/500000]  elapsed=8736s  rate=1.2/s  eta=414497s  finite=9223
+  [10330/500000]  elapsed=8744s  rate=1.2/s  eta=414488s  finite=9233
+  [10340/500000]  elapsed=8753s  rate=1.2/s  eta=414495s  finite=9241
+  [warn] sample 7 failed: 
+  [10350/500000]  elapsed=8761s  rate=1.2/s  eta=414458s  finite=9249
+  [warn] sample 2 failed: 
+  [10360/500000]  elapsed=8768s  rate=1.2/s  eta=414416s  finite=9258
+  [10370/500000]  elapsed=8777s  rate=1.2/s  eta=414405s  finite=9268
+  [10380/500000]  elapsed=8785s  rate=1.2/s  eta=414403s  finite=9278
+  [10390/500000]  elapsed=8794s  rate=1.2/s  eta=414397s  finite=9288
+  [10400/500000]  elapsed=8802s  rate=1.2/s  eta=414386s  finite=9297
+  -> checkpoint saved: /scratch/e1498138/lhs_noise_paris1_checkpoints/lhs_noise_paris1_ckpt_010400.pkl
+  [warn] sample 7 failed: 
+  [10410/500000]  elapsed=8810s  rate=1.2/s  eta=414348s  finite=9305
+  [10420/500000]  elapsed=8819s  rate=1.2/s  eta=414357s  finite=9315
+  [10430/500000]  elapsed=8828s  rate=1.2/s  eta=414351s  finite=9325
+  [10440/500000]  elapsed=8836s  rate=1.2/s  eta=414345s  finite=9335
+  [10450/500000]  elapsed=8845s  rate=1.2/s  eta=414356s  finite=9345
+  [10460/500000]  elapsed=8853s  rate=1.2/s  eta=414344s  finite=9355
+  [10470/500000]  elapsed=8862s  rate=1.2/s  eta=414342s  finite=9365
+  [warn] sample 4 failed: 
+  [10480/500000]  elapsed=8870s  rate=1.2/s  eta=414304s  finite=9374
+  [10490/500000]  elapsed=8878s  rate=1.2/s  eta=414297s  finite=9383
+  [10500/500000]  elapsed=8887s  rate=1.2/s  eta=414298s  finite=9392
+  -> checkpoint saved: /scratch/e1498138/lhs_noise_paris1_checkpoints/lhs_noise_paris1_ckpt_010500.pkl
+  [10510/500000]  elapsed=8895s  rate=1.2/s  eta=414291s  finite=9401
+  [10520/500000]  elapsed=8904s  rate=1.2/s  eta=414290s  finite=9409
+  [10530/500000]  elapsed=8912s  rate=1.2/s  eta=414282s  finite=9419
+  [10540/500000]  elapsed=8921s  rate=1.2/s  eta=414272s  finite=9428
+  [10550/500000]  elapsed=8929s  rate=1.2/s  eta=414267s  finite=9436
+  [10560/500000]  elapsed=8938s  rate=1.2/s  eta=414260s  finite=9446
+  [10570/500000]  elapsed=8946s  rate=1.2/s  eta=414252s  finite=9455
+  [10580/500000]  elapsed=8955s  rate=1.2/s  eta=414247s  finite=9464
+  [warn] sample 1 failed: 
+  [warn] sample 2 failed: 
+  [10590/500000]  elapsed=8962s  rate=1.2/s  eta=414183s  finite=9472
+  [warn] sample 7 failed: 
+  [10600/500000]  elapsed=8970s  rate=1.2/s  eta=414140s  finite=9480
+  -> checkpoint saved: /scratch/e1498138/lhs_noise_paris1_checkpoints/lhs_noise_paris1_ckpt_010600.pkl

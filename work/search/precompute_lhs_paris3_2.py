@@ -104,7 +104,7 @@ __main__.prior_transform = _stub_prior_transform
 
 print('Loading paris2 sampler...')
 sampler_2 = parismc.Sampler.load_state(
-    './intrinsic_ffunc_3mth_snr32_paris2/sampler_state.pkl'
+    '/scratch/e1498138/paris2/int_3mth_snr32_1/sampler_state.pkl'
 )
 
 all_pts_u  = sampler_2.searched_points_list[0]
@@ -142,7 +142,7 @@ def inverse_prior_transform(params):
 
 # ── Generate LHS in Cholesky space, filter by sphere ─────────────────────────
 ndim = 5
-N_LHS = int(1e5)
+N_LHS = int(5e5)
 _L = np.linalg.cholesky(cov_posterior)
 
 print(f'Generating {N_LHS} LHS points in Cholesky space...')
@@ -192,7 +192,7 @@ if n_finite > 0:
     print(f'Mean log_density (finite): {np.mean(log_densities[np.isfinite(log_densities)]):.6f}')
 
 # ── Save ─────────────────────────────────────────────────────────────────────
-savepath = f'./precomputed_lhs_paris3_1yr_{N_LHS:.0e}.pkl'
+savepath = f'./precomputed_lhs_paris3_1yr_new_{N_LHS:.0e}.pkl'
 save_data = {
     'lhs_u': lhs_u,                    # unit-cube points (for external_lhs_points)
     'lhs_phys': lhs_phys,              # physical-space points

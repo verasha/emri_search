@@ -1,0 +1,59 @@
+Using dt = 10 seconds, T = 2 years
+Initializing waveform generator...
+Creating GenerateEMRIWaveform class...
+Done initializing waveform generator.
+Creating GravWaveAnalysis class...
+Initializing loglike class...
+Done initializing loglike class.
+Calculating SNR...
+SNR calculated: 32.86622400746991
+Setting up log_density and prior functions...
+Done setting up log-likelihood and prior.
+Setting up ParisMC sampler...
+Done setting up ParisMC sampler.
+Setting up initial covariance matrix...
+Done setting up initial covariance matrix.
+Initializing sampler...
+Done initializing sampler.
+Loading external LHS samples from pkl...
+Loaded 500000 LHS samples.
+Running sampling...
+S=3 improved -> 5.55375 at iter 2
+S=3 improved -> 6.79391 at iter 3
+S=3 improved -> 6.83162 at iter 13
+S=3 improved -> 6.84624 at iter 16
+S=3 improved -> 6.91649 at iter 21
+S=3 improved -> 6.93004 at iter 23
+S=3 improved -> 6.98137 at iter 25
+S=3 improved -> 6.98137 at iter 54
+S=3 improved -> 7.07225 at iter 59
+S=3 improved -> 7.09173 at iter 69
+S=3 improved -> 7.10742 at iter 70
+S=3 improved -> 7.12025 at iter 153
+S=3 improved -> 7.14406 at iter 182
+S=3 improved -> 7.16160 at iter 371
+S=3 improved -> 7.18176 at iter 462
+S=3 improved -> 7.28729 at iter 556
+S=3 improved -> 7.29426 at iter 558
+S=3 improved -> 7.35149 at iter 603
+S=3 improved -> 7.38309 at iter 645
+S=3 improved -> 7.42456 at iter 672
+S=3 improved -> 7.48757 at iter 1026
+S=3 improved -> 7.54392 at iter 1062
+S=3 improved -> 7.59802 at iter 1096
+S=3 improved -> 7.78772 at iter 1533
+S=3 improved -> 7.83833 at iter 1554
+S=3 improved -> 7.84503 at iter 1562
+S=3 improved -> 8.72555 at iter 1565
+S=3 improved -> 8.81592 at iter 1767
+S=3 improved -> 9.46685 at iter 2636
+S=3 improved -> 9.68196 at iter 2710
+S=3 improved -> 9.78570 at iter 2761
+S=3 improved -> 12.02916 at iter 2807
+S=3 improved -> 12.40019 at iter 2821
+S=3 improved -> 15.36282 at iter 3615
+S=3 improved -> 15.36883 at iter 3982
+S=3 improved -> 16.64398 at iter 4003
+S=3 improved -> 16.97077 at iter 5983
+Done running sampling.
+Job completed at Mon May 18 06:19:44 AM +08 2026

@@ -3,12 +3,50 @@ try:
     import cupy as cp
 except ImportError:
     cp = None
-from lisatools.sensitivity import get_sensitivity, CornishLISASens
+from lisatools.sensitivity import get_sensitivity, A1TDISens, E1TDISens, T1TDISens, A2TDISens, E2TDISens, T2TDISens
 # from SNR_tutorial_utils import LISA_Noise
+from few.waveform import GenerateEMRIWaveform, FastKerrEccentricEquatorialFlux
+from fastlisaresponse import ResponseWrapper
+from lisatools.detector import EqualArmlengthOrbits, ESAOrbits
+
+
+def build_waveform_response(T: float, dt: float, use_gpu: bool = False, tdi_gen: int = 1):
+    if tdi_gen==1:
+        tdi_str = "1st generation"
+        orbits = EqualArmlengthOrbits(use_gpu=use_gpu)
+        tdi_chan="AET"
+    elif tdi_gen==2:
+        tdi_str = "2nd generation"
+        orbits = ESAOrbits(use_gpu=use_gpu)
+        tdi_chan="AE"
+
+
+    waveform_model = GenerateEMRIWaveform(
+        FastKerrEccentricEquatorialFlux,
+        return_list=False,
+        use_gpu=use_gpu,
+    )
+
+    return ResponseWrapper(
+        waveform_gen=waveform_model,
+        Tobs=T,
+        t0=10000.0,
+        dt=dt,
+        index_lambda=8,   # phiS
+        index_beta=7,     # qS
+        flip_hx=True,
+        is_ecliptic_latitude=False,
+        remove_garbage="zero",
+        orbits=orbits,
+        order=20,
+        tdi=tdi_str,
+        tdi_chan=tdi_chan,
+    )
 
 class GravWaveAnalysis:
     """
     A module for GW data analysis that I've compiled.
+    NOISE-BASED
     """
 
     # Physical constants
@@ -17,7 +55,7 @@ class GravWaveAnalysis:
     MTSUN_SI = 4.925491025543576e-06 # Mass-time conversion factor in seconds
     YRSID_SI = 31558149.763545603 # Number of seconds in 1 astronomical year
 
-    def __init__(self, T=None, dt=None, use_gpu=None):
+    def __init__(self, T=None, dt=None, use_gpu=None, tdi_gen=2):
         """
         Initialize the class with optional parameters.
 
@@ -34,7 +72,7 @@ class GravWaveAnalysis:
 
         # Calculate number of data points
         # NOTE: NOT the same as delta_T used for mode selection
-        self.N = int(T_sec / self.dt) + 1
+        self.N = int(T_sec / self.dt)
         
         # Auto-detect or set backend
         if use_gpu is None:
@@ -61,6 +99,20 @@ class GravWaveAnalysis:
         if self.N is not None and dt is not None:
             self.fft_freqs = self.xp.fft.fftfreq(self.N, dt)
             self.fft_freqs_rfft = self.xp.fft.rfftfreq(self.N, dt)
+
+        # Pre-compute per-channel TDI PSDs at rfft frequencies
+        if tdi_gen == 1:
+            channels = [A1TDISens, E1TDISens, T1TDISens]
+        else:
+            channels = [A2TDISens, E2TDISens]  # AE only for 2nd gen
+        self.n_chan = len(channels)
+        freqs_np = np.fft.rfftfreq(self.N, dt)[1:]
+
+
+        self.PSD = self.xp.stack([
+            self.xp.asarray(get_sensitivity(freqs_np, sens_fn=ch, return_type="PSD"))
+            for ch in channels
+        ])  # shape (n_chan, N_freq-1)
 
     def get_backend_info(self):
         """
@@ -110,7 +162,8 @@ class GravWaveAnalysis:
             # freqs_hz_cpu = freqs_hz.get() if hasattr(freqs_hz, 'get') else freqs_hz
 
             # Get PSD over traj
-            Sn = get_sensitivity(freqs_hz.flatten(), sens_fn=CornishLISASens, return_type="PSD").reshape(freqs_shape)
+            # NOTE:IDK WHAT TO USE?
+            Sn = get_sensitivity(freqs_hz.flatten(), sens_fn=A2TDISens, return_type="PSD").reshape(freqs_shape)
 
             # Apply noise weighing
             power /= Sn
@@ -152,47 +205,46 @@ class GravWaveAnalysis:
     def freq_wave(self, wave):
         """
         Compute the frequency domain representation of a waveform.
-        Zero-pads to data length before FFT.
-
-        Parameters:
-        wave (numpy.ndarray): Time domain waveform.
-
-        Returns:
-        numpy.ndarray: Frequency domain waveform.
+        NOISE-BASED
+        shape (3, N), real AET channels
         """ 
-        
-        wave_c = self.xp.vstack((wave.real, wave.imag))
-        return self.xp.fft.rfft(wave_c, axis=1) * self.dt
+        wave_c = [self.xp.fft.rfft(wave[i]) * self.dt for i in range(wave.shape[0])]
+        return self.xp.stack(wave_c)
+        # wave_c = self.xp.vstack((wave.real, wave.imag))
+        # return self.xp.fft.rfft(wave_c, axis=1) * self.dt
+
+    def generate_colored_noise(self, seed=0):
+        # Return time domain noise 
+        df = 1 / (self.N * self.dt)
+        N_freq = self.PSD.shape[1]
+
+        if self.xp is np:
+            np.random.seed(seed)
+        else:
+            self.xp.random.seed(seed)
+
+        noise_f = self.xp.zeros((self.n_chan, N_freq), dtype=self.xp.complex128)
+        for i in range(self.n_chan):
+            variance = self.PSD[i] / (2 * df)
+            noise_f[i] = (self.xp.random.normal(0, self.xp.sqrt(variance / 2), N_freq) +
+                          1j * self.xp.random.normal(0, self.xp.sqrt(variance / 2), N_freq))
+
+        # zero pad
+        # NOTE: important bc psd is generated without
+        dc = self.xp.zeros((self.n_chan, 1), dtype=self.xp.complex128)
+        noise_f_full = self.xp.concatenate([dc, noise_f], axis=1)
+
+        return self.xp.stack([self.xp.fft.irfft(noise_f_full[i] / self.dt, n=self.N) for i in range(self.n_chan)])
 
     def inner(self, h1f, h2f, return_complex=False):
-        """
-        Compute the inner product of two gravitational waveforms.
-
-        Parameters:
-        h1f, h2f (numpy.ndarray or cupy.ndarray): Frequency domain waveforms.
-        return_complex (bool): If True, return complex inner product.
-                               If False, return real part only (default, backward compatible)
-
-        Returns:
-        float or complex: Inner product of the two waveforms.
-        """
-
-        df = 1/(self.N*self.dt)  # Frequency resolution
-
-        # Get sensitivity (using rfft frequencies for this method since h1f/h2f come from freq_wave which uses rfft)
-        Sn = get_sensitivity(self.fft_freqs_rfft[1:], sens_fn=CornishLISASens, return_type="PSD")
-        # Sn = LISA_Noise(self.fft_freqs_rfft[1:])
-
-        # Compute the inner product using backend operations
-        plus = self.xp.conj(h1f[0,1:]) @ (h2f[0,1:] / Sn)
-        cross = self.xp.conj(h1f[1,1:]) @ (h2f[1,1:] / Sn)
-
-        inner_prod = 4*df*(plus+cross)
-
+        df = 1 / (self.N * self.dt)
+        total = self.xp.zeros(1, dtype=self.xp.complex128)[0]
+        for i in range(self.n_chan):
+            total += self.xp.conj(h1f[i, 1:]) @ (h2f[i, 1:] / self.PSD[i])
+        inner_prod = 4 * df * total
         if return_complex:
             return inner_prod
         else:
-            # OLD behavior: return real part only
             return self.xp.real(inner_prod)
 
     def SNR(self, hf):
@@ -413,24 +465,28 @@ class GravWaveAnalysis:
         float
             Maximum correlation value over all time shifts
         """
-        # FFT with dt scaling
-        H1 = self.xp.fft.fft(h1) * self.dt
-        H2 = self.xp.fft.fft(h2) * self.dt
-
-        # Get PSD at full FFT frequencies (skip DC), using absolute value for negative frequencies
-        Sn = self.xp.asarray(get_sensitivity(self.xp.abs(self.fft_freqs[1:]), sens_fn=CornishLISASens, return_type="PSD"))
-
-        # Initialize Y with zeros
-        Y = self.xp.zeros_like(H1)
-
-        # Noise-weighted correlation (skip DC)
-        Y[1:] = H1[1:] * self.xp.conj(H2[1:]) / (0.5 * Sn)
-
-        # IFFT to time domain with proper normalization
-        S = self.xp.fft.ifft(Y) / self.dt
-
-        # Return maximum correlation
+        Y = self.xp.zeros(self.N, dtype=self.xp.complex128)
+        for i in range(self.n_chan):
+            H1 = self.xp.fft.fft(h1[i]) * self.dt
+            H2 = self.xp.fft.fft(h2[i]) * self.dt
+            Y[1:self.N//2+1] += H1[1:self.N//2+1] * self.xp.conj(H2[1:self.N//2+1]) / (0.5 * self.PSD[i])
+        S = 2 * self.xp.fft.ifft(Y) / self.dt
         return self.xp.max(self.xp.abs(S))
+
+    def wave_fft(self, wave):
+        """Compute full per-channel FFTs (for use with inner_timemax_f)."""
+        return [self.xp.fft.fft(wave[i]) * self.dt for i in range(self.n_chan)]
+
+    def cross_corr_f(self, H1_list, H2_list):
+        """Full cross-correlation time series S[τ] with pre-computed per-channel FFTs."""
+        Y = self.xp.zeros(self.N, dtype=self.xp.complex128)
+        for i in range(self.n_chan):
+            Y[1:self.N//2+1] += H1_list[i][1:self.N//2+1] * self.xp.conj(H2_list[i][1:self.N//2+1]) / (0.5 * self.PSD[i])
+        return 2 * self.xp.fft.ifft(Y) / self.dt
+
+    def inner_timemax_f(self, H1_list, H2_list):
+        """inner_timemax with pre-computed per-channel FFTs."""
+        return self.xp.max(self.xp.abs(self.cross_corr_f(H1_list, H2_list)))
 
     def inner_timeonly(self, h1, h2):
         """
@@ -438,16 +494,12 @@ class GravWaveAnalysis:
 
         Same as inner_timemax but uses Re() instead of abs() before taking the max.
         """
-        H1 = self.xp.fft.fft(h1) * self.dt
-        H2 = self.xp.fft.fft(h2) * self.dt
-
-        Sn = self.xp.asarray(get_sensitivity(self.xp.abs(self.fft_freqs[1:]), sens_fn=CornishLISASens, return_type="PSD"))
-
-        Y = self.xp.zeros_like(H1)
-        Y[1:] = H1[1:] * self.xp.conj(H2[1:]) / (0.5 * Sn)
-
-        S = self.xp.fft.ifft(Y) / self.dt
-
+        Y = self.xp.zeros(self.N, dtype=self.xp.complex128)
+        for i in range(self.n_chan):
+            H1 = self.xp.fft.fft(h1[i]) * self.dt
+            H2 = self.xp.fft.fft(h2[i]) * self.dt
+            Y[1:self.N//2+1] += H1[1:self.N//2+1] * self.xp.conj(H2[1:self.N//2+1]) / (0.5 * self.PSD[i])
+        S = 2 * self.xp.fft.ifft(Y) / self.dt
         return self.xp.max(self.xp.real(S))  # Re() not abs()
 
     def Xstat_timeonly(self, x, h):

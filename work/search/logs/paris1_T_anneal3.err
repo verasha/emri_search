@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "/nfs/home/svu/e1498138/localgit/FEWNEW/work/search/intrinsic_ffunc_3mth_faceon_anneal_T.py", line 326, in <module>
+    sampler = parismc.Sampler(
+              ^^^^^^^^^^^^^^^^
+  File "/nfs/home/svu/e1498138/localgit/parismc/parismc/sampler.py", line 165, in __init__
+    raise ValueError("init_cov_list length must equal n_seed")
+ValueError: init_cov_list length must equal n_seed
+Traceback (most recent call last):
+  File "/nfs/home/svu/e1498138/localgit/FEWNEW/work/search/intrinsic_ffunc_3mth_faceon_anneal_T.py", line 326, in <module>
+    sampler = parismc.Sampler(
+              ^^^^^^^^^^^^^^^^
+  File "/nfs/home/svu/e1498138/localgit/parismc/parismc/sampler.py", line 165, in __init__
+    raise ValueError("init_cov_list length must equal n_seed")
+ValueError: init_cov_list length must equal n_seed

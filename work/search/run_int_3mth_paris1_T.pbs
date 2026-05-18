@@ -1,12 +1,12 @@
 #!/bin/bash
 #PBS -q auto_free
-#PBS -o logs/int_3mth_snr32_paris3_1.out
-#PBS -e logs/int_3mth_snr32_paris3_1.err
-#PBS -N paris3
+#PBS -o logs/paris1_T_anneal3.out
+#PBS -e logs/paris1_T_anneal3.err
+#PBS -N paris1
 #PBS -l walltime=48:00:00
 #PBS -l select=1:ncpus=4:mpiprocs=1:ompthreads=4:ngpus=1:mem=32gb
 
-cd $PBS_O_WORKDIR;
+cd $PBS_O_WORKDIR
 
 mkdir -p logs
 
@@ -14,6 +14,6 @@ source /scratch/e1498138/anaconda3/bin/activate fewsm
 
 export CUDA_VISIBLE_DEVICES=0
 
-python -u intrinsic_ffunc_3mth_faceon_paris3.py
+python intrinsic_ffunc_3mth_faceon_anneal_T.py
 
 echo "Job completed at $(date)"
