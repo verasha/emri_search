@@ -1,0 +1,58 @@
+Job ID: 533090.hopper-m-02
+Job name: speri_ffunc_noise
+Job starts at Thu Jul 16 10:15:17 PM +08 2026
+Using dt=5s, T=1.0yr, TDI gen=1
+Building ResponseWrapper...
+Building GravWaveAnalysis...
+Initializing LogLike (injects signal + noise, seed=42)...
+Job completed at Thu Jul 16 10:16:49 PM +08 2026
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+			Resource Usage on 2026-07-16 22:16:50.095589:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	JobId: 533090.hopper-m-02
+	Project: CFP03-CF-051
+	Exit Status: 0
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	NCPUs: Requested(12), Used(12)
+	CPU Time Used: 00:00:54
+	Memory: Requested(225gb), Used(11791732kb)
+	Vmem Used: 23734748kb
+	Walltime: Requested(24:00:00), Used(00:01:32)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	Execution Nodes Used: (hopper-20:ngpus=1:ncpus=12:mem=235929600kb)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	No GPU-related information available for this job.
+Job ID: 533099.hopper-m-02
+Job name: speri_ffunc_noise
+Job starts at Thu Jul 16 10:31:03 PM +08 2026
+Using dt=5s, T=1.0yr, TDI gen=1
+Building ResponseWrapper...
+Building GravWaveAnalysis...
+Initializing LogLike (injects signal + noise, seed=42)...
+LogLike initialized.
+Done setting up log-likelihood and prior.
+Loading SBI samples from /nfs/home/svu/e1498138/EMRI-Search/paper_figures/sample_lls_n1000000_b100_p8.npz ...
+  892346 / 1000000 SBI samples fall inside the box
+Re-evaluating f on 2000 SBI seeds (this realization)...
+  1432 finite-f seeds retained; max f = 0.0005
+Setting up ParisMC sampler...
+Sampler initialized.
+Running sampling...
+Done.
+Job completed at Fri Jul 17 03:23:18 AM +08 2026
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+			Resource Usage on 2026-07-17 03:23:19.409514:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	JobId: 533099.hopper-m-02
+	Project: CFP03-CF-051
+	Exit Status: 0
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	NCPUs: Requested(12), Used(12)
+	CPU Time Used: 05:48:18
+	Memory: Requested(225gb), Used(11792312kb)
+	Vmem Used: 31711264kb
+	Walltime: Requested(24:00:00), Used(04:52:16)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	Execution Nodes Used: (hopper-29:ngpus=1:ncpus=12:mem=235929600kb)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	No GPU-related information available for this job.

@@ -1,0 +1,63 @@
+Job ID: 495708.hopper-m-02
+Job name: paris1_noise_3
+Job starts at Mon May 25 09:37:06 PM +08 2026
+Using dt=10s, T=0.25yr, TDI gen=1
+Building ResponseWrapper...
+Building GravWaveAnalysis...
+Initializing LogLike...
+LogLike initialized.
+SNR (time-max): 1539.1741
+Setting up ParisMC...
+Top detSNR range: 4.2622 -> 2.8570
+Re-evaluating top 200 detSNR seeds with phasemax loglike...
+Re-evaluated: finite=185/200  max=3.6238
+Running sampling...
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+			Resource Usage on 2026-05-25 22:54:47.219757:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	JobId: 495708.hopper-m-02
+	Project: CFP03-CF-051
+	Exit Status: 271
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	NCPUs: Requested(12), Used(12)
+	CPU Time Used: 01:10:10
+	Memory: Requested(225gb), Used(11309068kb)
+	Vmem Used: 26219284kb
+	Walltime: Requested(24:00:00), Used(01:17:28)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	Execution Nodes Used: (hopper-28:ngpus=1:ncpus=12:mem=235929600kb)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	No GPU-related information available for this job.
+Job ID: 495784.hopper-m-02
+Job name: paris1_noise_3
+Job starts at Mon May 25 10:54:52 PM +08 2026
+Using dt=10s, T=0.25yr, TDI gen=1
+Building ResponseWrapper...
+Building GravWaveAnalysis...
+Initializing LogLike...
+LogLike initialized.
+SNR (time-max): 1539.1741
+Setting up ParisMC...
+Top detSNR range: 4.2622 -> 2.8570
+Re-evaluating top 200 detSNR seeds with phasemax loglike...
+Re-evaluated: finite=185/200  max=3.6238
+Running sampling...
+Done.
+Savepath: /scratch/e1498138/paris1_noise/int_3mth_snr48_3
+Job completed at Tue May 26 06:58:46 AM +08 2026
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+			Resource Usage on 2026-05-26 06:59:01.090659:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	JobId: 495784.hopper-m-02
+	Project: CFP03-CF-051
+	Exit Status: 0
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	NCPUs: Requested(12), Used(12)
+	CPU Time Used: 07:16:42
+	Memory: Requested(225gb), Used(11206876kb)
+	Vmem Used: 26219280kb
+	Walltime: Requested(24:00:00), Used(08:03:55)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	Execution Nodes Used: (hopper-28:ngpus=1:ncpus=12:mem=235929600kb)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	No GPU-related information available for this job.

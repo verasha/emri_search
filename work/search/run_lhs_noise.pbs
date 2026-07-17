@@ -1,0 +1,17 @@
+#!/bin/bash
+#PBS -P CFP03-CF-051
+#PBS -o logs/lhs_sf12_noise.out
+#PBS -e logs/lhs_sf12_noise.err
+#PBS -N lhs_sf12_noise
+#PBS -l walltime=24:00:00
+#PBS -l select=1:ngpus=1
+
+cd $PBS_O_WORKDIR
+
+mkdir -p logs
+module load cuda12.4/toolkit/12.4.1
+source /home/svu/e1498138/emri_search_uv/.venv/bin/activate
+
+python -u run_lhs_noise_sf.py --n-samples 100000 --batch-size 10 --n-segs 12 --outdir /scratch/e1498138/lhs/noise/sf/ckpt_1e5
+
+echo "Job completed at $(date)"

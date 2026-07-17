@@ -1,0 +1,31 @@
+Job ID: 498673.hopper-m-02
+Job name: resume_paris3_noise
+Job starts at Tue Jun  2 06:49:58 PM +08 2026
+Using dt=10s, T=1.0yr, TDI gen=1
+Building ResponseWrapper...
+Building GravWaveAnalysis...
+Initializing LogLike...
+LogLike initialized.
+Done setting up log-likelihood and prior.
+Loading sampler state from: /scratch/e1498138/paris3_noise/int_3mth_2/sampler_state.pkl
+Done loading sampler.
+Sampler ndim: 5
+Sampler n_seed: 100
+Sampler current_iter: 49999
+Resuming paris3 sampling...
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+			Resource Usage on 2026-06-02 18:55:43.728038:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	JobId: 498673.hopper-m-02
+	Project: CFP03-CF-051
+	Exit Status: 271
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	NCPUs: Requested(12), Used(12)
+	CPU Time Used: 00:07:31
+	Memory: Requested(225gb), Used(11205884kb)
+	Vmem Used: 26685484kb
+	Walltime: Requested(24:00:00), Used(00:05:46)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	Execution Nodes Used: (hopper-11:ngpus=1:ncpus=12:mem=235929600kb)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	No GPU-related information available for this job.

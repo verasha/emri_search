@@ -1,0 +1,9 @@
+python: can't open file '/nfs/home/svu/e1498138/emri_search/work/search/run_lhs_noise2_paris1.py': [Errno 2] No such file or directory
+/nfs/home/svu/e1498138/emri_search/work/search/run_lhs_noise.py:146: DeprecationWarning: Passing a seed or integer to random_state is deprecated and will raise an error in a future version. Please use seed parameter
+  sampling = LHS(xlimits=xlimits, random_state=args.seed)
+Traceback (most recent call last):
+  File "/nfs/home/svu/e1498138/emri_search/work/search/run_lhs_noise.py", line 163, in <module>
+    assert ckpt["n_total"] == n_total and ckpt["seed"] == args.seed, \
+AssertionError: Checkpoint grid mismatch — check --n-samples / --seed
+/nfs/home/svu/e1498138/emri_search/work/search/run_lhs_noise.py:146: DeprecationWarning: Passing a seed or integer to random_state is deprecated and will raise an error in a future version. Please use seed parameter
+  sampling = LHS(xlimits=xlimits, random_state=args.seed)

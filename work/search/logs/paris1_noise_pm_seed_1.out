@@ -1,0 +1,32 @@
+Job ID: 491528.hopper-m-02
+Job name: paris1_pm_seed
+Job starts at Sun May 24 02:31:17 AM +08 2026
+Using dt=10s, T=0.25yr, TDI gen=1
+Building ResponseWrapper...
+Building GravWaveAnalysis...
+Initializing LogLike (timemax)...
+LogLike initialized.
+Setting up ParisMC...
+Top 100 phasemax seeds: max_pm_logden=4.5417, min_pm_logden=3.0096
+Re-evaluating 100 seeds with timemax loglike...
+Re-evaluated: 100/100 finite, max_tm_logden=4.6988
+Running sampling...
+Done.
+Savepath: /scratch/e1498138/paris1_noise/int_3mth_pm_seed_tm_1
+Job completed at Sun May 24 07:11:34 PM +08 2026
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+			Resource Usage on 2026-05-24 19:11:35.709177:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	JobId: 491528.hopper-m-02
+	Project: CFP03-CF-051
+	Exit Status: 0
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	NCPUs: Requested(12), Used(12)
+	CPU Time Used: 14:34:44
+	Memory: Requested(225gb), Used(11206836kb)
+	Vmem Used: 25698420kb
+	Walltime: Requested(24:00:00), Used(16:40:17)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	Execution Nodes Used: (hopper-11:ngpus=1:ncpus=12:mem=235929600kb)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	No GPU-related information available for this job.

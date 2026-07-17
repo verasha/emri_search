@@ -1,0 +1,5 @@
+/nfs/home/svu/e1498138/emri_search/work/search/run_lhs_noise.py:148: DeprecationWarning: Passing a seed or integer to random_state is deprecated and will raise an error in a future version. Please use seed parameter
+  sampling = LHS(xlimits=xlimits, random_state=args.seed)
+=>> PBS: job killed: walltime 86514 exceeded limit 86400
+/nfs/home/svu/e1498138/emri_search/work/search/run_lhs_noise.py:148: DeprecationWarning: Passing a seed or integer to random_state is deprecated and will raise an error in a future version. Please use seed parameter
+  sampling = LHS(xlimits=xlimits, random_state=args.seed)

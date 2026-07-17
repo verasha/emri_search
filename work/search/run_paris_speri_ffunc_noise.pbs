@@ -1,0 +1,21 @@
+#!/bin/bash
+#PBS -P CFP03-CF-051
+#PBS -o logs/paris_speri_ffunc_noise.out
+#PBS -e logs/paris_speri_ffunc_noise.err
+#PBS -N speri_ffunc_noise
+#PBS -l walltime=24:00:00
+#PBS -l select=1:ngpus=1
+
+cd $PBS_O_WORKDIR
+
+echo "Job ID: $PBS_JOBID"
+echo "Job name: $PBS_JOBNAME"
+echo "Job starts at $(date)"
+
+mkdir -p logs
+module load cuda12.4/toolkit/12.4.1
+source /home/svu/e1498138/emri_search_uv/.venv/bin/activate
+
+python -u paris_speri_ffunc_noise.py
+
+echo "Job completed at $(date)"

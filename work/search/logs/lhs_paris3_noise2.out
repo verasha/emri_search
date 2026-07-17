@@ -1,0 +1,131 @@
+dt=5s  T=0.25yr  TDI gen=1
+SNR (rhostat): 2175.8140
+Loading paris2_noise sampler from /scratch/e1498138/paris2_noise/int_3mth_new_4/sampler_state.pkl...
+paris2_noise maxld: 184.6125
+paris2_noise maxld point: [6.05514623 1.00603334 0.56373708 9.78654236 0.4179413 ]
+paris2_noise posterior 1-sigma (diag): [0.02457964 0.03723991 0.04527731 0.18275246 0.00928907]
+Ellipse prior bounds (per-dim sigma):
+  logm1: [5.98141, 6.12889]  mu=6.05515  sigma=0.02458  N_sigma=3
+  logm2: [0.89431, 1.11775]  mu=1.00603  sigma=0.03724  N_sigma=3
+  a: [0.42791, 0.69957]  mu=0.56374  sigma=0.04528  N_sigma=3
+  p0: [9.23828, 10.33480]  mu=9.78654  sigma=0.18275  N_sigma=3
+  e0: [0.39007, 0.44581]  mu=0.41794  sigma=0.00929  N_sigma=3
+Generating 500000 LHS points in 5D Cholesky space...
+LHS points inside unit sphere: 82401 / 500000 (16.5%)
+Evaluating log_density on 82401 points...
+  [500/82401]  elapsed=99s  rate=5.0/s  ETA=16243s
+  [1000/82401]  elapsed=198s  rate=5.1/s  ETA=16079s
+  [1500/82401]  elapsed=296s  rate=5.1/s  ETA=15989s
+  [2000/82401]  elapsed=396s  rate=5.1/s  ETA=15903s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+			Resource Usage on 2026-06-08 20:19:46.137216:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	JobId: 504110.hopper-m-02
+	Project: CFP03-CF-051
+	Exit Status: 271
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	NCPUs: Requested(12), Used(12)
+	CPU Time Used: 00:08:00
+	Memory: Requested(225gb), Used(11221860kb)
+	Vmem Used: 25795276kb
+	Walltime: Requested(24:00:00), Used(00:09:49)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	Execution Nodes Used: (hopper-15:ngpus=1:ncpus=12:mem=235929600kb)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	No GPU-related information available for this job.
+dt=5s  T=0.25yr  TDI gen=1
+SNR (rhostat): 2175.8140
+Loading paris2_noise sampler from /scratch/e1498138/paris2_noise/int_3mth_new_4/sampler_state.pkl...
+paris2_noise maxld: 184.6125
+paris2_noise maxld point: [6.05514623 1.00603334 0.56373708 9.78654236 0.4179413 ]
+paris2_noise posterior 1-sigma (diag): [0.02457964 0.03723991 0.04527731 0.18275246 0.00928907]
+Ellipse prior bounds (per-dim sigma):
+  logm1: [5.98141, 6.12889]  mu=6.05515  sigma=0.02458  N_sigma=3
+  logm2: [0.89431, 1.11775]  mu=1.00603  sigma=0.03724  N_sigma=3
+  a: [0.42791, 0.69957]  mu=0.56374  sigma=0.04528  N_sigma=3
+  p0: [9.23828, 10.33480]  mu=9.78654  sigma=0.18275  N_sigma=3
+  e0: [0.39007, 0.44581]  mu=0.41794  sigma=0.00929  N_sigma=3
+Generating 500000 LHS points in 5D Cholesky space...
+LHS points inside unit sphere: 82049 / 500000 (16.4%)
+Evaluating log_density on 82049 points...
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+			Resource Usage on 2026-06-08 20:23:24.380082:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	JobId: 504238.hopper-m-02
+	Project: CFP03-CF-051
+	Exit Status: 271
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	NCPUs: Requested(12), Used(12)
+	CPU Time Used: 00:01:54
+	Memory: Requested(225gb), Used(11221104kb)
+	Vmem Used: 25796636kb
+	Walltime: Requested(24:00:00), Used(00:02:22)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	Execution Nodes Used: (hopper-15:ngpus=1:ncpus=12:mem=235929600kb)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	No GPU-related information available for this job.
+dt=5s  T=0.25yr  TDI gen=1
+SNR (rhostat): 2175.8140
+Loading paris2_noise sampler from /scratch/e1498138/paris2_noise/int_3mth_new_8/sampler_state.pkl...
+paris2_noise maxld: 57.7099
+paris2_noise maxld point: [6.27310716 1.18637044 0.44826329 8.93971604 0.45364836]
+paris2_noise posterior 1-sigma (diag): [0.12076609 0.13426548 0.12759678 0.72390773 0.03655618]
+Ellipse prior bounds (per-dim sigma):
+  logm1: [5.91081, 6.40000]  mu=6.27311  sigma=0.12077  N_sigma=3
+  logm2: [0.80000, 1.30000]  mu=1.18637  sigma=0.13427  N_sigma=3
+  a: [0.30000, 0.83105]  mu=0.44826  sigma=0.12760  N_sigma=3
+  p0: [8.00000, 11.00000]  mu=8.93972  sigma=0.72391  N_sigma=3
+  e0: [0.34398, 0.50000]  mu=0.45365  sigma=0.03656  N_sigma=3
+Generating 500000 LHS points in 5D Cholesky space...
+LHS points inside unit sphere: 82277 / 500000 (16.5%)
+Evaluating log_density on 82277 points...
+  [500/82277]  elapsed=98s  rate=5.1/s  ETA=15983s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+			Resource Usage on 2026-06-08 20:28:04.375186:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	JobId: 504246.hopper-m-02
+	Project: CFP03-CF-051
+	Exit Status: 271
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	NCPUs: Requested(12), Used(12)
+	CPU Time Used: 00:02:27
+	Memory: Requested(225gb), Used(11220928kb)
+	Vmem Used: 25754880kb
+	Walltime: Requested(24:00:00), Used(00:02:48)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	Execution Nodes Used: (hopper-15:ngpus=1:ncpus=12:mem=235929600kb)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	No GPU-related information available for this job.
+dt=5s  T=0.25yr  TDI gen=1
+SNR (rhostat): 2175.8140
+Loading paris2_noise sampler from /scratch/e1498138/paris2_noise/int_3mth_new_12/sampler_state.pkl...
+paris2_noise maxld: 178.1714
+paris2_noise maxld point: [6.07492788 0.94665512 0.69043852 9.57363205 0.43639834]
+paris2_noise posterior 1-sigma (diag): [0.00610649 0.01060214 0.0327011  0.02635504 0.00148728]
+Ellipse prior bounds (per-dim sigma):
+  logm1: [6.05661, 6.09325]  mu=6.07493  sigma=0.00611  N_sigma=3
+  logm2: [0.91485, 0.97846]  mu=0.94666  sigma=0.01060  N_sigma=3
+  a: [0.59234, 0.78854]  mu=0.69044  sigma=0.03270  N_sigma=3
+  p0: [9.49457, 9.65270]  mu=9.57363  sigma=0.02636  N_sigma=3
+  e0: [0.43194, 0.44086]  mu=0.43640  sigma=0.00149  N_sigma=3
+Generating 500000 LHS points in 5D Cholesky space...
+LHS points inside unit sphere: 82688 / 500000 (16.5%)
+Evaluating log_density on 82688 points...
+  [500/82688]  elapsed=99s  rate=5.0/s  ETA=16324s
+  [1000/82688]  elapsed=199s  rate=5.0/s  ETA=16219s
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+			Resource Usage on 2026-06-09 10:42:13.878605:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	JobId: 504445.hopper-m-02
+	Project: CFP03-CF-051
+	Exit Status: 271
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	NCPUs: Requested(12), Used(12)
+	CPU Time Used: 00:04:11
+	Memory: Requested(225gb), Used(11220792kb)
+	Vmem Used: 25631632kb
+	Walltime: Requested(24:00:00), Used(00:04:56)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	Execution Nodes Used: (hopper-17:ngpus=1:ncpus=12:mem=235929600kb)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	No GPU-related information available for this job.

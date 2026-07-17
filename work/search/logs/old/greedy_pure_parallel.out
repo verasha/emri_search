@@ -1,0 +1,52 @@
+[seed_idx=0] Starting
+[0] Initializing waveform generators...
+[0] Initializing loglike_pure...
+Job completed at Tue Apr 21 04:20:05 PM +08 2026
+[seed_idx=0] Starting
+[0] Initializing waveform generators...
+[0] Initializing loglike_pure...
+Job completed at Tue Apr 21 04:44:27 PM +08 2026
+[seed_idx=0] Starting
+[0] Initializing waveform generators...
+[0] Initializing loglike_pure...
+[0] SNR: 14.0813
+[0] Starting from LHS rank 0: [6.01448138 1.00559399 0.73052065 8.82542789 0.39503829]  logden=2.6745
+[0] cov_prop diag sigma: [0.00092971 0.00052197 0.00191881 0.01102793 0.00039019]
+[0] Evaluating start with pure loglike...
+Job completed at Tue Apr 21 05:00:47 PM +08 2026
+[seed_idx=0] Starting
+[0] Initializing waveform generators...
+[0] Initializing loglike_pure...
+[0] SNR: 14.0813
+[0] Starting from LHS rank 0: [6.01448138 1.00559399 0.73052065 8.82542789 0.39503829]  logden=2.6745
+[0] cov_prop diag sigma: [0.00092971 0.00052197 0.00191881 0.01102793 0.00039019]
+[0] Evaluating start with pure loglike...
+Job completed at Tue Apr 21 05:13:10 PM +08 2026
+[seed_idx=0] Starting
+[0] Initializing waveform generators...
+Job completed at Tue Apr 21 05:23:38 PM +08 2026
+[seed_idx=0] Starting
+[0] Initializing waveform generators...
+[0] Initializing loglike_pure...
+[0] SNR: 14.0813
+[0] Starting from LHS rank 0: [6.01448138 1.00559399 0.73052065 8.82542789 0.39503829]  logden=2.6745
+[0] cov_prop diag sigma: [0.00092971 0.00052197 0.00191881 0.01102793 0.00039019]
+[0] Evaluating start with pure loglike...
+[0] Starting logden (pure): 2.6745
+[0] Running 10000 iterations...
+[0]  iter=   500  max_logden=2.840663  accepts=1  elapsed=5195s
+[0]  iter=  1000  max_logden=3.182054  accepts=2  elapsed=10390s
+[0]  iter=  1500  max_logden=3.400424  accepts=4  elapsed=15586s
+[0]  iter=  2000  max_logden=4.534427  accepts=7  elapsed=20780s
+[0]  iter=  2500  max_logden=5.739253  accepts=8  elapsed=25978s
+[0]  iter=  3000  max_logden=5.739253  accepts=8  elapsed=31165s
+[0]  iter=  3500  max_logden=6.031071  accepts=9  elapsed=36351s
+[0]  iter=  4000  max_logden=6.031071  accepts=9  elapsed=41540s
+[0]  iter=  4500  max_logden=6.227786  accepts=10  elapsed=46725s
+[0]  iter=  5000  max_logden=6.227786  accepts=10  elapsed=51911s
+[0]  iter=  5500  max_logden=6.227786  accepts=10  elapsed=57103s
+[0]  iter=  6000  max_logden=6.227786  accepts=10  elapsed=62284s
+[0]  iter=  6500  max_logden=6.227786  accepts=10  elapsed=67467s
+[0]  iter=  7000  max_logden=6.227786  accepts=10  elapsed=72671s
+[0]  iter=  7500  max_logden=6.227786  accepts=10  elapsed=77886s
+[0]  iter=  8000  max_logden=6.227786  accepts=10  elapsed=83066s

@@ -1,0 +1,17 @@
+#!/bin/bash
+#PBS -P CFP03-CF-051
+#PBS -o logs/lhs_paris3_s6.out
+#PBS -e logs/lhs_paris3_s6.err
+#PBS -N lhs_paris3_s6
+#PBS -l walltime=24:00:00
+#PBS -l select=1:ngpus=1
+
+cd $PBS_O_WORKDIR
+
+mkdir -p logs
+module load cuda12.4/toolkit/12.4.1
+source /home/svu/e1498138/emri_search_uv/.venv/bin/activate
+
+python -u paris3_lhs_s6.py
+
+echo "Job completed at $(date)"

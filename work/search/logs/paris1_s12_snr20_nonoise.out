@@ -1,0 +1,31 @@
+Job ID: 509771.hopper-m-02
+Job name: paris1_s12_nonoise
+Job starts at Wed Jun 17 02:38:34 PM +08 2026
+Using dt=5s, T=1.0yr, TDI gen=1, N_segs=12
+Building ResponseWrapper...
+Building GravWaveAnalysis...
+Initializing LogLike...
+LogLike initialized.
+Setting up ParisMC...
+Getting LHS points...
+Loaded 43051 / 100000 finite LHS evaluations.
+Running sampling...
+Done.
+Savepath: /scratch/e1498138/paris1_sc/snr20/int_1yr_s12_nonoise
+Job completed at Wed Jun 17 03:00:28 PM +08 2026
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+			Resource Usage on 2026-06-17 15:00:29.346312:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	JobId: 509771.hopper-m-02
+	Project: CFP03-CF-051
+	Exit Status: 0
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	NCPUs: Requested(12), Used(12)
+	CPU Time Used: 00:12:18
+	Memory: Requested(225gb), Used(11206064kb)
+	Vmem Used: 30901236kb
+	Walltime: Requested(24:00:00), Used(00:21:56)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	Execution Nodes Used: (hopper-14:ngpus=1:ncpus=12:mem=235929600kb)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	No GPU-related information available for this job.

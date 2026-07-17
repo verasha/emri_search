@@ -1,0 +1,66 @@
+Job ID: 522774.hopper-m-02
+Job name: cls_res
+Job starts at Mon Jul  6 01:19:17 AM +08 2026
+=== Report: total number of samples = 10,000 ===
+Generating Plot (Strict Range): corner_cluster_best_logden_top100.png...
+--- Points for corner_cluster_best_logden_top100.png ---
+    True params: logM1=6.0000, logM2=1.0000, a=0.7000, p0=9.0000, e0=0.4000
+    pt 1: logM1=5.6895, logM2=0.8696, a=0.8689, p0=10.5470, e0=0.4229 | ld=16.3948 | dist=0.7418
+    pt 2: logM1=5.7164, logM2=0.8521, a=0.8451, p0=10.2570, e0=0.3288 | ld=16.3631 | dist=0.6995
+    pt 3: logM1=5.6579, logM2=0.8116, a=0.7978, p0=10.7781, e0=0.3368 | ld=15.9548 | dist=0.8605
+    pt 4: logM1=5.8720, logM2=0.8457, a=0.8463, p0=10.9655, e0=0.4880 | ld=15.8644 | dist=0.8253
+    pt 5: logM1=5.6931, logM2=0.8183, a=0.8146, p0=10.3873, e0=0.3371 | ld=15.7930 | dist=0.7514
+    pt 6: logM1=5.6797, logM2=0.8035, a=0.7962, p0=10.4929, e0=0.3365 | ld=15.5887 | dist=0.7916
+    pt 7: logM1=5.6759, logM2=0.8183, a=0.7777, p0=10.6374, e0=0.3669 | ld=15.5649 | dist=0.7867
+    pt 8: logM1=5.6605, logM2=0.8324, a=0.7732, p0=10.8987, e0=0.3584 | ld=15.3385 | dist=0.8506
+    pt 9: logM1=5.8980, logM2=0.8290, a=0.8625, p0=10.5926, e0=0.4685 | ld=14.9705 | dist=0.7230
+    pt 10: logM1=6.0093, logM2=0.9343, a=0.8694, p0=10.4896, e0=0.4932 | ld=14.8370 | dist=0.6487 <-- CLOSEST
+    >> Closest point: pt 10: logM1=6.0093, logM2=0.9343, a=0.8694, p0=10.4896, e0=0.4932 | ld=14.8370 | dist=0.6487
+Generating Plot (Strict Range): corner_cluster_best_logden_top1000.png...
+--- Points for corner_cluster_best_logden_top1000.png ---
+    True params: logM1=6.0000, logM2=1.0000, a=0.7000, p0=9.0000, e0=0.4000
+    pt 1: logM1=5.6895, logM2=0.8696, a=0.8689, p0=10.5470, e0=0.4229 | ld=16.3948 | dist=0.7418
+    pt 2: logM1=5.6579, logM2=0.8116, a=0.7978, p0=10.7781, e0=0.3368 | ld=15.9548 | dist=0.8605
+    pt 3: logM1=5.8720, logM2=0.8457, a=0.8463, p0=10.9655, e0=0.4880 | ld=15.8644 | dist=0.8253
+    pt 4: logM1=5.8980, logM2=0.8290, a=0.8625, p0=10.5926, e0=0.4685 | ld=14.9705 | dist=0.7230
+    pt 5: logM1=6.0093, logM2=0.9343, a=0.8694, p0=10.4896, e0=0.4932 | ld=14.8370 | dist=0.6487
+    pt 6: logM1=5.7050, logM2=0.8103, a=0.9329, p0=9.9668, e0=0.3026 | ld=14.6892 | dist=0.7766
+    pt 7: logM1=5.9708, logM2=0.9013, a=0.6558, p0=10.7421, e0=0.4265 | ld=14.3159 | dist=0.6240
+    pt 8: logM1=6.0084, logM2=0.8495, a=0.6623, p0=9.9752, e0=0.4906 | ld=14.1002 | dist=0.5391
+    pt 9: logM1=6.1156, logM2=0.8106, a=0.3574, p0=9.0802, e0=0.4107 | ld=14.0561 | dist=0.6425
+    pt 10: logM1=6.2286, logM2=0.8890, a=0.5990, p0=8.5772, e0=0.4883 | ld=13.7420 | dist=0.5087 <-- CLOSEST
+    >> Closest point: pt 10: logM1=6.2286, logM2=0.8890, a=0.5990, p0=8.5772, e0=0.4883 | ld=13.7420 | dist=0.5087
+Generating Plot (Strict Range): corner_global_top10_logden.png...
+--- Points for corner_global_top10_logden.png ---
+    True params: logM1=6.0000, logM2=1.0000, a=0.7000, p0=9.0000, e0=0.4000
+    pt 1: logM1=5.6895, logM2=0.8696, a=0.8689, p0=10.5470, e0=0.4229 | ld=16.3948 | dist=0.7418
+    pt 2: logM1=5.7164, logM2=0.8521, a=0.8451, p0=10.2570, e0=0.3288 | ld=16.3631 | dist=0.6995 <-- CLOSEST
+    pt 3: logM1=5.6579, logM2=0.8116, a=0.7978, p0=10.7781, e0=0.3368 | ld=15.9548 | dist=0.8605
+    pt 4: logM1=5.8720, logM2=0.8457, a=0.8463, p0=10.9655, e0=0.4880 | ld=15.8644 | dist=0.8253
+    pt 5: logM1=5.6931, logM2=0.8183, a=0.8146, p0=10.3873, e0=0.3371 | ld=15.7930 | dist=0.7514
+    pt 6: logM1=5.6789, logM2=0.8179, a=0.9257, p0=10.3304, e0=0.3210 | ld=15.6601 | dist=0.8165
+    pt 7: logM1=5.6833, logM2=0.8026, a=0.8476, p0=10.3485, e0=0.3396 | ld=15.6074 | dist=0.7752
+    pt 8: logM1=5.6797, logM2=0.8035, a=0.7962, p0=10.4929, e0=0.3365 | ld=15.5887 | dist=0.7916
+    pt 9: logM1=5.6759, logM2=0.8183, a=0.7777, p0=10.6374, e0=0.3669 | ld=15.5649 | dist=0.7867
+    pt 10: logM1=5.6454, logM2=0.8140, a=0.8358, p0=10.8489, e0=0.3629 | ld=15.5595 | dist=0.8767
+    >> Closest point: pt 2: logM1=5.7164, logM2=0.8521, a=0.8451, p0=10.2570, e0=0.3288 | ld=16.3631 | dist=0.6995
+Generating Averages Plot (Strict Range): corner_top_n_averages.png...
+
+Task complete. All plots have been locked to the strict coordinate ranges.
+Job completed at Mon Jul  6 01:21:15 AM +08 2026
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+			Resource Usage on 2026-07-06 01:21:15.711048:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	JobId: 522774.hopper-m-02
+	Project: CFP03-CF-051
+	Exit Status: 0
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	NCPUs: Requested(12), Used(12)
+	CPU Time Used: 00:00:11
+	Memory: Requested(225gb), Used(261300kb)
+	Vmem Used: 1137220kb
+	Walltime: Requested(01:00:00), Used(00:01:58)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	Execution Nodes Used: (hopper-15:ncpus=12:ngpus=1:mem=235929600kb)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	No GPU-related information available for this job.

@@ -2,7 +2,7 @@ import numpy as np
 from modeselectoralt import ModeSelector
 from few.utils.constants import Gpc, MRSUN_SI, YRSID_SI
 
-class LogLikeTimeMax:
+class LogLike:
     """
     Time-maximized log-likelihood class for gravitational wave parameter estimation.
 
@@ -26,7 +26,7 @@ class LogLikeTimeMax:
                  n_vals=None
                  ):
         """
-        Initialize the LogLikeTimeMax class.
+        Initialize the LogLike class.
 
         Parameters and some notes:
         - params: List of DATA/SIGNAL parameters

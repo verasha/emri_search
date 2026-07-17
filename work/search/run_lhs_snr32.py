@@ -42,12 +42,13 @@ os.makedirs(args.outdir, exist_ok=True)
 # ---------------------------------------------------------------------------
 # Setup (mirrors intrinsic_ffunc_3mth_snr32.ipynb)
 # ---------------------------------------------------------------------------
-os.chdir('/nfs/home/svu/e1498138/localgit/FEWNEW/work/')
-sys.path.insert(0, '/nfs/home/svu/e1498138/localgit/FEWNEW/work/')
+os.chdir('/home/svu/e1498138/emri_search/work/')
+sys.path.insert(0, '/home/svu/e1498138/emri_search/work/')
 
 import few
 import GWfuncs
-import loglike_timemax
+# import loglike_pure
+import loglike_timemax_Xonly
 
 cfg_set = few.get_config_setter(reset=True)
 cfg_set.set_log_level("info")
@@ -82,7 +83,7 @@ gwf = GWfuncs.GravWaveAnalysis(T, dt)
 
 # Source parameters
 m1, m2, a, p0, e0 = 1e6, 1e1, 0.7, 9, 0.4
-xI0 = 1.0;  dist = 1.8
+xI0 = 1.0;  dist = 1.8 
 qS = np.pi; phiS = 0.; qK = 0.; phiK = 0.
 Phi_phi0 = 0.4; Phi_theta0 = 0.0; Phi_r0 = 0.5
 
@@ -93,7 +94,7 @@ n_vals = np.arange(-1, 6)
 ell = 2
 
 print("Initializing loglike...")
-loglike_obj = loglike_timemax.LogLikeTimeMax(
+loglike_obj = loglike_timemax_Xonly.LogLike(
     params_star, waveform_gen_comb, gwf,
     verbose=False, waveform_gen_sep=waveform_gen_sep,
     ell=ell, n_vals=n_vals, M_mode=None)
@@ -153,7 +154,7 @@ logden   = np.full(n_total, np.nan)
 start_idx = 0
 
 if args.resume:
-    ckpts = sorted(glob.glob(os.path.join(args.outdir, "lhs_snr32_ckpt_*.pkl")))
+    ckpts = sorted(glob.glob(os.path.join(args.outdir, "ckpt_*.pkl")))
     if ckpts:
         latest = ckpts[-1]
         print(f"Resuming from checkpoint: {latest}")
@@ -200,7 +201,7 @@ for i in range(start_idx, n_total, batch_size):
 
     # Checkpoint
     if batch_count % save_every == 0 or end == n_total:
-        ckpt_path = os.path.join(args.outdir, f"lhs_snr32_ckpt_{end:06d}.pkl")
+        ckpt_path = os.path.join(args.outdir, f"ckpt_{end:06d}.pkl")
         with open(ckpt_path, "wb") as f:
             pickle.dump({
                 "n_total":  n_total,
@@ -214,7 +215,7 @@ for i in range(start_idx, n_total, batch_size):
 # ---------------------------------------------------------------------------
 # Save final output  (physical_points, logden)  — ready for run_sampling()
 # ---------------------------------------------------------------------------
-out_path = os.path.join(args.outdir, "/scratch/e1498138/lhs/lhs_snr32_1e5_3.pkl")
+out_path = os.path.join(args.outdir, "/scratch/e1498138/lhs/tminX/lhs_1e5.pkl")
 with open(out_path, "wb") as f:
     pickle.dump((phys_pts, logden), f)
 

@@ -1,0 +1,17 @@
+#!/bin/bash
+#PBS -P CFP03-CF-051
+#PBS -o logs/fisher_params_TDI.out
+#PBS -e logs/fisher_params_TDI.err
+#PBS -N fisher_params_TDI
+#PBS -l walltime=24:00:00
+#PBS -l select=1:ngpus=1
+
+cd $PBS_O_WORKDIR
+
+mkdir -p logs
+module load cuda12.4/toolkit/12.4.1
+source /home/svu/e1498138/emri_search_uv/.venv/bin/activate
+
+python -u fisher_params_TDI.py
+
+echo "Job completed at $(date)"

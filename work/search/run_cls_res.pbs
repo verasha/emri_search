@@ -1,0 +1,20 @@
+#!/bin/bash
+#PBS -P CFP03-CF-051
+#PBS -o logs/cls_res.out
+#PBS -e logs/cls_res.err
+#PBS -N cls_res
+#PBS -l walltime=01:00:00
+#PBS -l select=1:ncpus=4
+
+cd $PBS_O_WORKDIR
+
+echo "Job ID: $PBS_JOBID"
+echo "Job name: $PBS_JOBNAME"
+echo "Job starts at $(date)"
+
+mkdir -p logs
+source /home/svu/e1498138/emri_search_uv/.venv/bin/activate
+
+python cls_res.py
+
+echo "Job completed at $(date)"

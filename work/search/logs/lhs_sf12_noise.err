@@ -1,0 +1,4 @@
+/nfs/home/svu/e1498138/emri_search/work/search/run_lhs_noise_sf.py:188: DeprecationWarning: Passing a seed or integer to random_state is deprecated and will raise an error in a future version. Please use seed parameter
+  sampling = LHS(xlimits=xlimits, random_state=args.seed)
+/nfs/home/svu/e1498138/emri_search/work/search/run_lhs_noise_sf.py:188: DeprecationWarning: Passing a seed or integer to random_state is deprecated and will raise an error in a future version. Please use seed parameter
+  sampling = LHS(xlimits=xlimits, random_state=args.seed)

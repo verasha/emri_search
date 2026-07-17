@@ -1,0 +1,12 @@
+/nfs/home/svu/e1498138/localgit/FEWNEW/work/search/run_lhs_noise_paris1.py:146: DeprecationWarning: Passing a seed or integer to random_state is deprecated and will raise an error in a future version. Please use seed parameter
+  sampling = LHS(xlimits=xlimits, random_state=args.seed)
+Traceback (most recent call last):
+  File "/nfs/home/svu/e1498138/emri_search/work/search/run_lhs_noise_paris1.py", line 46, in <module>
+    os.chdir(dir_work)
+FileNotFoundError: [Errno 2] No such file or directory: '/nfs/home/svu/e1498138/localgit/FEWNEW/work/'
+Traceback (most recent call last):
+  File "/nfs/home/svu/e1498138/emri_search/work/search/run_lhs_noise_paris1.py", line 46, in <module>
+    os.chdir(dir_work)
+FileNotFoundError: [Errno 2] No such file or directory: '/nfs/home/svu/e1498138/localgit/FEWNEW/work/'
+/nfs/home/svu/e1498138/emri_search/work/search/run_lhs_noise2_paris1.py:146: DeprecationWarning: Passing a seed or integer to random_state is deprecated and will raise an error in a future version. Please use seed parameter
+  sampling = LHS(xlimits=xlimits, random_state=args.seed)

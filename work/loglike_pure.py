@@ -2,7 +2,7 @@ import numpy as np
 from modeselectoralt import ModeSelector
 from few.utils.constants import Gpc, MRSUN_SI, YRSID_SI
 
-class LogLikePure:
+class LogLike:
     """
     Log-likelihood class for gravitational wave parameter estimation.
 
@@ -205,7 +205,8 @@ class LogLikePure:
             print(f"Waveform amplitudes:")
             for i, wf in enumerate(waveform_per_mode):
                 wf_max = self.gwf.xp.max(self.gwf.xp.abs(wf))
-                inner_prod = self.gwf.inner(wf, wf)
+                wf_f = self.gwf.freq_wave(wf)
+                inner_prod = self.gwf.inner(wf_f, wf_f)
                 print(f"  Mode {i}: max(|h|) = {wf_max}, <hf|hf> = {inner_prod}, rho = {rho_m[i]}")
 
             # Debug rho values

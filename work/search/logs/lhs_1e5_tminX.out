@@ -1,0 +1,1125 @@
+dt=10s  T=0.25yr
+Building waveform generators...
+Initializing loglike...
+SNR = 5.942134448355127
+Evaluating 100000 remaining samples in 1000 batches of 100  (checkpoint every 10 batches)
+  [100/100000]  elapsed=14s  rate=7.1/s  eta=14094s  finite=63
+  [200/100000]  elapsed=28s  rate=7.2/s  eta=13775s  finite=127
+  [300/100000]  elapsed=42s  rate=7.2/s  eta=13853s  finite=195
+  [400/100000]  elapsed=59s  rate=6.8/s  eta=14571s  finite=269
+  [500/100000]  elapsed=72s  rate=6.9/s  eta=14342s  finite=335
+  [600/100000]  elapsed=86s  rate=7.0/s  eta=14211s  finite=407
+  [700/100000]  elapsed=99s  rate=7.0/s  eta=14106s  finite=469
+  [800/100000]  elapsed=114s  rate=7.0/s  eta=14176s  finite=535
+  [900/100000]  elapsed=128s  rate=7.0/s  eta=14085s  finite=602
+  [1000/100000]  elapsed=141s  rate=7.1/s  eta=13998s  finite=667
+  -> checkpoint saved: /scratch/e1498138/lhs/tminX/ckpt_1e5/ckpt_001000.pkl
+  [1100/100000]  elapsed=155s  rate=7.1/s  eta=13935s  finite=740
+  [1200/100000]  elapsed=169s  rate=7.1/s  eta=13947s  finite=810
+  [1300/100000]  elapsed=185s  rate=7.0/s  eta=14024s  finite=879
+  [1400/100000]  elapsed=198s  rate=7.1/s  eta=13942s  finite=937
+  [1500/100000]  elapsed=212s  rate=7.1/s  eta=13911s  finite=999
+  [1600/100000]  elapsed=228s  rate=7.0/s  eta=14001s  finite=1076
+  [1700/100000]  elapsed=241s  rate=7.0/s  eta=13963s  finite=1141
+  [1800/100000]  elapsed=256s  rate=7.0/s  eta=13940s  finite=1203
+  [1900/100000]  elapsed=269s  rate=7.1/s  eta=13871s  finite=1272
+  [2000/100000]  elapsed=282s  rate=7.1/s  eta=13835s  finite=1331
+  -> checkpoint saved: /scratch/e1498138/lhs/tminX/ckpt_1e5/ckpt_002000.pkl
+  [2100/100000]  elapsed=298s  rate=7.0/s  eta=13893s  finite=1405
+  [2200/100000]  elapsed=312s  rate=7.0/s  eta=13881s  finite=1478
+  [2300/100000]  elapsed=327s  rate=7.0/s  eta=13874s  finite=1546
+  [2400/100000]  elapsed=341s  rate=7.0/s  eta=13856s  finite=1605
+  [2500/100000]  elapsed=354s  rate=7.1/s  eta=13819s  finite=1670
+  [2600/100000]  elapsed=369s  rate=7.0/s  eta=13833s  finite=1738
+  [2700/100000]  elapsed=384s  rate=7.0/s  eta=13828s  finite=1810
+  [2800/100000]  elapsed=398s  rate=7.0/s  eta=13821s  finite=1875
+  [2900/100000]  elapsed=412s  rate=7.0/s  eta=13787s  finite=1943
+  [3000/100000]  elapsed=425s  rate=7.1/s  eta=13746s  finite=2012
+  -> checkpoint saved: /scratch/e1498138/lhs/tminX/ckpt_1e5/ckpt_003000.pkl
+  [3100/100000]  elapsed=439s  rate=7.1/s  eta=13737s  finite=2078
+  [3200/100000]  elapsed=453s  rate=7.1/s  eta=13714s  finite=2157
+  [3300/100000]  elapsed=468s  rate=7.1/s  eta=13716s  finite=2222
+  [3400/100000]  elapsed=483s  rate=7.0/s  eta=13714s  finite=2285
+  [3500/100000]  elapsed=498s  rate=7.0/s  eta=13720s  finite=2358
+  [3600/100000]  elapsed=512s  rate=7.0/s  eta=13710s  finite=2421
+  [3700/100000]  elapsed=526s  rate=7.0/s  eta=13678s  finite=2491
+  [3800/100000]  elapsed=541s  rate=7.0/s  eta=13691s  finite=2560
+  [3900/100000]  elapsed=556s  rate=7.0/s  eta=13690s  finite=2624
+  [4000/100000]  elapsed=569s  rate=7.0/s  eta=13662s  finite=2699
+  -> checkpoint saved: /scratch/e1498138/lhs/tminX/ckpt_1e5/ckpt_004000.pkl
+  [4100/100000]  elapsed=583s  rate=7.0/s  eta=13642s  finite=2767
+  [4200/100000]  elapsed=597s  rate=7.0/s  eta=13620s  finite=2836
+  [4300/100000]  elapsed=611s  rate=7.0/s  eta=13594s  finite=2906
+  [4400/100000]  elapsed=624s  rate=7.1/s  eta=13559s  finite=2974
+  [4500/100000]  elapsed=638s  rate=7.1/s  eta=13544s  finite=3043
+  [4600/100000]  elapsed=653s  rate=7.0/s  eta=13541s  finite=3117
+  [4700/100000]  elapsed=667s  rate=7.1/s  eta=13514s  finite=3181
+  [4800/100000]  elapsed=682s  rate=7.0/s  eta=13518s  finite=3253
+  [4900/100000]  elapsed=695s  rate=7.0/s  eta=13495s  finite=3323
+  [5000/100000]  elapsed=708s  rate=7.1/s  eta=13459s  finite=3393
+  -> checkpoint saved: /scratch/e1498138/lhs/tminX/ckpt_1e5/ckpt_005000.pkl
+  [5100/100000]  elapsed=724s  rate=7.0/s  eta=13475s  finite=3467
+  [5200/100000]  elapsed=737s  rate=7.1/s  eta=13429s  finite=3531
+  [5300/100000]  elapsed=750s  rate=7.1/s  eta=13406s  finite=3593
+  [5400/100000]  elapsed=764s  rate=7.1/s  eta=13393s  finite=3654
+  [5500/100000]  elapsed=778s  rate=7.1/s  eta=13363s  finite=3719
+  [5600/100000]  elapsed=791s  rate=7.1/s  eta=13328s  finite=3790
+  [5700/100000]  elapsed=804s  rate=7.1/s  eta=13298s  finite=3851
+  [5800/100000]  elapsed=818s  rate=7.1/s  eta=13284s  finite=3917
+  [5900/100000]  elapsed=832s  rate=7.1/s  eta=13268s  finite=3976
+  [6000/100000]  elapsed=846s  rate=7.1/s  eta=13255s  finite=4038
+  -> checkpoint saved: /scratch/e1498138/lhs/tminX/ckpt_1e5/ckpt_006000.pkl
+  [6100/100000]  elapsed=859s  rate=7.1/s  eta=13223s  finite=4107
+  [6200/100000]  elapsed=873s  rate=7.1/s  eta=13204s  finite=4168
+  [6300/100000]  elapsed=887s  rate=7.1/s  eta=13187s  finite=4241
+  [6400/100000]  elapsed=900s  rate=7.1/s  eta=13169s  finite=4308
+  [6500/100000]  elapsed=914s  rate=7.1/s  eta=13143s  finite=4381
+  [6600/100000]  elapsed=928s  rate=7.1/s  eta=13136s  finite=4449
+  [6700/100000]  elapsed=943s  rate=7.1/s  eta=13137s  finite=4516
+  [6800/100000]  elapsed=958s  rate=7.1/s  eta=13134s  finite=4589
+  [6900/100000]  elapsed=973s  rate=7.1/s  eta=13134s  finite=4649
+  [7000/100000]  elapsed=986s  rate=7.1/s  eta=13105s  finite=4724
+  -> checkpoint saved: /scratch/e1498138/lhs/tminX/ckpt_1e5/ckpt_007000.pkl
+  [7100/100000]  elapsed=999s  rate=7.1/s  eta=13073s  finite=4787
+  [7200/100000]  elapsed=1013s  rate=7.1/s  eta=13061s  finite=4849
+  [7300/100000]  elapsed=1026s  rate=7.1/s  eta=13035s  finite=4911
+  [7400/100000]  elapsed=1042s  rate=7.1/s  eta=13033s  finite=4975
+  [7500/100000]  elapsed=1055s  rate=7.1/s  eta=13013s  finite=5040
+  [7600/100000]  elapsed=1070s  rate=7.1/s  eta=13013s  finite=5105
+  [7700/100000]  elapsed=1084s  rate=7.1/s  eta=12989s  finite=5169
+  [7800/100000]  elapsed=1097s  rate=7.1/s  eta=12968s  finite=5238
+  [7900/100000]  elapsed=1112s  rate=7.1/s  eta=12964s  finite=5304
+  [8000/100000]  elapsed=1125s  rate=7.1/s  eta=12942s  finite=5365
+  -> checkpoint saved: /scratch/e1498138/lhs/tminX/ckpt_1e5/ckpt_008000.pkl
+  [8100/100000]  elapsed=1139s  rate=7.1/s  eta=12928s  finite=5432
+  [8200/100000]  elapsed=1153s  rate=7.1/s  eta=12907s  finite=5501
+  [8300/100000]  elapsed=1167s  rate=7.1/s  eta=12895s  finite=5568
+  [8400/100000]  elapsed=1182s  rate=7.1/s  eta=12884s  finite=5637
+  [8500/100000]  elapsed=1197s  rate=7.1/s  eta=12884s  finite=5704
+  [8600/100000]  elapsed=1210s  rate=7.1/s  eta=12864s  finite=5768
+  [8700/100000]  elapsed=1224s  rate=7.1/s  eta=12846s  finite=5831
+  [8800/100000]  elapsed=1240s  rate=7.1/s  eta=12851s  finite=5903
+  [8900/100000]  elapsed=1253s  rate=7.1/s  eta=12829s  finite=5964
+  [9000/100000]  elapsed=1268s  rate=7.1/s  eta=12816s  finite=6033
+  -> checkpoint saved: /scratch/e1498138/lhs/tminX/ckpt_1e5/ckpt_009000.pkl
+  [9100/100000]  elapsed=1282s  rate=7.1/s  eta=12809s  finite=6099
+  [9200/100000]  elapsed=1295s  rate=7.1/s  eta=12783s  finite=6158
+  [9300/100000]  elapsed=1310s  rate=7.1/s  eta=12775s  finite=6230
+  [9400/100000]  elapsed=1323s  rate=7.1/s  eta=12749s  finite=6285
+  [9500/100000]  elapsed=1337s  rate=7.1/s  eta=12736s  finite=6342
+  [9600/100000]  elapsed=1351s  rate=7.1/s  eta=12724s  finite=6398
+  [9700/100000]  elapsed=1366s  rate=7.1/s  eta=12715s  finite=6478
+  [9800/100000]  elapsed=1380s  rate=7.1/s  eta=12701s  finite=6539
+  [9900/100000]  elapsed=1395s  rate=7.1/s  eta=12692s  finite=6600
+  [10000/100000]  elapsed=1408s  rate=7.1/s  eta=12673s  finite=6668
+  -> checkpoint saved: /scratch/e1498138/lhs/tminX/ckpt_1e5/ckpt_010000.pkl
+  [10100/100000]  elapsed=1422s  rate=7.1/s  eta=12660s  finite=6737
+  [10200/100000]  elapsed=1436s  rate=7.1/s  eta=12641s  finite=6803
+  [10300/100000]  elapsed=1450s  rate=7.1/s  eta=12624s  finite=6872
+  [10400/100000]  elapsed=1463s  rate=7.1/s  eta=12606s  finite=6937
+  [10500/100000]  elapsed=1477s  rate=7.1/s  eta=12590s  finite=7016
+  [10600/100000]  elapsed=1491s  rate=7.1/s  eta=12576s  finite=7083
+  [10700/100000]  elapsed=1505s  rate=7.1/s  eta=12562s  finite=7152
+  [10800/100000]  elapsed=1519s  rate=7.1/s  eta=12548s  finite=7217
+  [10900/100000]  elapsed=1534s  rate=7.1/s  eta=12537s  finite=7284
+  [11000/100000]  elapsed=1546s  rate=7.1/s  eta=12512s  finite=7344
+  -> checkpoint saved: /scratch/e1498138/lhs/tminX/ckpt_1e5/ckpt_011000.pkl
+  [11100/100000]  elapsed=1560s  rate=7.1/s  eta=12496s  finite=7411
+  [11200/100000]  elapsed=1574s  rate=7.1/s  eta=12478s  finite=7469
+  [11300/100000]  elapsed=1587s  rate=7.1/s  eta=12454s  finite=7537
+  [11400/100000]  elapsed=1600s  rate=7.1/s  eta=12436s  finite=7602
+  [11500/100000]  elapsed=1614s  rate=7.1/s  eta=12420s  finite=7663
+  [11600/100000]  elapsed=1630s  rate=7.1/s  eta=12422s  finite=7733
+  [11700/100000]  elapsed=1643s  rate=7.1/s  eta=12403s  finite=7791
+  [11800/100000]  elapsed=1658s  rate=7.1/s  eta=12390s  finite=7850
+  [11900/100000]  elapsed=1670s  rate=7.1/s  eta=12367s  finite=7921
+  [12000/100000]  elapsed=1685s  rate=7.1/s  eta=12358s  finite=7991
+  -> checkpoint saved: /scratch/e1498138/lhs/tminX/ckpt_1e5/ckpt_012000.pkl
+  [12100/100000]  elapsed=1699s  rate=7.1/s  eta=12346s  finite=8050
+  [12200/100000]  elapsed=1712s  rate=7.1/s  eta=12323s  finite=8112
+  [12300/100000]  elapsed=1725s  rate=7.1/s  eta=12301s  finite=8184
+  [12400/100000]  elapsed=1740s  rate=7.1/s  eta=12293s  finite=8258
+  [12500/100000]  elapsed=1754s  rate=7.1/s  eta=12276s  finite=8329
+  [12600/100000]  elapsed=1769s  rate=7.1/s  eta=12269s  finite=8408
+  [12700/100000]  elapsed=1782s  rate=7.1/s  eta=12251s  finite=8464
+  [12800/100000]  elapsed=1796s  rate=7.1/s  eta=12239s  finite=8529
+  [12900/100000]  elapsed=1811s  rate=7.1/s  eta=12230s  finite=8594
+  [13000/100000]  elapsed=1825s  rate=7.1/s  eta=12212s  finite=8654
+  -> checkpoint saved: /scratch/e1498138/lhs/tminX/ckpt_1e5/ckpt_013000.pkl
+  [13100/100000]  elapsed=1839s  rate=7.1/s  eta=12198s  finite=8719
+  [13200/100000]  elapsed=1853s  rate=7.1/s  eta=12185s  finite=8795
+  [13300/100000]  elapsed=1866s  rate=7.1/s  eta=12165s  finite=8857
+  [13400/100000]  elapsed=1880s  rate=7.1/s  eta=12150s  finite=8933
+  [13500/100000]  elapsed=1894s  rate=7.1/s  eta=12135s  finite=9002
+  [13600/100000]  elapsed=1908s  rate=7.1/s  eta=12122s  finite=9066
+  [13700/100000]  elapsed=1923s  rate=7.1/s  eta=12112s  finite=9133
+  [13800/100000]  elapsed=1936s  rate=7.1/s  eta=12093s  finite=9201
+  [13900/100000]  elapsed=1950s  rate=7.1/s  eta=12078s  finite=9265
+  [14000/100000]  elapsed=1964s  rate=7.1/s  eta=12062s  finite=9326
+  -> checkpoint saved: /scratch/e1498138/lhs/tminX/ckpt_1e5/ckpt_014000.pkl
+  [14100/100000]  elapsed=1977s  rate=7.1/s  eta=12044s  finite=9396
+  [14200/100000]  elapsed=1991s  rate=7.1/s  eta=12031s  finite=9464
+  [14300/100000]  elapsed=2005s  rate=7.1/s  eta=12014s  finite=9524
+  [14400/100000]  elapsed=2021s  rate=7.1/s  eta=12014s  finite=9596
+  [14500/100000]  elapsed=2035s  rate=7.1/s  eta=11997s  finite=9670
+  [14600/100000]  elapsed=2048s  rate=7.1/s  eta=11981s  finite=9738
+  [14700/100000]  elapsed=2062s  rate=7.1/s  eta=11966s  finite=9800
+  [14800/100000]  elapsed=2076s  rate=7.1/s  eta=11953s  finite=9868
+  [14900/100000]  elapsed=2089s  rate=7.1/s  eta=11933s  finite=9929
+  [15000/100000]  elapsed=2103s  rate=7.1/s  eta=11918s  finite=9990
+  -> checkpoint saved: /scratch/e1498138/lhs/tminX/ckpt_1e5/ckpt_015000.pkl
+  [15100/100000]  elapsed=2118s  rate=7.1/s  eta=11907s  finite=10060
+  [15200/100000]  elapsed=2132s  rate=7.1/s  eta=11895s  finite=10128
+  [15300/100000]  elapsed=2145s  rate=7.1/s  eta=11874s  finite=10189
+  [15400/100000]  elapsed=2158s  rate=7.1/s  eta=11857s  finite=10260
+  [15500/100000]  elapsed=2173s  rate=7.1/s  eta=11844s  finite=10327
+  [15600/100000]  elapsed=2185s  rate=7.1/s  eta=11823s  finite=10393
+  [15700/100000]  elapsed=2200s  rate=7.1/s  eta=11812s  finite=10456
+  [15800/100000]  elapsed=2213s  rate=7.1/s  eta=11795s  finite=10529
+  [15900/100000]  elapsed=2226s  rate=7.1/s  eta=11776s  finite=10594
+  [16000/100000]  elapsed=2241s  rate=7.1/s  eta=11763s  finite=10655
+  -> checkpoint saved: /scratch/e1498138/lhs/tminX/ckpt_1e5/ckpt_016000.pkl
+  [16100/100000]  elapsed=2256s  rate=7.1/s  eta=11754s  finite=10732
+  [16200/100000]  elapsed=2270s  rate=7.1/s  eta=11740s  finite=10799
+  [16300/100000]  elapsed=2283s  rate=7.1/s  eta=11723s  finite=10862
+  [16400/100000]  elapsed=2297s  rate=7.1/s  eta=11708s  finite=10921
+  [16500/100000]  elapsed=2312s  rate=7.1/s  eta=11699s  finite=10992
+  [16600/100000]  elapsed=2327s  rate=7.1/s  eta=11692s  finite=11063
+  [16700/100000]  elapsed=2341s  rate=7.1/s  eta=11675s  finite=11126
+  [16800/100000]  elapsed=2355s  rate=7.1/s  eta=11664s  finite=11197
+  [16900/100000]  elapsed=2369s  rate=7.1/s  eta=11648s  finite=11255
+  [17000/100000]  elapsed=2383s  rate=7.1/s  eta=11635s  finite=11325
+  -> checkpoint saved: /scratch/e1498138/lhs/tminX/ckpt_1e5/ckpt_017000.pkl
+  [17100/100000]  elapsed=2396s  rate=7.1/s  eta=11618s  finite=11395
+  [17200/100000]  elapsed=2410s  rate=7.1/s  eta=11603s  finite=11458
+  [17300/100000]  elapsed=2424s  rate=7.1/s  eta=11590s  finite=11526
+  [17400/100000]  elapsed=2438s  rate=7.1/s  eta=11572s  finite=11597
+  [17500/100000]  elapsed=2451s  rate=7.1/s  eta=11557s  finite=11664
+  [17600/100000]  elapsed=2466s  rate=7.1/s  eta=11545s  finite=11730
+  [17700/100000]  elapsed=2481s  rate=7.1/s  eta=11535s  finite=11795
+  [17800/100000]  elapsed=2496s  rate=7.1/s  eta=11526s  finite=11863
+  [17900/100000]  elapsed=2510s  rate=7.1/s  eta=11510s  finite=11921
+  [18000/100000]  elapsed=2523s  rate=7.1/s  eta=11492s  finite=11985
+  -> checkpoint saved: /scratch/e1498138/lhs/tminX/ckpt_1e5/ckpt_018000.pkl
+  [18100/100000]  elapsed=2537s  rate=7.1/s  eta=11481s  finite=12050
+  [18200/100000]  elapsed=2552s  rate=7.1/s  eta=11469s  finite=12110
+  [18300/100000]  elapsed=2565s  rate=7.1/s  eta=11452s  finite=12167
+  [18400/100000]  elapsed=2579s  rate=7.1/s  eta=11437s  finite=12237
+  [18500/100000]  elapsed=2592s  rate=7.1/s  eta=11421s  finite=12311
+  [18600/100000]  elapsed=2606s  rate=7.1/s  eta=11404s  finite=12380
+  [18700/100000]  elapsed=2622s  rate=7.1/s  eta=11399s  finite=12450
+  [18800/100000]  elapsed=2638s  rate=7.1/s  eta=11392s  finite=12524
+  [18900/100000]  elapsed=2652s  rate=7.1/s  eta=11380s  finite=12591
+  [19000/100000]  elapsed=2667s  rate=7.1/s  eta=11368s  finite=12663
+  -> checkpoint saved: /scratch/e1498138/lhs/tminX/ckpt_1e5/ckpt_019000.pkl
+  [19100/100000]  elapsed=2680s  rate=7.1/s  eta=11353s  finite=12725
+  [19200/100000]  elapsed=2695s  rate=7.1/s  eta=11340s  finite=12787
+  [19300/100000]  elapsed=2710s  rate=7.1/s  eta=11330s  finite=12857
+  [19400/100000]  elapsed=2724s  rate=7.1/s  eta=11317s  finite=12921
+  [19500/100000]  elapsed=2739s  rate=7.1/s  eta=11307s  finite=12984
+  [19600/100000]  elapsed=2752s  rate=7.1/s  eta=11291s  finite=13061
+  [19700/100000]  elapsed=2768s  rate=7.1/s  eta=11284s  finite=13136
+  [19800/100000]  elapsed=2783s  rate=7.1/s  eta=11271s  finite=13207
+  [19900/100000]  elapsed=2798s  rate=7.1/s  eta=11262s  finite=13280
+  [20000/100000]  elapsed=2811s  rate=7.1/s  eta=11245s  finite=13343
+  -> checkpoint saved: /scratch/e1498138/lhs/tminX/ckpt_1e5/ckpt_020000.pkl
+  [20100/100000]  elapsed=2827s  rate=7.1/s  eta=11237s  finite=13419
+  [20200/100000]  elapsed=2840s  rate=7.1/s  eta=11221s  finite=13486
+  [20300/100000]  elapsed=2854s  rate=7.1/s  eta=11204s  finite=13548
+  [20400/100000]  elapsed=2868s  rate=7.1/s  eta=11189s  finite=13621
+  [20500/100000]  elapsed=2882s  rate=7.1/s  eta=11178s  finite=13695
+  [20600/100000]  elapsed=2896s  rate=7.1/s  eta=11164s  finite=13760
+  [20700/100000]  elapsed=2911s  rate=7.1/s  eta=11154s  finite=13828
+  [20800/100000]  elapsed=2924s  rate=7.1/s  eta=11135s  finite=13896
+  [20900/100000]  elapsed=2938s  rate=7.1/s  eta=11121s  finite=13963
+  [21000/100000]  elapsed=2952s  rate=7.1/s  eta=11106s  finite=14031
+  -> checkpoint saved: /scratch/e1498138/lhs/tminX/ckpt_1e5/ckpt_021000.pkl
+  [21100/100000]  elapsed=2965s  rate=7.1/s  eta=11088s  finite=14093
+  [21200/100000]  elapsed=2979s  rate=7.1/s  eta=11072s  finite=14161
+  [21300/100000]  elapsed=2993s  rate=7.1/s  eta=11057s  finite=14223
+  [21400/100000]  elapsed=3006s  rate=7.1/s  eta=11041s  finite=14286
+  [21500/100000]  elapsed=3021s  rate=7.1/s  eta=11030s  finite=14362
+  [21600/100000]  elapsed=3034s  rate=7.1/s  eta=11014s  finite=14424
+  [21700/100000]  elapsed=3048s  rate=7.1/s  eta=10996s  finite=14494
+  [21800/100000]  elapsed=3062s  rate=7.1/s  eta=10986s  finite=14558
+  [21900/100000]  elapsed=3076s  rate=7.1/s  eta=10971s  finite=14630
+  [22000/100000]  elapsed=3090s  rate=7.1/s  eta=10954s  finite=14699
+  -> checkpoint saved: /scratch/e1498138/lhs/tminX/ckpt_1e5/ckpt_022000.pkl
+  [22100/100000]  elapsed=3104s  rate=7.1/s  eta=10942s  finite=14774
+  [22200/100000]  elapsed=3118s  rate=7.1/s  eta=10926s  finite=14841
+  [22300/100000]  elapsed=3132s  rate=7.1/s  eta=10912s  finite=14908
+  [22400/100000]  elapsed=3146s  rate=7.1/s  eta=10898s  finite=14978
+  [22500/100000]  elapsed=3159s  rate=7.1/s  eta=10883s  finite=15039
+  [22600/100000]  elapsed=3174s  rate=7.1/s  eta=10871s  finite=15110
+  [22700/100000]  elapsed=3188s  rate=7.1/s  eta=10856s  finite=15173
+  [22800/100000]  elapsed=3202s  rate=7.1/s  eta=10841s  finite=15239
+  [22900/100000]  elapsed=3216s  rate=7.1/s  eta=10828s  finite=15306
+  [23000/100000]  elapsed=3229s  rate=7.1/s  eta=10811s  finite=15381
+  -> checkpoint saved: /scratch/e1498138/lhs/tminX/ckpt_1e5/ckpt_023000.pkl
+  [23100/100000]  elapsed=3243s  rate=7.1/s  eta=10796s  finite=15452
+  [23200/100000]  elapsed=3257s  rate=7.1/s  eta=10782s  finite=15513
+  [23300/100000]  elapsed=3271s  rate=7.1/s  eta=10767s  finite=15582
+  [23400/100000]  elapsed=3284s  rate=7.1/s  eta=10750s  finite=15650
+  [23500/100000]  elapsed=3298s  rate=7.1/s  eta=10736s  finite=15718
+  [23600/100000]  elapsed=3312s  rate=7.1/s  eta=10723s  finite=15787
+  [23700/100000]  elapsed=3327s  rate=7.1/s  eta=10710s  finite=15862
+  [23800/100000]  elapsed=3340s  rate=7.1/s  eta=10693s  finite=15917
+  [23900/100000]  elapsed=3355s  rate=7.1/s  eta=10681s  finite=15975
+  [24000/100000]  elapsed=3369s  rate=7.1/s  eta=10668s  finite=16043
+  -> checkpoint saved: /scratch/e1498138/lhs/tminX/ckpt_1e5/ckpt_024000.pkl
+  [24100/100000]  elapsed=3383s  rate=7.1/s  eta=10654s  finite=16109
+  [24200/100000]  elapsed=3398s  rate=7.1/s  eta=10642s  finite=16172
+  [24300/100000]  elapsed=3411s  rate=7.1/s  eta=10627s  finite=16240
+  [24400/100000]  elapsed=3426s  rate=7.1/s  eta=10615s  finite=16302
+  [24500/100000]  elapsed=3440s  rate=7.1/s  eta=10602s  finite=16363
+  [24600/100000]  elapsed=3454s  rate=7.1/s  eta=10586s  finite=16434
+  [24700/100000]  elapsed=3468s  rate=7.1/s  eta=10571s  finite=16503
+  [24800/100000]  elapsed=3483s  rate=7.1/s  eta=10560s  finite=16575
+  [24900/100000]  elapsed=3498s  rate=7.1/s  eta=10551s  finite=16646
+  [25000/100000]  elapsed=3512s  rate=7.1/s  eta=10535s  finite=16711
+  -> checkpoint saved: /scratch/e1498138/lhs/tminX/ckpt_1e5/ckpt_025000.pkl
+  [25100/100000]  elapsed=3526s  rate=7.1/s  eta=10521s  finite=16781
+  [25200/100000]  elapsed=3541s  rate=7.1/s  eta=10510s  finite=16844
+  [25300/100000]  elapsed=3554s  rate=7.1/s  eta=10494s  finite=16915
+  [25400/100000]  elapsed=3568s  rate=7.1/s  eta=10478s  finite=16983
+  [25500/100000]  elapsed=3582s  rate=7.1/s  eta=10466s  finite=17050
+  [25600/100000]  elapsed=3595s  rate=7.1/s  eta=10449s  finite=17113
+  [25700/100000]  elapsed=3609s  rate=7.1/s  eta=10433s  finite=17180
+  [25800/100000]  elapsed=3622s  rate=7.1/s  eta=10417s  finite=17251
+  [25900/100000]  elapsed=3635s  rate=7.1/s  eta=10401s  finite=17311
+  [26000/100000]  elapsed=3649s  rate=7.1/s  eta=10384s  finite=17383
+  -> checkpoint saved: /scratch/e1498138/lhs/tminX/ckpt_1e5/ckpt_026000.pkl
+  [26100/100000]  elapsed=3662s  rate=7.1/s  eta=10368s  finite=17447
+  [26200/100000]  elapsed=3675s  rate=7.1/s  eta=10351s  finite=17524
+  [26300/100000]  elapsed=3688s  rate=7.1/s  eta=10336s  finite=17578
+  [26400/100000]  elapsed=3702s  rate=7.1/s  eta=10320s  finite=17647
+  [26500/100000]  elapsed=3715s  rate=7.1/s  eta=10303s  finite=17708
+  [26600/100000]  elapsed=3728s  rate=7.1/s  eta=10287s  finite=17768
+  [26700/100000]  elapsed=3741s  rate=7.1/s  eta=10271s  finite=17835
+  [26800/100000]  elapsed=3755s  rate=7.1/s  eta=10257s  finite=17903
+  [26900/100000]  elapsed=3769s  rate=7.1/s  eta=10242s  finite=17971
+  [27000/100000]  elapsed=3783s  rate=7.1/s  eta=10228s  finite=18037
+  -> checkpoint saved: /scratch/e1498138/lhs/tminX/ckpt_1e5/ckpt_027000.pkl
+  [27100/100000]  elapsed=3797s  rate=7.1/s  eta=10215s  finite=18108
+  [27200/100000]  elapsed=3811s  rate=7.1/s  eta=10200s  finite=18171
+  [27300/100000]  elapsed=3825s  rate=7.1/s  eta=10186s  finite=18234
+  [27400/100000]  elapsed=3840s  rate=7.1/s  eta=10175s  finite=18295
+  [27500/100000]  elapsed=3854s  rate=7.1/s  eta=10161s  finite=18361
+  [27600/100000]  elapsed=3868s  rate=7.1/s  eta=10145s  finite=18433
+  [27700/100000]  elapsed=3881s  rate=7.1/s  eta=10129s  finite=18499
+  [27800/100000]  elapsed=3894s  rate=7.1/s  eta=10114s  finite=18569
+  [27900/100000]  elapsed=3908s  rate=7.1/s  eta=10100s  finite=18637
+  [28000/100000]  elapsed=3921s  rate=7.1/s  eta=10083s  finite=18697
+  -> checkpoint saved: /scratch/e1498138/lhs/tminX/ckpt_1e5/ckpt_028000.pkl
+  [28100/100000]  elapsed=3936s  rate=7.1/s  eta=10072s  finite=18769
+  [28200/100000]  elapsed=3951s  rate=7.1/s  eta=10060s  finite=18839
+  [28300/100000]  elapsed=3965s  rate=7.1/s  eta=10046s  finite=18903
+  [28400/100000]  elapsed=3978s  rate=7.1/s  eta=10029s  finite=18970
+  [28500/100000]  elapsed=3993s  rate=7.1/s  eta=10018s  finite=19033
+  [28600/100000]  elapsed=4006s  rate=7.1/s  eta=10002s  finite=19102
+  [28700/100000]  elapsed=4021s  rate=7.1/s  eta=9990s  finite=19167
+  [28800/100000]  elapsed=4036s  rate=7.1/s  eta=9977s  finite=19236
+  [28900/100000]  elapsed=4050s  rate=7.1/s  eta=9964s  finite=19300
+  [29000/100000]  elapsed=4064s  rate=7.1/s  eta=9950s  finite=19373
+  -> checkpoint saved: /scratch/e1498138/lhs/tminX/ckpt_1e5/ckpt_029000.pkl
+  [29100/100000]  elapsed=4079s  rate=7.1/s  eta=9938s  finite=19442
+  [29200/100000]  elapsed=4092s  rate=7.1/s  eta=9922s  finite=19511
+  [29300/100000]  elapsed=4105s  rate=7.1/s  eta=9905s  finite=19576
+  [29400/100000]  elapsed=4118s  rate=7.1/s  eta=9890s  finite=19643
+  [29500/100000]  elapsed=4132s  rate=7.1/s  eta=9875s  finite=19713
+  [29600/100000]  elapsed=4146s  rate=7.1/s  eta=9861s  finite=19784
+  [29700/100000]  elapsed=4160s  rate=7.1/s  eta=9847s  finite=19855
+  [29800/100000]  elapsed=4177s  rate=7.1/s  eta=9840s  finite=19926
+  [29900/100000]  elapsed=4192s  rate=7.1/s  eta=9827s  finite=19999
+  [30000/100000]  elapsed=4206s  rate=7.1/s  eta=9813s  finite=20062
+  -> checkpoint saved: /scratch/e1498138/lhs/tminX/ckpt_1e5/ckpt_030000.pkl
+  [30100/100000]  elapsed=4218s  rate=7.1/s  eta=9796s  finite=20125
+  [30200/100000]  elapsed=4232s  rate=7.1/s  eta=9780s  finite=20193
+  [30300/100000]  elapsed=4245s  rate=7.1/s  eta=9766s  finite=20262
+  [30400/100000]  elapsed=4259s  rate=7.1/s  eta=9751s  finite=20333
+  [30500/100000]  elapsed=4273s  rate=7.1/s  eta=9738s  finite=20394
+  [30600/100000]  elapsed=4287s  rate=7.1/s  eta=9722s  finite=20464
+  [30700/100000]  elapsed=4300s  rate=7.1/s  eta=9707s  finite=20531
+  [30800/100000]  elapsed=4314s  rate=7.1/s  eta=9691s  finite=20591
+  [30900/100000]  elapsed=4326s  rate=7.1/s  eta=9674s  finite=20659
+  [31000/100000]  elapsed=4339s  rate=7.1/s  eta=9658s  finite=20723
+  -> checkpoint saved: /scratch/e1498138/lhs/tminX/ckpt_1e5/ckpt_031000.pkl
+  [31100/100000]  elapsed=4352s  rate=7.1/s  eta=9642s  finite=20788
+  [31200/100000]  elapsed=4366s  rate=7.1/s  eta=9628s  finite=20864
+  [31300/100000]  elapsed=4380s  rate=7.1/s  eta=9614s  finite=20932
+  [31400/100000]  elapsed=4395s  rate=7.1/s  eta=9602s  finite=20999
+  [31500/100000]  elapsed=4409s  rate=7.1/s  eta=9587s  finite=21071
+  [31600/100000]  elapsed=4422s  rate=7.1/s  eta=9572s  finite=21140
+  [31700/100000]  elapsed=4436s  rate=7.1/s  eta=9557s  finite=21213
+  [31800/100000]  elapsed=4448s  rate=7.1/s  eta=9540s  finite=21286
+  [31900/100000]  elapsed=4462s  rate=7.1/s  eta=9526s  finite=21342
+  [32000/100000]  elapsed=4476s  rate=7.1/s  eta=9512s  finite=21406
+  -> checkpoint saved: /scratch/e1498138/lhs/tminX/ckpt_1e5/ckpt_032000.pkl
+  [32100/100000]  elapsed=4490s  rate=7.1/s  eta=9497s  finite=21482
+  [32200/100000]  elapsed=4504s  rate=7.1/s  eta=9483s  finite=21551
+  [32300/100000]  elapsed=4517s  rate=7.2/s  eta=9468s  finite=21617
+  [32400/100000]  elapsed=4531s  rate=7.2/s  eta=9453s  finite=21683
+  [32500/100000]  elapsed=4544s  rate=7.2/s  eta=9438s  finite=21751
+  [32600/100000]  elapsed=4557s  rate=7.2/s  eta=9422s  finite=21827
+  [32700/100000]  elapsed=4571s  rate=7.2/s  eta=9408s  finite=21894
+  [32800/100000]  elapsed=4584s  rate=7.2/s  eta=9392s  finite=21962
+  [32900/100000]  elapsed=4599s  rate=7.2/s  eta=9380s  finite=22021
+  [33000/100000]  elapsed=4613s  rate=7.2/s  eta=9365s  finite=22089
+  -> checkpoint saved: /scratch/e1498138/lhs/tminX/ckpt_1e5/ckpt_033000.pkl
+  [33100/100000]  elapsed=4627s  rate=7.2/s  eta=9352s  finite=22159
+  [33200/100000]  elapsed=4640s  rate=7.2/s  eta=9336s  finite=22232
+  [33300/100000]  elapsed=4654s  rate=7.2/s  eta=9322s  finite=22297
+  [33400/100000]  elapsed=4667s  rate=7.2/s  eta=9305s  finite=22364
+  [33500/100000]  elapsed=4680s  rate=7.2/s  eta=9290s  finite=22427
+  [33600/100000]  elapsed=4694s  rate=7.2/s  eta=9277s  finite=22492
+  [33700/100000]  elapsed=4708s  rate=7.2/s  eta=9262s  finite=22561
+  [33800/100000]  elapsed=4722s  rate=7.2/s  eta=9248s  finite=22623
+  [33900/100000]  elapsed=4735s  rate=7.2/s  eta=9233s  finite=22681
+  [34000/100000]  elapsed=4750s  rate=7.2/s  eta=9220s  finite=22747
+  -> checkpoint saved: /scratch/e1498138/lhs/tminX/ckpt_1e5/ckpt_034000.pkl
+  [34100/100000]  elapsed=4763s  rate=7.2/s  eta=9204s  finite=22812
+  [34200/100000]  elapsed=4777s  rate=7.2/s  eta=9190s  finite=22874
+  [34300/100000]  elapsed=4789s  rate=7.2/s  eta=9174s  finite=22938
+  [34400/100000]  elapsed=4803s  rate=7.2/s  eta=9160s  finite=23006
+  [34500/100000]  elapsed=4820s  rate=7.2/s  eta=9150s  finite=23080
+  [34600/100000]  elapsed=4833s  rate=7.2/s  eta=9135s  finite=23148
+  [34700/100000]  elapsed=4846s  rate=7.2/s  eta=9120s  finite=23213
+  [34800/100000]  elapsed=4860s  rate=7.2/s  eta=9105s  finite=23270
+  [34900/100000]  elapsed=4873s  rate=7.2/s  eta=9090s  finite=23333
+  [35000/100000]  elapsed=4888s  rate=7.2/s  eta=9078s  finite=23407
+  -> checkpoint saved: /scratch/e1498138/lhs/tminX/ckpt_1e5/ckpt_035000.pkl
+  [35100/100000]  elapsed=4904s  rate=7.2/s  eta=9067s  finite=23470
+  [35200/100000]  elapsed=4917s  rate=7.2/s  eta=9052s  finite=23539
+  [35300/100000]  elapsed=4932s  rate=7.2/s  eta=9039s  finite=23609
+  [35400/100000]  elapsed=4945s  rate=7.2/s  eta=9025s  finite=23675
+  [35500/100000]  elapsed=4959s  rate=7.2/s  eta=9010s  finite=23745
+  [35600/100000]  elapsed=4973s  rate=7.2/s  eta=8996s  finite=23818
+  [35700/100000]  elapsed=4987s  rate=7.2/s  eta=8982s  finite=23889
+  [35800/100000]  elapsed=5000s  rate=7.2/s  eta=8967s  finite=23962
+  [35900/100000]  elapsed=5014s  rate=7.2/s  eta=8953s  finite=24024
+  [36000/100000]  elapsed=5028s  rate=7.2/s  eta=8938s  finite=24087
+  -> checkpoint saved: /scratch/e1498138/lhs/tminX/ckpt_1e5/ckpt_036000.pkl
+  [36100/100000]  elapsed=5042s  rate=7.2/s  eta=8924s  finite=24151
+  [36200/100000]  elapsed=5056s  rate=7.2/s  eta=8910s  finite=24217
+  [36300/100000]  elapsed=5071s  rate=7.2/s  eta=8898s  finite=24283
+  [36400/100000]  elapsed=5085s  rate=7.2/s  eta=8885s  finite=24345
+  [36500/100000]  elapsed=5098s  rate=7.2/s  eta=8868s  finite=24402
+  [36600/100000]  elapsed=5112s  rate=7.2/s  eta=8855s  finite=24468
+  [36700/100000]  elapsed=5127s  rate=7.2/s  eta=8843s  finite=24538
+  [36800/100000]  elapsed=5142s  rate=7.2/s  eta=8832s  finite=24606
+  [36900/100000]  elapsed=5156s  rate=7.2/s  eta=8817s  finite=24671
+  [37000/100000]  elapsed=5169s  rate=7.2/s  eta=8802s  finite=24742
+  -> checkpoint saved: /scratch/e1498138/lhs/tminX/ckpt_1e5/ckpt_037000.pkl
+  [37100/100000]  elapsed=5182s  rate=7.2/s  eta=8786s  finite=24804
+  [37200/100000]  elapsed=5196s  rate=7.2/s  eta=8772s  finite=24868
+  [37300/100000]  elapsed=5209s  rate=7.2/s  eta=8756s  finite=24941
+  [37400/100000]  elapsed=5222s  rate=7.2/s  eta=8740s  finite=25012
+  [37500/100000]  elapsed=5234s  rate=7.2/s  eta=8724s  finite=25077
+  [37600/100000]  elapsed=5248s  rate=7.2/s  eta=8710s  finite=25144
+  [37700/100000]  elapsed=5264s  rate=7.2/s  eta=8699s  finite=25217
+  [37800/100000]  elapsed=5278s  rate=7.2/s  eta=8685s  finite=25294
+  [37900/100000]  elapsed=5292s  rate=7.2/s  eta=8672s  finite=25366
+  [38000/100000]  elapsed=5307s  rate=7.2/s  eta=8658s  finite=25432
+  -> checkpoint saved: /scratch/e1498138/lhs/tminX/ckpt_1e5/ckpt_038000.pkl
+  [38100/100000]  elapsed=5320s  rate=7.2/s  eta=8644s  finite=25495
+  [38200/100000]  elapsed=5335s  rate=7.2/s  eta=8631s  finite=25558
+  [38300/100000]  elapsed=5348s  rate=7.2/s  eta=8615s  finite=25619
+  [38400/100000]  elapsed=5361s  rate=7.2/s  eta=8599s  finite=25688
+  [38500/100000]  elapsed=5375s  rate=7.2/s  eta=8586s  finite=25753
+  [38600/100000]  elapsed=5389s  rate=7.2/s  eta=8572s  finite=25821
+  [38700/100000]  elapsed=5404s  rate=7.2/s  eta=8560s  finite=25879
+  [38800/100000]  elapsed=5419s  rate=7.2/s  eta=8547s  finite=25948
+  [38900/100000]  elapsed=5432s  rate=7.2/s  eta=8532s  finite=26011
+  [39000/100000]  elapsed=5446s  rate=7.2/s  eta=8518s  finite=26073
+  -> checkpoint saved: /scratch/e1498138/lhs/tminX/ckpt_1e5/ckpt_039000.pkl
+  [39100/100000]  elapsed=5460s  rate=7.2/s  eta=8505s  finite=26140
+  [39200/100000]  elapsed=5474s  rate=7.2/s  eta=8490s  finite=26207
+  [39300/100000]  elapsed=5487s  rate=7.2/s  eta=8474s  finite=26277
+  [39400/100000]  elapsed=5501s  rate=7.2/s  eta=8461s  finite=26348
+  [39500/100000]  elapsed=5514s  rate=7.2/s  eta=8445s  finite=26409
+  [39600/100000]  elapsed=5530s  rate=7.2/s  eta=8434s  finite=26482
+  [39700/100000]  elapsed=5543s  rate=7.2/s  eta=8419s  finite=26545
+  [39800/100000]  elapsed=5556s  rate=7.2/s  eta=8404s  finite=26615
+  [39900/100000]  elapsed=5571s  rate=7.2/s  eta=8391s  finite=26678
+  [40000/100000]  elapsed=5585s  rate=7.2/s  eta=8378s  finite=26743
+  -> checkpoint saved: /scratch/e1498138/lhs/tminX/ckpt_1e5/ckpt_040000.pkl
+  [40100/100000]  elapsed=5599s  rate=7.2/s  eta=8363s  finite=26806
+  [40200/100000]  elapsed=5612s  rate=7.2/s  eta=8349s  finite=26874
+  [40300/100000]  elapsed=5627s  rate=7.2/s  eta=8335s  finite=26935
+  [40400/100000]  elapsed=5641s  rate=7.2/s  eta=8322s  finite=27004
+  [40500/100000]  elapsed=5654s  rate=7.2/s  eta=8306s  finite=27064
+  [40600/100000]  elapsed=5667s  rate=7.2/s  eta=8292s  finite=27136
+  [40700/100000]  elapsed=5683s  rate=7.2/s  eta=8280s  finite=27201
+  [40800/100000]  elapsed=5698s  rate=7.2/s  eta=8268s  finite=27264
+  [40900/100000]  elapsed=5713s  rate=7.2/s  eta=8255s  finite=27334
+  [41000/100000]  elapsed=5726s  rate=7.2/s  eta=8240s  finite=27404
+  -> checkpoint saved: /scratch/e1498138/lhs/tminX/ckpt_1e5/ckpt_041000.pkl
+  [41100/100000]  elapsed=5741s  rate=7.2/s  eta=8227s  finite=27469
+  [41200/100000]  elapsed=5754s  rate=7.2/s  eta=8212s  finite=27534
+  [41300/100000]  elapsed=5768s  rate=7.2/s  eta=8199s  finite=27600
+  [41400/100000]  elapsed=5781s  rate=7.2/s  eta=8183s  finite=27674
+  [41500/100000]  elapsed=5794s  rate=7.2/s  eta=8168s  finite=27734
+  [41600/100000]  elapsed=5808s  rate=7.2/s  eta=8154s  finite=27804
+  [41700/100000]  elapsed=5822s  rate=7.2/s  eta=8139s  finite=27871
+  [41800/100000]  elapsed=5836s  rate=7.2/s  eta=8125s  finite=27937
+  [41900/100000]  elapsed=5850s  rate=7.2/s  eta=8111s  finite=28009
+  [42000/100000]  elapsed=5864s  rate=7.2/s  eta=8098s  finite=28069
+  -> checkpoint saved: /scratch/e1498138/lhs/tminX/ckpt_1e5/ckpt_042000.pkl
+  [42100/100000]  elapsed=5878s  rate=7.2/s  eta=8084s  finite=28139
+  [42200/100000]  elapsed=5892s  rate=7.2/s  eta=8071s  finite=28208
+  [42300/100000]  elapsed=5906s  rate=7.2/s  eta=8057s  finite=28277
+  [42400/100000]  elapsed=5920s  rate=7.2/s  eta=8042s  finite=28342
+  [42500/100000]  elapsed=5934s  rate=7.2/s  eta=8029s  finite=28420
+  [42600/100000]  elapsed=5950s  rate=7.2/s  eta=8016s  finite=28482
+  [42700/100000]  elapsed=5964s  rate=7.2/s  eta=8003s  finite=28548
+  [42800/100000]  elapsed=5978s  rate=7.2/s  eta=7989s  finite=28620
+  [42900/100000]  elapsed=5993s  rate=7.2/s  eta=7976s  finite=28689
+  [43000/100000]  elapsed=6006s  rate=7.2/s  eta=7962s  finite=28757
+  -> checkpoint saved: /scratch/e1498138/lhs/tminX/ckpt_1e5/ckpt_043000.pkl
+  [43100/100000]  elapsed=6020s  rate=7.2/s  eta=7947s  finite=28830
+  [43200/100000]  elapsed=6033s  rate=7.2/s  eta=7932s  finite=28900
+  [43300/100000]  elapsed=6047s  rate=7.2/s  eta=7918s  finite=28962
+  [43400/100000]  elapsed=6061s  rate=7.2/s  eta=7905s  finite=29027
+  [43500/100000]  elapsed=6076s  rate=7.2/s  eta=7891s  finite=29100
+  [43600/100000]  elapsed=6090s  rate=7.2/s  eta=7878s  finite=29161
+  [43700/100000]  elapsed=6105s  rate=7.2/s  eta=7865s  finite=29226
+  [43800/100000]  elapsed=6119s  rate=7.2/s  eta=7851s  finite=29295
+  [43900/100000]  elapsed=6133s  rate=7.2/s  eta=7838s  finite=29365
+  [44000/100000]  elapsed=6148s  rate=7.2/s  eta=7824s  finite=29426
+  -> checkpoint saved: /scratch/e1498138/lhs/tminX/ckpt_1e5/ckpt_044000.pkl
+  [44100/100000]  elapsed=6162s  rate=7.2/s  eta=7811s  finite=29498
+  [44200/100000]  elapsed=6178s  rate=7.2/s  eta=7799s  finite=29569
+  [44300/100000]  elapsed=6192s  rate=7.2/s  eta=7785s  finite=29637
+  [44400/100000]  elapsed=6205s  rate=7.2/s  eta=7770s  finite=29715
+  [44500/100000]  elapsed=6219s  rate=7.2/s  eta=7756s  finite=29783
+  [44600/100000]  elapsed=6232s  rate=7.2/s  eta=7741s  finite=29847
+  [44700/100000]  elapsed=6246s  rate=7.2/s  eta=7727s  finite=29916
+  [44800/100000]  elapsed=6260s  rate=7.2/s  eta=7713s  finite=29987
+  [44900/100000]  elapsed=6274s  rate=7.2/s  eta=7699s  finite=30059
+  [45000/100000]  elapsed=6288s  rate=7.2/s  eta=7686s  finite=30132
+  -> checkpoint saved: /scratch/e1498138/lhs/tminX/ckpt_1e5/ckpt_045000.pkl
+  [45100/100000]  elapsed=6303s  rate=7.2/s  eta=7673s  finite=30202
+  [45200/100000]  elapsed=6318s  rate=7.2/s  eta=7660s  finite=30272
+  [45300/100000]  elapsed=6331s  rate=7.2/s  eta=7645s  finite=30340
+  [45400/100000]  elapsed=6346s  rate=7.2/s  eta=7631s  finite=30412
+  [45500/100000]  elapsed=6359s  rate=7.2/s  eta=7617s  finite=30474
+  [45600/100000]  elapsed=6373s  rate=7.2/s  eta=7602s  finite=30531
+  [45700/100000]  elapsed=6387s  rate=7.2/s  eta=7589s  finite=30598
+  [45800/100000]  elapsed=6400s  rate=7.2/s  eta=7573s  finite=30666
+  [45900/100000]  elapsed=6413s  rate=7.2/s  eta=7559s  finite=30732
+  [46000/100000]  elapsed=6426s  rate=7.2/s  eta=7544s  finite=30793
+  -> checkpoint saved: /scratch/e1498138/lhs/tminX/ckpt_1e5/ckpt_046000.pkl
+  [46100/100000]  elapsed=6440s  rate=7.2/s  eta=7530s  finite=30870
+  [46200/100000]  elapsed=6455s  rate=7.2/s  eta=7517s  finite=30942
+  [46300/100000]  elapsed=6468s  rate=7.2/s  eta=7502s  finite=31005
+  [46400/100000]  elapsed=6482s  rate=7.2/s  eta=7488s  finite=31074
+  [46500/100000]  elapsed=6497s  rate=7.2/s  eta=7475s  finite=31134
+  [46600/100000]  elapsed=6512s  rate=7.2/s  eta=7462s  finite=31206
+  [46700/100000]  elapsed=6525s  rate=7.2/s  eta=7448s  finite=31280
+  [46800/100000]  elapsed=6539s  rate=7.2/s  eta=7433s  finite=31357
+  [46900/100000]  elapsed=6552s  rate=7.2/s  eta=7418s  finite=31423
+  [47000/100000]  elapsed=6567s  rate=7.2/s  eta=7405s  finite=31490
+  -> checkpoint saved: /scratch/e1498138/lhs/tminX/ckpt_1e5/ckpt_047000.pkl
+  [47100/100000]  elapsed=6581s  rate=7.2/s  eta=7391s  finite=31555
+  [47200/100000]  elapsed=6594s  rate=7.2/s  eta=7377s  finite=31625
+  [47300/100000]  elapsed=6608s  rate=7.2/s  eta=7363s  finite=31704
+  [47400/100000]  elapsed=6623s  rate=7.2/s  eta=7349s  finite=31778
+  [47500/100000]  elapsed=6637s  rate=7.2/s  eta=7336s  finite=31838
+  [47600/100000]  elapsed=6650s  rate=7.2/s  eta=7321s  finite=31904
+  [47700/100000]  elapsed=6663s  rate=7.2/s  eta=7306s  finite=31975
+  [47800/100000]  elapsed=6677s  rate=7.2/s  eta=7292s  finite=32050
+  [47900/100000]  elapsed=6691s  rate=7.2/s  eta=7277s  finite=32115
+  [48000/100000]  elapsed=6705s  rate=7.2/s  eta=7263s  finite=32182
+  -> checkpoint saved: /scratch/e1498138/lhs/tminX/ckpt_1e5/ckpt_048000.pkl
+  [48100/100000]  elapsed=6718s  rate=7.2/s  eta=7249s  finite=32244
+  [48200/100000]  elapsed=6732s  rate=7.2/s  eta=7235s  finite=32313
+  [48300/100000]  elapsed=6746s  rate=7.2/s  eta=7221s  finite=32372
+  [48400/100000]  elapsed=6761s  rate=7.2/s  eta=7208s  finite=32442
+  [48500/100000]  elapsed=6775s  rate=7.2/s  eta=7194s  finite=32511
+  [48600/100000]  elapsed=6788s  rate=7.2/s  eta=7179s  finite=32576
+  [48700/100000]  elapsed=6803s  rate=7.2/s  eta=7166s  finite=32649
+  [48800/100000]  elapsed=6818s  rate=7.2/s  eta=7153s  finite=32722
+  [48900/100000]  elapsed=6831s  rate=7.2/s  eta=7138s  finite=32785
+  [49000/100000]  elapsed=6845s  rate=7.2/s  eta=7124s  finite=32857
+  -> checkpoint saved: /scratch/e1498138/lhs/tminX/ckpt_1e5/ckpt_049000.pkl
+  [49100/100000]  elapsed=6861s  rate=7.2/s  eta=7112s  finite=32921
+  [49200/100000]  elapsed=6875s  rate=7.2/s  eta=7098s  finite=32994
+  [49300/100000]  elapsed=6889s  rate=7.2/s  eta=7085s  finite=33064
+  [49400/100000]  elapsed=6902s  rate=7.2/s  eta=7070s  finite=33134
+  [49500/100000]  elapsed=6917s  rate=7.2/s  eta=7056s  finite=33200
+  [49600/100000]  elapsed=6931s  rate=7.2/s  eta=7043s  finite=33267
+  [49700/100000]  elapsed=6944s  rate=7.2/s  eta=7028s  finite=33332
+  [49800/100000]  elapsed=6958s  rate=7.2/s  eta=7013s  finite=33398
+  [49900/100000]  elapsed=6972s  rate=7.2/s  eta=7000s  finite=33460
+  [50000/100000]  elapsed=6986s  rate=7.2/s  eta=6986s  finite=33517
+  -> checkpoint saved: /scratch/e1498138/lhs/tminX/ckpt_1e5/ckpt_050000.pkl
+  [50100/100000]  elapsed=7003s  rate=7.2/s  eta=6975s  finite=33587
+  [50200/100000]  elapsed=7016s  rate=7.2/s  eta=6960s  finite=33647
+  [50300/100000]  elapsed=7029s  rate=7.2/s  eta=6945s  finite=33706
+  [50400/100000]  elapsed=7043s  rate=7.2/s  eta=6931s  finite=33768
+  [50500/100000]  elapsed=7057s  rate=7.2/s  eta=6918s  finite=33837
+  [50600/100000]  elapsed=7073s  rate=7.2/s  eta=6905s  finite=33904
+  [50700/100000]  elapsed=7087s  rate=7.2/s  eta=6892s  finite=33976
+  [50800/100000]  elapsed=7102s  rate=7.2/s  eta=6878s  finite=34036
+  [50900/100000]  elapsed=7116s  rate=7.2/s  eta=6864s  finite=34106
+  [51000/100000]  elapsed=7130s  rate=7.2/s  eta=6851s  finite=34170
+  -> checkpoint saved: /scratch/e1498138/lhs/tminX/ckpt_1e5/ckpt_051000.pkl
+  [51100/100000]  elapsed=7145s  rate=7.2/s  eta=6837s  finite=34239
+  [51200/100000]  elapsed=7158s  rate=7.2/s  eta=6822s  finite=34308
+  [51300/100000]  elapsed=7171s  rate=7.2/s  eta=6808s  finite=34377
+  [51400/100000]  elapsed=7185s  rate=7.2/s  eta=6793s  finite=34444
+  [51500/100000]  elapsed=7200s  rate=7.2/s  eta=6781s  finite=34517
+  [51600/100000]  elapsed=7214s  rate=7.2/s  eta=6766s  finite=34581
+  [51700/100000]  elapsed=7228s  rate=7.2/s  eta=6753s  finite=34642
+  [51800/100000]  elapsed=7244s  rate=7.2/s  eta=6741s  finite=34703
+  [51900/100000]  elapsed=7258s  rate=7.2/s  eta=6726s  finite=34771
+  [52000/100000]  elapsed=7271s  rate=7.2/s  eta=6712s  finite=34840
+  -> checkpoint saved: /scratch/e1498138/lhs/tminX/ckpt_1e5/ckpt_052000.pkl
+  [52100/100000]  elapsed=7287s  rate=7.1/s  eta=6700s  finite=34902
+  [52200/100000]  elapsed=7301s  rate=7.2/s  eta=6685s  finite=34976
+  [52300/100000]  elapsed=7316s  rate=7.1/s  eta=6673s  finite=35050
+  [52400/100000]  elapsed=7331s  rate=7.1/s  eta=6660s  finite=35121
+  [52500/100000]  elapsed=7344s  rate=7.1/s  eta=6645s  finite=35187
+  [52600/100000]  elapsed=7358s  rate=7.1/s  eta=6631s  finite=35250
+  [52700/100000]  elapsed=7373s  rate=7.1/s  eta=6617s  finite=35321
+  [52800/100000]  elapsed=7388s  rate=7.1/s  eta=6604s  finite=35388
+  [52900/100000]  elapsed=7402s  rate=7.1/s  eta=6590s  finite=35453
+  [53000/100000]  elapsed=7417s  rate=7.1/s  eta=6578s  finite=35519
+  -> checkpoint saved: /scratch/e1498138/lhs/tminX/ckpt_1e5/ckpt_053000.pkl
+  [53100/100000]  elapsed=7432s  rate=7.1/s  eta=6565s  finite=35585
+  [53200/100000]  elapsed=7446s  rate=7.1/s  eta=6550s  finite=35653
+  [53300/100000]  elapsed=7461s  rate=7.1/s  eta=6537s  finite=35722
+  [53400/100000]  elapsed=7476s  rate=7.1/s  eta=6524s  finite=35786
+  [53500/100000]  elapsed=7489s  rate=7.1/s  eta=6509s  finite=35858
+  [53600/100000]  elapsed=7504s  rate=7.1/s  eta=6496s  finite=35935
+  [53700/100000]  elapsed=7518s  rate=7.1/s  eta=6482s  finite=36000
+  [53800/100000]  elapsed=7533s  rate=7.1/s  eta=6469s  finite=36069
+  [53900/100000]  elapsed=7546s  rate=7.1/s  eta=6454s  finite=36129
+  [54000/100000]  elapsed=7560s  rate=7.1/s  eta=6440s  finite=36200
+  -> checkpoint saved: /scratch/e1498138/lhs/tminX/ckpt_1e5/ckpt_054000.pkl
+  [54100/100000]  elapsed=7575s  rate=7.1/s  eta=6427s  finite=36269
+  [54200/100000]  elapsed=7588s  rate=7.1/s  eta=6412s  finite=36335
+  [54300/100000]  elapsed=7602s  rate=7.1/s  eta=6398s  finite=36401
+  [54400/100000]  elapsed=7616s  rate=7.1/s  eta=6384s  finite=36467
+  [54500/100000]  elapsed=7629s  rate=7.1/s  eta=6369s  finite=36525
+  [54600/100000]  elapsed=7644s  rate=7.1/s  eta=6356s  finite=36595
+  [54700/100000]  elapsed=7658s  rate=7.1/s  eta=6342s  finite=36653
+  [54800/100000]  elapsed=7671s  rate=7.1/s  eta=6327s  finite=36715
+  [54900/100000]  elapsed=7684s  rate=7.1/s  eta=6312s  finite=36786
+  [55000/100000]  elapsed=7698s  rate=7.1/s  eta=6299s  finite=36857
+  -> checkpoint saved: /scratch/e1498138/lhs/tminX/ckpt_1e5/ckpt_055000.pkl
+  [55100/100000]  elapsed=7711s  rate=7.1/s  eta=6283s  finite=36923
+  [55200/100000]  elapsed=7726s  rate=7.1/s  eta=6270s  finite=36992
+  [55300/100000]  elapsed=7740s  rate=7.1/s  eta=6256s  finite=37058
+  [55400/100000]  elapsed=7753s  rate=7.1/s  eta=6242s  finite=37130
+  [55500/100000]  elapsed=7768s  rate=7.1/s  eta=6228s  finite=37192
+  [55600/100000]  elapsed=7782s  rate=7.1/s  eta=6214s  finite=37261
+  [55700/100000]  elapsed=7796s  rate=7.1/s  eta=6200s  finite=37328
+  [55800/100000]  elapsed=7809s  rate=7.1/s  eta=6186s  finite=37399
+  [55900/100000]  elapsed=7823s  rate=7.1/s  eta=6172s  finite=37465
+  [56000/100000]  elapsed=7837s  rate=7.1/s  eta=6157s  finite=37533
+  -> checkpoint saved: /scratch/e1498138/lhs/tminX/ckpt_1e5/ckpt_056000.pkl
+  [56100/100000]  elapsed=7851s  rate=7.1/s  eta=6144s  finite=37604
+  [56200/100000]  elapsed=7865s  rate=7.1/s  eta=6130s  finite=37674
+  [56300/100000]  elapsed=7880s  rate=7.1/s  eta=6116s  finite=37752
+  [56400/100000]  elapsed=7893s  rate=7.1/s  eta=6102s  finite=37816
+  [56500/100000]  elapsed=7907s  rate=7.1/s  eta=6087s  finite=37881
+  [56600/100000]  elapsed=7921s  rate=7.1/s  eta=6074s  finite=37952
+  [56700/100000]  elapsed=7935s  rate=7.1/s  eta=6060s  finite=38020
+  [56800/100000]  elapsed=7951s  rate=7.1/s  eta=6047s  finite=38089
+  [56900/100000]  elapsed=7965s  rate=7.1/s  eta=6033s  finite=38155
+  [57000/100000]  elapsed=7978s  rate=7.1/s  eta=6019s  finite=38222
+  -> checkpoint saved: /scratch/e1498138/lhs/tminX/ckpt_1e5/ckpt_057000.pkl
+  [57100/100000]  elapsed=7992s  rate=7.1/s  eta=6004s  finite=38292
+  [57200/100000]  elapsed=8005s  rate=7.1/s  eta=5990s  finite=38366
+  [57300/100000]  elapsed=8020s  rate=7.1/s  eta=5976s  finite=38431
+  [57400/100000]  elapsed=8033s  rate=7.1/s  eta=5962s  finite=38492
+  [57500/100000]  elapsed=8046s  rate=7.1/s  eta=5947s  finite=38559
+  [57600/100000]  elapsed=8061s  rate=7.1/s  eta=5934s  finite=38628
+  [57700/100000]  elapsed=8076s  rate=7.1/s  eta=5920s  finite=38695
+  [57800/100000]  elapsed=8090s  rate=7.1/s  eta=5907s  finite=38772
+  [57900/100000]  elapsed=8104s  rate=7.1/s  eta=5893s  finite=38839
+  [58000/100000]  elapsed=8118s  rate=7.1/s  eta=5878s  finite=38904
+  -> checkpoint saved: /scratch/e1498138/lhs/tminX/ckpt_1e5/ckpt_058000.pkl
+  [58100/100000]  elapsed=8133s  rate=7.1/s  eta=5865s  finite=38963
+  [58200/100000]  elapsed=8146s  rate=7.1/s  eta=5851s  finite=39029
+  [58300/100000]  elapsed=8161s  rate=7.1/s  eta=5838s  finite=39098
+  [58400/100000]  elapsed=8175s  rate=7.1/s  eta=5823s  finite=39166
+  [58500/100000]  elapsed=8189s  rate=7.1/s  eta=5810s  finite=39237
+  [58600/100000]  elapsed=8203s  rate=7.1/s  eta=5795s  finite=39303
+  [58700/100000]  elapsed=8217s  rate=7.1/s  eta=5781s  finite=39374
+  [58800/100000]  elapsed=8231s  rate=7.1/s  eta=5768s  finite=39448
+  [58900/100000]  elapsed=8245s  rate=7.1/s  eta=5754s  finite=39523
+  [59000/100000]  elapsed=8259s  rate=7.1/s  eta=5739s  finite=39592
+  -> checkpoint saved: /scratch/e1498138/lhs/tminX/ckpt_1e5/ckpt_059000.pkl
+  [59100/100000]  elapsed=8274s  rate=7.1/s  eta=5726s  finite=39651
+  [59200/100000]  elapsed=8287s  rate=7.1/s  eta=5712s  finite=39718
+  [59300/100000]  elapsed=8301s  rate=7.1/s  eta=5697s  finite=39782
+  [59400/100000]  elapsed=8315s  rate=7.1/s  eta=5684s  finite=39855
+  [59500/100000]  elapsed=8329s  rate=7.1/s  eta=5670s  finite=39919
+  [59600/100000]  elapsed=8343s  rate=7.1/s  eta=5656s  finite=39981
+  [59700/100000]  elapsed=8357s  rate=7.1/s  eta=5641s  finite=40045
+  [59800/100000]  elapsed=8371s  rate=7.1/s  eta=5627s  finite=40120
+  [59900/100000]  elapsed=8386s  rate=7.1/s  eta=5614s  finite=40177
+  [60000/100000]  elapsed=8400s  rate=7.1/s  eta=5600s  finite=40240
+  -> checkpoint saved: /scratch/e1498138/lhs/tminX/ckpt_1e5/ckpt_060000.pkl
+  [60100/100000]  elapsed=8415s  rate=7.1/s  eta=5586s  finite=40306
+  [60200/100000]  elapsed=8431s  rate=7.1/s  eta=5574s  finite=40379
+  [60300/100000]  elapsed=8445s  rate=7.1/s  eta=5560s  finite=40451
+  [60400/100000]  elapsed=8459s  rate=7.1/s  eta=5546s  finite=40520
+  [60500/100000]  elapsed=8471s  rate=7.1/s  eta=5531s  finite=40592
+  [60600/100000]  elapsed=8486s  rate=7.1/s  eta=5518s  finite=40661
+  [60700/100000]  elapsed=8500s  rate=7.1/s  eta=5503s  finite=40722
+  [60800/100000]  elapsed=8514s  rate=7.1/s  eta=5490s  finite=40783
+  [60900/100000]  elapsed=8527s  rate=7.1/s  eta=5475s  finite=40843
+  [61000/100000]  elapsed=8541s  rate=7.1/s  eta=5461s  finite=40915
+  -> checkpoint saved: /scratch/e1498138/lhs/tminX/ckpt_1e5/ckpt_061000.pkl
+  [61100/100000]  elapsed=8555s  rate=7.1/s  eta=5447s  finite=40979
+  [61200/100000]  elapsed=8569s  rate=7.1/s  eta=5432s  finite=41041
+  [61300/100000]  elapsed=8582s  rate=7.1/s  eta=5418s  finite=41112
+  [61400/100000]  elapsed=8597s  rate=7.1/s  eta=5404s  finite=41180
+  [61500/100000]  elapsed=8610s  rate=7.1/s  eta=5390s  finite=41254
+  [61600/100000]  elapsed=8624s  rate=7.1/s  eta=5376s  finite=41327
+  [61700/100000]  elapsed=8639s  rate=7.1/s  eta=5362s  finite=41401
+  [61800/100000]  elapsed=8652s  rate=7.1/s  eta=5348s  finite=41463
+  [61900/100000]  elapsed=8667s  rate=7.1/s  eta=5334s  finite=41537
+  [62000/100000]  elapsed=8682s  rate=7.1/s  eta=5321s  finite=41603
+  -> checkpoint saved: /scratch/e1498138/lhs/tminX/ckpt_1e5/ckpt_062000.pkl
+  [62100/100000]  elapsed=8695s  rate=7.1/s  eta=5307s  finite=41668
+  [62200/100000]  elapsed=8708s  rate=7.1/s  eta=5292s  finite=41729
+  [62300/100000]  elapsed=8722s  rate=7.1/s  eta=5278s  finite=41800
+  [62400/100000]  elapsed=8737s  rate=7.1/s  eta=5264s  finite=41868
+  [62500/100000]  elapsed=8751s  rate=7.1/s  eta=5250s  finite=41943
+  [62600/100000]  elapsed=8765s  rate=7.1/s  eta=5236s  finite=42010
+  [62700/100000]  elapsed=8778s  rate=7.1/s  eta=5222s  finite=42071
+  [62800/100000]  elapsed=8791s  rate=7.1/s  eta=5207s  finite=42134
+  [62900/100000]  elapsed=8805s  rate=7.1/s  eta=5193s  finite=42202
+  [63000/100000]  elapsed=8818s  rate=7.1/s  eta=5179s  finite=42262
+  -> checkpoint saved: /scratch/e1498138/lhs/tminX/ckpt_1e5/ckpt_063000.pkl
+  [63100/100000]  elapsed=8832s  rate=7.1/s  eta=5165s  finite=42328
+  [63200/100000]  elapsed=8846s  rate=7.1/s  eta=5151s  finite=42397
+  [63300/100000]  elapsed=8859s  rate=7.1/s  eta=5136s  finite=42464
+  [63400/100000]  elapsed=8873s  rate=7.1/s  eta=5123s  finite=42534
+  [63500/100000]  elapsed=8887s  rate=7.1/s  eta=5108s  finite=42596
+  [63600/100000]  elapsed=8900s  rate=7.1/s  eta=5094s  finite=42663
+  [63700/100000]  elapsed=8915s  rate=7.1/s  eta=5080s  finite=42728
+  [63800/100000]  elapsed=8929s  rate=7.1/s  eta=5066s  finite=42794
+  [63900/100000]  elapsed=8943s  rate=7.1/s  eta=5052s  finite=42853
+  [64000/100000]  elapsed=8956s  rate=7.1/s  eta=5038s  finite=42928
+  -> checkpoint saved: /scratch/e1498138/lhs/tminX/ckpt_1e5/ckpt_064000.pkl
+  [64100/100000]  elapsed=8970s  rate=7.1/s  eta=5024s  finite=42996
+  [64200/100000]  elapsed=8984s  rate=7.1/s  eta=5010s  finite=43063
+  [64300/100000]  elapsed=8997s  rate=7.1/s  eta=4995s  finite=43132
+  [64400/100000]  elapsed=9012s  rate=7.1/s  eta=4982s  finite=43197
+  [64500/100000]  elapsed=9027s  rate=7.1/s  eta=4968s  finite=43266
+  [64600/100000]  elapsed=9040s  rate=7.1/s  eta=4954s  finite=43327
+  [64700/100000]  elapsed=9054s  rate=7.1/s  eta=4940s  finite=43396
+  [64800/100000]  elapsed=9070s  rate=7.1/s  eta=4927s  finite=43468
+  [64900/100000]  elapsed=9084s  rate=7.1/s  eta=4913s  finite=43536
+  [65000/100000]  elapsed=9098s  rate=7.1/s  eta=4899s  finite=43607
+  -> checkpoint saved: /scratch/e1498138/lhs/tminX/ckpt_1e5/ckpt_065000.pkl
+  [65100/100000]  elapsed=9114s  rate=7.1/s  eta=4886s  finite=43678
+  [65200/100000]  elapsed=9128s  rate=7.1/s  eta=4872s  finite=43748
+  [65300/100000]  elapsed=9142s  rate=7.1/s  eta=4858s  finite=43822
+  [65400/100000]  elapsed=9155s  rate=7.1/s  eta=4843s  finite=43883
+  [65500/100000]  elapsed=9169s  rate=7.1/s  eta=4830s  finite=43953
+  [65600/100000]  elapsed=9182s  rate=7.1/s  eta=4815s  finite=44020
+  [65700/100000]  elapsed=9196s  rate=7.1/s  eta=4801s  finite=44087
+  [65800/100000]  elapsed=9210s  rate=7.1/s  eta=4787s  finite=44153
+  [65900/100000]  elapsed=9223s  rate=7.1/s  eta=4772s  finite=44224
+  [66000/100000]  elapsed=9237s  rate=7.1/s  eta=4758s  finite=44283
+  -> checkpoint saved: /scratch/e1498138/lhs/tminX/ckpt_1e5/ckpt_066000.pkl
+  [66100/100000]  elapsed=9249s  rate=7.1/s  eta=4744s  finite=44347
+  [66200/100000]  elapsed=9263s  rate=7.1/s  eta=4730s  finite=44416
+  [66300/100000]  elapsed=9277s  rate=7.1/s  eta=4715s  finite=44480
+  [66400/100000]  elapsed=9291s  rate=7.1/s  eta=4702s  finite=44554
+  [66500/100000]  elapsed=9305s  rate=7.1/s  eta=4688s  finite=44617
+  [66600/100000]  elapsed=9320s  rate=7.1/s  eta=4674s  finite=44679
+  [66700/100000]  elapsed=9335s  rate=7.1/s  eta=4660s  finite=44753
+  [66800/100000]  elapsed=9350s  rate=7.1/s  eta=4647s  finite=44826
+  [66900/100000]  elapsed=9363s  rate=7.1/s  eta=4632s  finite=44897
+  [67000/100000]  elapsed=9378s  rate=7.1/s  eta=4619s  finite=44960
+  -> checkpoint saved: /scratch/e1498138/lhs/tminX/ckpt_1e5/ckpt_067000.pkl
+  [67100/100000]  elapsed=9392s  rate=7.1/s  eta=4605s  finite=45028
+  [67200/100000]  elapsed=9406s  rate=7.1/s  eta=4591s  finite=45100
+  [67300/100000]  elapsed=9419s  rate=7.1/s  eta=4577s  finite=45175
+  [67400/100000]  elapsed=9432s  rate=7.1/s  eta=4562s  finite=45241
+  [67500/100000]  elapsed=9448s  rate=7.1/s  eta=4549s  finite=45317
+  [67600/100000]  elapsed=9462s  rate=7.1/s  eta=4535s  finite=45384
+  [67700/100000]  elapsed=9476s  rate=7.1/s  eta=4521s  finite=45458
+  [67800/100000]  elapsed=9491s  rate=7.1/s  eta=4507s  finite=45525
+  [67900/100000]  elapsed=9506s  rate=7.1/s  eta=4494s  finite=45588
+  [68000/100000]  elapsed=9520s  rate=7.1/s  eta=4480s  finite=45648
+  -> checkpoint saved: /scratch/e1498138/lhs/tminX/ckpt_1e5/ckpt_068000.pkl
+  [68100/100000]  elapsed=9534s  rate=7.1/s  eta=4466s  finite=45716
+  [68200/100000]  elapsed=9547s  rate=7.1/s  eta=4452s  finite=45785
+  [68300/100000]  elapsed=9560s  rate=7.1/s  eta=4437s  finite=45842
+  [68400/100000]  elapsed=9573s  rate=7.1/s  eta=4423s  finite=45906
+  [68500/100000]  elapsed=9587s  rate=7.1/s  eta=4409s  finite=45967
+  [68600/100000]  elapsed=9600s  rate=7.1/s  eta=4394s  finite=46040
+  [68700/100000]  elapsed=9615s  rate=7.1/s  eta=4381s  finite=46111
+  [68800/100000]  elapsed=9630s  rate=7.1/s  eta=4367s  finite=46179
+  [68900/100000]  elapsed=9644s  rate=7.1/s  eta=4353s  finite=46248
+  [69000/100000]  elapsed=9660s  rate=7.1/s  eta=4340s  finite=46312
+  -> checkpoint saved: /scratch/e1498138/lhs/tminX/ckpt_1e5/ckpt_069000.pkl
+  [69100/100000]  elapsed=9675s  rate=7.1/s  eta=4327s  finite=46375
+  [69200/100000]  elapsed=9689s  rate=7.1/s  eta=4312s  finite=46439
+  [69300/100000]  elapsed=9702s  rate=7.1/s  eta=4298s  finite=46498
+  [69400/100000]  elapsed=9715s  rate=7.1/s  eta=4283s  finite=46563
+  [69500/100000]  elapsed=9728s  rate=7.1/s  eta=4269s  finite=46624
+  [69600/100000]  elapsed=9742s  rate=7.1/s  eta=4255s  finite=46686
+  [69700/100000]  elapsed=9756s  rate=7.1/s  eta=4241s  finite=46754
+  [69800/100000]  elapsed=9770s  rate=7.1/s  eta=4227s  finite=46822
+  [69900/100000]  elapsed=9784s  rate=7.1/s  eta=4213s  finite=46895
+  [70000/100000]  elapsed=9798s  rate=7.1/s  eta=4199s  finite=46958
+  -> checkpoint saved: /scratch/e1498138/lhs/tminX/ckpt_1e5/ckpt_070000.pkl
+  [70100/100000]  elapsed=9811s  rate=7.1/s  eta=4185s  finite=47017
+  [70200/100000]  elapsed=9824s  rate=7.1/s  eta=4170s  finite=47090
+  [70300/100000]  elapsed=9838s  rate=7.1/s  eta=4156s  finite=47154
+  [70400/100000]  elapsed=9851s  rate=7.1/s  eta=4142s  finite=47220
+  [70500/100000]  elapsed=9864s  rate=7.1/s  eta=4127s  finite=47280
+  [70600/100000]  elapsed=9878s  rate=7.1/s  eta=4114s  finite=47345
+  [70700/100000]  elapsed=9893s  rate=7.1/s  eta=4100s  finite=47412
+  [70800/100000]  elapsed=9906s  rate=7.1/s  eta=4086s  finite=47475
+  [70900/100000]  elapsed=9919s  rate=7.1/s  eta=4071s  finite=47547
+  [71000/100000]  elapsed=9934s  rate=7.1/s  eta=4057s  finite=47608
+  -> checkpoint saved: /scratch/e1498138/lhs/tminX/ckpt_1e5/ckpt_071000.pkl
+  [71100/100000]  elapsed=9948s  rate=7.1/s  eta=4044s  finite=47680
+  [71200/100000]  elapsed=9961s  rate=7.1/s  eta=4029s  finite=47736
+  [71300/100000]  elapsed=9975s  rate=7.1/s  eta=4015s  finite=47812
+  [71400/100000]  elapsed=9989s  rate=7.1/s  eta=4001s  finite=47881
+  [71500/100000]  elapsed=10003s  rate=7.1/s  eta=3987s  finite=47948
+  [71600/100000]  elapsed=10018s  rate=7.1/s  eta=3973s  finite=48015
+  [71700/100000]  elapsed=10032s  rate=7.1/s  eta=3960s  finite=48074
+  [71800/100000]  elapsed=10046s  rate=7.1/s  eta=3946s  finite=48138
+  [71900/100000]  elapsed=10060s  rate=7.1/s  eta=3932s  finite=48211
+  [72000/100000]  elapsed=10076s  rate=7.1/s  eta=3918s  finite=48284
+  -> checkpoint saved: /scratch/e1498138/lhs/tminX/ckpt_1e5/ckpt_072000.pkl
+  [72100/100000]  elapsed=10089s  rate=7.1/s  eta=3904s  finite=48345
+  [72200/100000]  elapsed=10103s  rate=7.1/s  eta=3890s  finite=48413
+  [72300/100000]  elapsed=10116s  rate=7.1/s  eta=3876s  finite=48485
+  [72400/100000]  elapsed=10130s  rate=7.1/s  eta=3862s  finite=48555
+  [72500/100000]  elapsed=10145s  rate=7.1/s  eta=3848s  finite=48624
+  [72600/100000]  elapsed=10159s  rate=7.1/s  eta=3834s  finite=48689
+  [72700/100000]  elapsed=10173s  rate=7.1/s  eta=3820s  finite=48766
+  [72800/100000]  elapsed=10187s  rate=7.1/s  eta=3806s  finite=48828
+  [72900/100000]  elapsed=10201s  rate=7.1/s  eta=3792s  finite=48899
+  [73000/100000]  elapsed=10216s  rate=7.1/s  eta=3778s  finite=48973
+  -> checkpoint saved: /scratch/e1498138/lhs/tminX/ckpt_1e5/ckpt_073000.pkl
+  [73100/100000]  elapsed=10230s  rate=7.1/s  eta=3764s  finite=49045
+  [73200/100000]  elapsed=10243s  rate=7.1/s  eta=3750s  finite=49117
+  [73300/100000]  elapsed=10256s  rate=7.1/s  eta=3736s  finite=49187
+  [73400/100000]  elapsed=10270s  rate=7.1/s  eta=3722s  finite=49254
+  [73500/100000]  elapsed=10284s  rate=7.1/s  eta=3708s  finite=49328
+  [73600/100000]  elapsed=10299s  rate=7.1/s  eta=3694s  finite=49395
+  [73700/100000]  elapsed=10313s  rate=7.1/s  eta=3680s  finite=49463
+  [73800/100000]  elapsed=10328s  rate=7.1/s  eta=3666s  finite=49529
+  [73900/100000]  elapsed=10342s  rate=7.1/s  eta=3652s  finite=49592
+  [74000/100000]  elapsed=10356s  rate=7.1/s  eta=3638s  finite=49664
+  -> checkpoint saved: /scratch/e1498138/lhs/tminX/ckpt_1e5/ckpt_074000.pkl
+  [74100/100000]  elapsed=10370s  rate=7.1/s  eta=3625s  finite=49738
+  [74200/100000]  elapsed=10385s  rate=7.1/s  eta=3611s  finite=49802
+  [74300/100000]  elapsed=10399s  rate=7.1/s  eta=3597s  finite=49870
+  [74400/100000]  elapsed=10412s  rate=7.1/s  eta=3583s  finite=49948
+  [74500/100000]  elapsed=10426s  rate=7.1/s  eta=3569s  finite=50009
+  [74600/100000]  elapsed=10440s  rate=7.1/s  eta=3555s  finite=50076
+  [74700/100000]  elapsed=10453s  rate=7.1/s  eta=3540s  finite=50142
+  [74800/100000]  elapsed=10466s  rate=7.1/s  eta=3526s  finite=50210
+  [74900/100000]  elapsed=10480s  rate=7.1/s  eta=3512s  finite=50277
+  [75000/100000]  elapsed=10496s  rate=7.1/s  eta=3499s  finite=50355
+  -> checkpoint saved: /scratch/e1498138/lhs/tminX/ckpt_1e5/ckpt_075000.pkl
+  [75100/100000]  elapsed=10512s  rate=7.1/s  eta=3485s  finite=50419
+  [75200/100000]  elapsed=10526s  rate=7.1/s  eta=3471s  finite=50492
+  [75300/100000]  elapsed=10540s  rate=7.1/s  eta=3457s  finite=50566
+  [75400/100000]  elapsed=10554s  rate=7.1/s  eta=3443s  finite=50634
+  [75500/100000]  elapsed=10569s  rate=7.1/s  eta=3430s  finite=50712
+  [75600/100000]  elapsed=10583s  rate=7.1/s  eta=3416s  finite=50782
+  [75700/100000]  elapsed=10596s  rate=7.1/s  eta=3401s  finite=50851
+  [75800/100000]  elapsed=10611s  rate=7.1/s  eta=3388s  finite=50921
+  [75900/100000]  elapsed=10625s  rate=7.1/s  eta=3374s  finite=50989
+  [76000/100000]  elapsed=10638s  rate=7.1/s  eta=3359s  finite=51058
+  -> checkpoint saved: /scratch/e1498138/lhs/tminX/ckpt_1e5/ckpt_076000.pkl
+  [76100/100000]  elapsed=10651s  rate=7.1/s  eta=3345s  finite=51121
+  [76200/100000]  elapsed=10666s  rate=7.1/s  eta=3331s  finite=51190
+  [76300/100000]  elapsed=10680s  rate=7.1/s  eta=3317s  finite=51256
+  [76400/100000]  elapsed=10694s  rate=7.1/s  eta=3303s  finite=51325
+  [76500/100000]  elapsed=10708s  rate=7.1/s  eta=3289s  finite=51391
+  [76600/100000]  elapsed=10723s  rate=7.1/s  eta=3276s  finite=51453
+  [76700/100000]  elapsed=10737s  rate=7.1/s  eta=3262s  finite=51513
+  [76800/100000]  elapsed=10751s  rate=7.1/s  eta=3248s  finite=51581
+  [76900/100000]  elapsed=10766s  rate=7.1/s  eta=3234s  finite=51650
+  [77000/100000]  elapsed=10780s  rate=7.1/s  eta=3220s  finite=51719
+  -> checkpoint saved: /scratch/e1498138/lhs/tminX/ckpt_1e5/ckpt_077000.pkl
+  [77100/100000]  elapsed=10794s  rate=7.1/s  eta=3206s  finite=51779
+  [77200/100000]  elapsed=10809s  rate=7.1/s  eta=3192s  finite=51842
+  [77300/100000]  elapsed=10824s  rate=7.1/s  eta=3179s  finite=51917
+  [77400/100000]  elapsed=10838s  rate=7.1/s  eta=3165s  finite=51984
+  [77500/100000]  elapsed=10852s  rate=7.1/s  eta=3151s  finite=52044
+  [77600/100000]  elapsed=10866s  rate=7.1/s  eta=3137s  finite=52106
+  [77700/100000]  elapsed=10880s  rate=7.1/s  eta=3122s  finite=52172
+  [77800/100000]  elapsed=10893s  rate=7.1/s  eta=3108s  finite=52236
+  [77900/100000]  elapsed=10907s  rate=7.1/s  eta=3094s  finite=52298
+  [78000/100000]  elapsed=10921s  rate=7.1/s  eta=3080s  finite=52363
+  -> checkpoint saved: /scratch/e1498138/lhs/tminX/ckpt_1e5/ckpt_078000.pkl
+  [78100/100000]  elapsed=10935s  rate=7.1/s  eta=3066s  finite=52431
+  [78200/100000]  elapsed=10948s  rate=7.1/s  eta=3052s  finite=52492
+  [78300/100000]  elapsed=10962s  rate=7.1/s  eta=3038s  finite=52562
+  [78400/100000]  elapsed=10978s  rate=7.1/s  eta=3024s  finite=52630
+  [78500/100000]  elapsed=10993s  rate=7.1/s  eta=3011s  finite=52689
+  [78600/100000]  elapsed=11007s  rate=7.1/s  eta=2997s  finite=52749
+  [78700/100000]  elapsed=11022s  rate=7.1/s  eta=2983s  finite=52820
+  [78800/100000]  elapsed=11037s  rate=7.1/s  eta=2969s  finite=52894
+  [78900/100000]  elapsed=11050s  rate=7.1/s  eta=2955s  finite=52960
+  [79000/100000]  elapsed=11064s  rate=7.1/s  eta=2941s  finite=53032
+  -> checkpoint saved: /scratch/e1498138/lhs/tminX/ckpt_1e5/ckpt_079000.pkl
+  [79100/100000]  elapsed=11078s  rate=7.1/s  eta=2927s  finite=53093
+  [79200/100000]  elapsed=11091s  rate=7.1/s  eta=2913s  finite=53156
+  [79300/100000]  elapsed=11105s  rate=7.1/s  eta=2899s  finite=53221
+  [79400/100000]  elapsed=11121s  rate=7.1/s  eta=2885s  finite=53296
+  [79500/100000]  elapsed=11134s  rate=7.1/s  eta=2871s  finite=53358
+  [79600/100000]  elapsed=11149s  rate=7.1/s  eta=2857s  finite=53432
+  [79700/100000]  elapsed=11162s  rate=7.1/s  eta=2843s  finite=53493
+  [79800/100000]  elapsed=11176s  rate=7.1/s  eta=2829s  finite=53554
+  [79900/100000]  elapsed=11190s  rate=7.1/s  eta=2815s  finite=53621
+  [80000/100000]  elapsed=11204s  rate=7.1/s  eta=2801s  finite=53693
+  -> checkpoint saved: /scratch/e1498138/lhs/tminX/ckpt_1e5/ckpt_080000.pkl
+  [80100/100000]  elapsed=11217s  rate=7.1/s  eta=2787s  finite=53765
+  [80200/100000]  elapsed=11231s  rate=7.1/s  eta=2773s  finite=53829
+  [80300/100000]  elapsed=11244s  rate=7.1/s  eta=2759s  finite=53900
+  [80400/100000]  elapsed=11258s  rate=7.1/s  eta=2745s  finite=53968
+  [80500/100000]  elapsed=11272s  rate=7.1/s  eta=2730s  finite=54038
+  [80600/100000]  elapsed=11286s  rate=7.1/s  eta=2716s  finite=54108
+  [80700/100000]  elapsed=11299s  rate=7.1/s  eta=2702s  finite=54179
+  [80800/100000]  elapsed=11314s  rate=7.1/s  eta=2688s  finite=54253
+  [80900/100000]  elapsed=11327s  rate=7.1/s  eta=2674s  finite=54321
+  [81000/100000]  elapsed=11340s  rate=7.1/s  eta=2660s  finite=54386
+  -> checkpoint saved: /scratch/e1498138/lhs/tminX/ckpt_1e5/ckpt_081000.pkl
+  [81100/100000]  elapsed=11356s  rate=7.1/s  eta=2646s  finite=54450
+  [81200/100000]  elapsed=11370s  rate=7.1/s  eta=2632s  finite=54520
+  [81300/100000]  elapsed=11384s  rate=7.1/s  eta=2618s  finite=54590
+  [81400/100000]  elapsed=11400s  rate=7.1/s  eta=2605s  finite=54659
+  [81500/100000]  elapsed=11413s  rate=7.1/s  eta=2591s  finite=54727
+  [81600/100000]  elapsed=11428s  rate=7.1/s  eta=2577s  finite=54791
+  [81700/100000]  elapsed=11443s  rate=7.1/s  eta=2563s  finite=54859
+  [81800/100000]  elapsed=11457s  rate=7.1/s  eta=2549s  finite=54923
+  [81900/100000]  elapsed=11469s  rate=7.1/s  eta=2535s  finite=54985
+  [82000/100000]  elapsed=11484s  rate=7.1/s  eta=2521s  finite=55054
+  -> checkpoint saved: /scratch/e1498138/lhs/tminX/ckpt_1e5/ckpt_082000.pkl
+  [82100/100000]  elapsed=11497s  rate=7.1/s  eta=2507s  finite=55126
+  [82200/100000]  elapsed=11511s  rate=7.1/s  eta=2493s  finite=55195
+  [82300/100000]  elapsed=11526s  rate=7.1/s  eta=2479s  finite=55258
+  [82400/100000]  elapsed=11539s  rate=7.1/s  eta=2465s  finite=55331
+  [82500/100000]  elapsed=11554s  rate=7.1/s  eta=2451s  finite=55390
+  [82600/100000]  elapsed=11568s  rate=7.1/s  eta=2437s  finite=55460
+  [82700/100000]  elapsed=11583s  rate=7.1/s  eta=2423s  finite=55516
+  [82800/100000]  elapsed=11596s  rate=7.1/s  eta=2409s  finite=55576
+  [82900/100000]  elapsed=11611s  rate=7.1/s  eta=2395s  finite=55637
+  [83000/100000]  elapsed=11625s  rate=7.1/s  eta=2381s  finite=55707
+  -> checkpoint saved: /scratch/e1498138/lhs/tminX/ckpt_1e5/ckpt_083000.pkl
+  [83100/100000]  elapsed=11638s  rate=7.1/s  eta=2367s  finite=55765
+  [83200/100000]  elapsed=11651s  rate=7.1/s  eta=2353s  finite=55831
+  [83300/100000]  elapsed=11665s  rate=7.1/s  eta=2339s  finite=55889
+  [83400/100000]  elapsed=11679s  rate=7.1/s  eta=2325s  finite=55957
+  [83500/100000]  elapsed=11694s  rate=7.1/s  eta=2311s  finite=56022
+  [83600/100000]  elapsed=11706s  rate=7.1/s  eta=2296s  finite=56091
+  [83700/100000]  elapsed=11721s  rate=7.1/s  eta=2283s  finite=56161
+  [83800/100000]  elapsed=11736s  rate=7.1/s  eta=2269s  finite=56232
+  [83900/100000]  elapsed=11752s  rate=7.1/s  eta=2255s  finite=56299
+  [84000/100000]  elapsed=11765s  rate=7.1/s  eta=2241s  finite=56365
+  -> checkpoint saved: /scratch/e1498138/lhs/tminX/ckpt_1e5/ckpt_084000.pkl
+  [84100/100000]  elapsed=11779s  rate=7.1/s  eta=2227s  finite=56430
+  [84200/100000]  elapsed=11792s  rate=7.1/s  eta=2213s  finite=56495
+  [84300/100000]  elapsed=11806s  rate=7.1/s  eta=2199s  finite=56563
+  [84400/100000]  elapsed=11820s  rate=7.1/s  eta=2185s  finite=56626
+  [84500/100000]  elapsed=11835s  rate=7.1/s  eta=2171s  finite=56693
+  [84600/100000]  elapsed=11848s  rate=7.1/s  eta=2157s  finite=56764
+  [84700/100000]  elapsed=11863s  rate=7.1/s  eta=2143s  finite=56832
+  [84800/100000]  elapsed=11877s  rate=7.1/s  eta=2129s  finite=56907
+  [84900/100000]  elapsed=11892s  rate=7.1/s  eta=2115s  finite=56971
+  [85000/100000]  elapsed=11904s  rate=7.1/s  eta=2101s  finite=57028
+  -> checkpoint saved: /scratch/e1498138/lhs/tminX/ckpt_1e5/ckpt_085000.pkl
+  [85100/100000]  elapsed=11918s  rate=7.1/s  eta=2087s  finite=57088
+  [85200/100000]  elapsed=11931s  rate=7.1/s  eta=2073s  finite=57158
+  [85300/100000]  elapsed=11945s  rate=7.1/s  eta=2059s  finite=57225
+  [85400/100000]  elapsed=11958s  rate=7.1/s  eta=2044s  finite=57291
+  [85500/100000]  elapsed=11971s  rate=7.1/s  eta=2030s  finite=57363
+  [85600/100000]  elapsed=11985s  rate=7.1/s  eta=2016s  finite=57432
+  [85700/100000]  elapsed=11999s  rate=7.1/s  eta=2002s  finite=57505
+  [85800/100000]  elapsed=12012s  rate=7.1/s  eta=1988s  finite=57562
+  [85900/100000]  elapsed=12026s  rate=7.1/s  eta=1974s  finite=57631
+  [86000/100000]  elapsed=12039s  rate=7.1/s  eta=1960s  finite=57697
+  -> checkpoint saved: /scratch/e1498138/lhs/tminX/ckpt_1e5/ckpt_086000.pkl
+  [86100/100000]  elapsed=12053s  rate=7.1/s  eta=1946s  finite=57769
+  [86200/100000]  elapsed=12067s  rate=7.1/s  eta=1932s  finite=57826
+  [86300/100000]  elapsed=12082s  rate=7.1/s  eta=1918s  finite=57896
+  [86400/100000]  elapsed=12095s  rate=7.1/s  eta=1904s  finite=57964
+  [86500/100000]  elapsed=12110s  rate=7.1/s  eta=1890s  finite=58042
+  [86600/100000]  elapsed=12123s  rate=7.1/s  eta=1876s  finite=58112
+  [86700/100000]  elapsed=12138s  rate=7.1/s  eta=1862s  finite=58179
+  [86800/100000]  elapsed=12152s  rate=7.1/s  eta=1848s  finite=58245
+  [86900/100000]  elapsed=12168s  rate=7.1/s  eta=1834s  finite=58307
+  [87000/100000]  elapsed=12182s  rate=7.1/s  eta=1820s  finite=58376
+  -> checkpoint saved: /scratch/e1498138/lhs/tminX/ckpt_1e5/ckpt_087000.pkl
+  [87100/100000]  elapsed=12196s  rate=7.1/s  eta=1806s  finite=58451
+  [87200/100000]  elapsed=12209s  rate=7.1/s  eta=1792s  finite=58517
+  [87300/100000]  elapsed=12223s  rate=7.1/s  eta=1778s  finite=58572
+  [87400/100000]  elapsed=12239s  rate=7.1/s  eta=1764s  finite=58647
+  [87500/100000]  elapsed=12253s  rate=7.1/s  eta=1750s  finite=58713
+  [87600/100000]  elapsed=12266s  rate=7.1/s  eta=1736s  finite=58783
+  [87700/100000]  elapsed=12279s  rate=7.1/s  eta=1722s  finite=58848
+  [87800/100000]  elapsed=12293s  rate=7.1/s  eta=1708s  finite=58919
+  [87900/100000]  elapsed=12308s  rate=7.1/s  eta=1694s  finite=58985
+  [88000/100000]  elapsed=12321s  rate=7.1/s  eta=1680s  finite=59048
+  -> checkpoint saved: /scratch/e1498138/lhs/tminX/ckpt_1e5/ckpt_088000.pkl
+  [88100/100000]  elapsed=12335s  rate=7.1/s  eta=1666s  finite=59106
+  [88200/100000]  elapsed=12350s  rate=7.1/s  eta=1652s  finite=59174
+  [88300/100000]  elapsed=12364s  rate=7.1/s  eta=1638s  finite=59241
+  [88400/100000]  elapsed=12379s  rate=7.1/s  eta=1624s  finite=59305
+  [88500/100000]  elapsed=12393s  rate=7.1/s  eta=1610s  finite=59367
+  [88600/100000]  elapsed=12408s  rate=7.1/s  eta=1596s  finite=59438
+  [88700/100000]  elapsed=12421s  rate=7.1/s  eta=1582s  finite=59506
+  [88800/100000]  elapsed=12434s  rate=7.1/s  eta=1568s  finite=59570
+  [88900/100000]  elapsed=12447s  rate=7.1/s  eta=1554s  finite=59630
+  [89000/100000]  elapsed=12460s  rate=7.1/s  eta=1540s  finite=59691
+  -> checkpoint saved: /scratch/e1498138/lhs/tminX/ckpt_1e5/ckpt_089000.pkl
+  [89100/100000]  elapsed=12474s  rate=7.1/s  eta=1526s  finite=59756
+  [89200/100000]  elapsed=12486s  rate=7.1/s  eta=1512s  finite=59818
+  [89300/100000]  elapsed=12500s  rate=7.1/s  eta=1498s  finite=59890
+  [89400/100000]  elapsed=12515s  rate=7.1/s  eta=1484s  finite=59955
+  [89500/100000]  elapsed=12528s  rate=7.1/s  eta=1470s  finite=60024
+  [89600/100000]  elapsed=12543s  rate=7.1/s  eta=1456s  finite=60097
+  [89700/100000]  elapsed=12556s  rate=7.1/s  eta=1442s  finite=60164
+  [89800/100000]  elapsed=12571s  rate=7.1/s  eta=1428s  finite=60237
+  [89900/100000]  elapsed=12585s  rate=7.1/s  eta=1414s  finite=60307
+  [90000/100000]  elapsed=12599s  rate=7.1/s  eta=1400s  finite=60378
+  -> checkpoint saved: /scratch/e1498138/lhs/tminX/ckpt_1e5/ckpt_090000.pkl
+  [90100/100000]  elapsed=12614s  rate=7.1/s  eta=1386s  finite=60440
+  [90200/100000]  elapsed=12627s  rate=7.1/s  eta=1372s  finite=60509
+  [90300/100000]  elapsed=12641s  rate=7.1/s  eta=1358s  finite=60573
+  [90400/100000]  elapsed=12655s  rate=7.1/s  eta=1344s  finite=60633
+  [90500/100000]  elapsed=12668s  rate=7.1/s  eta=1330s  finite=60699
+  [90600/100000]  elapsed=12681s  rate=7.1/s  eta=1316s  finite=60772
+  [90700/100000]  elapsed=12694s  rate=7.1/s  eta=1302s  finite=60830
+  [90800/100000]  elapsed=12709s  rate=7.1/s  eta=1288s  finite=60899
+  [90900/100000]  elapsed=12722s  rate=7.1/s  eta=1274s  finite=60971
+  [91000/100000]  elapsed=12738s  rate=7.1/s  eta=1260s  finite=61035
+  -> checkpoint saved: /scratch/e1498138/lhs/tminX/ckpt_1e5/ckpt_091000.pkl
+  [91100/100000]  elapsed=12753s  rate=7.1/s  eta=1246s  finite=61105
+  [91200/100000]  elapsed=12768s  rate=7.1/s  eta=1232s  finite=61177
+  [91300/100000]  elapsed=12783s  rate=7.1/s  eta=1218s  finite=61242
+  [91400/100000]  elapsed=12796s  rate=7.1/s  eta=1204s  finite=61314
+  [91500/100000]  elapsed=12810s  rate=7.1/s  eta=1190s  finite=61384
+  [91600/100000]  elapsed=12825s  rate=7.1/s  eta=1176s  finite=61437
+  [91700/100000]  elapsed=12839s  rate=7.1/s  eta=1162s  finite=61510
+  [91800/100000]  elapsed=12852s  rate=7.1/s  eta=1148s  finite=61581
+  [91900/100000]  elapsed=12867s  rate=7.1/s  eta=1134s  finite=61656
+  [92000/100000]  elapsed=12881s  rate=7.1/s  eta=1120s  finite=61721
+  -> checkpoint saved: /scratch/e1498138/lhs/tminX/ckpt_1e5/ckpt_092000.pkl
+  [92100/100000]  elapsed=12895s  rate=7.1/s  eta=1106s  finite=61791
+  [92200/100000]  elapsed=12910s  rate=7.1/s  eta=1092s  finite=61861
+  [92300/100000]  elapsed=12924s  rate=7.1/s  eta=1078s  finite=61927
+  [92400/100000]  elapsed=12938s  rate=7.1/s  eta=1064s  finite=62002
+  [92500/100000]  elapsed=12950s  rate=7.1/s  eta=1050s  finite=62072
+  [92600/100000]  elapsed=12965s  rate=7.1/s  eta=1036s  finite=62142
+  [92700/100000]  elapsed=12981s  rate=7.1/s  eta=1022s  finite=62207
+  [92800/100000]  elapsed=12996s  rate=7.1/s  eta=1008s  finite=62273
+  [92900/100000]  elapsed=13011s  rate=7.1/s  eta=994s  finite=62343
+  [93000/100000]  elapsed=13027s  rate=7.1/s  eta=981s  finite=62416
+  -> checkpoint saved: /scratch/e1498138/lhs/tminX/ckpt_1e5/ckpt_093000.pkl
+  [93100/100000]  elapsed=13039s  rate=7.1/s  eta=966s  finite=62486
+  [93200/100000]  elapsed=13052s  rate=7.1/s  eta=952s  finite=62548
+  [93300/100000]  elapsed=13067s  rate=7.1/s  eta=938s  finite=62622
+  [93400/100000]  elapsed=13081s  rate=7.1/s  eta=924s  finite=62690
+  [93500/100000]  elapsed=13094s  rate=7.1/s  eta=910s  finite=62752
+  [93600/100000]  elapsed=13108s  rate=7.1/s  eta=896s  finite=62823
+  [93700/100000]  elapsed=13120s  rate=7.1/s  eta=882s  finite=62893
+  [93800/100000]  elapsed=13135s  rate=7.1/s  eta=868s  finite=62964
+  [93900/100000]  elapsed=13150s  rate=7.1/s  eta=854s  finite=63038
+  [94000/100000]  elapsed=13164s  rate=7.1/s  eta=840s  finite=63103
+  -> checkpoint saved: /scratch/e1498138/lhs/tminX/ckpt_1e5/ckpt_094000.pkl
+  [94100/100000]  elapsed=13179s  rate=7.1/s  eta=826s  finite=63174
+  [94200/100000]  elapsed=13193s  rate=7.1/s  eta=812s  finite=63243
+  [94300/100000]  elapsed=13206s  rate=7.1/s  eta=798s  finite=63317
+  [94400/100000]  elapsed=13219s  rate=7.1/s  eta=784s  finite=63387
+  [94500/100000]  elapsed=13233s  rate=7.1/s  eta=770s  finite=63462
+  [94600/100000]  elapsed=13246s  rate=7.1/s  eta=756s  finite=63531
+  [94700/100000]  elapsed=13260s  rate=7.1/s  eta=742s  finite=63596
+  [94800/100000]  elapsed=13274s  rate=7.1/s  eta=728s  finite=63664
+  [94900/100000]  elapsed=13287s  rate=7.1/s  eta=714s  finite=63732
+  [95000/100000]  elapsed=13302s  rate=7.1/s  eta=700s  finite=63800
+  -> checkpoint saved: /scratch/e1498138/lhs/tminX/ckpt_1e5/ckpt_095000.pkl
+  [95100/100000]  elapsed=13316s  rate=7.1/s  eta=686s  finite=63871
+  [95200/100000]  elapsed=13331s  rate=7.1/s  eta=672s  finite=63936
+  [95300/100000]  elapsed=13346s  rate=7.1/s  eta=658s  finite=64003
+  [95400/100000]  elapsed=13360s  rate=7.1/s  eta=644s  finite=64074
+  [95500/100000]  elapsed=13374s  rate=7.1/s  eta=630s  finite=64133
+  [95600/100000]  elapsed=13388s  rate=7.1/s  eta=616s  finite=64198
+  [95700/100000]  elapsed=13401s  rate=7.1/s  eta=602s  finite=64264
+  [95800/100000]  elapsed=13415s  rate=7.1/s  eta=588s  finite=64335
+  [95900/100000]  elapsed=13429s  rate=7.1/s  eta=574s  finite=64403
+  [96000/100000]  elapsed=13443s  rate=7.1/s  eta=560s  finite=64463
+  -> checkpoint saved: /scratch/e1498138/lhs/tminX/ckpt_1e5/ckpt_096000.pkl
+  [96100/100000]  elapsed=13456s  rate=7.1/s  eta=546s  finite=64522
+  [96200/100000]  elapsed=13469s  rate=7.1/s  eta=532s  finite=64594
+  [96300/100000]  elapsed=13483s  rate=7.1/s  eta=518s  finite=64669
+  [96400/100000]  elapsed=13497s  rate=7.1/s  eta=504s  finite=64727
+  [96500/100000]  elapsed=13510s  rate=7.1/s  eta=490s  finite=64794
+  [96600/100000]  elapsed=13524s  rate=7.1/s  eta=476s  finite=64864
+  [96700/100000]  elapsed=13539s  rate=7.1/s  eta=462s  finite=64937
+  [96800/100000]  elapsed=13553s  rate=7.1/s  eta=448s  finite=65001
+  [96900/100000]  elapsed=13566s  rate=7.1/s  eta=434s  finite=65063
+  [97000/100000]  elapsed=13581s  rate=7.1/s  eta=420s  finite=65141
+  -> checkpoint saved: /scratch/e1498138/lhs/tminX/ckpt_1e5/ckpt_097000.pkl
+  [97100/100000]  elapsed=13596s  rate=7.1/s  eta=406s  finite=65204
+  [97200/100000]  elapsed=13609s  rate=7.1/s  eta=392s  finite=65260
+  [97300/100000]  elapsed=13623s  rate=7.1/s  eta=378s  finite=65327
+  [97400/100000]  elapsed=13637s  rate=7.1/s  eta=364s  finite=65393
+  [97500/100000]  elapsed=13650s  rate=7.1/s  eta=350s  finite=65463
+  [97600/100000]  elapsed=13665s  rate=7.1/s  eta=336s  finite=65533
+  [97700/100000]  elapsed=13679s  rate=7.1/s  eta=322s  finite=65602
+  [97800/100000]  elapsed=13693s  rate=7.1/s  eta=308s  finite=65669
+  [97900/100000]  elapsed=13707s  rate=7.1/s  eta=294s  finite=65737
+  [98000/100000]  elapsed=13722s  rate=7.1/s  eta=280s  finite=65802
+  -> checkpoint saved: /scratch/e1498138/lhs/tminX/ckpt_1e5/ckpt_098000.pkl
+  [98100/100000]  elapsed=13736s  rate=7.1/s  eta=266s  finite=65877
+  [98200/100000]  elapsed=13751s  rate=7.1/s  eta=252s  finite=65948
+  [98300/100000]  elapsed=13766s  rate=7.1/s  eta=238s  finite=66015
+  [98400/100000]  elapsed=13780s  rate=7.1/s  eta=224s  finite=66079
+  [98500/100000]  elapsed=13795s  rate=7.1/s  eta=210s  finite=66152
+  [98600/100000]  elapsed=13808s  rate=7.1/s  eta=196s  finite=66220
+  [98700/100000]  elapsed=13822s  rate=7.1/s  eta=182s  finite=66292
+  [98800/100000]  elapsed=13836s  rate=7.1/s  eta=168s  finite=66370
+  [98900/100000]  elapsed=13849s  rate=7.1/s  eta=154s  finite=66442
+  [99000/100000]  elapsed=13863s  rate=7.1/s  eta=140s  finite=66503
+  -> checkpoint saved: /scratch/e1498138/lhs/tminX/ckpt_1e5/ckpt_099000.pkl
+  [99100/100000]  elapsed=13877s  rate=7.1/s  eta=126s  finite=66568
+  [99200/100000]  elapsed=13891s  rate=7.1/s  eta=112s  finite=66637
+  [99300/100000]  elapsed=13905s  rate=7.1/s  eta=98s  finite=66695
+  [99400/100000]  elapsed=13918s  rate=7.1/s  eta=84s  finite=66765
+  [99500/100000]  elapsed=13932s  rate=7.1/s  eta=70s  finite=66832
+  [99600/100000]  elapsed=13947s  rate=7.1/s  eta=56s  finite=66909
+  [99700/100000]  elapsed=13962s  rate=7.1/s  eta=42s  finite=66980
+  [99800/100000]  elapsed=13976s  rate=7.1/s  eta=28s  finite=67052
+  [99900/100000]  elapsed=13992s  rate=7.1/s  eta=14s  finite=67124
+  [100000/100000]  elapsed=14005s  rate=7.1/s  eta=0s  finite=67187
+  -> checkpoint saved: /scratch/e1498138/lhs/tminX/ckpt_1e5/ckpt_100000.pkl
+
+Done!  Final output: /scratch/e1498138/lhs/tminX/lhs_1e5.pkl
+Total finite evaluations: 67187 / 100000
+Job completed at Thu May 21 02:11:04 PM +08 2026
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+			Resource Usage on 2026-05-21 14:11:15.834806:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	JobId: 485026.hopper-m-02
+	Project: CFP03-CF-051
+	Exit Status: 0
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	NCPUs: Requested(12), Used(12)
+	CPU Time Used: 03:53:06
+	Memory: Requested(225gb), Used(11804168kb)
+	Vmem Used: 32269052kb
+	Walltime: Requested(24:00:00), Used(03:54:31)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	Execution Nodes Used: (hopper-17:ngpus=1:ncpus=12:mem=235929600kb)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	No GPU-related information available for this job.
