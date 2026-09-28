@@ -69,7 +69,8 @@ class GravWaveAnalysis:
         use_gpu (bool): Force GPU usage. If None, auto-detect.
         """
         self.dt = dt
-        self.T = T 
+        self.T = T
+        self.tdi_gen = tdi_gen
 
         # Convert T to seconds
         T_sec = T * self.YRSID_SI
@@ -166,9 +167,12 @@ class GravWaveAnalysis:
             freqs_shape = freqs_hz.shape
             # freqs_hz_cpu = freqs_hz.get() if hasattr(freqs_hz, 'get') else freqs_hz
 
-            # Get PSD over traj
-            # NOTE:IDK WHAT TO USE?
-            Sn = get_sensitivity(freqs_hz.flatten(), sens_fn=A2TDISens, return_type="PSD").reshape(freqs_shape)
+            # Get PSD over traj -- match the TDI generation actually in use
+            # (this used to hardcode A2TDISens regardless of self.tdi_gen,
+            # inconsistent with the A1/E1/T1 channels used for tdi_gen=1
+            # elsewhere in this class).
+            power_sens_fn = A1TDISens if self.tdi_gen == 1 else A2TDISens
+            Sn = get_sensitivity(freqs_hz.flatten(), sens_fn=power_sens_fn, return_type="PSD").reshape(freqs_shape)
 
             # Apply noise weighing
             power /= Sn
@@ -217,6 +221,43 @@ class GravWaveAnalysis:
         return self.xp.stack(wave_c)
         # wave_c = self.xp.vstack((wave.real, wave.imag))
         # return self.xp.fft.rfft(wave_c, axis=1) * self.dt
+
+    def freq_wave_batch(self, wave_batch):
+        """
+        Batched version of freq_wave: per-channel rfft for a stack of
+        waveforms in one call.
+
+        wave_batch : (B, n_chan, N) real time-domain waveforms
+        Returns    : (B, n_chan, N//2+1) complex rfft, numerically identical
+                     to calling freq_wave on each row of wave_batch.
+        """
+        return self.xp.fft.rfft(wave_batch, axis=-1) * self.dt
+
+    def inner_batch(self, H1, H2, return_complex=False):
+        """
+        Batched version of inner (rfft-based, PSD-weighted, no time/phase
+        maximization).
+
+        H1 : (n_chan, N_freq) or (B, n_chan, N_freq) rfft array (e.g. from
+             freq_wave / freq_wave_batch). A single (n_chan, N_freq) array
+             broadcasts against every row of H2 (e.g. one data rfft vs. a
+             batch of templates); a (B, n_chan, N_freq) array is paired
+             row-for-row with H2 (e.g. a batch of templates against
+             themselves).
+        H2 : (B, n_chan, N_freq) rfft — batch of templates.
+
+        Returns (B,) real (or complex if return_complex) inner products,
+        one per row of H2 — numerically identical to inner(H1[b] or H1, H2[b]).
+        """
+        xp = self.xp
+        df = 1.0 / (self.N * self.dt)
+        h1 = H1[..., 1:]
+        h2 = H2[:, :, 1:]
+        total = xp.sum(xp.conj(h1) * h2 / self.PSD, axis=(-2, -1))
+        inner_prod = 4 * df * total
+        if return_complex:
+            return inner_prod
+        return xp.real(inner_prod)
 
     def generate_colored_noise(self, seed=0):
         # Return time domain noise 
@@ -493,6 +534,51 @@ class GravWaveAnalysis:
         """inner_timemax with pre-computed per-channel FFTs."""
         return self.xp.max(self.xp.abs(self.cross_corr_f(H1_list, H2_list)))
 
+    def wave_fft_batch(self, wave_batch):
+        """
+        Batched version of wave_fft: full per-channel FFT for a stack of
+        waveforms in one call.
+
+        wave_batch : (B, n_chan, N) real time-domain waveforms
+        Returns    : (B, n_chan, N) complex FFT, axis=-1 batches over every
+                     other axis so this is numerically identical to calling
+                     wave_fft on each row of wave_batch individually.
+        """
+        return self.xp.fft.fft(wave_batch, axis=-1) * self.dt
+
+    def cross_corr_batch(self, H1, H2):
+        """
+        Batched version of cross_corr_f.
+
+        H1 : (n_chan, N) or (B, n_chan, N) full FFT (e.g. from wave_fft /
+             wave_fft_batch). A single (n_chan, N) array broadcasts against
+             every row of H2 (e.g. one data FFT vs. a batch of templates);
+             a (B, n_chan, N) array is paired row-for-row with H2 (e.g. a
+             batch of templates against themselves).
+        H2 : (B, n_chan, N) full FFT — batch of templates.
+
+        Returns S : (B, N) complex cross-correlation series. S[b] is
+        numerically identical to cross_corr_f(H1[b] or H1, H2[b]).
+        """
+        xp = self.xp
+        N = H2.shape[-1]
+        half = N // 2 + 1
+        B = H2.shape[0]
+        Y = xp.zeros((B, N), dtype=xp.complex128)
+        for i in range(self.n_chan):
+            h1_i = H1[..., i, 1:half]
+            h2_i = H2[:, i, 1:half]
+            Y[:, 1:half] += h1_i * xp.conj(h2_i) / (0.5 * self.PSD[i])
+        return 2 * xp.fft.ifft(Y, axis=-1) / self.dt
+
+    def inner_timemax_batch(self, H1, H2):
+        """
+        Batched version of inner_timemax_f. Returns (B,) real array, one
+        time-maxed inner product per row of H2 (see cross_corr_batch for the
+        H1 broadcasting rules).
+        """
+        return self.xp.max(self.xp.abs(self.cross_corr_batch(H1, H2)), axis=-1)
+
     def inner_timeonly(self, h1, h2):
         """
         max_τ Re(<h1|h2(τ)>) — time-shift maximized, phase NOT maximized.
@@ -589,18 +675,23 @@ class GravWaveAnalysis:
 
     def _whiten(self, x):
         """
-        Whiten a time-domain series x (shape (n_chan, N)) at full frequency
-        resolution: w(f) = sqrt(4 df / PSD), DC = 0, so that the Euclidean
-        inner product <a|b> = (N/2) * sum_t a_w b_w reproduces the noise-
-        weighted inner product. Shared by the semi-coherent statistics.
+        Whiten a time-domain series x of shape (..., n_chan, N) at full
+        frequency resolution: w(f) = sqrt(4 df / PSD), DC = 0, so that the
+        Euclidean inner product <a|b> = (N/2) * sum_t a_w b_w reproduces the
+        noise-weighted inner product. Shared by the semi-coherent statistics.
+
+        Accepts an optional leading batch axis: x may be (n_chan, N) for a
+        single waveform or (B, n_chan, N) for B waveforms whitened in one
+        call. axis=-1 makes rfft/irfft batch over every other axis, so no
+        Python loop over channels (or batch) is needed either way.
         """
         xp = self.xp
         N = x.shape[-1]
         df = 1.0 / (N * self.dt)
         W = xp.zeros((self.n_chan, N // 2 + 1))
         W[:, 1:] = xp.sqrt(4.0 * df / self.PSD)
-        return xp.stack([xp.fft.irfft(xp.fft.rfft(x[c]) * self.dt * W[c], n=N)
-                         for c in range(self.n_chan)])
+        Xf = xp.fft.rfft(x, axis=-1) * self.dt * W
+        return xp.fft.irfft(Xf, n=N, axis=-1)
 
     def _semicoherent_inner(self, x_w, h_w, N_seg, phase_max=False,
                             tau_star=None, return_tau=False):
@@ -675,6 +766,63 @@ class GravWaveAnalysis:
         if return_tau:
             return xh_sum, hh_sum, taus
         return xh_sum, hh_sum
+
+    def _semicoherent_inner_batch(self, x_w, h_w, N_seg, phase_max=False):
+        """
+        Batched version of _semicoherent_inner: x_w is the single whitened
+        data signal (n_chan, N), h_w is a batch of whitened templates
+        (B, n_chan, N). Returns (xh_sum, hh_sum), each shape (B,) -- one
+        value per template, numerically identical to calling
+        _semicoherent_inner once per row of h_w with phase_max the same
+        and tau_star=None, return_tau=False.
+
+        Does not support tau_star / return_tau (common_tau path); use
+        _semicoherent_inner directly for those.
+        """
+        xp = self.xp
+        N = h_w.shape[-1]
+        N_per = N // N_seg
+        B = h_w.shape[0]
+        n_use = N_seg * N_per  # drop the same trailing remainder as the loop version
+
+        x_seg = x_w[..., :n_use].reshape(self.n_chan, N_seg, N_per)
+        h_seg = h_w[..., :n_use].reshape(B, self.n_chan, N_seg, N_per)
+
+        if phase_max:
+            half = N_per // 2 + 1
+            Xf = xp.fft.fft(x_seg, axis=-1)                       # (n_chan, N_seg, N_per)
+            Hf = xp.fft.fft(h_seg, axis=-1)                       # (B, n_chan, N_seg, N_per)
+            Y_pos = xp.sum(
+                xp.conj(Xf[:, :, 1:half])[None, ...] * Hf[:, :, :, 1:half], axis=1
+            )                                                      # (B, N_seg, half-1)
+            Y = xp.zeros((B, N_seg, N_per), dtype=xp.complex128)
+            Y[:, :, 1:half] = Y_pos
+            corr = (N / 2.0) * 2.0 * xp.fft.ifft(Y, axis=-1)       # (B, N_seg, N_per)
+            metric = xp.abs(corr)
+        else:
+            Xf = xp.fft.rfft(x_seg, axis=-1)                       # (n_chan, N_seg, N_per//2+1)
+            Hf = xp.fft.rfft(h_seg, axis=-1)                       # (B, n_chan, N_seg, N_per//2+1)
+            Y = xp.sum(xp.conj(Xf)[None, ...] * Hf, axis=1)        # (B, N_seg, N_per//2+1)
+            corr = (N / 2.0) * xp.fft.irfft(Y, n=N_per, axis=-1)   # (B, N_seg, N_per)
+            metric = corr
+
+        xh_sum = xp.sum(xp.max(metric, axis=-1), axis=-1)          # (B,)
+        hh_sum = (N / 2.0) * xp.sum(h_seg ** 2, axis=(1, 2, 3))    # (B,)
+        return xh_sum, hh_sum
+
+    def SNR_semicoherent_batch(self, x, h_batch, N_seg, phase_max=False):
+        """
+        Batched version of SNR_semicoherent: x is the single (n_chan, N)
+        data signal, h_batch is (B, n_chan, N) templates. Returns an array
+        of shape (B,), one S_N per template -- numerically identical to
+        calling SNR_semicoherent once per row of h_batch, but whitening and
+        the segment cross-correlations run as one batched call instead of
+        B sequential ones (see _whiten, _semicoherent_inner_batch).
+        """
+        x_w = self._whiten(x)
+        h_w = self._whiten(h_batch)
+        xh_sum, hh_sum = self._semicoherent_inner_batch(x_w, h_w, N_seg, phase_max)
+        return xh_sum / hh_sum ** 0.5
 
     def SNR_semicoherent(self, x, h, N_seg, phase_max=False):
         """

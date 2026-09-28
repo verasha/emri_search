@@ -1,0 +1,4 @@
+  File "/nfs/home/svu/e1498138/emri_search/work/search/run_lhs_noise_sc_ext.py", line 184
+    ]
+    ^
+SyntaxError: closing parenthesis ']' does not match opening parenthesis '(' on line 183

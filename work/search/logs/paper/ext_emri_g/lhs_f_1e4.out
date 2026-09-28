@@ -1,0 +1,53 @@
+dt=5s  T=1.0yr  TDI gen=1
+SNR (rhostat): 4354.0710
+LHS box bounds:
+  logm1: [5.82507, 5.82762]
+  logm2: [1.99252, 1.99310]
+  a: [0.49334, 0.50078]
+  p0: [15.70599, 15.75367]
+  e0: [0.74388, 0.74418]
+  cosqS: [0.79926, 0.86149]
+  phiS: [3.48384, 3.66905]
+Generating 10000 LHS points in 7D box...
+Evaluating coherent f-statistic on 10000 points...
+  [500/10000]  elapsed=256s  rate=1.9/s  ETA=4873s
+  [1000/10000]  elapsed=513s  rate=2.0/s  ETA=4615s
+  [1500/10000]  elapsed=770s  rate=1.9/s  ETA=4363s
+  [2000/10000]  elapsed=1027s  rate=1.9/s  ETA=4107s
+  [2500/10000]  elapsed=1284s  rate=1.9/s  ETA=3852s
+  [3000/10000]  elapsed=1541s  rate=1.9/s  ETA=3596s
+  [3500/10000]  elapsed=1798s  rate=1.9/s  ETA=3339s
+  [4000/10000]  elapsed=2055s  rate=1.9/s  ETA=3082s
+  [4500/10000]  elapsed=2312s  rate=1.9/s  ETA=2825s
+  [5000/10000]  elapsed=2569s  rate=1.9/s  ETA=2569s
+  [5500/10000]  elapsed=2826s  rate=1.9/s  ETA=2312s
+  [6000/10000]  elapsed=3082s  rate=1.9/s  ETA=2055s
+  [6500/10000]  elapsed=3339s  rate=1.9/s  ETA=1798s
+  [7000/10000]  elapsed=3596s  rate=1.9/s  ETA=1541s
+  [7500/10000]  elapsed=3853s  rate=1.9/s  ETA=1284s
+  [8000/10000]  elapsed=4110s  rate=1.9/s  ETA=1027s
+  [8500/10000]  elapsed=4368s  rate=1.9/s  ETA=771s
+  [9000/10000]  elapsed=4626s  rate=1.9/s  ETA=514s
+  [9500/10000]  elapsed=4884s  rate=1.9/s  ETA=257s
+Done. 10000 evals in 5146s (1.9/s)
+Finite log_densities: 10000 / 10000
+Max log_density: 17.137940
+Mean log_density (finite): 0.013542
+Saved to /scratch/e1498138/paper/ext/emri_g/f_lhs_small/lhs_f_box.pkl
+Job completed at Tue Aug 11 12:34:36 PM +08 2026
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+			Resource Usage on 2026-08-11 12:34:37.195153:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	JobId: 559228.hopper-m-02
+	Project: CFP03-CF-051
+	Exit Status: 0
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	NCPUs: Requested(12), Used(12)
+	CPU Time Used: 01:22:17
+	Memory: Requested(225gb), Used(11191700kb)
+	Vmem Used: 30806860kb
+	Walltime: Requested(24:00:00), Used(01:27:18)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	Execution Nodes Used: (hopper-16:ngpus=1:ncpus=12:mem=235929600kb)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	No GPU-related information available for this job.

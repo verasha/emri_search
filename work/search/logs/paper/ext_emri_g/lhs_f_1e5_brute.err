@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/nfs/home/svu/e1498138/emri_search/work/search/paris5_lhs_box_brute.py", line 108, in <module>
+    loglike_obj = LogLike(
+  File "/home/svu/e1498138/emri_search/work/loglike_pure_noise.py", line 44, in __init__
+    self.signal = gwf.xp.array(waveform_response(
+  File "/nfs/home/svu/e1498138/emri_search_uv/.venv/lib64/python3.9/site-packages/fastlisaresponse/response.py", line 833, in __call__
+    self.response_model.get_projections(h, lam, beta, t0=self.t0)
+  File "/nfs/home/svu/e1498138/emri_search_uv/.venv/lib64/python3.9/site-packages/fastlisaresponse/response.py", line 538, in get_projections
+    assert len(input_in) >= self.num_pts
+AssertionError

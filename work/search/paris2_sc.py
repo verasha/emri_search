@@ -21,7 +21,7 @@ cfg_set.set_log_level("info")
 use_gpu = True
 tdi_gen = 1
 dt = 5
-T = 12/12
+T = 8/12 #NOTE: changed!
 N_SEGS = 12
 print(f"Using dt={dt}s, T={T}yr, TDI gen={tdi_gen}, N_segs={N_SEGS}")
 
@@ -31,37 +31,23 @@ waveform_response = build_waveform_response(T=T, dt=dt, use_gpu=True, tdi_gen=td
 print('Building GravWaveAnalysis...')
 gwf = GravWaveAnalysis(T=T, dt=dt, use_gpu=use_gpu, tdi_gen=tdi_gen)
 
-# # Source parameters
-# m1 = 1e6
-# m2 = 1e1
-# a = 0.7
-# p0 = 9
-# e0 = 0.4
-# xI0 = 1.0
-# dist = 4.5
-# qS = np.pi
-# phiS = 0.
-# qK = 0.
-# phiK = 0.
-# Phi_phi0 = 0.4
-# Phi_theta0 = 0.0
-# Phi_r0 = 0.5
-
 # Source parameters
+#NOTE: this is the midSNR injection.  
+# snr 30 1 yr plunging case (should peak abt snr 25 for 8mth)
 m1 = 1e6
 m2 = 1e1
 a = 0.7
-p0 = 7.8
+p0 = 7.7 #NOTE
 e0 = 0.4
 xI0 = 1.0
-dist = 10.5 # Gpc
+dist =  6 #NOTE: 
 qS = np.pi
 phiS = 0.
 qK =  0.
 phiK = 0.
 Phi_phi0 = 0.4
 Phi_theta0 = 0.0
-Phi_r0 = 0.5  
+Phi_r0 = 0.5 
 
 params_star = [m1, m2, a, p0, e0, xI0, dist, qS, phiS, qK, phiK, Phi_phi0, Phi_theta0, Phi_r0]
 param_true = [np.log10(m1), np.log10(m2), a, p0, e0]
@@ -123,7 +109,7 @@ def log_density(params):
 
 
 def prior_transform(u):
-    logm1lim = [5.6, 6.4]
+    logm1lim = [5.5, 6.3]
     logm2lim = [0.8, 1.3]
     alim = [0.3, 0.99]
     p0lim = [7.0, 10.0]
@@ -138,7 +124,7 @@ def prior_transform(u):
 
 
 def inverse_prior_transform(params):
-    logm1lim = [5.6, 6.4]
+    logm1lim = [5.5, 6.3]
     logm2lim = [0.8, 1.3]
     alim = [0.3, 0.99]
     p0lim = [7.0, 10.0]
@@ -158,7 +144,7 @@ print('Setting up ParisMC sampler...')
 config = parismc.SamplerConfig(
     merge_confidence=0.9,
     alpha=int(1e3),    
-    trail_size=int(1e5),
+    trail_size=int(1e3),
     boundary_limiting=True,
     use_beta=True,    
     integral_num=int(1e5),
@@ -179,12 +165,12 @@ sys.path.insert(0, dir_search)
 ndim = 5
 n_seed = 1  # start already merged
 
-# cov from paris1_noise_f
-paris1_cov = np.array([[ 0.04717521,  0.042774  , -0.0321179 , -0.0425167 ,  0.00611756],
-        [ 0.042774  ,  0.21319327, -0.0126961 ,  0.00417553,  0.0067059 ],
-        [-0.0321179 , -0.0126961 ,  0.2934893 , -0.00260203,  0.0062287 ],
-        [-0.0425167 ,  0.00417553, -0.00260203,  0.1830377 ,  0.00376639],
-        [ 0.00611756,  0.0067059 ,  0.0062287 ,  0.00376639,  0.27416401]])
+# cov from paris1_snr30
+paris1_cov = np.array([[ 0.04147409,  0.03472272, -0.01733769, -0.04059817,  0.00292473],
+        [ 0.03472272,  0.18460412, -0.00473998,  0.00557801,  0.004751  ],
+        [-0.01733769, -0.00473998,  0.1891968 , -0.03521546, -0.00517243],
+        [-0.04059817,  0.00557801, -0.03521546,  0.21138746,  0.01854485],
+        [ 0.00292473,  0.004751  , -0.00517243,  0.01854485,  0.17609459]])
 init_cov_list = [paris1_cov / anneal_state['S']]
 
 print('Done setting up initial covariance matrix.')
@@ -201,7 +187,9 @@ sampler = parismc.Sampler(
 print('Done initializing sampler.')
 
 # Start from best fit
-best_fit = [5.9603, 1.0189,0.7429,9.4876,0.4122]
+best_fit = [6.02383241, 1.12592747, 0.87314815, 7.68257927, 0.34387809]
+
+# best_fit = [5.9603, 1.0189,0.7429,9.4876,0.4122]
 # best_fit = [5.99872048, 1.08372831, 0.86628064, 9.17494943, 0.3773804]
 
 external_lhs_points        = inverse_prior_transform(np.array([best_fit]))
@@ -265,7 +253,7 @@ def combined_callback(sampler, i):
         sampler.save_state()
 dir_scratch='/scratch/e1498138/'
 
-savepath = dir_scratch+'paris2_sc/int_1yr_s12_2'
+savepath = dir_scratch+'paper/stage1/anneal_s12_snr30'
 
 print('Running sampling...')
 sampler.run_sampling(

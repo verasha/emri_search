@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "/nfs/home/svu/e1498138/emri_search/work/search/paris3_lhs_s6_ext.py", line 115, in <module>
+    sampler_1 = parismc.Sampler.load_state(stage1_anneal_path)
+  File "/nfs/home/svu/e1498138/emri_search_uv/.venv/lib64/python3.9/site-packages/parismc/sampler.py", line 1580, in load_state
+    with open(filename, 'rb') as f:
+OSError: [Errno 5] Input/output error: '/scratch/e1498138/paper/ext/stage1_anneal/sampler_state.pkl'
+Traceback (most recent call last):
+  File "/nfs/home/svu/e1498138/emri_search/work/search/paris3_lhs_s6_ext.py", line 115, in <module>
+    sampler_1 = parismc.Sampler.load_state(stage1_anneal_path)
+  File "/nfs/home/svu/e1498138/emri_search_uv/.venv/lib64/python3.9/site-packages/parismc/sampler.py", line 1580, in load_state
+    with open(filename, 'rb') as f:
+OSError: [Errno 5] Input/output error: '/scratch/e1498138/paper/ext/stage1_anneal/sampler_state.pkl'

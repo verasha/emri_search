@@ -1,0 +1,21 @@
+#!/bin/bash
+#PBS -P CFP03-CF-051
+#PBS -o logs/map_mojito_light_emri_c_7d_greedy.out
+#PBS -e logs/map_mojito_light_emri_c_7d_greedy.err
+#PBS -N map_mojito_c_7d_greedy
+#PBS -l walltime=24:00:00
+#PBS -l select=1:ngpus=1
+
+cd $PBS_O_WORKDIR
+
+echo "Job ID: $PBS_JOBID"
+echo "Job name: $PBS_JOBNAME"
+echo "Job starts at $(date)"
+
+mkdir -p logs
+module load cuda12.4/toolkit/12.4.1
+source /home/svu/e1498138/emri_search_uv/.venv/bin/activate
+
+python -u map_mojito_light_emri_c_7d_greedy.py
+
+echo "Job completed at $(date)"

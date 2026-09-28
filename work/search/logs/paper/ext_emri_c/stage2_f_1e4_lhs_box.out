@@ -1,0 +1,56 @@
+Job ID: 567255.hopper-m-02
+Job name: lhs_box_pure
+Job starts at Sun Aug 16 11:39:52 PM +08 2026
+dt=10s  T=1.9166666666666667yr  TDI gen=1
+SNR (rhostat): 4263.0037
+LHS box bounds:
+  logm1: [6.54900, 6.54901]
+  logm2: [1.90363, 1.90364]
+  a: [0.95000, 0.95001]
+  p0: [7.38894, 7.38903]
+  e0: [0.31599, 0.31601]
+  cosqS: [-0.47014, -0.44492]
+  phiS: [5.77627, 5.80239]
+Generating 10000 LHS points in 7D box...
+Evaluating coherent f-statistic on 10000 points...
+  [500/10000]  elapsed=267s  rate=1.9/s  ETA=5072s
+  [1000/10000]  elapsed=534s  rate=1.9/s  ETA=4803s
+  [1500/10000]  elapsed=801s  rate=1.9/s  ETA=4537s
+  [2000/10000]  elapsed=1067s  rate=1.9/s  ETA=4269s
+  [2500/10000]  elapsed=1334s  rate=1.9/s  ETA=4002s
+  [3000/10000]  elapsed=1601s  rate=1.9/s  ETA=3735s
+  [3500/10000]  elapsed=1868s  rate=1.9/s  ETA=3469s
+  [4000/10000]  elapsed=2135s  rate=1.9/s  ETA=3203s
+  [4500/10000]  elapsed=2402s  rate=1.9/s  ETA=2936s
+  [5000/10000]  elapsed=2670s  rate=1.9/s  ETA=2670s
+  [5500/10000]  elapsed=2937s  rate=1.9/s  ETA=2403s
+  [6000/10000]  elapsed=3203s  rate=1.9/s  ETA=2136s
+  [6500/10000]  elapsed=3470s  rate=1.9/s  ETA=1869s
+  [7000/10000]  elapsed=3737s  rate=1.9/s  ETA=1602s
+  [7500/10000]  elapsed=4005s  rate=1.9/s  ETA=1335s
+  [8000/10000]  elapsed=4272s  rate=1.9/s  ETA=1068s
+  [8500/10000]  elapsed=4539s  rate=1.9/s  ETA=801s
+  [9000/10000]  elapsed=4807s  rate=1.9/s  ETA=534s
+  [9500/10000]  elapsed=5074s  rate=1.9/s  ETA=267s
+Done. 10000 evals in 5342s (1.9/s)
+Finite log_densities: 10000 / 10000
+Max log_density: 114.076005
+Mean log_density (finite): 2.651495
+Saved to /scratch/e1498138/paper/ext/emri_c/stage2_f_1e4/lhs_final.pkl
+Job completed at Mon Aug 17 01:10:22 AM +08 2026
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+			Resource Usage on 2026-08-17 01:10:22.975986:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	JobId: 567255.hopper-m-02
+	Project: CFP03-CF-051
+	Exit Status: 0
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	NCPUs: Requested(12), Used(12)
+	CPU Time Used: 01:25:58
+	Memory: Requested(225gb), Used(11190976kb)
+	Vmem Used: 31033728kb
+	Walltime: Requested(24:00:00), Used(01:30:31)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	Execution Nodes Used: (hopper-15:ngpus=1:ncpus=12:mem=235929600kb)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	No GPU-related information available for this job.

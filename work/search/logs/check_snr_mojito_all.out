@@ -1,0 +1,237 @@
+Job ID: 583707.hopper-m-02
+Job name: snr_mojito_all
+Job starts at Tue Aug 25 04:45:45 PM +08 2026
+Using dt=5s, T=2.0yr
+Building tdi_gen=1 (EqualArmlengthOrbits) response + analysis...
+Building tdi_gen=2 (ESAOrbits) response + analysis...
+
+--- Source ID=1  m1=5.35e+05  m2=9.51 ---
+  building h1 (tdi_gen=1)...
+  tdi_gen=1 failed:
+Traceback (most recent call last):
+  File "/nfs/home/svu/e1498138/emri_search/work/search/check_snr_mojito_all.py", line 136, in <module>
+    snr1 = float(gwf_g1.rhostat(h1))
+  File "/home/svu/e1498138/emri_search/work/GWfuncs_noise.py", line 463, in rhostat
+    hf = self.freq_wave(h)
+  File "/home/svu/e1498138/emri_search/work/GWfuncs_noise.py", line 220, in freq_wave
+    wave_c = [self.xp.fft.rfft(wave[i]) * self.dt for i in range(wave.shape[0])]
+AttributeError: 'list' object has no attribute 'shape'
+  building h2 (tdi_gen=2)...
+  tdi_gen=2 failed:
+Traceback (most recent call last):
+  File "/nfs/home/svu/e1498138/emri_search/work/search/check_snr_mojito_all.py", line 146, in <module>
+    snr2 = float(gwf_g2.rhostat(h2))
+  File "/home/svu/e1498138/emri_search/work/GWfuncs_noise.py", line 463, in rhostat
+    hf = self.freq_wave(h)
+  File "/home/svu/e1498138/emri_search/work/GWfuncs_noise.py", line 220, in freq_wave
+    wave_c = [self.xp.fft.rfft(wave[i]) * self.dt for i in range(wave.shape[0])]
+AttributeError: 'list' object has no attribute 'shape'
+  EstimatedSNR (catalog) = 53.35
+  SNR tdi_gen=1 (EqualArmlength, AET) = nan
+  SNR tdi_gen=2 (ESAOrbits, AE)       = nan
+
+--- Source ID=2  m1=2.8e+06  m2=15.4 ---
+  building h1 (tdi_gen=1)...
+  tdi_gen=1 failed:
+Traceback (most recent call last):
+  File "/nfs/home/svu/e1498138/emri_search/work/search/check_snr_mojito_all.py", line 135, in <module>
+    h1 = resp_g1(*params)
+  File "/nfs/home/svu/e1498138/emri_search_uv/.venv/lib64/python3.9/site-packages/fastlisaresponse/response.py", line 833, in __call__
+    self.response_model.get_projections(h, lam, beta, t0=self.t0)
+  File "/nfs/home/svu/e1498138/emri_search_uv/.venv/lib64/python3.9/site-packages/fastlisaresponse/response.py", line 538, in get_projections
+    assert len(input_in) >= self.num_pts
+AssertionError
+  building h2 (tdi_gen=2)...
+  tdi_gen=2 failed:
+Traceback (most recent call last):
+  File "/nfs/home/svu/e1498138/emri_search/work/search/check_snr_mojito_all.py", line 145, in <module>
+    h2 = resp_g2(*params)
+  File "/nfs/home/svu/e1498138/emri_search_uv/.venv/lib64/python3.9/site-packages/fastlisaresponse/response.py", line 833, in __call__
+    self.response_model.get_projections(h, lam, beta, t0=self.t0)
+  File "/nfs/home/svu/e1498138/emri_search_uv/.venv/lib64/python3.9/site-packages/fastlisaresponse/response.py", line 538, in get_projections
+    assert len(input_in) >= self.num_pts
+AssertionError
+  EstimatedSNR (catalog) = 62.13
+  SNR tdi_gen=1 (EqualArmlength, AET) = nan
+  SNR tdi_gen=2 (ESAOrbits, AE)       = nan
+
+--- Source ID=3  m1=3.54e+06  m2=80.1 ---
+  building h1 (tdi_gen=1)...
+  tdi_gen=1 failed:
+Traceback (most recent call last):
+  File "/nfs/home/svu/e1498138/emri_search/work/search/check_snr_mojito_all.py", line 135, in <module>
+    h1 = resp_g1(*params)
+  File "/nfs/home/svu/e1498138/emri_search_uv/.venv/lib64/python3.9/site-packages/fastlisaresponse/response.py", line 833, in __call__
+    self.response_model.get_projections(h, lam, beta, t0=self.t0)
+  File "/nfs/home/svu/e1498138/emri_search_uv/.venv/lib64/python3.9/site-packages/fastlisaresponse/response.py", line 538, in get_projections
+    assert len(input_in) >= self.num_pts
+AssertionError
+  building h2 (tdi_gen=2)...
+  tdi_gen=2 failed:
+Traceback (most recent call last):
+  File "/nfs/home/svu/e1498138/emri_search/work/search/check_snr_mojito_all.py", line 145, in <module>
+    h2 = resp_g2(*params)
+  File "/nfs/home/svu/e1498138/emri_search_uv/.venv/lib64/python3.9/site-packages/fastlisaresponse/response.py", line 833, in __call__
+    self.response_model.get_projections(h, lam, beta, t0=self.t0)
+  File "/nfs/home/svu/e1498138/emri_search_uv/.venv/lib64/python3.9/site-packages/fastlisaresponse/response.py", line 538, in get_projections
+    assert len(input_in) >= self.num_pts
+AssertionError
+  EstimatedSNR (catalog) = 102.7
+  SNR tdi_gen=1 (EqualArmlength, AET) = nan
+  SNR tdi_gen=2 (ESAOrbits, AE)       = nan
+
+--- Source ID=4  m1=1.58e+06  m2=128 ---
+  building h1 (tdi_gen=1)...
+  tdi_gen=1 failed:
+Traceback (most recent call last):
+  File "/nfs/home/svu/e1498138/emri_search/work/search/check_snr_mojito_all.py", line 135, in <module>
+    h1 = resp_g1(*params)
+  File "/nfs/home/svu/e1498138/emri_search_uv/.venv/lib64/python3.9/site-packages/fastlisaresponse/response.py", line 833, in __call__
+    self.response_model.get_projections(h, lam, beta, t0=self.t0)
+  File "/nfs/home/svu/e1498138/emri_search_uv/.venv/lib64/python3.9/site-packages/fastlisaresponse/response.py", line 538, in get_projections
+    assert len(input_in) >= self.num_pts
+AssertionError
+  building h2 (tdi_gen=2)...
+  tdi_gen=2 failed:
+Traceback (most recent call last):
+  File "/nfs/home/svu/e1498138/emri_search/work/search/check_snr_mojito_all.py", line 145, in <module>
+    h2 = resp_g2(*params)
+  File "/nfs/home/svu/e1498138/emri_search_uv/.venv/lib64/python3.9/site-packages/fastlisaresponse/response.py", line 833, in __call__
+    self.response_model.get_projections(h, lam, beta, t0=self.t0)
+  File "/nfs/home/svu/e1498138/emri_search_uv/.venv/lib64/python3.9/site-packages/fastlisaresponse/response.py", line 538, in get_projections
+    assert len(input_in) >= self.num_pts
+AssertionError
+  EstimatedSNR (catalog) = 64.53
+  SNR tdi_gen=1 (EqualArmlength, AET) = nan
+  SNR tdi_gen=2 (ESAOrbits, AE)       = nan
+
+--- Source ID=5  m1=3.92e+05  m2=10.2 ---
+  building h1 (tdi_gen=1)...
+  tdi_gen=1 failed:
+Traceback (most recent call last):
+  File "/nfs/home/svu/e1498138/emri_search/work/search/check_snr_mojito_all.py", line 136, in <module>
+    snr1 = float(gwf_g1.rhostat(h1))
+  File "/home/svu/e1498138/emri_search/work/GWfuncs_noise.py", line 463, in rhostat
+    hf = self.freq_wave(h)
+  File "/home/svu/e1498138/emri_search/work/GWfuncs_noise.py", line 220, in freq_wave
+    wave_c = [self.xp.fft.rfft(wave[i]) * self.dt for i in range(wave.shape[0])]
+AttributeError: 'list' object has no attribute 'shape'
+  building h2 (tdi_gen=2)...
+  tdi_gen=2 failed:
+Traceback (most recent call last):
+  File "/nfs/home/svu/e1498138/emri_search/work/search/check_snr_mojito_all.py", line 146, in <module>
+    snr2 = float(gwf_g2.rhostat(h2))
+  File "/home/svu/e1498138/emri_search/work/GWfuncs_noise.py", line 463, in rhostat
+    hf = self.freq_wave(h)
+  File "/home/svu/e1498138/emri_search/work/GWfuncs_noise.py", line 220, in freq_wave
+    wave_c = [self.xp.fft.rfft(wave[i]) * self.dt for i in range(wave.shape[0])]
+AttributeError: 'list' object has no attribute 'shape'
+  EstimatedSNR (catalog) = 50.19
+  SNR tdi_gen=1 (EqualArmlength, AET) = nan
+  SNR tdi_gen=2 (ESAOrbits, AE)       = nan
+
+--- Source ID=6  m1=1e+07  m2=10 ---
+  building h1 (tdi_gen=1)...
+  tdi_gen=1 failed:
+Traceback (most recent call last):
+  File "/nfs/home/svu/e1498138/emri_search/work/search/check_snr_mojito_all.py", line 136, in <module>
+    snr1 = float(gwf_g1.rhostat(h1))
+  File "/home/svu/e1498138/emri_search/work/GWfuncs_noise.py", line 463, in rhostat
+    hf = self.freq_wave(h)
+  File "/home/svu/e1498138/emri_search/work/GWfuncs_noise.py", line 220, in freq_wave
+    wave_c = [self.xp.fft.rfft(wave[i]) * self.dt for i in range(wave.shape[0])]
+AttributeError: 'list' object has no attribute 'shape'
+  building h2 (tdi_gen=2)...
+  tdi_gen=2 failed:
+Traceback (most recent call last):
+  File "/nfs/home/svu/e1498138/emri_search/work/search/check_snr_mojito_all.py", line 146, in <module>
+    snr2 = float(gwf_g2.rhostat(h2))
+  File "/home/svu/e1498138/emri_search/work/GWfuncs_noise.py", line 463, in rhostat
+    hf = self.freq_wave(h)
+  File "/home/svu/e1498138/emri_search/work/GWfuncs_noise.py", line 220, in freq_wave
+    wave_c = [self.xp.fft.rfft(wave[i]) * self.dt for i in range(wave.shape[0])]
+AttributeError: 'list' object has no attribute 'shape'
+  EstimatedSNR (catalog) = 36.56
+  SNR tdi_gen=1 (EqualArmlength, AET) = nan
+  SNR tdi_gen=2 (ESAOrbits, AE)       = nan
+
+--- Source ID=7  m1=6.72e+05  m2=98.4 ---
+  building h1 (tdi_gen=1)...
+  tdi_gen=1 failed:
+Traceback (most recent call last):
+  File "/nfs/home/svu/e1498138/emri_search/work/search/check_snr_mojito_all.py", line 135, in <module>
+    h1 = resp_g1(*params)
+  File "/nfs/home/svu/e1498138/emri_search_uv/.venv/lib64/python3.9/site-packages/fastlisaresponse/response.py", line 833, in __call__
+    self.response_model.get_projections(h, lam, beta, t0=self.t0)
+  File "/nfs/home/svu/e1498138/emri_search_uv/.venv/lib64/python3.9/site-packages/fastlisaresponse/response.py", line 538, in get_projections
+    assert len(input_in) >= self.num_pts
+AssertionError
+  building h2 (tdi_gen=2)...
+  tdi_gen=2 failed:
+Traceback (most recent call last):
+  File "/nfs/home/svu/e1498138/emri_search/work/search/check_snr_mojito_all.py", line 145, in <module>
+    h2 = resp_g2(*params)
+  File "/nfs/home/svu/e1498138/emri_search_uv/.venv/lib64/python3.9/site-packages/fastlisaresponse/response.py", line 833, in __call__
+    self.response_model.get_projections(h, lam, beta, t0=self.t0)
+  File "/nfs/home/svu/e1498138/emri_search_uv/.venv/lib64/python3.9/site-packages/fastlisaresponse/response.py", line 538, in get_projections
+    assert len(input_in) >= self.num_pts
+AssertionError
+  EstimatedSNR (catalog) = 95.85
+  SNR tdi_gen=1 (EqualArmlength, AET) = nan
+  SNR tdi_gen=2 (ESAOrbits, AE)       = nan
+
+--- Source ID=8  m1=3.99e+05  m2=36.7 ---
+  building h1 (tdi_gen=1)...
+  tdi_gen=1 failed:
+Traceback (most recent call last):
+  File "/nfs/home/svu/e1498138/emri_search/work/search/check_snr_mojito_all.py", line 135, in <module>
+    h1 = resp_g1(*params)
+  File "/nfs/home/svu/e1498138/emri_search_uv/.venv/lib64/python3.9/site-packages/fastlisaresponse/response.py", line 833, in __call__
+    self.response_model.get_projections(h, lam, beta, t0=self.t0)
+  File "/nfs/home/svu/e1498138/emri_search_uv/.venv/lib64/python3.9/site-packages/fastlisaresponse/response.py", line 538, in get_projections
+    assert len(input_in) >= self.num_pts
+AssertionError
+  building h2 (tdi_gen=2)...
+  tdi_gen=2 failed:
+Traceback (most recent call last):
+  File "/nfs/home/svu/e1498138/emri_search/work/search/check_snr_mojito_all.py", line 145, in <module>
+    h2 = resp_g2(*params)
+  File "/nfs/home/svu/e1498138/emri_search_uv/.venv/lib64/python3.9/site-packages/fastlisaresponse/response.py", line 833, in __call__
+    self.response_model.get_projections(h, lam, beta, t0=self.t0)
+  File "/nfs/home/svu/e1498138/emri_search_uv/.venv/lib64/python3.9/site-packages/fastlisaresponse/response.py", line 538, in get_projections
+    assert len(input_in) >= self.num_pts
+AssertionError
+  EstimatedSNR (catalog) = 61.61
+  SNR tdi_gen=1 (EqualArmlength, AET) = nan
+  SNR tdi_gen=2 (ESAOrbits, AE)       = nan
+
+
+=== Summary ===
+ ID  EstimatedSNR   SNR_gen1   SNR_gen2
+  1         53.35        nan        nan
+  2         62.13        nan        nan
+  3         102.7        nan        nan
+  4         64.53        nan        nan
+  5         50.19        nan        nan
+  6         36.56        nan        nan
+  7         95.85        nan        nan
+  8         61.61        nan        nan
+
+Saved to /home/svu/e1498138/emri_search/work/search/check_snr_mojito_all.pkl
+Job completed at Tue Aug 25 04:47:07 PM +08 2026
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+			Resource Usage on 2026-08-25 16:47:07.978086:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	JobId: 583707.hopper-m-02
+	Project: CFP03-CF-051
+	Exit Status: 0
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	NCPUs: Requested(12), Used(12)
+	CPU Time Used: 00:01:11
+	Memory: Requested(225gb), Used(12123172kb)
+	Vmem Used: 35664284kb
+	Walltime: Requested(02:00:00), Used(00:01:23)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	Execution Nodes Used: (hopper-18:ngpus=1:ncpus=12:mem=235929600kb)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	No GPU-related information available for this job.

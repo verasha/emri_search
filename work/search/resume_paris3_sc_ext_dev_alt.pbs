@@ -1,0 +1,21 @@
+#!/bin/bash
+#PBS -P CFP03-CF-051
+#PBS -o logs/paper/ext_emri_g/resume_stage2_merge_s6_dev_alt2.out
+#PBS -e logs/paper/ext_emri_g/resume_stage2_merge_s6_dev_alt2.err
+#PBS -N resume_paris3_sc_ext
+#PBS -l walltime=24:00:00
+#PBS -l select=1:ngpus=1
+
+cd $PBS_O_WORKDIR
+
+echo "Job ID: $PBS_JOBID"
+echo "Job name: $PBS_JOBNAME"
+echo "Job starts at $(date)"
+
+mkdir -p logs/paper/ext_emri_g
+module load cuda12.4/toolkit/12.4.1
+source /home/svu/e1498138/emri_search_uv/.venv/bin/activate
+
+python -u resume_paris3_sc_ext_dev_alt.py
+
+echo "Job completed at $(date)"

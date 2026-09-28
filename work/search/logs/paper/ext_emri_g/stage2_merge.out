@@ -1,0 +1,40 @@
+Job ID: 551109.hopper-m-02
+Job name: paris3_sc_ext
+Job starts at Sun Aug  2 12:04:51 PM +08 2026
+Using dt=5s, T=1.0yr, TDI gen=1, N_segs=6
+Building ResponseWrapper...
+Building GravWaveAnalysis...
+Initializing LogLike...
+LogLike initialized.
+Loading LHS grid from /scratch/e1498138/paper/ext/paris3_lhs_s6/lhs_s6.pkl...
+Prior bounds (from paris3_lhs_s6_ext ellipsoid box):
+  logm1: [5.92138, 6.11220]
+  logm2: [0.89200, 1.01955]
+  a: [0.69030, 0.77933]
+  p0: [8.00000, 9.45620]
+  e0: [0.39955, 0.44961]
+  qS: [0.00000, 3.14159]
+  phiS: [0.00000, 6.28319]
+Setting up ParisMC...
+Getting LHS points...
+Loaded 497762 / 500000 finite LHS evaluations.
+Running sampling...
+Done.
+Savepath: /scratch/e1498138/paper/ext/stage2_merge/
+Job completed at Sun Aug  2 12:26:32 PM +08 2026
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+			Resource Usage on 2026-08-02 12:26:32.956983:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	JobId: 551109.hopper-m-02
+	Project: CFP03-CF-051
+	Exit Status: 0
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	NCPUs: Requested(12), Used(12)
+	CPU Time Used: 00:21:24
+	Memory: Requested(225gb), Used(11205604kb)
+	Vmem Used: 30042708kb
+	Walltime: Requested(24:00:00), Used(00:21:42)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	Execution Nodes Used: (hopper-12:ngpus=1:ncpus=12:mem=235929600kb)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	No GPU-related information available for this job.

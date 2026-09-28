@@ -63,7 +63,7 @@ cfg_set.set_log_level("info")
 use_gpu = True
 tdi_gen = 1
 dt      = 5
-T       = 12/12
+T       = 8/12 #NOTE: changed!
 N_segs  = args.n_segs
 print(f"Using dt={dt}s, T={T}yr, TDI gen={tdi_gen}, N_segs={N_segs}")
 
@@ -74,13 +74,15 @@ print('Building GravWaveAnalysis...')
 gwf = GravWaveAnalysis(T=T, dt=dt, use_gpu=use_gpu, tdi_gen=tdi_gen)
 
 # Source parameters
+#NOTE: this is the midSNR injection.  
+# snr 30 1 yr plunging case (should peak abt snr 25 for 8mth)
 m1 = 1e6
 m2 = 1e1
 a = 0.7
-p0 = 7.8
+p0 = 7.7 #NOTE
 e0 = 0.4
 xI0 = 1.0
-dist = 10.5 # Gpc
+dist =  6 #NOTE: 
 qS = np.pi
 phiS = 0.
 qK =  0.
@@ -98,7 +100,7 @@ h_true = gwf.xp.array(waveform_response(
     Phi_phi0, Phi_theta0, Phi_r0,
     T=T, dt=dt,
 ))
-signal = h_true #+ gwf.generate_colored_noise(seed=42)
+signal = h_true + gwf.generate_colored_noise(seed=42)
 print('Signal generated.')
 
 # Context: injected SNR vs the S_N noise floor for this segmentation

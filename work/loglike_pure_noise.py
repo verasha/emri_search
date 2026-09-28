@@ -128,6 +128,8 @@ class LogLike:
 
         rho_dom_M = rho_m[rho_m.argmax()]
         beta = self.gwf.calc_beta(rho_dom_M, rho_tot)
+        if self.verbose:
+            print(f"rho_tot={rho_tot:.6g}, rho_dom_M={rho_dom_M:.6g}, beta={beta:.6g}")
         if float(beta) <= 0.0:
             return -np.inf
 
@@ -143,6 +145,109 @@ class LogLike:
         f_stat = X_scalar * float(self.gwf.xp.exp(-0.5 * beta * chi_sq))
 
         if self.verbose:
+            print(f"{'group':>20} {'X_m':>12} {'rho_m':>12} {'(X_m-rho_m)^2':>16}")
+            for idx, group in enumerate(selected):
+                X_m_i = float(X_modes[idx])
+                rho_m_i = float(rho_m[idx])
+                contrib = (X_m_i - rho_m_i) ** 2
+                print(f"{str(group):>20} {X_m_i:>12.6g} {rho_m_i:>12.6g} {contrib:>16.6g}")
+            print(f"X_scalar={X_scalar:.6g}, chi_sq={chi_sq:.6g}, f_stat={f_stat:.6g}")
             print(f"Pure log-likelihood: {f_stat:.6g}")
 
         return float(f_stat)
+
+    def log_density_batch(self, theta_batch):
+        """
+        Batched pure (non-maximized) f-statistic for B templates at once.
+
+        Waveform generation is still one call per row — the underlying `few`
+        waveform generator (and hence ResponseWrapper) only accepts scalar
+        source parameters, so there is no batched API to call into there.
+        What's batched is everything downstream of generation: the per-row
+        waveforms are stacked into (B, n_chan, N) arrays and every rfft /
+        inner-product / chi-square step runs once across the whole batch
+        (via GWfuncs_noise.freq_wave_batch / inner_batch) instead of once
+        per row.
+
+        Parameters
+        ----------
+        theta_batch : (B, 14) array of physical template parameters
+            [m1, m2, a, p0, e0, xI0, dist, qS, phiS, qK, phiK,
+             Phi_phi0, Phi_theta0, Phi_r0]
+
+        Returns
+        -------
+        (B,) numpy array of f_stat values (-inf where waveform generation
+        raised or beta <= 0, mirroring __call__'s behavior). Otherwise can
+        be negative, same as __call__.
+        """
+        theta_batch = np.asarray(theta_batch)
+        B = theta_batch.shape[0]
+        xp = self.gwf.xp
+
+        selected = self.mode_select if self.mode_select else self.selected_labels
+        n_modes = len(selected)
+
+        h_temp_list = []
+        mode_wf_lists = [[] for _ in range(n_modes)]
+        ok = np.ones(B, dtype=bool)
+
+        for b in range(B):
+            theta = theta_batch[b]
+            (m1_t, m2_t, a_t, p0_t, e0_t, xI0_t, dist_t, qS_t, phiS_t,
+             qK_t, phiK_t, Phi_phi0_t, Phi_theta0_t, Phi_r0_t) = theta
+            try:
+                h_temp = xp.array(self.waveform_response(
+                    m1_t, m2_t, a_t, p0_t, e0_t, xI0_t, dist_t, qS_t, phiS_t,
+                    qK_t, phiK_t, Phi_phi0_t, Phi_theta0_t, Phi_r0_t,
+                    T=self.T, dt=self.dt,
+                ))
+                wf_groups = self._generate_selected_waveforms(theta, selected)
+            except Exception:
+                ok[b] = False
+                h_temp_list.append(xp.zeros_like(self.signal))
+                for m in range(n_modes):
+                    mode_wf_lists[m].append(xp.zeros_like(self.signal))
+                continue
+
+            h_temp_list.append(h_temp)
+            for m in range(n_modes):
+                mode_wf_lists[m].append(wf_groups[m])
+
+        if not np.any(ok):
+            return np.full(B, -np.inf)
+
+        signal_fft_arr = self.signal_fft  # (n_chan, N_freq), from freq_wave
+
+        h_temp_batch = xp.stack(h_temp_list, axis=0)  # (B, n_chan, N)
+        h_temp_fft_batch = self.gwf.freq_wave_batch(h_temp_batch)
+
+        rho_tot = xp.sqrt(self.gwf.inner_batch(h_temp_fft_batch, h_temp_fft_batch))
+        X_scalar = self.gwf.inner_batch(signal_fft_arr, h_temp_fft_batch) / rho_tot
+
+        rho_m = xp.empty((B, n_modes), dtype=xp.float64)
+        X_modes = xp.empty((B, n_modes), dtype=xp.float64)
+        for m in range(n_modes):
+            hf_batch = self.gwf.freq_wave_batch(xp.stack(mode_wf_lists[m], axis=0))
+            rho_m[:, m] = xp.sqrt(self.gwf.inner_batch(hf_batch, hf_batch))
+
+        max_rho_idx = xp.argmax(rho_m, axis=-1)
+        idx = xp.arange(B)
+        rho_dom_M = rho_m[idx, max_rho_idx]
+        beta = self.gwf.calc_beta(rho_dom_M, rho_tot)
+
+        chi_sq = xp.sum((X_modes - rho_m) ** 2, axis=-1)
+        f_stat = X_scalar * xp.exp(-0.5 * beta * chi_sq)
+        if self.verbose:
+            print(f" X_scalar: {X_scalar}")
+            print(f" chi_sq: {chi_sq}")
+            print(f" beta: {beta}")
+            # print(f"Batch f_stat (before masking): {f_stat}")
+
+        f_stat = xp.where(beta <= 0.0, -xp.inf, f_stat)
+        f_stat = xp.where(xp.asarray(ok), f_stat, -xp.inf)
+        if self.verbose:
+            print(f" log-likelihood: {f_stat}")
+
+        f_stat_np = f_stat.get() if hasattr(f_stat, 'get') else f_stat
+        return np.asarray(f_stat_np, dtype=np.float64)

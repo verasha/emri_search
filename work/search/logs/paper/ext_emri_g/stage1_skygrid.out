@@ -1,0 +1,117 @@
+Job ID: 551544.hopper-m-02
+Job name: paris1_skygrid
+Job starts at Mon Aug  3 11:06:06 AM +08 2026
+Using dt=5s, T=0.25yr, TDI gen=1
+Building ResponseWrapper...
+Building GravWaveAnalysis...
+Initializing LogLike...
+LogLike initialized.
+Setting up ParisMC...
+Building 25 grid seed points around MAP1 sky position (qS0=1.7372, phiS0=1.3238)...
+qS grid: [0.1664143  0.95181247 1.73721063 2.52260879 3.14159265]
+phiS grid: [6.03619161 0.53840447 1.32380263 2.10920079 2.89459896]
+Job completed at Mon Aug  3 11:07:51 AM +08 2026
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+			Resource Usage on 2026-08-03 11:07:53.178567:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	JobId: 551544.hopper-m-02
+	Project: CFP03-CF-051
+	Exit Status: 0
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	NCPUs: Requested(12), Used(12)
+	CPU Time Used: 00:00:48
+	Memory: Requested(225gb), Used(11530676kb)
+	Vmem Used: 16661264kb
+	Walltime: Requested(48:00:00), Used(00:01:46)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	Execution Nodes Used: (hopper-26:ngpus=1:ncpus=12:mem=235929600kb)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	No GPU-related information available for this job.
+Job ID: 551549.hopper-m-02
+Job name: paris1_skygrid
+Job starts at Mon Aug  3 11:11:56 AM +08 2026
+Using dt=5s, T=0.25yr, TDI gen=1
+Building ResponseWrapper...
+Building GravWaveAnalysis...
+Initializing LogLike...
+LogLike initialized.
+Setting up ParisMC...
+Building 25 grid seed points around MAP1 sky position (qS0=1.7372, phiS0=1.3238)...
+qS grid: [0.1664143  0.95181247 1.73721063 2.52260879 3.14159265]
+phiS grid: [6.03619161 0.53840447 1.32380263 2.10920079 2.89459896]
+Job completed at Mon Aug  3 11:12:46 AM +08 2026
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+			Resource Usage on 2026-08-03 11:12:46.764628:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	JobId: 551549.hopper-m-02
+	Project: CFP03-CF-051
+	Exit Status: 0
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	NCPUs: Requested(12), Used(12)
+	CPU Time Used: 00:00:46
+	Memory: Requested(225gb), Used(11205576kb)
+	Vmem Used: 24537764kb
+	Walltime: Requested(48:00:00), Used(00:00:51)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	Execution Nodes Used: (hopper-26:ngpus=1:ncpus=12:mem=235929600kb)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	No GPU-related information available for this job.
+Job ID: 551553.hopper-m-02
+Job name: paris1_skygrid
+Job starts at Mon Aug  3 11:14:09 AM +08 2026
+Using dt=5s, T=0.25yr, TDI gen=1
+Building ResponseWrapper...
+Building GravWaveAnalysis...
+Initializing LogLike...
+LogLike initialized.
+Setting up ParisMC...
+Building 25 grid seed points around MAP1 sky position (qS0=1.7372, phiS0=1.3238)...
+qS grid: [0.1664143  0.95181247 1.73721063 2.52260879 3.14159265]
+phiS grid: [6.03619161 0.53840447 1.32380263 2.10920079 2.89459896]
+Evaluating log-density at grid seed points...
+WARNING: 8 / 25 grid points have non-finite log-density (likely qS clipped to boundary). These seeds will start from a weak point.
+  seed  0: qS=0.1664, phiS=6.0362, logL=-inf
+  seed  1: qS=0.1664, phiS=0.5384, logL=-inf
+  seed  2: qS=0.1664, phiS=1.3238, logL=-inf
+  seed  3: qS=0.1664, phiS=2.1092, logL=-inf
+  seed  4: qS=0.1664, phiS=2.8946, logL=-inf
+  seed  5: qS=0.9518, phiS=6.0362, logL=20.2118
+  seed  6: qS=0.9518, phiS=0.5384, logL=4.9741
+  seed  7: qS=0.9518, phiS=1.3238, logL=37.0936
+  seed  8: qS=0.9518, phiS=2.1092, logL=-inf
+  seed  9: qS=0.9518, phiS=2.8946, logL=-inf
+  seed 10: qS=1.7372, phiS=6.0362, logL=32.8131
+  seed 11: qS=1.7372, phiS=0.5384, logL=5.5101
+  seed 12: qS=1.7372, phiS=1.3238, logL=44.8077
+  seed 13: qS=1.7372, phiS=2.1092, logL=8.0614
+  seed 14: qS=1.7372, phiS=2.8946, logL=-inf
+  seed 15: qS=2.5226, phiS=6.0362, logL=23.5196
+  seed 16: qS=2.5226, phiS=0.5384, logL=7.2081
+  seed 17: qS=2.5226, phiS=1.3238, logL=25.7548
+  seed 18: qS=2.5226, phiS=2.1092, logL=29.9729
+  seed 19: qS=2.5226, phiS=2.8946, logL=18.9765
+  seed 20: qS=3.1416, phiS=6.0362, logL=13.6028
+  seed 21: qS=3.1416, phiS=0.5384, logL=13.6028
+  seed 22: qS=3.1416, phiS=1.3238, logL=13.6028
+  seed 23: qS=3.1416, phiS=2.1092, logL=13.6028
+  seed 24: qS=3.1416, phiS=2.8946, logL=13.6028
+Running sampling...
+Done.
+Savepath: /scratch/e1498138/paper/ext/emri_g/stage1_skygrid/
+Job completed at Tue Aug  4 10:23:22 AM +08 2026
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+			Resource Usage on 2026-08-04 10:23:23.664731:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	JobId: 551553.hopper-m-02
+	Project: CFP03-CF-051
+	Exit Status: 0
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	NCPUs: Requested(12), Used(12)
+	CPU Time Used: 21:34:38
+	Memory: Requested(225gb), Used(11205504kb)
+	Vmem Used: 26717180kb
+	Walltime: Requested(48:00:00), Used(23:09:15)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	Execution Nodes Used: (hopper-26:ngpus=1:ncpus=12:mem=235929600kb)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	No GPU-related information available for this job.

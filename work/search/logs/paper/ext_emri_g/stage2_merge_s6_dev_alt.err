@@ -1,0 +1,6 @@
+/nfs/home/svu/e1498138/parismc_dev/parismc/evaluator.py:230: RuntimeWarning: invalid value encountered in subtract
+  diff = np.abs(batched - singly)
+Traceback (most recent call last):
+  File "/nfs/home/svu/e1498138/emri_search/work/search/paris3_sc_ext_dev_alt.py", line 186, in <module>
+    phys_pts, det_snr = pickle.load(f)
+ValueError: too many values to unpack (expected 2)

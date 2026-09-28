@@ -1,0 +1,477 @@
+Job ID: 545430.hopper-m-02
+Job name: box1_5sig_lhs_closest
+Job starts at Mon Jul 27 09:38:12 PM +08 2026
+Using N_sigma=5.0
+dt=5s  T=0.25yr  TDI gen=1
+SNR (rhostat): 2175.8140
+Loading paris4_noise sampler from /scratch/e1498138/paris4_sc/int_1yr_s6/sampler_state.pkl...
+paris4_noise maxld: 858.5097
+paris4_noise maxld point: [5.99582573 0.99810132 0.69144752 9.04888015 0.40169474]
+paris4_noise posterior 1-sigma (diag): [0.00170288 0.00074718 0.00352764 0.02022939 0.00066724]
+Box bounds (N_sigma=5.0):
+  logm1: [5.98731, 6.00434]  mu=5.99583  sigma=0.00170
+  logm2: [0.99437, 1.00184]  mu=0.99810  sigma=0.00075
+  a: [0.67381, 0.70909]  mu=0.69145  sigma=0.00353
+  p0: [8.94773, 9.15003]  mu=9.04888  sigma=0.02023
+  e0: [0.39836, 0.40503]  mu=0.40169  sigma=0.00067
+True injection point: [6.  1.  0.7 9.  0.4]
+Per-dim-normalized distance from mu_center to true point: 5.5348 sigma
+
+Generating 100000 LHS points in 5D box...
+Closest LHS point to injection (N=100000):
+  logm1: 6.00008  (true=6.00000, offset=+0.048 sigma)
+  logm2: 1.00015  (true=1.00000, offset=+0.205 sigma)
+  a: 0.70162  (true=0.70000, offset=+0.458 sigma)
+  p0: 8.99558  (true=9.00000, offset=-0.218 sigma)
+  e0: 0.39978  (true=0.40000, offset=-0.333 sigma)
+Per-dim-normalized distance: 0.6427 sigma
+log_density at closest point: 0.086982
+Saved to /scratch/e1498138/box/5sig_closest/N100000.pkl
+
+Generating 500000 LHS points in 5D box...
+Closest LHS point to injection (N=500000):
+  logm1: 6.00001  (true=6.00000, offset=+0.004 sigma)
+  logm2: 0.99995  (true=1.00000, offset=-0.070 sigma)
+  a: 0.70048  (true=0.70000, offset=+0.136 sigma)
+  p0: 8.99423  (true=9.00000, offset=-0.285 sigma)
+  e0: 0.39986  (true=0.40000, offset=-0.217 sigma)
+Per-dim-normalized distance: 0.3898 sigma
+log_density at closest point: -0.031267
+Saved to /scratch/e1498138/box/5sig_closest/N500000.pkl
+
+Generating 1000000 LHS points in 5D box...
+Closest LHS point to injection (N=1000000):
+  logm1: 5.99993  (true=6.00000, offset=-0.039 sigma)
+  logm2: 1.00019  (true=1.00000, offset=+0.248 sigma)
+  a: 0.70114  (true=0.70000, offset=+0.322 sigma)
+  p0: 8.99708  (true=9.00000, offset=-0.144 sigma)
+  e0: 0.39986  (true=0.40000, offset=-0.211 sigma)
+Per-dim-normalized distance: 0.4818 sigma
+log_density at closest point: 0.147030
+Saved to /scratch/e1498138/box/5sig_closest/N1000000.pkl
+
+=== Summary (N_sigma=5.0) ===
+         N   closest (sigma)     log_density  per-dim sigma offsets
+    100000            0.6427          0.0870  logm1=+0.048, logm2=+0.205, a=+0.458, p0=-0.218, e0=-0.333
+    500000            0.3898         -0.0313  logm1=+0.004, logm2=-0.070, a=+0.136, p0=-0.285, e0=-0.217
+   1000000            0.4818          0.1470  logm1=-0.039, logm2=+0.248, a=+0.322, p0=-0.144, e0=-0.211
+Job completed at Mon Jul 27 09:39:39 PM +08 2026
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+			Resource Usage on 2026-07-27 21:39:40.055075:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	JobId: 545430.hopper-m-02
+	Project: CFP03-CF-051
+	Exit Status: 0
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	NCPUs: Requested(12), Used(12)
+	CPU Time Used: 00:00:47
+	Memory: Requested(225gb), Used(11400420kb)
+	Vmem Used: 22952272kb
+	Walltime: Requested(24:00:00), Used(00:01:27)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	Execution Nodes Used: (hopper-13:ngpus=1:ncpus=12:mem=235929600kb)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	No GPU-related information available for this job.
+Job ID: 547039.hopper-m-02
+Job name: box1_5sig_lhs_closest
+Job starts at Tue Jul 28 01:26:57 PM +08 2026
+Using N_sigma=5.0
+dt=5s  T=0.25yr  TDI gen=1
+SNR (rhostat): 2175.8140
+Loading paris4_noise sampler from /scratch/e1498138/paris4_sc/int_1yr_s6/sampler_state.pkl...
+paris4_noise maxld: 858.5097
+paris4_noise maxld point: [5.99582573 0.99810132 0.69144752 9.04888015 0.40169474]
+paris4_noise posterior 1-sigma (diag): [0.00170288 0.00074718 0.00352764 0.02022939 0.00066724]
+Box bounds (N_sigma=5.0):
+  logm1: [5.98731, 6.00434]  mu=5.99583  sigma=0.00170
+  logm2: [0.99437, 1.00184]  mu=0.99810  sigma=0.00075
+  a: [0.67381, 0.70909]  mu=0.69145  sigma=0.00353
+  p0: [8.94773, 9.15003]  mu=9.04888  sigma=0.02023
+  e0: [0.39836, 0.40503]  mu=0.40169  sigma=0.00067
+True injection point: [6.  1.  0.7 9.  0.4]
+Per-dim-normalized distance from mu_center to true point: 5.5348 sigma
+
+Generating 100000 LHS points in 5D box...
+Closest LHS point to injection (N=100000):
+  logm1: 5.99944  (true=6.00000, offset=-0.331 sigma)
+  logm2: 1.00022  (true=1.00000, offset=+0.289 sigma)
+  a: 0.70207  (true=0.70000, offset=+0.586 sigma)
+  p0: 8.99696  (true=9.00000, offset=-0.150 sigma)
+  e0: 0.39966  (true=0.40000, offset=-0.504 sigma)
+Per-dim-normalized distance: 0.9016 sigma
+log_density at closest point: 0.339282
+Saved to /scratch/e1498138/box/5sig_closest/N100000.pkl
+
+Generating 500000 LHS points in 5D box...
+Closest LHS point to injection (N=500000):
+  logm1: 5.99961  (true=6.00000, offset=-0.232 sigma)
+  logm2: 1.00003  (true=1.00000, offset=+0.036 sigma)
+  a: 0.69987  (true=0.70000, offset=-0.037 sigma)
+  p0: 8.99476  (true=9.00000, offset=-0.259 sigma)
+  e0: 0.39986  (true=0.40000, offset=-0.211 sigma)
+Per-dim-normalized distance: 0.4100 sigma
+log_density at closest point: -0.045264
+Saved to /scratch/e1498138/box/5sig_closest/N500000.pkl
+
+Generating 1000000 LHS points in 5D box...
+Closest LHS point to injection (N=1000000):
+  logm1: 6.00016  (true=6.00000, offset=+0.092 sigma)
+  logm2: 1.00006  (true=1.00000, offset=+0.079 sigma)
+  a: 0.69918  (true=0.70000, offset=-0.232 sigma)
+  p0: 8.99963  (true=9.00000, offset=-0.018 sigma)
+  e0: 0.40005  (true=0.40000, offset=+0.082 sigma)
+Per-dim-normalized distance: 0.2750 sigma
+log_density at closest point: -0.030675
+Saved to /scratch/e1498138/box/5sig_closest/N1000000.pkl
+
+=== Summary (N_sigma=5.0) ===
+         N   closest (sigma)     log_density  per-dim sigma offsets
+    100000            0.9016          0.3393  logm1=-0.331, logm2=+0.289, a=+0.586, p0=-0.150, e0=-0.504
+    500000            0.4100         -0.0453  logm1=-0.232, logm2=+0.036, a=-0.037, p0=-0.259, e0=-0.211
+   1000000            0.2750         -0.0307  logm1=+0.092, logm2=+0.079, a=-0.232, p0=-0.018, e0=+0.082
+Job completed at Tue Jul 28 01:28:25 PM +08 2026
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+			Resource Usage on 2026-07-28 13:28:26.082733:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	JobId: 547039.hopper-m-02
+	Project: CFP03-CF-051
+	Exit Status: 0
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	NCPUs: Requested(12), Used(12)
+	CPU Time Used: 00:00:51
+	Memory: Requested(225gb), Used(11220588kb)
+	Vmem Used: 26230112kb
+	Walltime: Requested(24:00:00), Used(00:01:30)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	Execution Nodes Used: (hopper-23:ngpus=1:ncpus=12:mem=235929600kb)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	No GPU-related information available for this job.
+Job ID: 547093.hopper-m-02
+Job name: box1_5sig_lhs_closest
+Job starts at Tue Jul 28 02:46:36 PM +08 2026
+Using N_sigma=5.0
+dt=5s  T=0.25yr  TDI gen=1
+SNR (rhostat): 2175.8140
+Loading paris4_noise sampler from /scratch/e1498138/paris4_sc/int_1yr_s6/sampler_state.pkl...
+paris4_noise maxld: 858.5097
+paris4_noise maxld point: [5.99582573 0.99810132 0.69144752 9.04888015 0.40169474]
+paris4_noise posterior 1-sigma (diag): [0.00170288 0.00074718 0.00352764 0.02022939 0.00066724]
+Box bounds (N_sigma=5.0):
+  logm1: [5.98731, 6.00434]  mu=5.99583  sigma=0.00170
+  logm2: [0.99437, 1.00184]  mu=0.99810  sigma=0.00075
+  a: [0.67381, 0.70909]  mu=0.69145  sigma=0.00353
+  p0: [8.94773, 9.15003]  mu=9.04888  sigma=0.02023
+  e0: [0.39836, 0.40503]  mu=0.40169  sigma=0.00067
+True injection point: [6.  1.  0.7 9.  0.4]
+Per-dim-normalized distance from mu_center to true point: 5.5348 sigma
+
+Generating 100000 LHS points in 5D box...
+Evaluating log_density on the 1000 closest points (N=100000)...
+Top logden among 1000 closest points to injection (N=100000):
+  logm1: 5.99870  (true=6.00000, offset=-0.765 sigma)
+  logm2: 1.00101  (true=1.00000, offset=+1.354 sigma)
+  a: 0.70665  (true=0.70000, offset=+1.886 sigma)
+  p0: 9.00374  (true=9.00000, offset=+0.185 sigma)
+  e0: 0.40068  (true=0.40000, offset=+1.026 sigma)
+Per-dim-normalized distance: 2.6570 sigma
+log_density: 0.823583
+Saved to /scratch/e1498138/box/5sig_closest/N100000.pkl
+
+Generating 500000 LHS points in 5D box...
+Evaluating log_density on the 1000 closest points (N=500000)...
+Top logden among 1000 closest points to injection (N=500000):
+  logm1: 5.99876  (true=6.00000, offset=-0.731 sigma)
+  logm2: 0.99903  (true=1.00000, offset=-1.302 sigma)
+  a: 0.70242  (true=0.70000, offset=+0.687 sigma)
+  p0: 9.01946  (true=9.00000, offset=+0.962 sigma)
+  e0: 0.39953  (true=0.40000, offset=-0.698 sigma)
+Per-dim-normalized distance: 2.0282 sigma
+log_density: 1.326081
+Saved to /scratch/e1498138/box/5sig_closest/N500000.pkl
+
+Generating 1000000 LHS points in 5D box...
+Evaluating log_density on the 1000 closest points (N=1000000)...
+Top logden among 1000 closest points to injection (N=1000000):
+  logm1: 5.99853  (true=6.00000, offset=-0.861 sigma)
+  logm2: 0.99939  (true=1.00000, offset=-0.815 sigma)
+  a: 0.69787  (true=0.70000, offset=-0.604 sigma)
+  p0: 9.01765  (true=9.00000, offset=+0.873 sigma)
+  e0: 0.40055  (true=0.40000, offset=+0.827 sigma)
+Per-dim-normalized distance: 1.7936 sigma
+log_density: 1.870943
+Saved to /scratch/e1498138/box/5sig_closest/N1000000.pkl
+
+=== Summary (N_sigma=5.0) ===
+         N      dist (sigma)     log_density  per-dim sigma offsets
+    100000            2.6570          0.8236  logm1=-0.765, logm2=+1.354, a=+1.886, p0=+0.185, e0=+1.026
+    500000            2.0282          1.3261  logm1=-0.731, logm2=-1.302, a=+0.687, p0=+0.962, e0=-0.698
+   1000000            1.7936          1.8709  logm1=-0.861, logm2=-0.815, a=-0.604, p0=+0.873, e0=+0.827
+Job completed at Tue Jul 28 02:58:30 PM +08 2026
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+			Resource Usage on 2026-07-28 14:58:31.250886:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	JobId: 547093.hopper-m-02
+	Project: CFP03-CF-051
+	Exit Status: 0
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	NCPUs: Requested(12), Used(12)
+	CPU Time Used: 00:10:02
+	Memory: Requested(225gb), Used(11225632kb)
+	Vmem Used: 25714508kb
+	Walltime: Requested(24:00:00), Used(00:11:56)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	Execution Nodes Used: (hopper-20:ngpus=1:ncpus=12:mem=235929600kb)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	No GPU-related information available for this job.
+Job ID: 547674.hopper-m-02
+Job name: box1_5sig_lhs_closest
+Job starts at Tue Jul 28 06:36:30 PM +08 2026
+Using N_sigma=5.0
+dt=5s  T=0.25yr  TDI gen=1
+SNR (rhostat): 2175.8140
+Loading paris4_noise sampler from /scratch/e1498138/paris4_sc/int_1yr_s6/sampler_state.pkl...
+paris4_noise maxld: 858.5097
+paris4_noise maxld point: [5.99582573 0.99810132 0.69144752 9.04888015 0.40169474]
+paris4_noise posterior 1-sigma (diag): [0.00170288 0.00074718 0.00352764 0.02022939 0.00066724]
+Box bounds (N_sigma=5.0):
+  logm1: [5.98731, 6.00434]  mu=5.99583  sigma=0.00170
+  logm2: [0.99437, 1.00184]  mu=0.99810  sigma=0.00075
+  a: [0.67381, 0.70909]  mu=0.69145  sigma=0.00353
+  p0: [8.94773, 9.15003]  mu=9.04888  sigma=0.02023
+  e0: [0.39836, 0.40503]  mu=0.40169  sigma=0.00067
+True injection point: [6.  1.  0.7 9.  0.4]
+Per-dim-normalized distance from mu_center to true point: 5.5348 sigma
+
+Generating 100000 LHS points in 5D box...
+Evaluating log_density on the 1000 closest points (N=100000)...
+Top logden among 1000 closest points to injection (N=100000):
+  logm1: 6.00169  (true=6.00000, offset=+0.991 sigma)
+  logm2: 1.00148  (true=1.00000, offset=+1.979 sigma)
+  a: 0.70365  (true=0.70000, offset=+1.034 sigma)
+  p0: 8.98015  (true=9.00000, offset=-0.981 sigma)
+  e0: 0.39938  (true=0.40000, offset=-0.926 sigma)
+Per-dim-normalized distance: 2.7902 sigma
+log_density: 0.884607
+Saved to /scratch/e1498138/box/5sig_closest/N100000.pkl
+Job completed at Tue Jul 28 06:41:21 PM +08 2026
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+			Resource Usage on 2026-07-28 18:41:22.017851:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	JobId: 547674.hopper-m-02
+	Project: CFP03-CF-051
+	Exit Status: 0
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	NCPUs: Requested(12), Used(12)
+	CPU Time Used: 00:03:46
+	Memory: Requested(225gb), Used(11206728kb)
+	Vmem Used: 26234828kb
+	Walltime: Requested(24:00:00), Used(00:04:52)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	Execution Nodes Used: (hopper-27:ngpus=1:ncpus=12:mem=235929600kb)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	No GPU-related information available for this job.
+Job ID: 547681.hopper-m-02
+Job name: box1_5sig_lhs_closest
+Job starts at Tue Jul 28 06:51:28 PM +08 2026
+Using N_sigma=5.0
+dt=5s  T=0.25yr  TDI gen=1
+SNR (rhostat): 2175.8140
+Loading paris4_noise sampler from /scratch/e1498138/paris4_sc/int_1yr_s6/sampler_state.pkl...
+paris4_noise maxld: 858.5097
+paris4_noise maxld point: [5.99582573 0.99810132 0.69144752 9.04888015 0.40169474]
+paris4_noise posterior 1-sigma (diag): [0.00170288 0.00074718 0.00352764 0.02022939 0.00066724]
+Box bounds (N_sigma=5.0):
+  logm1: [5.98731, 6.00434]  mu=5.99583  sigma=0.00170
+  logm2: [0.99437, 1.00184]  mu=0.99810  sigma=0.00075
+  a: [0.67381, 0.70909]  mu=0.69145  sigma=0.00353
+  p0: [8.94773, 9.15003]  mu=9.04888  sigma=0.02023
+  e0: [0.39836, 0.40503]  mu=0.40169  sigma=0.00067
+True injection point: [6.  1.  0.7 9.  0.4]
+Per-dim-normalized distance from mu_center to true point: 5.5348 sigma
+
+Generating 100000 LHS points in 5D box...
+Evaluating log_density on the 1000 closest points (N=100000)...
+Top logden among 1000 closest points to injection (N=100000):
+  logm1: 5.99871  (true=6.00000, offset=-0.758 sigma)
+  logm2: 0.99968  (true=1.00000, offset=-0.432 sigma)
+  a: 0.70104  (true=0.70000, offset=+0.294 sigma)
+  p0: 9.00643  (true=9.00000, offset=+0.318 sigma)
+  e0: 0.39970  (true=0.40000, offset=-0.445 sigma)
+Per-dim-normalized distance: 1.0709 sigma
+log_density: 0.954687
+Saved to /scratch/e1498138/box/5sig_closest/N100000.pkl
+Job completed at Tue Jul 28 06:56:14 PM +08 2026
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+			Resource Usage on 2026-07-28 18:56:14.809459:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	JobId: 547681.hopper-m-02
+	Project: CFP03-CF-051
+	Exit Status: 0
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	NCPUs: Requested(12), Used(12)
+	CPU Time Used: 00:03:45
+	Memory: Requested(225gb), Used(11206364kb)
+	Vmem Used: 25715272kb
+	Walltime: Requested(24:00:00), Used(00:04:48)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	Execution Nodes Used: (hopper-27:ngpus=1:ncpus=12:mem=235929600kb)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	No GPU-related information available for this job.
+Job ID: 547695.hopper-m-02
+Job name: box1_5sig_lhs_closest
+Job starts at Tue Jul 28 07:13:33 PM +08 2026
+Using N_sigma=5.0
+dt=5s  T=0.25yr  TDI gen=1
+SNR (rhostat): 2175.8140
+Loading paris4_noise sampler from /scratch/e1498138/paris4_sc/int_1yr_s6/sampler_state.pkl...
+paris4_noise maxld: 858.5097
+paris4_noise maxld point: [5.99582573 0.99810132 0.69144752 9.04888015 0.40169474]
+paris4_noise posterior 1-sigma (diag): [0.00170288 0.00074718 0.00352764 0.02022939 0.00066724]
+Box bounds (N_sigma=5.0):
+  logm1: [5.98731, 6.00434]  mu=5.99583  sigma=0.00170
+  logm2: [0.99437, 1.00184]  mu=0.99810  sigma=0.00075
+  a: [0.67381, 0.70909]  mu=0.69145  sigma=0.00353
+  p0: [8.94773, 9.15003]  mu=9.04888  sigma=0.02023
+  e0: [0.39836, 0.40503]  mu=0.40169  sigma=0.00067
+True injection point: [6.  1.  0.7 9.  0.4]
+Per-dim-normalized distance from mu_center to true point: 5.5348 sigma
+
+Generating 100000 LHS points in 5D box...
+Evaluating log_density on the 1000 closest points (N=100000)...
+Top logden among 1000 closest points to injection (N=100000):
+  logm1: 6.00118  (true=6.00000, offset=+0.692 sigma)
+  logm2: 0.99995  (true=1.00000, offset=-0.073 sigma)
+  a: 0.69776  (true=0.70000, offset=-0.635 sigma)
+  p0: 9.00067  (true=9.00000, offset=+0.033 sigma)
+  e0: 0.40069  (true=0.40000, offset=+1.036 sigma)
+Per-dim-normalized distance: 1.4005 sigma
+log_density: 0.977496
+Saved to /scratch/e1498138/box/5sig_closest/N100000.pkl
+Saved corner plot to /scratch/e1498138/box/5sig_closest/corner_N100000.png
+
+Generating 500000 LHS points in 5D box...
+Evaluating log_density on the 1000 closest points (N=500000)...
+Top logden among 1000 closest points to injection (N=500000):
+  logm1: 6.00041  (true=6.00000, offset=+0.241 sigma)
+  logm2: 0.99924  (true=1.00000, offset=-1.011 sigma)
+  a: 0.69409  (true=0.70000, offset=-1.675 sigma)
+  p0: 8.99524  (true=9.00000, offset=-0.235 sigma)
+  e0: 0.39990  (true=0.40000, offset=-0.145 sigma)
+Per-dim-normalized distance: 1.9900 sigma
+log_density: 1.749559
+Saved to /scratch/e1498138/box/5sig_closest/N500000.pkl
+Saved corner plot to /scratch/e1498138/box/5sig_closest/corner_N500000.png
+
+Generating 1000000 LHS points in 5D box...
+Evaluating log_density on the 1000 closest points (N=1000000)...
+Top logden among 1000 closest points to injection (N=1000000):
+  logm1: 5.99959  (true=6.00000, offset=-0.241 sigma)
+  logm2: 1.00055  (true=1.00000, offset=+0.736 sigma)
+  a: 0.70012  (true=0.70000, offset=+0.034 sigma)
+  p0: 9.00201  (true=9.00000, offset=+0.099 sigma)
+  e0: 0.40060  (true=0.40000, offset=+0.904 sigma)
+Per-dim-normalized distance: 1.1949 sigma
+log_density: 1.907169
+Saved to /scratch/e1498138/box/5sig_closest/N1000000.pkl
+Saved corner plot to /scratch/e1498138/box/5sig_closest/corner_N1000000.png
+
+=== Summary (N_sigma=5.0) ===
+         N      dist (sigma)     log_density  per-dim sigma offsets
+    100000            1.4005          0.9775  logm1=+0.692, logm2=-0.073, a=-0.635, p0=+0.033, e0=+1.036
+    500000            1.9900          1.7496  logm1=+0.241, logm2=-1.011, a=-1.675, p0=-0.235, e0=-0.145
+   1000000            1.1949          1.9072  logm1=-0.241, logm2=+0.736, a=+0.034, p0=+0.099, e0=+0.904
+Job completed at Tue Jul 28 07:25:41 PM +08 2026
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+			Resource Usage on 2026-07-28 19:25:42.441256:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	JobId: 547695.hopper-m-02
+	Project: CFP03-CF-051
+	Exit Status: 0
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	NCPUs: Requested(12), Used(12)
+	CPU Time Used: 00:10:19
+	Memory: Requested(225gb), Used(11206544kb)
+	Vmem Used: 25794568kb
+	Walltime: Requested(24:00:00), Used(00:12:09)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	Execution Nodes Used: (hopper-28:ngpus=1:ncpus=12:mem=235929600kb)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	No GPU-related information available for this job.
+Job ID: 547703.hopper-m-02
+Job name: box1_5sig_lhs_closest
+Job starts at Tue Jul 28 07:54:25 PM +08 2026
+Using N_sigma=5.0
+dt=5s  T=0.25yr  TDI gen=1
+SNR (rhostat): 2175.8140
+Loading paris4_noise sampler from /scratch/e1498138/paris4_sc/int_1yr_s6/sampler_state.pkl...
+paris4_noise maxld: 858.5097
+paris4_noise maxld point: [5.99582573 0.99810132 0.69144752 9.04888015 0.40169474]
+paris4_noise posterior 1-sigma (diag): [0.00170288 0.00074718 0.00352764 0.02022939 0.00066724]
+Box bounds (N_sigma=5.0):
+  logm1: [5.98731, 6.00434]  mu=5.99583  sigma=0.00170
+  logm2: [0.99437, 1.00184]  mu=0.99810  sigma=0.00075
+  a: [0.67381, 0.70909]  mu=0.69145  sigma=0.00353
+  p0: [8.94773, 9.15003]  mu=9.04888  sigma=0.02023
+  e0: [0.39836, 0.40503]  mu=0.40169  sigma=0.00067
+True injection point: [6.  1.  0.7 9.  0.4]
+Per-dim-normalized distance from mu_center to true point: 5.5348 sigma
+
+Generating 100000 LHS points in 5D box...
+Evaluating log_density on the 1000 closest points (N=100000)...
+Top logden among 1000 closest points to injection (N=100000):
+  logm1: 5.99884  (true=6.00000, offset=-0.683 sigma)
+  logm2: 1.00018  (true=1.00000, offset=+0.246 sigma)
+  a: 0.69398  (true=0.70000, offset=-1.707 sigma)
+  p0: 9.02486  (true=9.00000, offset=+1.229 sigma)
+  e0: 0.39885  (true=0.40000, offset=-1.719 sigma)
+Per-dim-normalized distance: 2.8121 sigma
+log_density: 0.999677
+Saved to /scratch/e1498138/box/5sig_closest/N100000.pkl
+
+Generating 500000 LHS points in 5D box...
+Evaluating log_density on the 1000 closest points (N=500000)...
+Top logden among 1000 closest points to injection (N=500000):
+  logm1: 6.00162  (true=6.00000, offset=+0.951 sigma)
+  logm2: 1.00018  (true=1.00000, offset=+0.240 sigma)
+  a: 0.69856  (true=0.70000, offset=-0.407 sigma)
+  p0: 8.99976  (true=9.00000, offset=-0.012 sigma)
+  e0: 0.39942  (true=0.40000, offset=-0.867 sigma)
+Per-dim-normalized distance: 1.3710 sigma
+log_density: 0.809260
+Saved to /scratch/e1498138/box/5sig_closest/N500000.pkl
+
+Generating 1000000 LHS points in 5D box...
+Evaluating log_density on the 1000 closest points (N=1000000)...
+Top logden among 1000 closest points to injection (N=1000000):
+  logm1: 6.00014  (true=6.00000, offset=+0.082 sigma)
+  logm2: 0.99937  (true=1.00000, offset=-0.840 sigma)
+  a: 0.69905  (true=0.70000, offset=-0.270 sigma)
+  p0: 9.00266  (true=9.00000, offset=+0.131 sigma)
+  e0: 0.39932  (true=0.40000, offset=-1.021 sigma)
+Per-dim-normalized distance: 1.3579 sigma
+log_density: 1.465588
+Saved to /scratch/e1498138/box/5sig_closest/N1000000.pkl
+
+=== Summary (N_sigma=5.0) ===
+         N      dist (sigma)     log_density  per-dim sigma offsets
+    100000            2.8121          0.9997  logm1=-0.683, logm2=+0.246, a=-1.707, p0=+1.229, e0=-1.719
+    500000            1.3710          0.8093  logm1=+0.951, logm2=+0.240, a=-0.407, p0=-0.012, e0=-0.867
+   1000000            1.3579          1.4656  logm1=+0.082, logm2=-0.840, a=-0.270, p0=+0.131, e0=-1.021
+Saved corner plot to /nfs/home/svu/e1498138/emri_search/work/search/box/plots/corner_5sig.png
+Job completed at Tue Jul 28 08:05:54 PM +08 2026
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+			Resource Usage on 2026-07-28 20:05:55.129839:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	JobId: 547703.hopper-m-02
+	Project: CFP03-CF-051
+	Exit Status: 0
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	NCPUs: Requested(12), Used(12)
+	CPU Time Used: 00:09:46
+	Memory: Requested(225gb), Used(11206948kb)
+	Vmem Used: 25732308kb
+	Walltime: Requested(24:00:00), Used(00:11:30)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	Execution Nodes Used: (hopper-22:ngpus=1:ncpus=12:mem=235929600kb)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	No GPU-related information available for this job.

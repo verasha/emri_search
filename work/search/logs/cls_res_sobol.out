@@ -1,0 +1,66 @@
+Job ID: 536976.hopper-m-02
+Job name: cls_res_sobol
+Job starts at Tue Jul 21 03:27:17 PM +08 2026
+=== Report: total number of Sobol samples = 100,000 ===
+Generating Plot (Strict Range): corner_cluster_sobol_top100.png...
+--- Points for corner_cluster_sobol_top100.png ---
+    True params: logM1=6.0000, logM2=1.0000, a=0.7000, p0=9.0000, e0=0.4000
+    pt 1: logM1=6.0595, logM2=0.8256, a=0.4166, p0=8.9069, e0=0.4343 | ld=5.7055 | dist=0.5568
+    pt 2: logM1=6.0825, logM2=0.9978, a=0.6149, p0=9.3750, e0=0.4216 | ld=5.5426 | dist=0.2161 <-- CLOSEST
+    pt 3: logM1=5.9875, logM2=1.0282, a=0.8148, p0=10.1064, e0=0.4808 | ld=5.4253 | dist=0.4895
+    pt 4: logM1=6.1994, logM2=1.1380, a=0.5798, p0=10.2435, e0=0.4386 | ld=5.3954 | dist=0.5975
+    pt 5: logM1=6.1197, logM2=1.0394, a=0.6077, p0=9.6073, e0=0.4677 | ld=5.3943 | dist=0.3720
+    pt 6: logM1=5.8071, logM2=0.8546, a=0.8996, p0=10.8540, e0=0.4493 | ld=5.3832 | dist=0.7970
+    pt 7: logM1=6.3153, logM2=1.2527, a=0.9220, p0=8.9827, e0=0.4237 | ld=5.2298 | dist=0.7215
+    pt 8: logM1=6.1857, logM2=0.8313, a=0.5771, p0=8.4293, e0=0.4900 | ld=5.1849 | dist=0.5706
+    pt 9: logM1=6.1206, logM2=1.2396, a=0.9296, p0=10.9790, e0=0.4247 | ld=5.1775 | dist=0.8972
+    pt 10: logM1=6.3117, logM2=1.2085, a=0.9692, p0=8.0783, e0=0.4906 | ld=5.1546 | dist=0.8146
+    >> Closest point: pt 2: logM1=6.0825, logM2=0.9978, a=0.6149, p0=9.3750, e0=0.4216 | ld=5.5426 | dist=0.2161
+Generating Plot (Strict Range): corner_cluster_sobol_top1000.png...
+--- Points for corner_cluster_sobol_top1000.png ---
+    True params: logM1=6.0000, logM2=1.0000, a=0.7000, p0=9.0000, e0=0.4000
+    pt 1: logM1=6.0595, logM2=0.8256, a=0.4166, p0=8.9069, e0=0.4343 | ld=5.7055 | dist=0.5568
+    pt 2: logM1=6.0825, logM2=0.9978, a=0.6149, p0=9.3750, e0=0.4216 | ld=5.5426 | dist=0.2161 <-- CLOSEST
+    pt 3: logM1=5.9875, logM2=1.0282, a=0.8148, p0=10.1064, e0=0.4808 | ld=5.4253 | dist=0.4895
+    pt 4: logM1=6.1994, logM2=1.1380, a=0.5798, p0=10.2435, e0=0.4386 | ld=5.3954 | dist=0.5975
+    pt 5: logM1=5.8071, logM2=0.8546, a=0.8996, p0=10.8540, e0=0.4493 | ld=5.3832 | dist=0.7970
+    pt 6: logM1=5.9566, logM2=0.8487, a=0.9015, p0=9.1564, e0=0.4994 | ld=5.2860 | dist=0.5407
+    pt 7: logM1=6.0573, logM2=1.0458, a=0.7480, p0=9.5887, e0=0.3856 | ld=5.2695 | dist=0.2433
+    pt 8: logM1=5.8481, logM2=0.8283, a=0.3408, p0=10.7943, e0=0.4517 | ld=5.2144 | dist=0.9014
+    pt 9: logM1=6.1857, logM2=0.8313, a=0.5771, p0=8.4293, e0=0.4900 | ld=5.1849 | dist=0.5706
+    pt 10: logM1=6.3117, logM2=1.2085, a=0.9692, p0=8.0783, e0=0.4906 | ld=5.1546 | dist=0.8146
+    >> Closest point: pt 2: logM1=6.0825, logM2=0.9978, a=0.6149, p0=9.3750, e0=0.4216 | ld=5.5426 | dist=0.2161
+Generating Plot (Strict Range): corner_global_top10_sobol.png...
+--- Points for corner_global_top10_sobol.png ---
+    True params: logM1=6.0000, logM2=1.0000, a=0.7000, p0=9.0000, e0=0.4000
+    pt 1: logM1=6.0595, logM2=0.8256, a=0.4166, p0=8.9069, e0=0.4343 | ld=5.7055 | dist=0.5568
+    pt 2: logM1=6.0825, logM2=0.9978, a=0.6149, p0=9.3750, e0=0.4216 | ld=5.5426 | dist=0.2161 <-- CLOSEST
+    pt 3: logM1=5.9875, logM2=1.0282, a=0.8148, p0=10.1064, e0=0.4808 | ld=5.4253 | dist=0.4895
+    pt 4: logM1=6.1994, logM2=1.1380, a=0.5798, p0=10.2435, e0=0.4386 | ld=5.3954 | dist=0.5975
+    pt 5: logM1=6.1197, logM2=1.0394, a=0.6077, p0=9.6073, e0=0.4677 | ld=5.3943 | dist=0.3720
+    pt 6: logM1=5.8071, logM2=0.8546, a=0.8996, p0=10.8540, e0=0.4493 | ld=5.3832 | dist=0.7970
+    pt 7: logM1=5.9566, logM2=0.8487, a=0.9015, p0=9.1564, e0=0.4994 | ld=5.2860 | dist=0.5407
+    pt 8: logM1=6.0573, logM2=1.0458, a=0.7480, p0=9.5887, e0=0.3856 | ld=5.2695 | dist=0.2433
+    pt 9: logM1=6.3153, logM2=1.2527, a=0.9220, p0=8.9827, e0=0.4237 | ld=5.2298 | dist=0.7215
+    pt 10: logM1=6.0190, logM2=0.9214, a=0.8683, p0=9.7718, e0=0.4161 | ld=5.2193 | dist=0.3922
+    >> Closest point: pt 2: logM1=6.0825, logM2=0.9978, a=0.6149, p0=9.3750, e0=0.4216 | ld=5.5426 | dist=0.2161
+Generating Averages Plot (Strict Range): corner_top_n_averages_sobol.png...
+
+Task complete. All plots have been locked to the strict coordinate ranges.
+Job completed at Tue Jul 21 03:27:43 PM +08 2026
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+			Resource Usage on 2026-07-21 15:27:44.714615:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	JobId: 536976.hopper-m-02
+	Project: CFP03-CF-051
+	Exit Status: 0
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	NCPUs: Requested(12), Used(12)
+	CPU Time Used: 00:00:12
+	Memory: Requested(225gb), Used(237584kb)
+	Vmem Used: 1539840kb
+	Walltime: Requested(01:00:00), Used(00:00:27)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	Execution Nodes Used: (hopper-16:ncpus=12:ngpus=1:mem=235929600kb)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	No GPU-related information available for this job.

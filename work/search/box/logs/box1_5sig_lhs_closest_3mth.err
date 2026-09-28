@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "/nfs/home/svu/e1498138/emri_search/work/search/box/box1_lhs_closest.py", line 213, in <module>
+    fig = corner.corner(
+  File "/nfs/home/svu/e1498138/emri_search_uv/.venv/lib64/python3.9/site-packages/corner/corner.py", line 248, in corner
+    return corner_impl(
+  File "/nfs/home/svu/e1498138/emri_search_uv/.venv/lib64/python3.9/site-packages/corner/core.py", line 90, in corner_impl
+    assert xs.shape[0] <= xs.shape[1], (
+AssertionError: I don't believe that you want more dimensions than samples!
+Traceback (most recent call last):
+  File "/nfs/home/svu/e1498138/emri_search/work/search/box/box1_lhs_closest.py", line 213, in <module>
+    fig = corner.corner(
+  File "/nfs/home/svu/e1498138/emri_search_uv/.venv/lib64/python3.9/site-packages/corner/corner.py", line 248, in corner
+    return corner_impl(
+  File "/nfs/home/svu/e1498138/emri_search_uv/.venv/lib64/python3.9/site-packages/corner/core.py", line 90, in corner_impl
+    assert xs.shape[0] <= xs.shape[1], (
+AssertionError: I don't believe that you want more dimensions than samples!

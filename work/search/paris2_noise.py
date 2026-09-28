@@ -21,7 +21,7 @@ cfg_set.set_log_level("info")
 use_gpu = True
 tdi_gen = 1
 dt = 5
-T = 3/12
+T = 12/12
 print(f"Using dt={dt}s, T={T}yr, TDI gen={tdi_gen}")
 
 print('Building ResponseWrapper...')
@@ -138,7 +138,7 @@ print('Done setting up log-likelihood and prior.')
 print('Setting up ParisMC sampler...')
 config = parismc.SamplerConfig(
     merge_confidence=0.9,
-    alpha=int(1e5),      #NOTE: changed  
+    alpha=int(1e5),     
     trail_size=int(1e5),
     boundary_limiting=True,
     use_beta=True,    
@@ -160,12 +160,12 @@ sys.path.insert(0, dir_search)
 ndim = 5
 n_seed = 1  # start already merged
 
-# cov from paris1_noise_f
-paris1_cov = np.array([[ 0.04733625,  0.04034993,  0.00292217, -0.03591503,  0.00689124],
-        [ 0.04034993,  0.22356962,  0.01579661,  0.01887789, -0.02094393],
-        [ 0.00292217,  0.01579661,  0.23289204, -0.00259045,  0.01640477],
-        [-0.03591503,  0.01887789, -0.00259045,  0.26323022, -0.01374274],
-        [ 0.00689124, -0.02094393,  0.01640477, -0.01374274,  0.24157748]])
+# cov from paris1_noise_s12 for paper
+paris1_cov = np.array([[ 0.03499527,  0.03417996, -0.01067811, -0.02816686, -0.00145578],
+        [ 0.03417996,  0.30719298,  0.02276974,  0.01544498, -0.02040223],
+        [-0.01067811,  0.02276974,  0.15139759, -0.0111434 ,  0.00789442],
+        [-0.02816686,  0.01544498, -0.0111434 ,  0.13048487,  0.0077877 ],
+        [-0.00145578, -0.02040223,  0.00789442,  0.0077877 ,  0.21571847]])
 init_cov_list = [paris1_cov / anneal_state['S']]
 
 print('Done setting up initial covariance matrix.')
@@ -182,7 +182,10 @@ sampler = parismc.Sampler(
 print('Done initializing sampler.')
 
 # Start from best fit
-best_fit = [6.1179571 , 1.18952974, 0.78922904, 9.84163333, 0.35247262]
+best_fit = [5.71052516, 0.81798421, 0.94361655, 9.85262151, 0.47007412]
+
+# best_fit = [6.082053681690808, 0.9811954088717246, 0.5829749691715863, 9.788676416934136, 0.41303639255422386]
+# best_fit = [6.1179571 , 1.18952974, 0.78922904, 9.84163333, 0.35247262]
 # best_fit = [6.11830222, 0.98563136, 0.86100312, 8.50850005, 0.41907004]  # paris1 pt8, closest p0
 
 # average of top 10 pts
@@ -248,21 +251,8 @@ def combined_callback(sampler, i):
     if i % 1000 == 0 and i > 0:
         sampler.save_state()
 dir_scratch='/scratch/e1498138/'
-#1  = 3 to 100
-#2 = 0.1 to 30, stuck=10k
-#3 = 0.1 to 30, stuck=[100k,50k,20k,10k,10k,10k], start=pt1
-#4 = same schedule, start=pt8 (closest p0)
-#5=3 to 30
-#6=0.1 to 30, stuck=10
-#7=same as 6 but start at pt8
-#8=3,10, only 5e4 iter
-#9=0.3 to 10
-#10=same as 9 but 0.3 to 30, alpha=1e5
-#11=same as 10 but with pure loglike, alpha = 1e5
-#12=start from avg of top 10 points, alpha=1e5, 3 to 30
-#13=same as 12 but alpha=1e3
-#14 = start from pt 1 insteead, alpha=1e5
-savepath = dir_scratch+'paris2_noise/int_3mth_new_14'
+
+savepath = dir_scratch+'paris2_sobol/int_1'
 
 print('Running sampling...')
 sampler.run_sampling(

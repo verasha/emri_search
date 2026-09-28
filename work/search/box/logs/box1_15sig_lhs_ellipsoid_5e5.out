@@ -1,0 +1,205 @@
+Job ID: 543383.hopper-m-02
+Job name: box1_15sig_lhs_ellipsoid
+Job starts at Sun Jul 26 12:55:00 PM +08 2026
+Using N_sigma=15.0
+dt=5s  T=1.0yr  TDI gen=1
+SNR (rhostat): 4353.0012
+Loading paris4_noise sampler from /scratch/e1498138/paris4_sc/int_1yr_s6/sampler_state.pkl...
+paris4_noise maxld: 858.5097
+paris4_noise maxld point: [5.99582573 0.99810132 0.69144752 9.04888015 0.40169474]
+paris4_noise posterior 1-sigma (diag): [0.00170288 0.00074718 0.00352764 0.02022939 0.00066724]
+Ellipse prior bounds (per-dim sigma, N_sigma=15.0):
+  logm1: [5.97028, 6.02137]  mu=5.99583  sigma=0.00170
+  logm2: [0.99336, 1.00931]  mu=0.99810  sigma=0.00075
+  a: [0.63853, 0.74436]  mu=0.69145  sigma=0.00353
+  p0: [8.74544, 9.35232]  mu=9.04888  sigma=0.02023
+  e0: [0.39169, 0.41170]  mu=0.40169  sigma=0.00067
+Generating 500000 LHS points in 5D Cholesky space...
+LHS points inside unit sphere: 82229 / 500000 (16.4%)
+Evaluating log_density on 82229 points...
+  [500/82229]  elapsed=196s  rate=2.6/s  ETA=32042s
+  [1000/82229]  elapsed=393s  rate=2.5/s  ETA=31900s
+  [1500/82229]  elapsed=589s  rate=2.5/s  ETA=31703s
+  [2000/82229]  elapsed=785s  rate=2.5/s  ETA=31480s
+  [2500/82229]  elapsed=981s  rate=2.5/s  ETA=31279s
+  [3000/82229]  elapsed=1177s  rate=2.5/s  ETA=31087s
+  [3500/82229]  elapsed=1374s  rate=2.5/s  ETA=30897s
+  [4000/82229]  elapsed=1570s  rate=2.5/s  ETA=30702s
+  [4500/82229]  elapsed=1767s  rate=2.5/s  ETA=30521s
+  [5000/82229]  elapsed=1963s  rate=2.5/s  ETA=30315s
+  [5500/82229]  elapsed=2159s  rate=2.5/s  ETA=30122s
+  [6000/82229]  elapsed=2356s  rate=2.5/s  ETA=29932s
+  [6500/82229]  elapsed=2552s  rate=2.5/s  ETA=29733s
+  [7000/82229]  elapsed=2748s  rate=2.5/s  ETA=29537s
+  [7500/82229]  elapsed=2944s  rate=2.5/s  ETA=29335s
+  [8000/82229]  elapsed=3141s  rate=2.5/s  ETA=29143s
+  [8500/82229]  elapsed=3337s  rate=2.5/s  ETA=28949s
+  [9000/82229]  elapsed=3533s  rate=2.5/s  ETA=28750s
+  [9500/82229]  elapsed=3730s  rate=2.5/s  ETA=28559s
+  [10000/82229]  elapsed=3928s  rate=2.5/s  ETA=28369s
+  [10500/82229]  elapsed=4125s  rate=2.5/s  ETA=28177s
+  [11000/82229]  elapsed=4321s  rate=2.5/s  ETA=27979s
+  [11500/82229]  elapsed=4519s  rate=2.5/s  ETA=27791s
+  [12000/82229]  elapsed=4716s  rate=2.5/s  ETA=27601s
+  [12500/82229]  elapsed=4914s  rate=2.5/s  ETA=27410s
+  [13000/82229]  elapsed=5112s  rate=2.5/s  ETA=27223s
+  [13500/82229]  elapsed=5309s  rate=2.5/s  ETA=27029s
+  [14000/82229]  elapsed=5505s  rate=2.5/s  ETA=26830s
+  [14500/82229]  elapsed=5702s  rate=2.5/s  ETA=26634s
+  [15000/82229]  elapsed=5898s  rate=2.5/s  ETA=26432s
+  [15500/82229]  elapsed=6093s  rate=2.5/s  ETA=26232s
+  [16000/82229]  elapsed=6289s  rate=2.5/s  ETA=26031s
+  [16500/82229]  elapsed=6485s  rate=2.5/s  ETA=25832s
+  [17000/82229]  elapsed=6681s  rate=2.5/s  ETA=25635s
+  [17500/82229]  elapsed=6878s  rate=2.5/s  ETA=25441s
+  [18000/82229]  elapsed=7074s  rate=2.5/s  ETA=25242s
+  [18500/82229]  elapsed=7270s  rate=2.5/s  ETA=25045s
+  [19000/82229]  elapsed=7467s  rate=2.5/s  ETA=24848s
+  [19500/82229]  elapsed=7664s  rate=2.5/s  ETA=24653s
+  [20000/82229]  elapsed=7860s  rate=2.5/s  ETA=24457s
+  [20500/82229]  elapsed=8056s  rate=2.5/s  ETA=24258s
+  [21000/82229]  elapsed=8251s  rate=2.5/s  ETA=24058s
+  [21500/82229]  elapsed=8447s  rate=2.5/s  ETA=23860s
+  [22000/82229]  elapsed=8645s  rate=2.5/s  ETA=23666s
+  [22500/82229]  elapsed=8842s  rate=2.5/s  ETA=23472s
+  [23000/82229]  elapsed=9038s  rate=2.5/s  ETA=23275s
+  [23500/82229]  elapsed=9234s  rate=2.5/s  ETA=23078s
+  [24000/82229]  elapsed=9430s  rate=2.5/s  ETA=22880s
+  [24500/82229]  elapsed=9626s  rate=2.5/s  ETA=22682s
+  [25000/82229]  elapsed=9822s  rate=2.5/s  ETA=22485s
+  [25500/82229]  elapsed=10019s  rate=2.5/s  ETA=22289s
+  [26000/82229]  elapsed=10218s  rate=2.5/s  ETA=22098s
+  [26500/82229]  elapsed=10414s  rate=2.5/s  ETA=21901s
+  [27000/82229]  elapsed=10611s  rate=2.5/s  ETA=21704s
+  [27500/82229]  elapsed=10806s  rate=2.5/s  ETA=21506s
+  [28000/82229]  elapsed=11003s  rate=2.5/s  ETA=21310s
+  [28500/82229]  elapsed=11199s  rate=2.5/s  ETA=21112s
+  [29000/82229]  elapsed=11396s  rate=2.5/s  ETA=20917s
+  [29500/82229]  elapsed=11593s  rate=2.5/s  ETA=20722s
+  [30000/82229]  elapsed=11794s  rate=2.5/s  ETA=20533s
+  [30500/82229]  elapsed=11996s  rate=2.5/s  ETA=20345s
+  [31000/82229]  elapsed=12195s  rate=2.5/s  ETA=20152s
+  [31500/82229]  elapsed=12392s  rate=2.5/s  ETA=19956s
+  [32000/82229]  elapsed=12588s  rate=2.5/s  ETA=19760s
+  [32500/82229]  elapsed=12785s  rate=2.5/s  ETA=19563s
+  [33000/82229]  elapsed=12983s  rate=2.5/s  ETA=19368s
+  [33500/82229]  elapsed=13179s  rate=2.5/s  ETA=19170s
+  [34000/82229]  elapsed=13375s  rate=2.5/s  ETA=18972s
+  [34500/82229]  elapsed=13570s  rate=2.5/s  ETA=18774s
+  [35000/82229]  elapsed=13766s  rate=2.5/s  ETA=18576s
+  [35500/82229]  elapsed=13963s  rate=2.5/s  ETA=18379s
+  [36000/82229]  elapsed=14159s  rate=2.5/s  ETA=18182s
+  [36500/82229]  elapsed=14355s  rate=2.5/s  ETA=17984s
+  [37000/82229]  elapsed=14553s  rate=2.5/s  ETA=17789s
+  [37500/82229]  elapsed=14749s  rate=2.5/s  ETA=17593s
+  [38000/82229]  elapsed=14947s  rate=2.5/s  ETA=17397s
+  [38500/82229]  elapsed=15143s  rate=2.5/s  ETA=17200s
+  [39000/82229]  elapsed=15339s  rate=2.5/s  ETA=17002s
+  [39500/82229]  elapsed=15535s  rate=2.5/s  ETA=16805s
+  [40000/82229]  elapsed=15731s  rate=2.5/s  ETA=16607s
+  [40500/82229]  elapsed=15927s  rate=2.5/s  ETA=16411s
+  [41000/82229]  elapsed=16124s  rate=2.5/s  ETA=16214s
+  [41500/82229]  elapsed=16321s  rate=2.5/s  ETA=16018s
+  [42000/82229]  elapsed=16517s  rate=2.5/s  ETA=15821s
+  [42500/82229]  elapsed=16713s  rate=2.5/s  ETA=15623s
+  [43000/82229]  elapsed=16909s  rate=2.5/s  ETA=15426s
+  [43500/82229]  elapsed=17105s  rate=2.5/s  ETA=15229s
+  [44000/82229]  elapsed=17302s  rate=2.5/s  ETA=15032s
+  [44500/82229]  elapsed=17497s  rate=2.5/s  ETA=14835s
+  [45000/82229]  elapsed=17693s  rate=2.5/s  ETA=14638s
+  [45500/82229]  elapsed=17889s  rate=2.5/s  ETA=14441s
+  [46000/82229]  elapsed=18086s  rate=2.5/s  ETA=14245s
+  [46500/82229]  elapsed=18283s  rate=2.5/s  ETA=14048s
+  [47000/82229]  elapsed=18479s  rate=2.5/s  ETA=13851s
+  [47500/82229]  elapsed=18675s  rate=2.5/s  ETA=13654s
+  [48000/82229]  elapsed=18872s  rate=2.5/s  ETA=13458s
+  [48500/82229]  elapsed=19069s  rate=2.5/s  ETA=13261s
+  [49000/82229]  elapsed=19265s  rate=2.5/s  ETA=13065s
+  [49500/82229]  elapsed=19461s  rate=2.5/s  ETA=12868s
+  [50000/82229]  elapsed=19658s  rate=2.5/s  ETA=12671s
+  [50500/82229]  elapsed=19854s  rate=2.5/s  ETA=12474s
+  [51000/82229]  elapsed=20050s  rate=2.5/s  ETA=12277s
+  [51500/82229]  elapsed=20246s  rate=2.5/s  ETA=12080s
+  [52000/82229]  elapsed=20442s  rate=2.5/s  ETA=11884s
+  [52500/82229]  elapsed=20638s  rate=2.5/s  ETA=11687s
+  [53000/82229]  elapsed=20834s  rate=2.5/s  ETA=11490s
+  [53500/82229]  elapsed=21030s  rate=2.5/s  ETA=11293s
+  [54000/82229]  elapsed=21225s  rate=2.5/s  ETA=11096s
+  [54500/82229]  elapsed=21421s  rate=2.5/s  ETA=10899s
+  [55000/82229]  elapsed=21618s  rate=2.5/s  ETA=10702s
+  [55500/82229]  elapsed=21814s  rate=2.5/s  ETA=10506s
+  [56000/82229]  elapsed=22010s  rate=2.5/s  ETA=10309s
+  [56500/82229]  elapsed=22206s  rate=2.5/s  ETA=10112s
+  [57000/82229]  elapsed=22402s  rate=2.5/s  ETA=9915s
+  [57500/82229]  elapsed=22598s  rate=2.5/s  ETA=9719s
+  [58000/82229]  elapsed=22795s  rate=2.5/s  ETA=9522s
+  [58500/82229]  elapsed=22991s  rate=2.5/s  ETA=9326s
+  [59000/82229]  elapsed=23186s  rate=2.5/s  ETA=9129s
+  [59500/82229]  elapsed=23382s  rate=2.5/s  ETA=8932s
+  [60000/82229]  elapsed=23578s  rate=2.5/s  ETA=8735s
+  [60500/82229]  elapsed=23775s  rate=2.5/s  ETA=8539s
+  [61000/82229]  elapsed=23974s  rate=2.5/s  ETA=8343s
+  [61500/82229]  elapsed=24170s  rate=2.5/s  ETA=8147s
+  [62000/82229]  elapsed=24366s  rate=2.5/s  ETA=7950s
+  [62500/82229]  elapsed=24562s  rate=2.5/s  ETA=7753s
+  [63000/82229]  elapsed=24760s  rate=2.5/s  ETA=7557s
+  [63500/82229]  elapsed=24955s  rate=2.5/s  ETA=7360s
+  [64000/82229]  elapsed=25151s  rate=2.5/s  ETA=7164s
+  [64500/82229]  elapsed=25348s  rate=2.5/s  ETA=6967s
+  [65000/82229]  elapsed=25543s  rate=2.5/s  ETA=6770s
+  [65500/82229]  elapsed=25741s  rate=2.5/s  ETA=6574s
+  [66000/82229]  elapsed=25938s  rate=2.5/s  ETA=6378s
+  [66500/82229]  elapsed=26134s  rate=2.5/s  ETA=6181s
+  [67000/82229]  elapsed=26329s  rate=2.5/s  ETA=5985s
+  [67500/82229]  elapsed=26524s  rate=2.5/s  ETA=5788s
+  [68000/82229]  elapsed=26719s  rate=2.5/s  ETA=5591s
+  [68500/82229]  elapsed=26916s  rate=2.5/s  ETA=5395s
+  [69000/82229]  elapsed=27113s  rate=2.5/s  ETA=5198s
+  [69500/82229]  elapsed=27310s  rate=2.5/s  ETA=5002s
+  [70000/82229]  elapsed=27508s  rate=2.5/s  ETA=4806s
+  [70500/82229]  elapsed=27699s  rate=2.5/s  ETA=4608s
+  [71000/82229]  elapsed=27892s  rate=2.5/s  ETA=4411s
+  [71500/82229]  elapsed=28083s  rate=2.5/s  ETA=4214s
+  [72000/82229]  elapsed=28275s  rate=2.5/s  ETA=4017s
+  [72500/82229]  elapsed=28465s  rate=2.5/s  ETA=3820s
+  [73000/82229]  elapsed=28656s  rate=2.5/s  ETA=3623s
+  [73500/82229]  elapsed=28848s  rate=2.5/s  ETA=3426s
+  [74000/82229]  elapsed=29040s  rate=2.5/s  ETA=3229s
+  [74500/82229]  elapsed=29233s  rate=2.5/s  ETA=3033s
+  [75000/82229]  elapsed=29426s  rate=2.5/s  ETA=2836s
+  [75500/82229]  elapsed=29619s  rate=2.5/s  ETA=2640s
+  [76000/82229]  elapsed=29810s  rate=2.5/s  ETA=2443s
+  [76500/82229]  elapsed=30002s  rate=2.5/s  ETA=2247s
+  [77000/82229]  elapsed=30194s  rate=2.6/s  ETA=2050s
+  [77500/82229]  elapsed=30385s  rate=2.6/s  ETA=1854s
+  [78000/82229]  elapsed=30576s  rate=2.6/s  ETA=1658s
+  [78500/82229]  elapsed=30766s  rate=2.6/s  ETA=1461s
+  [79000/82229]  elapsed=30957s  rate=2.6/s  ETA=1265s
+  [79500/82229]  elapsed=31147s  rate=2.6/s  ETA=1069s
+  [80000/82229]  elapsed=31339s  rate=2.6/s  ETA=873s
+  [80500/82229]  elapsed=31530s  rate=2.6/s  ETA=677s
+  [81000/82229]  elapsed=31723s  rate=2.6/s  ETA=481s
+  [81500/82229]  elapsed=31914s  rate=2.6/s  ETA=285s
+  [82000/82229]  elapsed=32106s  rate=2.6/s  ETA=90s
+Done. 82229 evals in 32194s (2.6/s)
+Finite log_densities: 82229 / 82229
+Max log_density: 18.382601
+Mean log_density (finite): 0.032440
+Saved to /scratch/e1498138/box/15sig_5e5_ellipsoid/lhs_f.pkl
+Job completed at Sun Jul 26 09:53:06 PM +08 2026
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+			Resource Usage on 2026-07-26 21:53:07.089327:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	JobId: 543383.hopper-m-02
+	Project: CFP03-CF-051
+	Exit Status: 0
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	NCPUs: Requested(12), Used(12)
+	CPU Time Used: 08:22:12
+	Memory: Requested(225gb), Used(11220272kb)
+	Vmem Used: 30915076kb
+	Walltime: Requested(24:00:00), Used(08:58:08)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	Execution Nodes Used: (hopper-18:ngpus=1:ncpus=12:mem=235929600kb)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	No GPU-related information available for this job.

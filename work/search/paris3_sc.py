@@ -20,8 +20,8 @@ cfg_set.set_log_level("info")
 use_gpu = True
 tdi_gen = 1
 dt = 5
-T = 12/12
-N_SEGS = 6
+T = 8/12
+N_SEGS = 3
 print(f"Using dt={dt}s, T={T}yr, TDI gen={tdi_gen}, N_segs={N_SEGS}")
 
 print('Building ResponseWrapper...')
@@ -34,17 +34,18 @@ gwf = GravWaveAnalysis(T=T, dt=dt, use_gpu=use_gpu, tdi_gen=tdi_gen)
 m1 = 1e6
 m2 = 1e1
 a = 0.7
-p0 = 9
+p0 = 7.7 #NOTE
 e0 = 0.4
 xI0 = 1.0
-dist = 4.5
+dist =  6 #NOTE: 
 qS = np.pi
 phiS = 0.
-qK = 0.
+qK =  0.
 phiK = 0.
 Phi_phi0 = 0.4
 Phi_theta0 = 0.0
-Phi_r0 = 0.5
+Phi_r0 = 0.5                                                                                                                         
+             
 
 params_star = [m1, m2, a, p0, e0, xI0, dist, qS, phiS, qK, phiK, Phi_phi0, Phi_theta0, Phi_r0]
 param_true = [np.log10(m1), np.log10(m2), a, p0, e0]
@@ -86,11 +87,11 @@ def log_density(params):
 
 
 def prior_transform(u):
-    logm1lim = [5.94889, 6.03054]
-    logm2lim = [0.99336, 1.13038]
-    alim = [0.62652, 0.99000]
-    p0lim = [8.74104, 9.68094]
-    e0lim = [0.37427, 0.41300]
+    logm1lim = [5.8725, 6.1452]
+    logm2lim = [0.9507, 1.0508]
+    alim = [0.6538, 0.7850] 
+    p0lim = [7.2442, 7.9415]
+    e0lim = [0.3563, 0.4434]
     t = np.zeros_like(u)
     t[:, 0] = (logm1lim[1] - logm1lim[0]) * u[:, 0] + logm1lim[0]
     t[:, 1] = (logm2lim[1] - logm2lim[0]) * u[:, 1] + logm2lim[0]
@@ -101,11 +102,11 @@ def prior_transform(u):
 
 
 def inverse_prior_transform(params):
-    logm1lim = [5.94889, 6.03054]
-    logm2lim = [0.99336, 1.13038]
-    alim = [0.62652, 0.99000]
-    p0lim = [8.74104, 9.68094]
-    e0lim = [0.37427, 0.41300]
+    logm1lim = [5.8725, 6.1452]
+    logm2lim = [0.9507, 1.0508]
+    alim = [0.6538, 0.7850] 
+    p0lim = [7.2442, 7.9415]
+    e0lim = [0.3563, 0.4434]
     params = np.asarray(params)
     u = np.zeros_like(params)
     u[:, 0] = (params[:, 0] - logm1lim[0]) / (logm1lim[1] - logm1lim[0])
@@ -147,19 +148,19 @@ sampler = parismc.Sampler(
 print('Getting LHS points...')
 dir_scratch = '/scratch/e1498138'
 #NOTE: change this if needed
-lhs_path = '/scratch/e1498138/paris3_noise/lhs_s6.pkl'
+# GOD I FORGOT TO CHANGE THIS  TO s6 WHEN I WROTE THE FILE sry
+lhs_path = '/scratch/e1498138/paper/stage2/lhs_s3_snr30/final.pkl'
 
 with open(lhs_path, 'rb') as f:
     data = pickle.load(f)
-phys_pts = data['lhs_phys']
-det_snr  = data['log_densities']
+phys_pts, det_snr = data
 
 valid = np.isfinite(det_snr)
 external_lhs_points = inverse_prior_transform(phys_pts[valid])
 external_lhs_log_densities = det_snr[valid]
 print(f'Loaded {valid.sum()} / {len(det_snr)} finite LHS evaluations.')
 
-savepath = dir_scratch + f'/paris3_sc/int_1yr_s{N_SEGS}'
+savepath = dir_scratch + f'/paper/stage4/int_1yr_s{N_SEGS}'
 
 
 def callback(sampler, i):

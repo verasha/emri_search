@@ -1,0 +1,261 @@
+Job ID: 571925.hopper-m-02
+Job name: map_mojito_g_greedy
+Job starts at Tue Aug 18 12:38:05 PM +08 2026
+Using dt=5s, T=1.0yr, TDI gen=1
+Building ResponseWrapper...
+Building GravWaveAnalysis...
+Generating data (signal + seed=42 colored noise) and pure-f-stat LogLike...
+Data generated.
+lnL at injected (true) params: 100.326
+
+Running greedy hill-climb for 20000 iterations...
+  iter=   200  max_logden=100.326057  accepts=0  step(diag)=[0.0001 0.001  0.0001 0.0001 0.0001 0.01   0.001  0.001  0.001  0.001
+ 0.001  0.001  0.001 ]  elapsed=104s
+  iter=   400  max_logden=100.326057  accepts=0  step(diag)=[0.0001 0.001  0.0001 0.0001 0.0001 0.01   0.001  0.001  0.001  0.001
+ 0.001  0.001  0.001 ]  elapsed=207s
+  iter=   600  max_logden=100.326057  accepts=0  step(diag)=[5.e-05 5.e-04 5.e-05 5.e-05 5.e-05 5.e-03 5.e-04 5.e-04 5.e-04 5.e-04
+ 5.e-04 5.e-04 5.e-04]  elapsed=311s
+  iter=   800  max_logden=100.326057  accepts=0  step(diag)=[5.e-05 5.e-04 5.e-05 5.e-05 5.e-05 5.e-03 5.e-04 5.e-04 5.e-04 5.e-04
+ 5.e-04 5.e-04 5.e-04]  elapsed=415s
+  iter=  1000  max_logden=100.326057  accepts=0  step(diag)=[2.5e-05 2.5e-04 2.5e-05 2.5e-05 2.5e-05 2.5e-03 2.5e-04 2.5e-04 2.5e-04
+ 2.5e-04 2.5e-04 2.5e-04 2.5e-04]  elapsed=519s
+  iter=  1200  max_logden=100.326057  accepts=0  step(diag)=[2.5e-05 2.5e-04 2.5e-05 2.5e-05 2.5e-05 2.5e-03 2.5e-04 2.5e-04 2.5e-04
+ 2.5e-04 2.5e-04 2.5e-04 2.5e-04]  elapsed=623s
+  iter=  1400  max_logden=100.326057  accepts=0  step(diag)=[2.5e-05 2.5e-04 2.5e-05 2.5e-05 2.5e-05 2.5e-03 2.5e-04 2.5e-04 2.5e-04
+ 2.5e-04 2.5e-04 2.5e-04 2.5e-04]  elapsed=727s
+  iter=  1600  max_logden=100.326057  accepts=0  step(diag)=[1.25e-05 1.25e-04 1.25e-05 1.25e-05 1.25e-05 1.25e-03 1.25e-04 1.25e-04
+ 1.25e-04 1.25e-04 1.25e-04 1.25e-04 1.25e-04]  elapsed=830s
+  iter=  1800  max_logden=100.326057  accepts=0  step(diag)=[1.25e-05 1.25e-04 1.25e-05 1.25e-05 1.25e-05 1.25e-03 1.25e-04 1.25e-04
+ 1.25e-04 1.25e-04 1.25e-04 1.25e-04 1.25e-04]  elapsed=934s
+  iter=  2000  max_logden=100.326057  accepts=0  step(diag)=[6.25e-06 6.25e-05 6.25e-06 6.25e-06 6.25e-06 6.25e-04 6.25e-05 6.25e-05
+ 6.25e-05 6.25e-05 6.25e-05 6.25e-05 6.25e-05]  elapsed=1038s
+  iter=  2200  max_logden=100.326057  accepts=0  step(diag)=[6.25e-06 6.25e-05 6.25e-06 6.25e-06 6.25e-06 6.25e-04 6.25e-05 6.25e-05
+ 6.25e-05 6.25e-05 6.25e-05 6.25e-05 6.25e-05]  elapsed=1141s
+  iter=  2400  max_logden=100.326057  accepts=0  step(diag)=[6.25e-06 6.25e-05 6.25e-06 6.25e-06 6.25e-06 6.25e-04 6.25e-05 6.25e-05
+ 6.25e-05 6.25e-05 6.25e-05 6.25e-05 6.25e-05]  elapsed=1245s
+  iter=  2600  max_logden=100.326057  accepts=0  step(diag)=[3.125e-06 3.125e-05 3.125e-06 3.125e-06 3.125e-06 3.125e-04 3.125e-05
+ 3.125e-05 3.125e-05 3.125e-05 3.125e-05 3.125e-05 3.125e-05]  elapsed=1350s
+  iter=  2800  max_logden=100.326057  accepts=0  step(diag)=[3.125e-06 3.125e-05 3.125e-06 3.125e-06 3.125e-06 3.125e-04 3.125e-05
+ 3.125e-05 3.125e-05 3.125e-05 3.125e-05 3.125e-05 3.125e-05]  elapsed=1454s
+  iter=  3000  max_logden=100.326057  accepts=0  step(diag)=[1.5625e-06 1.5625e-05 1.5625e-06 1.5625e-06 1.5625e-06 1.5625e-04
+ 1.5625e-05 1.5625e-05 1.5625e-05 1.5625e-05 1.5625e-05 1.5625e-05
+ 1.5625e-05]  elapsed=1558s
+  iter=  3200  max_logden=100.326057  accepts=0  step(diag)=[1.5625e-06 1.5625e-05 1.5625e-06 1.5625e-06 1.5625e-06 1.5625e-04
+ 1.5625e-05 1.5625e-05 1.5625e-05 1.5625e-05 1.5625e-05 1.5625e-05
+ 1.5625e-05]  elapsed=1662s
+  iter=  3400  max_logden=100.326057  accepts=0  step(diag)=[1.5625e-06 1.5625e-05 1.5625e-06 1.5625e-06 1.5625e-06 1.5625e-04
+ 1.5625e-05 1.5625e-05 1.5625e-05 1.5625e-05 1.5625e-05 1.5625e-05
+ 1.5625e-05]  elapsed=1765s
+  iter=  3600  max_logden=100.326057  accepts=0  step(diag)=[7.8125e-07 7.8125e-06 7.8125e-07 7.8125e-07 7.8125e-07 7.8125e-05
+ 7.8125e-06 7.8125e-06 7.8125e-06 7.8125e-06 7.8125e-06 7.8125e-06
+ 7.8125e-06]  elapsed=1869s
+  iter=  3800  max_logden=100.326057  accepts=0  step(diag)=[7.8125e-07 7.8125e-06 7.8125e-07 7.8125e-07 7.8125e-07 7.8125e-05
+ 7.8125e-06 7.8125e-06 7.8125e-06 7.8125e-06 7.8125e-06 7.8125e-06
+ 7.8125e-06]  elapsed=1973s
+  iter=  4000  max_logden=100.326057  accepts=0  step(diag)=[3.90625e-07 3.90625e-06 3.90625e-07 3.90625e-07 3.90625e-07 3.90625e-05
+ 3.90625e-06 3.90625e-06 3.90625e-06 3.90625e-06 3.90625e-06 3.90625e-06
+ 3.90625e-06]  elapsed=2077s
+  iter=  4200  max_logden=100.326057  accepts=0  step(diag)=[3.90625e-07 3.90625e-06 3.90625e-07 3.90625e-07 3.90625e-07 3.90625e-05
+ 3.90625e-06 3.90625e-06 3.90625e-06 3.90625e-06 3.90625e-06 3.90625e-06
+ 3.90625e-06]  elapsed=2181s
+  iter=  4400  max_logden=100.326057  accepts=0  step(diag)=[3.90625e-07 3.90625e-06 3.90625e-07 3.90625e-07 3.90625e-07 3.90625e-05
+ 3.90625e-06 3.90625e-06 3.90625e-06 3.90625e-06 3.90625e-06 3.90625e-06
+ 3.90625e-06]  elapsed=2285s
+  iter=  4600  max_logden=100.326057  accepts=0  step(diag)=[1.953125e-07 1.953125e-06 1.953125e-07 1.953125e-07 1.953125e-07
+ 1.953125e-05 1.953125e-06 1.953125e-06 1.953125e-06 1.953125e-06
+ 1.953125e-06 1.953125e-06 1.953125e-06]  elapsed=2389s
+  iter=  4800  max_logden=100.326057  accepts=0  step(diag)=[1.953125e-07 1.953125e-06 1.953125e-07 1.953125e-07 1.953125e-07
+ 1.953125e-05 1.953125e-06 1.953125e-06 1.953125e-06 1.953125e-06
+ 1.953125e-06 1.953125e-06 1.953125e-06]  elapsed=2493s
+  iter=  5000  max_logden=100.326057  accepts=0  step(diag)=[1.e-07 1.e-06 1.e-07 1.e-07 1.e-07 1.e-05 1.e-06 1.e-06 1.e-06 1.e-06
+ 1.e-06 1.e-06 1.e-06]  elapsed=2595s
+  iter=  5200  max_logden=100.326057  accepts=0  step(diag)=[1.e-07 1.e-06 1.e-07 1.e-07 1.e-07 1.e-05 1.e-06 1.e-06 1.e-06 1.e-06
+ 1.e-06 1.e-06 1.e-06]  elapsed=2699s
+  iter=  5400  max_logden=100.326057  accepts=0  step(diag)=[1.e-07 1.e-06 1.e-07 1.e-07 1.e-07 1.e-05 1.e-06 1.e-06 1.e-06 1.e-06
+ 1.e-06 1.e-06 1.e-06]  elapsed=2803s
+  iter=  5600  max_logden=100.326057  accepts=0  step(diag)=[1.e-07 1.e-06 1.e-07 1.e-07 1.e-07 1.e-05 1.e-06 1.e-06 1.e-06 1.e-06
+ 1.e-06 1.e-06 1.e-06]  elapsed=2907s
+  iter=  5800  max_logden=100.326057  accepts=0  step(diag)=[1.e-07 1.e-06 1.e-07 1.e-07 1.e-07 1.e-05 1.e-06 1.e-06 1.e-06 1.e-06
+ 1.e-06 1.e-06 1.e-06]  elapsed=3011s
+  iter=  6000  max_logden=100.336366  accepts=2  step(diag)=[1.e-07 1.e-06 1.e-07 1.e-07 1.e-07 1.e-05 1.e-06 1.e-06 1.e-06 1.e-06
+ 1.e-06 1.e-06 1.e-06]  elapsed=3115s
+  iter=  6200  max_logden=100.338227  accepts=3  step(diag)=[1.e-07 1.e-06 1.e-07 1.e-07 1.e-07 1.e-05 1.e-06 1.e-06 1.e-06 1.e-06
+ 1.e-06 1.e-06 1.e-06]  elapsed=3219s
+  iter=  6400  max_logden=100.338227  accepts=3  step(diag)=[1.e-07 1.e-06 1.e-07 1.e-07 1.e-07 1.e-05 1.e-06 1.e-06 1.e-06 1.e-06
+ 1.e-06 1.e-06 1.e-06]  elapsed=3322s
+  iter=  6600  max_logden=100.338227  accepts=3  step(diag)=[1.e-07 1.e-06 1.e-07 1.e-07 1.e-07 1.e-05 1.e-06 1.e-06 1.e-06 1.e-06
+ 1.e-06 1.e-06 1.e-06]  elapsed=3426s
+  iter=  6800  max_logden=100.338227  accepts=3  step(diag)=[1.e-07 1.e-06 1.e-07 1.e-07 1.e-07 1.e-05 1.e-06 1.e-06 1.e-06 1.e-06
+ 1.e-06 1.e-06 1.e-06]  elapsed=3530s
+  iter=  7000  max_logden=100.338231  accepts=4  step(diag)=[1.e-07 1.e-06 1.e-07 1.e-07 1.e-07 1.e-05 1.e-06 1.e-06 1.e-06 1.e-06
+ 1.e-06 1.e-06 1.e-06]  elapsed=3634s
+  iter=  7200  max_logden=100.338231  accepts=4  step(diag)=[1.e-07 1.e-06 1.e-07 1.e-07 1.e-07 1.e-05 1.e-06 1.e-06 1.e-06 1.e-06
+ 1.e-06 1.e-06 1.e-06]  elapsed=3737s
+  iter=  7400  max_logden=100.338231  accepts=4  step(diag)=[1.e-07 1.e-06 1.e-07 1.e-07 1.e-07 1.e-05 1.e-06 1.e-06 1.e-06 1.e-06
+ 1.e-06 1.e-06 1.e-06]  elapsed=3841s
+  iter=  7600  max_logden=100.338231  accepts=4  step(diag)=[1.e-07 1.e-06 1.e-07 1.e-07 1.e-07 1.e-05 1.e-06 1.e-06 1.e-06 1.e-06
+ 1.e-06 1.e-06 1.e-06]  elapsed=3945s
+  iter=  7800  max_logden=100.338231  accepts=4  step(diag)=[1.e-07 1.e-06 1.e-07 1.e-07 1.e-07 1.e-05 1.e-06 1.e-06 1.e-06 1.e-06
+ 1.e-06 1.e-06 1.e-06]  elapsed=4048s
+  iter=  8000  max_logden=100.338231  accepts=4  step(diag)=[1.e-07 1.e-06 1.e-07 1.e-07 1.e-07 1.e-05 1.e-06 1.e-06 1.e-06 1.e-06
+ 1.e-06 1.e-06 1.e-06]  elapsed=4152s
+  iter=  8200  max_logden=100.338231  accepts=4  step(diag)=[1.e-07 1.e-06 1.e-07 1.e-07 1.e-07 1.e-05 1.e-06 1.e-06 1.e-06 1.e-06
+ 1.e-06 1.e-06 1.e-06]  elapsed=4254s
+  iter=  8400  max_logden=100.338231  accepts=4  step(diag)=[1.e-07 1.e-06 1.e-07 1.e-07 1.e-07 1.e-05 1.e-06 1.e-06 1.e-06 1.e-06
+ 1.e-06 1.e-06 1.e-06]  elapsed=4354s
+  iter=  8600  max_logden=100.338231  accepts=4  step(diag)=[1.e-07 1.e-06 1.e-07 1.e-07 1.e-07 1.e-05 1.e-06 1.e-06 1.e-06 1.e-06
+ 1.e-06 1.e-06 1.e-06]  elapsed=4454s
+  iter=  8800  max_logden=100.338231  accepts=4  step(diag)=[1.e-07 1.e-06 1.e-07 1.e-07 1.e-07 1.e-05 1.e-06 1.e-06 1.e-06 1.e-06
+ 1.e-06 1.e-06 1.e-06]  elapsed=4554s
+  iter=  9000  max_logden=100.338231  accepts=4  step(diag)=[1.e-07 1.e-06 1.e-07 1.e-07 1.e-07 1.e-05 1.e-06 1.e-06 1.e-06 1.e-06
+ 1.e-06 1.e-06 1.e-06]  elapsed=4654s
+  iter=  9200  max_logden=100.338231  accepts=4  step(diag)=[1.e-07 1.e-06 1.e-07 1.e-07 1.e-07 1.e-05 1.e-06 1.e-06 1.e-06 1.e-06
+ 1.e-06 1.e-06 1.e-06]  elapsed=4753s
+  iter=  9400  max_logden=100.338231  accepts=4  step(diag)=[1.e-07 1.e-06 1.e-07 1.e-07 1.e-07 1.e-05 1.e-06 1.e-06 1.e-06 1.e-06
+ 1.e-06 1.e-06 1.e-06]  elapsed=4852s
+  iter=  9600  max_logden=100.338231  accepts=4  step(diag)=[1.e-07 1.e-06 1.e-07 1.e-07 1.e-07 1.e-05 1.e-06 1.e-06 1.e-06 1.e-06
+ 1.e-06 1.e-06 1.e-06]  elapsed=4952s
+  iter=  9800  max_logden=100.338231  accepts=4  step(diag)=[1.e-07 1.e-06 1.e-07 1.e-07 1.e-07 1.e-05 1.e-06 1.e-06 1.e-06 1.e-06
+ 1.e-06 1.e-06 1.e-06]  elapsed=5051s
+  iter= 10000  max_logden=100.338231  accepts=4  step(diag)=[1.e-07 1.e-06 1.e-07 1.e-07 1.e-07 1.e-05 1.e-06 1.e-06 1.e-06 1.e-06
+ 1.e-06 1.e-06 1.e-06]  elapsed=5151s
+  iter= 10200  max_logden=100.338231  accepts=4  step(diag)=[1.e-07 1.e-06 1.e-07 1.e-07 1.e-07 1.e-05 1.e-06 1.e-06 1.e-06 1.e-06
+ 1.e-06 1.e-06 1.e-06]  elapsed=5251s
+  iter= 10400  max_logden=100.338231  accepts=4  step(diag)=[1.e-07 1.e-06 1.e-07 1.e-07 1.e-07 1.e-05 1.e-06 1.e-06 1.e-06 1.e-06
+ 1.e-06 1.e-06 1.e-06]  elapsed=5350s
+  iter= 10600  max_logden=100.338231  accepts=4  step(diag)=[1.e-07 1.e-06 1.e-07 1.e-07 1.e-07 1.e-05 1.e-06 1.e-06 1.e-06 1.e-06
+ 1.e-06 1.e-06 1.e-06]  elapsed=5450s
+  iter= 10800  max_logden=100.338231  accepts=4  step(diag)=[1.e-07 1.e-06 1.e-07 1.e-07 1.e-07 1.e-05 1.e-06 1.e-06 1.e-06 1.e-06
+ 1.e-06 1.e-06 1.e-06]  elapsed=5550s
+  iter= 11000  max_logden=100.338231  accepts=4  step(diag)=[1.e-07 1.e-06 1.e-07 1.e-07 1.e-07 1.e-05 1.e-06 1.e-06 1.e-06 1.e-06
+ 1.e-06 1.e-06 1.e-06]  elapsed=5649s
+  iter= 11200  max_logden=100.338231  accepts=4  step(diag)=[1.e-07 1.e-06 1.e-07 1.e-07 1.e-07 1.e-05 1.e-06 1.e-06 1.e-06 1.e-06
+ 1.e-06 1.e-06 1.e-06]  elapsed=5748s
+  iter= 11400  max_logden=100.338231  accepts=4  step(diag)=[1.e-07 1.e-06 1.e-07 1.e-07 1.e-07 1.e-05 1.e-06 1.e-06 1.e-06 1.e-06
+ 1.e-06 1.e-06 1.e-06]  elapsed=5848s
+  iter= 11600  max_logden=100.338231  accepts=4  step(diag)=[1.e-07 1.e-06 1.e-07 1.e-07 1.e-07 1.e-05 1.e-06 1.e-06 1.e-06 1.e-06
+ 1.e-06 1.e-06 1.e-06]  elapsed=5947s
+  iter= 11800  max_logden=100.338231  accepts=4  step(diag)=[1.e-07 1.e-06 1.e-07 1.e-07 1.e-07 1.e-05 1.e-06 1.e-06 1.e-06 1.e-06
+ 1.e-06 1.e-06 1.e-06]  elapsed=6047s
+  iter= 12000  max_logden=100.338231  accepts=4  step(diag)=[1.e-07 1.e-06 1.e-07 1.e-07 1.e-07 1.e-05 1.e-06 1.e-06 1.e-06 1.e-06
+ 1.e-06 1.e-06 1.e-06]  elapsed=6146s
+  iter= 12200  max_logden=100.338231  accepts=4  step(diag)=[1.e-07 1.e-06 1.e-07 1.e-07 1.e-07 1.e-05 1.e-06 1.e-06 1.e-06 1.e-06
+ 1.e-06 1.e-06 1.e-06]  elapsed=6247s
+  iter= 12400  max_logden=100.338231  accepts=4  step(diag)=[1.e-07 1.e-06 1.e-07 1.e-07 1.e-07 1.e-05 1.e-06 1.e-06 1.e-06 1.e-06
+ 1.e-06 1.e-06 1.e-06]  elapsed=6348s
+  iter= 12600  max_logden=100.338231  accepts=4  step(diag)=[1.e-07 1.e-06 1.e-07 1.e-07 1.e-07 1.e-05 1.e-06 1.e-06 1.e-06 1.e-06
+ 1.e-06 1.e-06 1.e-06]  elapsed=6448s
+  iter= 12800  max_logden=100.338231  accepts=4  step(diag)=[1.e-07 1.e-06 1.e-07 1.e-07 1.e-07 1.e-05 1.e-06 1.e-06 1.e-06 1.e-06
+ 1.e-06 1.e-06 1.e-06]  elapsed=6547s
+  iter= 13000  max_logden=100.338231  accepts=4  step(diag)=[1.e-07 1.e-06 1.e-07 1.e-07 1.e-07 1.e-05 1.e-06 1.e-06 1.e-06 1.e-06
+ 1.e-06 1.e-06 1.e-06]  elapsed=6646s
+  iter= 13200  max_logden=100.338231  accepts=4  step(diag)=[1.e-07 1.e-06 1.e-07 1.e-07 1.e-07 1.e-05 1.e-06 1.e-06 1.e-06 1.e-06
+ 1.e-06 1.e-06 1.e-06]  elapsed=6745s
+  iter= 13400  max_logden=100.338231  accepts=4  step(diag)=[1.e-07 1.e-06 1.e-07 1.e-07 1.e-07 1.e-05 1.e-06 1.e-06 1.e-06 1.e-06
+ 1.e-06 1.e-06 1.e-06]  elapsed=6844s
+  iter= 13600  max_logden=100.338231  accepts=4  step(diag)=[1.e-07 1.e-06 1.e-07 1.e-07 1.e-07 1.e-05 1.e-06 1.e-06 1.e-06 1.e-06
+ 1.e-06 1.e-06 1.e-06]  elapsed=6943s
+  iter= 13800  max_logden=100.338916  accepts=5  step(diag)=[1.e-07 1.e-06 1.e-07 1.e-07 1.e-07 1.e-05 1.e-06 1.e-06 1.e-06 1.e-06
+ 1.e-06 1.e-06 1.e-06]  elapsed=7043s
+  iter= 14000  max_logden=100.338916  accepts=5  step(diag)=[1.e-07 1.e-06 1.e-07 1.e-07 1.e-07 1.e-05 1.e-06 1.e-06 1.e-06 1.e-06
+ 1.e-06 1.e-06 1.e-06]  elapsed=7143s
+  iter= 14200  max_logden=100.338916  accepts=5  step(diag)=[1.e-07 1.e-06 1.e-07 1.e-07 1.e-07 1.e-05 1.e-06 1.e-06 1.e-06 1.e-06
+ 1.e-06 1.e-06 1.e-06]  elapsed=7242s
+  iter= 14400  max_logden=100.338916  accepts=5  step(diag)=[1.e-07 1.e-06 1.e-07 1.e-07 1.e-07 1.e-05 1.e-06 1.e-06 1.e-06 1.e-06
+ 1.e-06 1.e-06 1.e-06]  elapsed=7341s
+  iter= 14600  max_logden=100.338916  accepts=5  step(diag)=[1.e-07 1.e-06 1.e-07 1.e-07 1.e-07 1.e-05 1.e-06 1.e-06 1.e-06 1.e-06
+ 1.e-06 1.e-06 1.e-06]  elapsed=7439s
+  iter= 14800  max_logden=100.338916  accepts=5  step(diag)=[1.e-07 1.e-06 1.e-07 1.e-07 1.e-07 1.e-05 1.e-06 1.e-06 1.e-06 1.e-06
+ 1.e-06 1.e-06 1.e-06]  elapsed=7538s
+  iter= 15000  max_logden=100.338916  accepts=5  step(diag)=[1.e-07 1.e-06 1.e-07 1.e-07 1.e-07 1.e-05 1.e-06 1.e-06 1.e-06 1.e-06
+ 1.e-06 1.e-06 1.e-06]  elapsed=7638s
+  iter= 15200  max_logden=100.338916  accepts=5  step(diag)=[1.e-07 1.e-06 1.e-07 1.e-07 1.e-07 1.e-05 1.e-06 1.e-06 1.e-06 1.e-06
+ 1.e-06 1.e-06 1.e-06]  elapsed=7737s
+  iter= 15400  max_logden=100.338916  accepts=5  step(diag)=[1.e-07 1.e-06 1.e-07 1.e-07 1.e-07 1.e-05 1.e-06 1.e-06 1.e-06 1.e-06
+ 1.e-06 1.e-06 1.e-06]  elapsed=7837s
+  iter= 15600  max_logden=100.338916  accepts=5  step(diag)=[1.e-07 1.e-06 1.e-07 1.e-07 1.e-07 1.e-05 1.e-06 1.e-06 1.e-06 1.e-06
+ 1.e-06 1.e-06 1.e-06]  elapsed=7936s
+  iter= 15800  max_logden=100.338916  accepts=5  step(diag)=[1.e-07 1.e-06 1.e-07 1.e-07 1.e-07 1.e-05 1.e-06 1.e-06 1.e-06 1.e-06
+ 1.e-06 1.e-06 1.e-06]  elapsed=8034s
+  iter= 16000  max_logden=100.338916  accepts=5  step(diag)=[1.e-07 1.e-06 1.e-07 1.e-07 1.e-07 1.e-05 1.e-06 1.e-06 1.e-06 1.e-06
+ 1.e-06 1.e-06 1.e-06]  elapsed=8133s
+  iter= 16200  max_logden=100.338916  accepts=5  step(diag)=[1.e-07 1.e-06 1.e-07 1.e-07 1.e-07 1.e-05 1.e-06 1.e-06 1.e-06 1.e-06
+ 1.e-06 1.e-06 1.e-06]  elapsed=8232s
+  iter= 16400  max_logden=100.338916  accepts=5  step(diag)=[1.e-07 1.e-06 1.e-07 1.e-07 1.e-07 1.e-05 1.e-06 1.e-06 1.e-06 1.e-06
+ 1.e-06 1.e-06 1.e-06]  elapsed=8330s
+  iter= 16600  max_logden=100.338916  accepts=5  step(diag)=[1.e-07 1.e-06 1.e-07 1.e-07 1.e-07 1.e-05 1.e-06 1.e-06 1.e-06 1.e-06
+ 1.e-06 1.e-06 1.e-06]  elapsed=8429s
+  iter= 16800  max_logden=100.338916  accepts=5  step(diag)=[1.e-07 1.e-06 1.e-07 1.e-07 1.e-07 1.e-05 1.e-06 1.e-06 1.e-06 1.e-06
+ 1.e-06 1.e-06 1.e-06]  elapsed=8530s
+  iter= 17000  max_logden=100.338916  accepts=5  step(diag)=[1.e-07 1.e-06 1.e-07 1.e-07 1.e-07 1.e-05 1.e-06 1.e-06 1.e-06 1.e-06
+ 1.e-06 1.e-06 1.e-06]  elapsed=8629s
+  iter= 17200  max_logden=100.338916  accepts=5  step(diag)=[1.e-07 1.e-06 1.e-07 1.e-07 1.e-07 1.e-05 1.e-06 1.e-06 1.e-06 1.e-06
+ 1.e-06 1.e-06 1.e-06]  elapsed=8729s
+  iter= 17400  max_logden=100.338916  accepts=5  step(diag)=[1.e-07 1.e-06 1.e-07 1.e-07 1.e-07 1.e-05 1.e-06 1.e-06 1.e-06 1.e-06
+ 1.e-06 1.e-06 1.e-06]  elapsed=8828s
+  iter= 17600  max_logden=100.338916  accepts=5  step(diag)=[1.e-07 1.e-06 1.e-07 1.e-07 1.e-07 1.e-05 1.e-06 1.e-06 1.e-06 1.e-06
+ 1.e-06 1.e-06 1.e-06]  elapsed=8927s
+  iter= 17800  max_logden=100.338916  accepts=5  step(diag)=[1.e-07 1.e-06 1.e-07 1.e-07 1.e-07 1.e-05 1.e-06 1.e-06 1.e-06 1.e-06
+ 1.e-06 1.e-06 1.e-06]  elapsed=9027s
+  iter= 18000  max_logden=100.338916  accepts=5  step(diag)=[1.e-07 1.e-06 1.e-07 1.e-07 1.e-07 1.e-05 1.e-06 1.e-06 1.e-06 1.e-06
+ 1.e-06 1.e-06 1.e-06]  elapsed=9126s
+  iter= 18200  max_logden=100.338916  accepts=5  step(diag)=[1.e-07 1.e-06 1.e-07 1.e-07 1.e-07 1.e-05 1.e-06 1.e-06 1.e-06 1.e-06
+ 1.e-06 1.e-06 1.e-06]  elapsed=9226s
+  iter= 18400  max_logden=100.338916  accepts=5  step(diag)=[1.e-07 1.e-06 1.e-07 1.e-07 1.e-07 1.e-05 1.e-06 1.e-06 1.e-06 1.e-06
+ 1.e-06 1.e-06 1.e-06]  elapsed=9325s
+  iter= 18600  max_logden=100.338916  accepts=5  step(diag)=[1.e-07 1.e-06 1.e-07 1.e-07 1.e-07 1.e-05 1.e-06 1.e-06 1.e-06 1.e-06
+ 1.e-06 1.e-06 1.e-06]  elapsed=9424s
+  iter= 18800  max_logden=100.338916  accepts=5  step(diag)=[1.e-07 1.e-06 1.e-07 1.e-07 1.e-07 1.e-05 1.e-06 1.e-06 1.e-06 1.e-06
+ 1.e-06 1.e-06 1.e-06]  elapsed=9523s
+  iter= 19000  max_logden=100.338916  accepts=5  step(diag)=[1.e-07 1.e-06 1.e-07 1.e-07 1.e-07 1.e-05 1.e-06 1.e-06 1.e-06 1.e-06
+ 1.e-06 1.e-06 1.e-06]  elapsed=9622s
+  iter= 19200  max_logden=100.338916  accepts=5  step(diag)=[1.e-07 1.e-06 1.e-07 1.e-07 1.e-07 1.e-05 1.e-06 1.e-06 1.e-06 1.e-06
+ 1.e-06 1.e-06 1.e-06]  elapsed=9721s
+  iter= 19400  max_logden=100.338916  accepts=5  step(diag)=[1.e-07 1.e-06 1.e-07 1.e-07 1.e-07 1.e-05 1.e-06 1.e-06 1.e-06 1.e-06
+ 1.e-06 1.e-06 1.e-06]  elapsed=9820s
+  iter= 19600  max_logden=100.338916  accepts=5  step(diag)=[1.e-07 1.e-06 1.e-07 1.e-07 1.e-07 1.e-05 1.e-06 1.e-06 1.e-06 1.e-06
+ 1.e-06 1.e-06 1.e-06]  elapsed=9919s
+  iter= 19800  max_logden=100.338916  accepts=5  step(diag)=[1.e-07 1.e-06 1.e-07 1.e-07 1.e-07 1.e-05 1.e-06 1.e-06 1.e-06 1.e-06
+ 1.e-06 1.e-06 1.e-06]  elapsed=10018s
+  iter= 20000  max_logden=100.338916  accepts=5  step(diag)=[1.e-07 1.e-06 1.e-07 1.e-07 1.e-07 1.e-05 1.e-06 1.e-06 1.e-06 1.e-06
+ 1.e-06 1.e-06 1.e-06]  elapsed=10116s
+
+Done. 20000 iters in 10116s (2.0/s)
+Total accepts: 5
+
+=== MAP result (greedy hill-climb) ===
+  log10(m1)   : true= 5.827369  MAP= 5.827369  diff=-1.061e-07
+  log10(m2)   : true= 1.992995  MAP= 1.992995  diff=-2.922e-07
+  a           : true= 0.500000  MAP= 0.500000  diff=-6.275e-08
+  p0          : true= 15.711700  MAP= 15.711700  diff=-5.611e-09
+  e0          : true= 0.744000  MAP= 0.744000  diff= 2.918e-08
+  dist        : true= 4.755000  MAP= 4.755035  diff= 3.528e-05
+  qS          : true= 0.590600  MAP= 0.590597  diff=-2.897e-06
+  phiS        : true= 3.580800  MAP= 3.580804  diff= 4.486e-06
+  qK          : true= 1.170700  MAP= 1.170698  diff=-1.844e-06
+  phiK        : true= 3.849500  MAP= 3.849500  diff=-1.560e-07
+  Phi_phi0    : true= 3.194000  MAP= 3.193998  diff=-1.742e-06
+  Phi_theta0  : true= 3.378000  MAP= 3.378000  diff= 8.633e-08
+  Phi_r0      : true= 0.603800  MAP= 0.603797  diff=-2.602e-06
+
+lnL(true) = 100.326
+lnL(MAP)  = 100.339
+
+Saved to /scratch/e1498138/map_mojito_light_g_greedy_seed42.npz
+Job completed at Tue Aug 18 03:27:38 PM +08 2026
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+			Resource Usage on 2026-08-18 15:27:53.674582:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	JobId: 571925.hopper-m-02
+	Project: CFP03-CF-051
+	Exit Status: 0
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	NCPUs: Requested(12), Used(12)
+	CPU Time Used: 02:41:35
+	Memory: Requested(225gb), Used(11216464kb)
+	Vmem Used: 30920688kb
+	Walltime: Requested(24:00:00), Used(02:49:34)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	Execution Nodes Used: (hopper-14:ngpus=1:ncpus=12:mem=235929600kb)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	No GPU-related information available for this job.

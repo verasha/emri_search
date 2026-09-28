@@ -1,0 +1,27 @@
+Direct write is requested for job: 550322.hopper-m-02, but the destination is not usecp-able from hopper-28.cm.cluster
+Sampling:   0%|          | 0/10000 [00:00<?, ?it/s]Value error in sampling: array must not contain infs or NaNs
+Traceback (most recent call last):
+  File "/nfs/home/svu/e1498138/emri_search/work/search/resume_paris1_sc_ext.py", line 156, in <module>
+    sampler.run_sampling(
+  File "/nfs/home/svu/e1498138/emri_search_uv/.venv/lib64/python3.9/site-packages/parismc/sampler.py", line 1397, in run_sampling
+    points_list, probabilities_list = self._update_means_and_covariances(i)
+  File "/nfs/home/svu/e1498138/emri_search_uv/.venv/lib64/python3.9/site-packages/parismc/sampler.py", line 862, in _update_means_and_covariances
+    mvn = multivariate_normal(mean=np.zeros(self.ndim), cov=covariance, allow_singular=True)
+  File "/nfs/home/svu/e1498138/emri_search_uv/.venv/lib64/python3.9/site-packages/scipy/stats/_multivariate.py", line 397, in __call__
+    return multivariate_normal_frozen(mean, cov,
+  File "/nfs/home/svu/e1498138/emri_search_uv/.venv/lib64/python3.9/site-packages/scipy/stats/_multivariate.py", line 903, in __init__
+    self._dist._process_parameters(mean, cov, allow_singular))
+  File "/nfs/home/svu/e1498138/emri_search_uv/.venv/lib64/python3.9/site-packages/scipy/stats/_multivariate.py", line 421, in _process_parameters
+    psd = _PSD(cov, allow_singular=allow_singular)
+  File "/nfs/home/svu/e1498138/emri_search_uv/.venv/lib64/python3.9/site-packages/scipy/stats/_multivariate.py", line 164, in __init__
+    s, u = scipy.linalg.eigh(M, lower=lower, check_finite=check_finite)
+  File "/nfs/home/svu/e1498138/emri_search_uv/.venv/lib64/python3.9/site-packages/scipy/_lib/deprecation.py", line 213, in inner_f
+    return f(*args, **kwargs)
+  File "/nfs/home/svu/e1498138/emri_search_uv/.venv/lib64/python3.9/site-packages/scipy/linalg/_decomp.py", line 464, in eigh
+    a1 = _asarray_validated(a, check_finite=check_finite)
+  File "/nfs/home/svu/e1498138/emri_search_uv/.venv/lib64/python3.9/site-packages/scipy/_lib/_util.py", line 321, in _asarray_validated
+    a = toarray(a)
+  File "/nfs/home/svu/e1498138/emri_search_uv/.venv/lib64/python3.9/site-packages/numpy/lib/function_base.py", line 630, in asarray_chkfinite
+    raise ValueError(
+ValueError: array must not contain infs or NaNs
+Sampling:   0%|          | 0/10000 [00:01<?, ?it/s]

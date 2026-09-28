@@ -1,0 +1,84 @@
+Building ResponseWrapper...
+Building GravWaveAnalysis...
+
+=== true point ===
+sum of per-mode power = 1.58528e+46, captured by (l,m,n) grid = 100.0000%
+  l    m    n          power   fraction %
+  2   -2    3    5.85195e+45      36.9144
+  2   -2    2    4.62953e+45      29.2033
+  2   -2    4    1.87443e+45      11.8240
+  2   -2    1    8.04251e+44       5.0733
+  2   -2    5     7.7778e+44       4.9063
+  2   -2   -1     7.5649e+44       4.7720
+  2   -2    6    3.76328e+44       2.3739
+  2   -2    7    1.98056e+44       1.2493
+  2   -2    0    1.58119e+44       0.9974
+  2   -2    8     1.0966e+44       0.6917
+  2   -2    9    6.27154e+43       0.3956
+  3   -3    4    5.66634e+43       0.3574
+  2   -2   10    3.66339e+43       0.2311
+  2   -2   11     2.1695e+43       0.1369
+  3   -3    5    1.83244e+43       0.1156
+  3   -3    3    1.47928e+43       0.0933
+  2   -2   12    1.29589e+43       0.0817
+  2   -1    1    1.07305e+43       0.0677
+  2   -2   13    7.77849e+42       0.0491
+  2   -2   -2    7.73488e+42       0.0488
+Saved /nfs/home/svu/e1498138/emri_search/work/search/paper/emri_g/mode_power_distribution_ecl/mode_power_true.csv
+Saved /nfs/home/svu/e1498138/emri_search/work/search/paper/emri_g/mode_power_distribution_ecl/mode_power_true.png
+
+=== pt1 point ===
+sum of per-mode power = 1.58668e+46, captured by (l,m,n) grid = 100.0000%
+  l    m    n          power   fraction %
+  2   -2    3    5.86258e+45      36.9488
+  2   -2    2    4.63108e+45      29.1873
+  2   -2    4    1.87805e+45      11.8363
+  2   -2    1    8.02812e+44       5.0597
+  2   -2    5     7.7955e+44       4.9131
+  2   -2   -1    7.57846e+44       4.7763
+  2   -2    6    3.77346e+44       2.3782
+  2   -2    7    1.98681e+44       1.2522
+  2   -2    0    1.58628e+44       0.9998
+  2   -2    8    1.10056e+44       0.6936
+  2   -2    9    6.29702e+43       0.3969
+  3   -3    4    5.39456e+43       0.3400
+  2   -2   10    3.67994e+43       0.2319
+  2   -2   11     2.1803e+43       0.1374
+  3   -3    5    1.74526e+43       0.1100
+  3   -3    3    1.40555e+43       0.0886
+  2   -2   12    1.30293e+43       0.0821
+  2   -1    1    1.02379e+43       0.0645
+  2   -2   13    7.82431e+42       0.0493
+  2   -2   -2    7.76048e+42       0.0489
+Saved /nfs/home/svu/e1498138/emri_search/work/search/paper/emri_g/mode_power_distribution_ecl/mode_power_pt1.csv
+Saved /nfs/home/svu/e1498138/emri_search/work/search/paper/emri_g/mode_power_distribution_ecl/mode_power_pt1.png
+
+=== pt9 point ===
+sum of per-mode power = 1.59641e+46, captured by (l,m,n) grid = 100.0000%
+  l    m    n          power   fraction %
+  2   -2    3    5.89367e+45      36.9182
+  2   -2    2    4.67417e+45      29.2792
+  2   -2    4    1.88728e+45      11.8220
+  2   -2    1    8.11926e+44       5.0859
+  2   -2    5    7.82922e+44       4.9043
+  2   -2   -1    7.61861e+44       4.7723
+  2   -2    6      3.787e+44       2.3722
+  2   -2    7    1.99243e+44       1.2481
+  2   -2    0    1.58721e+44       0.9942
+  2   -2    8    1.10285e+44       0.6908
+  2   -2    9    6.30538e+43       0.3950
+  3   -3    4    5.20399e+43       0.3260
+  2   -2   10    3.68206e+43       0.2306
+  2   -2   11    2.17991e+43       0.1366
+  3   -3    5    1.68003e+43       0.1052
+  3   -3    3    1.36097e+43       0.0853
+  2   -2   12     1.3017e+43       0.0815
+  2   -1    1    9.81365e+42       0.0615
+  2   -2   13    7.81085e+42       0.0489
+  2   -2   -2    7.74139e+42       0.0485
+Saved /nfs/home/svu/e1498138/emri_search/work/search/paper/emri_g/mode_power_distribution_ecl/mode_power_pt9.csv
+Saved /nfs/home/svu/e1498138/emri_search/work/search/paper/emri_g/mode_power_distribution_ecl/mode_power_pt9.png
+
+Saved /nfs/home/svu/e1498138/emri_search/work/search/paper/emri_g/mode_power_distribution_ecl/mode_power_comparison_pt1.png
+
+Saved /nfs/home/svu/e1498138/emri_search/work/search/paper/emri_g/mode_power_distribution_ecl/mode_power_comparison_pt9.png

@@ -1,0 +1,50 @@
+Job ID: 569477.hopper-m-02
+Job name: map_mojito_c
+Job starts at Mon Aug 17 04:50:02 PM +08 2026
+Using dt=10s, T=1.9166666666666667yr, TDI gen=1
+Building ResponseWrapper...
+Building GravWaveAnalysis...
+Generating data (signal + seed=42 colored noise) and pure-f-stat LogLike...
+Data generated.
+lnL at injected (true) params: 115.779
+Running Nelder-Mead from the injected (true) params...
+NM result: x=[6.54900291 1.90363229 0.94999911 7.38900446 0.31599937 5.48803655
+ 2.03874038 5.7810062  2.07988762 1.76332531 2.37353363 0.26921546
+ 0.97231195], lnL=123.308
+
+=== MAP result ===
+  log10(m1)   : true= 6.549003  MAP= 6.549003  diff=-3.471e-07
+  log10(m2)   : true= 1.903633  MAP= 1.903632  diff=-2.293e-07
+  a           : true= 0.950000  MAP= 0.949999  diff=-8.932e-07
+  p0          : true= 7.389000  MAP= 7.389004  diff= 4.461e-06
+  e0          : true= 0.316000  MAP= 0.315999  diff=-6.311e-07
+  dist        : true= 4.858000  MAP= 5.488037  diff= 6.300e-01
+  qS          : true= 2.042000  MAP= 2.038740  diff=-3.260e-03
+  phiS        : true= 5.787300  MAP= 5.781006  diff=-6.294e-03
+  qK          : true= 2.065716  MAP= 2.079888  diff= 1.417e-02
+  phiK        : true= 1.766032  MAP= 1.763325  diff=-2.707e-03
+  Phi_phi0    : true= 2.404400  MAP= 2.373534  diff=-3.087e-02
+  Phi_theta0  : true= 0.285000  MAP= 0.269215  diff=-1.578e-02
+  Phi_r0      : true= 0.974300  MAP= 0.972312  diff=-1.988e-03
+
+lnL(true) = 115.779
+lnL(MAP)  = 123.308
+
+Saved to /scratch/e1498138/map_mojito_light_c_pure_seed42.npz
+Job completed at Mon Aug 17 07:51:58 PM +08 2026
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+			Resource Usage on 2026-08-17 19:52:08.470782:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	JobId: 569477.hopper-m-02
+	Project: CFP03-CF-051
+	Exit Status: 0
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	NCPUs: Requested(12), Used(12)
+	CPU Time Used: 02:51:07
+	Memory: Requested(225gb), Used(11216280kb)
+	Vmem Used: 31006568kb
+	Walltime: Requested(24:00:00), Used(03:01:56)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	Execution Nodes Used: (hopper-16:ngpus=1:ncpus=12:mem=235929600kb)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	No GPU-related information available for this job.

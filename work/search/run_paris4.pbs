@@ -1,8 +1,8 @@
 #!/bin/bash
 #PBS -P CFP03-CF-051
-#PBS -o logs/paris4_s6.out
-#PBS -e logs/paris4_s6.err
-#PBS -N paris4_s6
+#PBS -o logs/paper/ext_emri_c/stage2_anneal_s6.out
+#PBS -e logs/paper/ext_emri_c/stage2_anneal_s6.err
+#PBS -N stage2_anneal
 #PBS -l walltime=24:00:00
 #PBS -l select=1:ngpus=1
 
@@ -16,6 +16,6 @@ mkdir -p logs
 module load cuda12.4/toolkit/12.4.1
 source /home/svu/e1498138/emri_search_uv/.venv/bin/activate
 
-python paris4_sc.py
+python paris4_sc_ext.py
 
 echo "Job completed at $(date)"

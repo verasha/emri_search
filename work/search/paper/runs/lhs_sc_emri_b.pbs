@@ -1,0 +1,43 @@
+#!/bin/bash
+# Semi-coherent S_N over a Latin hypercube, for EMRI_A rescaled to SNR 30.
+#
+# EMRI_A here is at dist = 2.081234 Gpc, not the catalogue's 1.066961: SNR
+# scales as 1/D, so 1.066961 x 58.5186 / 30 puts rho at 30. Every other
+# parameter is the catalogue's. The source and prior box live in lhs_sc.py.
+#
+# No checkpointing -- the run finishes or is repeated. At ~4 it/s, 1e5 samples
+# is ~7 h against the 24 h walltime.
+#PBS -P CFP03-CF-051
+#PBS -N lhs_sc.emri_b_snr30
+#PBS -o /scratch/e1498138/paper/logs/
+#PBS -e /scratch/e1498138/paper/logs/
+#PBS -l walltime=24:00:00
+#PBS -l select=1:ngpus=1
+
+cd "$PBS_O_WORKDIR"
+module load cuda12.4/toolkit/12.4.1
+source /home/svu/e1498138/emri_search_uv/.venv/bin/activate
+
+SRC="${SRC:-emri_b_snr30}"
+NSEG="${NSEG:-12}"
+NLHS="${NLHS:-100000}"
+SEED="${SEED:-42}"
+
+LOGDIR="/scratch/e1498138/paper/logs/$SRC"
+OUTDIR="${OUTDIR:-/scratch/e1498138/paper/$SRC/lhs_sc_s$NSEG}"
+mkdir -p "$LOGDIR" "$OUTDIR"
+
+JOBID="${PBS_JOBID%%.*}"
+# Named for the run and source, not the script: NSEG is in both the log name
+# and the output dir, so s4 and s12 runs can never overwrite each other.
+LOG="$LOGDIR/lhs_sc_s${NSEG}.${SRC}.${JOBID}.log"
+
+python -u lhs_sc.py \
+  --n-samples "$NLHS" \
+  --batch-size 10 \
+  --n-segs "$NSEG" \
+  --seed "$SEED" \
+  --outdir "$OUTDIR" \
+  > "$LOG" 2>&1
+
+echo "Job completed at $(date)"

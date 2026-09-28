@@ -1,0 +1,121 @@
+Job ID: 558238.hopper-m-02
+Job name: paris3_sc_ext
+Job starts at Mon Aug 10 12:58:57 PM +08 2026
+Using dt=5s, T=1.0yr, TDI gen=1, N_segs=6
+Building ResponseWrapper...
+Building GravWaveAnalysis...
+Initializing LogLike...
+LogLike initialized.
+Setting up ParisMC...
+Getting LHS points...
+Loaded 100000 / 100000 finite LHS evaluations.
+Running sampling...
+Done.
+Savepath: /scratch/e1498138/paper/ext/emri_g/stage1_merge_s12_dev_alt
+logZ (hist ruler): nan
+Job completed at Mon Aug 10 01:12:49 PM +08 2026
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+			Resource Usage on 2026-08-10 13:12:50.656981:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	JobId: 558238.hopper-m-02
+	Project: CFP03-CF-051
+	Exit Status: 0
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	NCPUs: Requested(12), Used(12)
+	CPU Time Used: 00:15:11
+	Memory: Requested(225gb), Used(17748960kb)
+	Vmem Used: 35548776kb
+	Walltime: Requested(24:00:00), Used(00:13:53)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	Execution Nodes Used: (hopper-29:ngpus=1:ncpus=12:mem=235929600kb)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	No GPU-related information available for this job.
+Job ID: 558339.hopper-m-02
+Job name: paris3_sc_ext
+Job starts at Mon Aug 10 02:40:43 PM +08 2026
+Using dt=5s, T=1.0yr, TDI gen=1, N_segs=6
+Building ResponseWrapper...
+Building GravWaveAnalysis...
+Initializing LogLike...
+LogLike initialized.
+Getting LHS points...
+Prior bounds (from paris3_lhs_s6_ext ellipsoid box):
+  logm1: [5.82442, 5.84531]
+  logm2: [1.99181, 1.99656]
+  a: [0.49134, 0.55132]
+  p0: [15.37450, 15.76176]
+  e0: [0.74195, 0.74441]
+  cosqS: [0.72035, 0.84668]
+  phiS: [3.20755, 3.63934]
+Setting up ParisMC...
+Loaded 100000 / 100000 finite LHS evaluations.
+Running sampling...
+Job completed at Mon Aug 10 04:22:19 PM +08 2026
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+			Resource Usage on 2026-08-10 16:22:34.462929:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	JobId: 558339.hopper-m-02
+	Project: CFP03-CF-051
+	Exit Status: 0
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	NCPUs: Requested(12), Used(12)
+	CPU Time Used: 01:34:43
+	Memory: Requested(225gb), Used(17742920kb)
+	Vmem Used: 164383348kb
+	Walltime: Requested(24:00:00), Used(01:41:37)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	Execution Nodes Used: (hopper-17:ngpus=1:ncpus=12:mem=235929600kb)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	No GPU-related information available for this job.
+Job ID: 558443.hopper-m-02
+Job name: paris3_sc_ext
+Job starts at Mon Aug 10 05:12:33 PM +08 2026
+Using dt=5s, T=1.0yr, TDI gen=1, N_segs=6
+Building ResponseWrapper...
+Building GravWaveAnalysis...
+Initializing LogLike...
+LogLike initialized.
+Getting LHS points...
+Prior bounds (from paris3_lhs_s6_ext ellipsoid box):
+  logm1: [5.82442, 5.84531]
+  logm2: [1.99181, 1.99656]
+  a: [0.49134, 0.55132]
+  p0: [15.37450, 15.76176]
+  e0: [0.74195, 0.74441]
+  cosqS: [0.72035, 0.84668]
+  phiS: [3.20755, 3.63934]
+Setting up ParisMC...
+Loaded 100000 / 100000 finite LHS evaluations.
+Running sampling...
+log_density batch of 9 points failed (CuFFTError('CUFFT_INTERNAL_ERROR')); clearing cuFFT plan cache and treating batch as -inf.
+log_density batch of 10 points failed (OutOfMemoryError('Out of memory allocating 12,150,001,664 bytes (allocated so far: 129,929,311,744 bytes).')); clearing cuFFT plan cache and treating batch as -inf.
+log_density batch of 10 points failed (CuFFTError('CUFFT_INTERNAL_ERROR')); clearing cuFFT plan cache and treating batch as -inf.
+log_density batch of 10 points failed (CuFFTError('CUFFT_INTERNAL_ERROR')); clearing cuFFT plan cache and treating batch as -inf.
+log_density batch of 10 points failed (OutOfMemoryError('Out of memory allocating 12,150,001,664 bytes (allocated so far: 132,080,634,880 bytes).')); clearing cuFFT plan cache and treating batch as -inf.
+log_density batch of 10 points failed (OutOfMemoryError('Out of memory allocating 12,150,001,664 bytes (allocated so far: 130,843,462,144 bytes).')); clearing cuFFT plan cache and treating batch as -inf.
+log_density batch of 7 points failed (CuFFTError('CUFFT_INTERNAL_ERROR')); clearing cuFFT plan cache and treating batch as -inf.
+log_density batch of 10 points failed (OutOfMemoryError('Out of memory allocating 12,150,001,664 bytes (allocated so far: 132,302,663,168 bytes).')); clearing cuFFT plan cache and treating batch as -inf.
+log_density batch of 9 points failed (OutOfMemoryError('Out of memory allocating 10,935,001,088 bytes (allocated so far: 131,780,842,496 bytes).')); clearing cuFFT plan cache and treating batch as -inf.
+log_density batch of 7 points failed (CuFFTError('CUFFT_INTERNAL_ERROR')); clearing cuFFT plan cache and treating batch as -inf.
+log_density batch of 7 points failed (CuFFTError('CUFFT_INTERNAL_ERROR')); clearing cuFFT plan cache and treating batch as -inf.
+log_density batch of 9 points failed (OutOfMemoryError('Out of memory allocating 10,935,001,088 bytes (allocated so far: 131,774,510,080 bytes).')); clearing cuFFT plan cache and treating batch as -inf.
+Done.
+Savepath: /scratch/e1498138/paper/ext/emri_g/stage1_merge_s12_dev_alt
+logZ (hist ruler): 63.74392224641643
+Job completed at Mon Aug 10 10:06:37 PM +08 2026
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+			Resource Usage on 2026-08-10 22:06:45.279028:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	JobId: 558443.hopper-m-02
+	Project: CFP03-CF-051
+	Exit Status: 0
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	NCPUs: Requested(12), Used(12)
+	CPU Time Used: 04:44:58
+	Memory: Requested(225gb), Used(17750040kb)
+	Vmem Used: 173527108kb
+	Walltime: Requested(24:00:00), Used(04:54:06)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	Execution Nodes Used: (hopper-27:ngpus=1:ncpus=12:mem=235929600kb)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	No GPU-related information available for this job.

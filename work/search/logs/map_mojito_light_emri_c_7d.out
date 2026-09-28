@@ -1,0 +1,43 @@
+Job ID: 570326.hopper-m-02
+Job name: map_mojito_c7d
+Job starts at Mon Aug 17 09:11:36 PM +08 2026
+Using dt=10s, T=1.9166666666666667yr, TDI gen=1
+Building ResponseWrapper...
+Building GravWaveAnalysis...
+Generating data (signal + seed=42 colored noise) and pure-f-stat LogLike...
+Data generated.
+lnL at injected (true) params: 115.779
+Running Nelder-Mead from the injected (true) params...
+NM result: x=[ 6.5490032   1.90363256  0.95000013  7.3890003   0.316      -0.47067891
+  5.79959081], lnL=118.116
+
+=== MAP result (7-dim, matching ParisMC search subspace) ===
+  log10(m1)   : true= 6.549003  MAP= 6.549003  diff=-6.160e-08
+  log10(m2)   : true= 1.903633  MAP= 1.903633  diff= 3.938e-08
+  a           : true= 0.950000  MAP= 0.950000  diff= 1.315e-07
+  p0          : true= 7.389000  MAP= 7.389000  diff= 3.033e-07
+  e0          : true= 0.316000  MAP= 0.316000  diff= 3.498e-09
+  cos(qS)     : true=-0.453959  MAP=-0.470679  diff=-1.672e-02
+  phiS        : true= 5.787300  MAP= 5.799591  diff= 1.229e-02
+
+lnL(true) = 115.779
+lnL(MAP)  = 118.116
+
+Saved to /scratch/e1498138/map_mojito_light_c_7d_pure_seed42.npz
+Job completed at Tue Aug 18 12:10:19 AM +08 2026
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+			Resource Usage on 2026-08-18 00:10:20.454464:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	JobId: 570326.hopper-m-02
+	Project: CFP03-CF-051
+	Exit Status: 0
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	NCPUs: Requested(12), Used(12)
+	CPU Time Used: 02:49:58
+	Memory: Requested(225gb), Used(11216100kb)
+	Vmem Used: 31006468kb
+	Walltime: Requested(24:00:00), Used(02:58:44)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	Execution Nodes Used: (hopper-27:ngpus=1:ncpus=12:mem=235929600kb)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	No GPU-related information available for this job.

@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/nfs/home/svu/e1498138/emri_search/work/search/paris5_noise.py", line 163, in <module>
+    external_lhs_points = data['lhs_u']
+TypeError: tuple indices must be integers or slices, not str

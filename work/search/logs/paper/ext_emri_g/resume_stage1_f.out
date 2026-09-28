@@ -1,0 +1,34 @@
+Job ID: 551007.hopper-m-02
+Job name: resume_paris1_noise_ext
+Job starts at Sat Aug  1 09:15:51 PM +08 2026
+Using dt=5s, T=0.25yr, TDI gen=1
+Building ResponseWrapper...
+Building GravWaveAnalysis...
+Initializing LogLike...
+LogLike initialized.
+Done setting up log-likelihood and prior.
+Loading sampler state from: /scratch/e1498138/paper/ext/emri_g/stage1/sampler_state.pkl
+Done loading sampler.
+Sampler ndim: 7
+Sampler n_seed: 10
+Sampler current_iter: 4999
+Resuming paris1_noise_ext sampling...
+Done.
+Savepath: /scratch/e1498138/paper/ext/emri_g/stage1/resume/
+Job completed at Sun Aug  2 01:58:42 AM +08 2026
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+			Resource Usage on 2026-08-02 01:58:57.322228:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	JobId: 551007.hopper-m-02
+	Project: CFP03-CF-051
+	Exit Status: 0
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	NCPUs: Requested(12), Used(12)
+	CPU Time Used: 04:25:12
+	Memory: Requested(225gb), Used(11205880kb)
+	Vmem Used: 26350228kb
+	Walltime: Requested(24:00:00), Used(04:42:53)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	Execution Nodes Used: (hopper-27:ngpus=1:ncpus=12:mem=235929600kb)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	No GPU-related information available for this job.

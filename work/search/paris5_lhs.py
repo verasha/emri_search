@@ -26,15 +26,28 @@ cfg_set.set_log_level("WARNING")
 use_gpu = True
 tdi_gen = 1
 dt = 5
-T = 12 / 12
+T = 8 / 12
 print(f"dt={dt}s  T={T}yr  TDI gen={tdi_gen}")
 
 waveform_response = build_waveform_response(T=T, dt=dt, use_gpu=use_gpu, tdi_gen=tdi_gen)
 gwf = GravWaveAnalysis(T=T, dt=dt, use_gpu=use_gpu, tdi_gen=tdi_gen)
 
-m1, m2, a, p0, e0, xI0 = 1e6, 1e1, 0.7, 9.0, 0.4, 1.0
-dist, qS, phiS, qK, phiK = 4.5, np.pi, 0., 0., 0.
-Phi_phi0, Phi_theta0, Phi_r0 = 0.4, 0.0, 0.5
+# Source parameters
+m1 = 1e6
+m2 = 1e1
+a = 0.7
+p0 = 7.7 #NOTE
+e0 = 0.4
+xI0 = 1.0
+dist =  6 #NOTE: 
+qS = np.pi
+phiS = 0.
+qK =  0.
+phiK = 0.
+Phi_phi0 = 0.4
+Phi_theta0 = 0.0
+Phi_r0 = 0.5                                                                                                                         
+             
 params_star = [m1, m2, a, p0, e0, xI0, dist, qS, phiS, qK, phiK,
                Phi_phi0, Phi_theta0, Phi_r0]
 
@@ -96,8 +109,8 @@ del sampler_2, samples_p2, weights_p2, idx_rs
 # Use N_SIGMA_E0 >> N_SIGMA_OTHER so true e0=0.4 is safely inside the LHS volume.
 
 param_names   = ['logm1', 'logm2', 'a', 'p0', 'e0']
-N_SIGMA_1 = 3.0
-N_SIGMA_2    = 3.0
+N_SIGMA_1 = 5.0
+N_SIGMA_2    = 5.0
 N_SIGMA_PER_DIM = np.array([N_SIGMA_2, N_SIGMA_1, N_SIGMA_1,
                              N_SIGMA_2, N_SIGMA_2])
 
@@ -171,7 +184,7 @@ if n_finite > 0:
 
 # ── Save ──────────────────────────────────────────────────────────────────────
 
-savepath = f'/scratch/e1498138/paris5_noise/lhs_f.pkl'
+savepath = f'/scratch/e1498138/box/5sig/lhs_f.pkl'
 os.makedirs(os.path.dirname(savepath), exist_ok=True)
 save_data = {
     'lhs_u':          lhs_u,
